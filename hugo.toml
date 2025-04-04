@@ -1,4 +1,4 @@
-baseurl = "http://localhost:1313/" 
+baseurl = "https://mlalibertephoto.netlify.app" 
 title = "Marc Laliberte Photo"
 theme = "hugo-universal-theme"
 languageCode = "fr-ca"
@@ -9,6 +9,13 @@ summaryLength = 70
 
 # not pluralize title pages by default
 pluralizelisttitles = false
+
+[build]
+    command = "hugo --gc --minify"
+    publish = "public"
+
+[context.production.environment]
+    HUGO_VERSION = "0.126.1"
 
 [services]
     # Enable comments by entering your Disqus shortname
