@@ -1,0 +1,10 @@
+weight: 4
+title: "Vidéos"
+description: >
+  <ul class="list-style-none">
+    <li>Vidéo clips</li>
+    <li>Promotionel</li>
+    <li></li>
+  </ul>
+image: "img/Snapshot_3.jpg"
+href: "videos"

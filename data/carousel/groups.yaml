@@ -1,0 +1,11 @@
+weight: 2
+title: "Groupes"
+description: >
+  <ul class="list-style-none">
+     <li>Familial</li>
+     <li>Couples</li>
+     <li>Bands</li>
+     <li>Équipe de travail</li>
+   </ul>
+image: "img/DSC00515.jpg"
+href: "photos/groups"

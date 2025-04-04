@@ -1,0 +1,10 @@
+weight: 3
+title: "Évènements"
+description: >
+  <ul class="list-style-none">
+    <li>Spectacles</li>
+    <li>Théatre</li>
+    <li>Danse</li>
+  </ul>
+image: "img/DSC4217_small.jpg"
+href: "photos/events"
