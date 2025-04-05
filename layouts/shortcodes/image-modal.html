@@ -1,0 +1,98 @@
+<div class="enlargeable-image">
+    <img src="{{ .Get "src" }}" 
+         alt="{{ .Get "alt" }}" 
+         class="click-to-enlarge"
+         style="cursor: zoom-in; {{ with .Get "width" }}width: {{ . }};{{ else }}max-width: 100%;{{ end }} height: auto;">
+    {{ if .Get "caption" }}
+      <p class="image-caption">{{ .Get "caption" }}</p>
+    {{ end }}
+  </div>
+  
+  {{ if not (.Page.Scratch.Get "modal_created") }}
+    {{ .Page.Scratch.Set "modal_created" true }}
+    <div id="imageModal" class="modal" onclick="this.style.display='none'">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImage" style="max-width: 90vw; max-height: 90vh;">
+      <div id="caption"></div>
+    </div>
+  
+    <style>
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.9);
+      text-align: center;
+    }
+    .modal-content {
+      margin: auto;
+      display: inline-block;
+      max-width: 90vw;
+      max-height: 90vh;
+      width: auto;
+      height: auto;
+      padding: 20px 0;
+    }
+    #caption {
+      margin: 0 auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+      text-align: center;
+      color: #ccc;
+      padding: 10px 0;
+    }
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .close:hover,
+    .close:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    </style>
+  
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (document.getElementById('imageModal')) {
+        document.querySelectorAll('.click-to-enlarge').forEach(img => {
+          img.onclick = function(){
+            const modalImg = document.getElementById('modalImage');
+            modalImg.src = this.src;
+            document.getElementById('caption').innerHTML = this.alt;
+            document.getElementById('imageModal').style.display = "block";
+            
+            // Reset image size first
+            modalImg.style.width = 'auto';
+            modalImg.style.height = 'auto';
+            
+            // Adjust if image is larger than viewport
+            if (modalImg.naturalWidth > window.innerWidth || 
+                modalImg.naturalHeight > window.innerHeight) {
+              const ratio = Math.min(
+                window.innerWidth / modalImg.naturalWidth,
+                window.innerHeight / modalImg.naturalHeight
+              ) * 0.9;
+              modalImg.style.width = (modalImg.naturalWidth * ratio) + 'px';
+            }
+          }
+        });
+        
+        document.querySelector('.close').onclick = function() {
+          document.getElementById('imageModal').style.display = "none";
+        }
+      }
+    });
+    </script>
+  {{ end }}
