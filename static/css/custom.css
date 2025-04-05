@@ -1,0 +1,14 @@
+.flex-images {
+    display: flex;
+    gap: 1rem; /* Space between images */
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+    justify-content: center; /* Center images horizontally */
+    align-items: center; /* Center vertically */
+  }
+  
+  .flex-images img {
+    max-width: 100%;
+    height: auto;
+    flex: 1 1 auto; 
+    min-width: 200px; 
+  }

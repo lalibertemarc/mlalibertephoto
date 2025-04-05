@@ -37,7 +37,6 @@ pluralizelisttitles = false
     url        = "/photos"
     weight     = 3
 
-
 [[menu.main]]
     name       = "Portraits"
     url        = "/photos/Portraits"
@@ -54,6 +53,12 @@ pluralizelisttitles = false
     name       = "Évènements"
     url        = "/photos/events"
     weight     = 4
+    parent     = "menu.photos"
+
+[[menu.main]]
+    name       = "Animalière"
+    url        = "/photos/wildlife"
+    weight     = 5
     parent     = "menu.photos"
 
 [[menu.main]]
