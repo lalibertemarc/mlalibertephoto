@@ -86,11 +86,6 @@ pluralizelisttitles = false
 
 # Top bar social links menu
 
-[[menu.topbar]]
-    weight = 1
-    name = "Phone"
-    url = "tel:+1-514-503-2446"
-    pre = "<i class='fas fa-2x fa-phone'></i>"
 
 [[menu.topbar]]
     weight = 3
@@ -104,11 +99,6 @@ pluralizelisttitles = false
     url = "https://www.instagram.com/marc.laliberte.photo"
     pre = "<i class='fab fa-2x fa-instagram'></i>"
 
-[[menu.topbar]]
-    weight = 5
-    name = "Email"
-    url = "mailto:laliberte.marc1@gmail.com"
-    pre = "<i class='fas fa-2x fa-envelope'></i>"
 
 [params]
     viewMorePostLink = "/blog/"
