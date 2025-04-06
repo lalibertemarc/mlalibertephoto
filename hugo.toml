@@ -11,6 +11,11 @@ summaryLength = 70
 pluralizelisttitles = false
 
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # Allow raw HTML
+
 [services]
     # Enable comments by entering your Disqus shortname
     [services.disqus]
@@ -66,6 +71,12 @@ pluralizelisttitles = false
     identifier = "menu.videos"
     url        = "/videos"
     weight     = 3
+
+[[menu.main]]
+    name       = "Blog"
+    identifier = "menu.blog"
+    url        = "/blog"
+    weight     = 4
 
 [[menu.main]]
     identifier = "contact"
@@ -240,13 +251,13 @@ pluralizelisttitles = false
     subtitle = ""
 
 [params.recent_posts]
-    enable = false
-    title = "From our blog"
-    subtitle = "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo."
+    enable = true
+    title = "Mes publications récentes"
+    subtitle = ""
     hide_summary = false
 
 [params.footer.recent_posts]
-    enable = false
+    enable = true
 
 [taxonomies]
     category = "categories"

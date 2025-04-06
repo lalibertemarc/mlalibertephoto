@@ -29,7 +29,7 @@ draft = false
 {{< image-modal 
     src="/img/_DSC6905 - insta.jpg"
     width="400px"
-    alt="Guitbassdrom"
+    alt="Diamond Cobra"
 >}}
 {{< /fleximages >}}
 ## Danse

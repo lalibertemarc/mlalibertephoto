@@ -6,7 +6,7 @@ draft = false
 # Corporatifs
 {{< fleximages >}}
 {{< image-modal 
-    src="/img/DSC00683_small.jpg" 
+    src="/img/DSC00683 - insta-3.jpg" 
     width="400px" 
 >}}
 {{< image-modal 
