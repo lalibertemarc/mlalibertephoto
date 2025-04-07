@@ -7,7 +7,7 @@ draft = false
 
 {{< fleximages >}}
 {{< image-modal 
-    src="/img/DSC4217_small.jpg"
+    src="/img/_DSC4217-Enhanced-NR - insta-2.jpg"
     width="400px" 
     alt="Lutharo"
 >}}
