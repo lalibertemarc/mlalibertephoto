@@ -15,7 +15,10 @@ draft = false
 </a>
 </p>
 
-<p>Contactez-moi pour connaître mes forfaits</p>
+<p>1000$ pour 4h de prise de photo ou vidéo sur place<p>
+<p>Édition photo incluse</p> 
+<p>Édition vidéo : prix à discuter selon le projet</p>
+<p>Contactez-moi pour connaître mes autres forfaits</p>
 
 +1-514-503-2446
 

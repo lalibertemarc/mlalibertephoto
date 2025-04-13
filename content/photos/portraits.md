@@ -3,7 +3,8 @@ title = 'Portraits'
 draft = false
 +++
 
-# Corporatifs
+## Portraits corporatifs
+
 {{< fleximages >}}
 {{< image-modal 
     src="/img/DSC00683 - insta-3.jpg" 
@@ -14,7 +15,7 @@ draft = false
     width="400px" 
 >}}
 {{< /fleximages >}}
-## Personnels
+## Portraits personnels
 
 {{< fleximages >}}
 
