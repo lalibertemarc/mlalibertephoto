@@ -15,7 +15,7 @@ draft = false
 </a>
 </p>
 
-<p>1000$ pour 4h de prise de photos ou vidéos sur place<p>
+<p>600$ pour 3h de prise de photos ou vidéos sur place<p>
 <p>Édition photo incluse</p> 
 <p>Édition vidéo : prix à discuter selon le projet</p>
 <p>Contactez-moi pour connaître mes autres forfaits</p>
