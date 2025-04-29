@@ -7,6 +7,16 @@ draft = false
 
 {{< fleximages >}}
 {{< image-modal 
+    src="/img/DSC01453 - insta.jpg"
+    width="400px" 
+    alt="The Mother Rockers"
+>}}
+{{< image-modal 
+    src="/img/DSC01554 - insta.jpg"
+    width="400px" 
+    alt="The Mother Rockers"
+>}}
+{{< image-modal 
     src="/img/_DSC4217-Enhanced-NR - insta-2.jpg"
     width="400px" 
     alt="Lutharo"
