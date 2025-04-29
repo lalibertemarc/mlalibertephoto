@@ -1,5 +1,5 @@
 +++
-title = 'SavkaDesign'
+title = 'Savka Design'
 date = 2025-04-26T10:00:53-04:00
 draft = false
 tags = ["product", "merch", "savka"]
