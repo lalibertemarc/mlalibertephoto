@@ -6,13 +6,13 @@ draft = false
 
 # Donnez une seconde vie aux photos de vos êtres chers.
 
-### Service de restauration, numérisation et retouches de photos d'archives
+### Service de restauration, numérisation et retouches de photos anciennes
 
-- Restauration de photos floues
-- Élimination de grain
-- Enlever les rayures de photos abîmées
-- Numériser vos vieilles photos pour partage sur les réseaux sociaux
-- Améliorer la résolution pour impression et encadrement
+- Correction des photos floues
+- Suppression du grain
+- Réparation des rayures sur photos abîmées
+- Numérisation de vos vieilles photos pour un partage sur les réseaux sociaux
+- Amélioration de la résolution pour impression et encadrement
 
 {{< fleximages >}}
 {{< image-modal 
