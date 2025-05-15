@@ -1,0 +1,14 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "{{ .Site.Title }}",
+  "url": "{{ .Site.BaseURL }}",
+  "logo": "{{ absURL "img/logo-small.png" }}",
+  "description": "{{ .Site.Params.description }}",
+  "sameAs": [
+    "https://www.instagram.com/marc.laliberte.photo",
+    "https://www.facebook.com/profile.php?id=61567037645807"
+  ]
+}
+</script>

@@ -1,5 +1,7 @@
 baseurl = "https://mlalibertephoto.netlify.app" 
-title = "Marc Laliberte Photo"
+title = "Marc Laliberte Photo & Restauration"
+enableRobotsTXT = true
+disableHugoGeneratorInject = true
 theme = "hugo-universal-theme"
 languageCode = "fr-ca"
 defaultContentLanguage = "fr"
@@ -10,11 +12,15 @@ summaryLength = 70
 # not pluralize title pages by default
 pluralizelisttitles = false
 
+[imaging]
+  quality = 85
+  resampleFilter = "CatmullRom"
+  anchor = "center"
 
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
-      unsafe = true  # Allow raw HTML
+      unsafe = true
 
 [services]
     # Enable comments by entering your Disqus shortname
@@ -109,9 +115,10 @@ pluralizelisttitles = false
 [params]
     viewMorePostLink = "/blog/"
     author = "Marc Laliberte"
-    defaultKeywords = ["mlaliberte", "hugo", "go"]
+    defaultDescription = "Photographe spécialisé en restauration de photographies anciennes pour préserver les souvenirs de famille"
+    defaultKeywords = ["restauration", "photographe", "numerisation",]
     mainSections = ["blog"]
-    defaultDescription = "Marc Laliberte Photos&Vidéos"
+
 
     # Social media
     facebook_site = "https://www.facebook.com/profile.php?id=61567037645807"
@@ -175,7 +182,12 @@ pluralizelisttitles = false
         <strong>Canada</strong>
       </p>
       """
-
+    [params.opengraph]
+        enable = true
+        image = "img/logo.png" # Default image for shares
+        image_width = 1200
+        image_height = 630  # Facebook recommended ratio
+  
 [permalinks]
     blog = "/blog/:year/:month/:day/:filename/"
 

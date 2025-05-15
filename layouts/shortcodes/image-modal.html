@@ -1,23 +1,44 @@
-<div class="enlargeable-image">
+<figure class="enlargeable-image" itemscope itemtype="https://schema.org/ImageObject">
     {{ if .Get "title" }}
-      <h4 class="image-title">{{ .Get "title" }}</h4>
+      <figcaption class="image-title" itemprop="name">{{ .Get "title" }}</figcaption>
     {{ end }}
-    <img src="{{ .Get "src" }}" 
-         alt="{{ .Get "alt" }}" 
-         class="click-to-enlarge"
-         style="cursor: zoom-in; {{ with .Get "width" }}width: {{ . }};{{ else }}max-width: 100%;{{ end }} height: auto;">
-    {{ if .Get "caption" }}
-      <p class="image-caption">{{ .Get "caption" }}</p>
-    {{ end }}
-</div>
+    <img 
+        src="{{ .Get "src" }}" 
+        alt="{{ .Get "alt" }}" 
+        class="click-to-enlarge" 
+        itemprop="contentUrl"
+        loading="lazy"
+        data-caption="{{ if .Get "caption" }}{{ .Get "caption" }}{{ end }}"
+        {{ if .Get "srcset" }}srcset="{{ .Get "srcset" }}" sizes="(max-width: 768px) 100vw, 50vw"{{ end }}
+        style="cursor: zoom-in; {{ with .Get "width" }}width: {{ . }};{{ else }}max-width: 100%;{{ end }} height: auto;"
+    >
+</figure>
 
 {{ if not (.Page.Scratch.Get "modal_created") }}
   {{ .Page.Scratch.Set "modal_created" true }}
-  <div id="imageModal" class="modal" onclick="this.style.display='none'">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="modalImage" style="max-width: 90vw; max-height: 90vh;">
-    <div id="caption"></div>
+  <div id="imageModal" class="modal" role="dialog" aria-modal="true" aria-label="Enlarged image view" onclick="this.style.display='none'">
+    <button class="close" aria-label="Close image modal">&times;</button>
+    <img class="modal-content" id="modalImage" alt="" style="max-width: 90vw; max-height: 90vh;">
+    <div id="modalCaption" class="modal-caption" aria-live="polite"></div>
   </div>
+
+{{ if not (.Page.Scratch.Get "jsonld_created") }}
+  {{ .Page.Scratch.Set "jsonld_created" true }}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ImageObject",
+    "contentUrl": "{{ .Get "src" }}",
+    "name": "{{ .Get "title" }}",
+    "description": "{{ .Get "alt" }}",
+    "caption": "{{ .Get "caption" }}",
+    "associatedArticle": {
+      "@type": "Article",
+      "url": "{{ .Page.Permalink }}"
+    }
+  }
+  </script>
+{{ end }}
 
   <style>
   .modal {
@@ -40,7 +61,7 @@
     height: auto;
     padding: 20px 0;
   }
-  #caption {
+  .modal-caption {
     margin: 0 auto;
     display: block;
     width: 80%;
@@ -48,6 +69,7 @@
     text-align: center;
     color: #ccc;
     padding: 10px 0;
+    font-style: italic;
   }
   .close {
     position: absolute;
@@ -56,19 +78,20 @@
     color: #f1f1f1;
     font-size: 40px;
     font-weight: bold;
-    transition: 0.3s;
+    background: none;
+    border: none;
+    cursor: pointer;
   }
   .close:hover,
   .close:focus {
     color: #bbb;
     text-decoration: none;
-    cursor: pointer;
   }
   .image-title {
     margin-bottom: 0.5em;
     font-weight: bold;
     text-align: center;
-    width: 100%
+    width: 100%;
   }
   </style>
 
@@ -78,8 +101,10 @@
       document.querySelectorAll('.click-to-enlarge').forEach(img => {
         img.onclick = function(){
           const modalImg = document.getElementById('modalImage');
+          const modalCaption = document.getElementById('modalCaption');
           modalImg.src = this.src;
-          document.getElementById('caption').innerHTML = this.alt;
+          modalImg.alt = this.alt;
+          modalCaption.innerHTML = this.dataset.caption || ""; // Show caption if it exists
           document.getElementById('imageModal').style.display = "block";
           
           // Reset image size first
@@ -101,6 +126,13 @@
       document.querySelector('.close').onclick = function() {
         document.getElementById('imageModal').style.display = "none";
       }
+      
+      // Close modal on ESC key
+      document.addEventListener('keydown', function(e) {
+        if (e.key === "Escape") {
+          document.getElementById('imageModal').style.display = "none";
+        }
+      });
     }
   });
   </script>

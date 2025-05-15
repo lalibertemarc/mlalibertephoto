@@ -8,18 +8,26 @@ draft = false
 
 ### Service de restauration, numérisation et retouches de photos d'archives
 
+- Restauration de photos floues
+- Élimination de grain
+- Enlever les rayures de photos abîmées
+- Numériser vos vieilles photos pour partage sur les réseaux sociaux
+- Améliorer la résolution pour impression et encadrement
+
 {{< fleximages >}}
 {{< image-modal 
-    src="/img/_DSC7374 - insta-2.jpg" 
+    src="/img/_DSC7374 - insta-2.jpg"
     width="500px"
-    alt="Avant"
     title="Avant"
+    alt="Avant, vieille photo abîmée d'une jeune dame"
+    caption="Avant, on voit bien les rayures et la texture sur cette vielles photo" 
 >}}
 {{< image-modal 
     src="/img/_DSC7374-001-Edit-Edit - insta.jpg"
     width="500px"
-    alt="Après"
     title="Après"
+    alt="Après, photo restaurée d'une jeune dame resplendissante"
+    caption="Après, le sujet est très clair, toutes les rayures sont disparues" 
 >}}
 {{< /fleximages >}}
 
@@ -29,14 +37,16 @@ draft = false
 {{< image-modal 
     src="/img/DSC01077 - insta.jpg" 
     width="500px"
-    alt="Avant"
     title="Avant"
+    alt="Avant, vieille photo abîmée d'une jeune dame"
+    caption="Avant, la photo est floue et le jaunissement est très apparent" 
 >}}
 {{< image-modal 
     src="/img/DSC01077-Edit-2 - insta.jpg"
     width="500px"
-    alt="Après"
     title="Après"
+    alt="Après, photo restaurée d'une jeune dame resplendissante"
+    caption="Après, la photo est très claire, le photo ne montre plus de vieillissement" 
 >}}
 {{< /fleximages >}}
 

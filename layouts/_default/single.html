@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-
+  {{ block "schema" . }}{{ end }}
   <head>
     {{ partial "headers.html" . }}
     {{ partial "custom_headers.html" . }}
