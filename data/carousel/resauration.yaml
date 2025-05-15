@@ -1,0 +1,10 @@
+weight: 1
+title: "Restauration"
+description: >
+  <ul class="list-style-none">
+    <li>Restauration</li>
+    <li>Numérisation</li>
+    <li>Retouches</li>
+  </ul>
+image: "img/restauration thumbnail.jpg"
+href: "restauration"
