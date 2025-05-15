@@ -15,7 +15,7 @@ draft = false
     width="400px" 
 >}}
 {{< /fleximages >}}
-## Portraits personnels
+## Portraits personnels et candides
 
 {{< fleximages >}}
 

@@ -16,7 +16,7 @@ draft = false
     title="Avant"
 >}}
 {{< image-modal 
-    src="/img/_DSC7374-001-Edit - insta.jpg"
+    src="/img/_DSC7374-001-Edit-Edit - insta.jpg"
     width="500px"
     alt="Après"
     title="Après"
