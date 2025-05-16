@@ -12,6 +12,9 @@ summaryLength = 70
 # not pluralize title pages by default
 pluralizelisttitles = false
 
+[outputs]
+  home = ["HTML", "RSS", "ImageSitemap"]
+
 [imaging]
   quality = 85
   resampleFilter = "CatmullRom"

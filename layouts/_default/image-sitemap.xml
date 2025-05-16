@@ -1,0 +1,37 @@
+{{- $.Scratch.Add "images" slice -}}
+{{- range .Site.AllPages -}}
+  {{- if .Params.images -}}
+    {{- range .Params.images -}}
+      {{- $.Scratch.Add "images" (dict 
+          "url" (. | absURL)
+          "title" ($.Title | htmlEscape)
+          "caption" ($.Params.image_caption | default $.Description | htmlEscape)
+          "license" ($.Site.Params.imageLicense | default "https://creativecommons.org/licenses/by-sa/4.0/")
+        ) -}}
+    {{- end -}}
+  {{- else if .Resources.ByType "image" -}}
+    {{- range .Resources.ByType "image" -}}
+      {{- $.Scratch.Add "images" (dict 
+          "url" (.Permalink | absURL)
+          "title" ($.Title | htmlEscape)
+          "geo_location" ($.Params.location | default "")
+        ) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  {{ range $.Scratch.Get "images" }}
+  <url>
+    <loc>{{ .url }}</loc>
+    <image:image>
+      <image:loc>{{ .url }}</image:loc>
+      {{ if .title }}<image:title>{{ .title }}</image:title>{{ end }}
+      {{ if .caption }}<image:caption>{{ .caption }}</image:caption>{{ end }}
+      {{ if .geo_location }}<image:geo_location>{{ .geo_location }}</image:geo_location>{{ end }}
+      {{ if .license }}<image:license>{{ .license }}</image:license>{{ end }}
+    </image:image>
+  </url>
+  {{ end }}
+</urlset>

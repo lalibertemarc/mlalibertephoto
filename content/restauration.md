@@ -1,7 +1,27 @@
 +++
-title = 'Restauration'
+title = "Restauration"
 date = 2025-05-14T19:53:25-04:00
 draft = false
+
+[[images]]
+src = "/img/_DSC7374 - insta-2.jpg"
+alt = "Avant, vieille photo abîmée d'une jeune dame"
+caption = "Avant, on voit bien les rayures et la texture sur cette vielles photo"
+
+[[images]]
+src = "/img/_DSC7374-001-Edit-Edit - insta.jpg"
+alt = "Après, photo restaurée d'une jeune dame resplendissante"  
+caption = "Après, le sujet est très clair, toutes les rayures sont disparues"
+
+[[images]]
+src = "/img/DSC01077 - insta.jpg"
+alt = "Avant, vieille photo abîmée d'une jeune dame"
+caption = "Avant, la photo est floue et le jaunissement est très apparent"
+
+[[images]]
+src = "/img/DSC01077-Edit-2 - insta.jpg"
+alt = "Après, photo restaurée d'une jeune dame resplendissante"  
+caption = "Après, la photo est très claire, le photo ne montre plus de vieillissement"
 +++
 
 # Donnez une seconde vie aux photos de vos êtres chers.
@@ -45,7 +65,7 @@ draft = false
     src="/img/DSC01077-Edit-2 - insta.jpg"
     width="500px"
     title="Après"
-    alt="Après, photo restaurée d'une jeune dame resplendissante"
+    alt="Après, photo restaurée d'une jeune dame"
     caption="Après, la photo est très claire, le photo ne montre plus de vieillissement" 
 >}}
 {{< /fleximages >}}

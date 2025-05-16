@@ -1,5 +1,5 @@
 +++
-title = 'Mallards'
+title = 'Canard Colvert'
 date = 2025-05-14T11:19:03-04:00
 draft = false
 tags = ["oiseaux", "bird", "mallard",]
