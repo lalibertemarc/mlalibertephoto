@@ -14,7 +14,12 @@ baseURL = "https://mlalibertephoto.netlify.app"
     languageName = "Français"
     weight = 1
     contentDir = "content/fr"
-    
+
+    [languages.fr.params.recent_posts]
+      enable = true
+      title = "Mes publications récentes"
+      subtitle = ""
+      hide_summary = false
     [languages.fr.menu]
       [[languages.fr.menu.main]]
         name = "Bienvenue"
@@ -81,6 +86,12 @@ baseURL = "https://mlalibertephoto.netlify.app"
     weight = 2
     contentDir = "content/en"
     title = "Marc Laliberte Photo and Restoration"
+
+    [languages.en.params.recent_posts]
+      enable = true
+      title = "My recent posts"
+      subtitle = ""
+      hide_summary = false
 
     [languages.en.menu]
       [[languages.en.menu.main]]
@@ -338,12 +349,6 @@ pluralizelisttitles = false
     # For more information take a look at the README.
     title = "Our Clients"
     subtitle = ""
-
-[params.recent_posts]
-    enable = true
-    title = "Mes publications récentes"
-    subtitle = ""
-    hide_summary = false
 
 [params.footer.recent_posts]
     enable = true
