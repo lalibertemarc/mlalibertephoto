@@ -1,10 +1,17 @@
 baseurl = "https://mlalibertephoto.netlify.app" 
-title = "Marc Laliberte Photo & Restauration"
+title = "Marc Laliberte Photo and Restauration"
 enableRobotsTXT = true
 disableHugoGeneratorInject = true
 theme = "hugo-universal-theme"
 languageCode = "fr-ca"
 defaultContentLanguage = "fr"
+[languages]
+  [languages.fr]
+    languageName = "Français"
+    weight = 1
+  [languages.en]
+    languageName = "English"
+    weight = 2
 
 # number of words of summarized post content (default 70)
 summaryLength = 70

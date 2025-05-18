@@ -1,10 +1,19 @@
 weight: 5
-title: "Vidéos"
-description: >
-  <ul class="list-style-none">
-    <li>Vidéo clips</li>
-    <li>Promotionel</li>
-    <li></li>
-  </ul>
+title:
+  fr: "Vidéos"
+  en: "Videos"
+description:
+  fr: >
+    <ul class="list-style-none">
+      <li>Vidéo clips</li>
+      <li>Promotionnel</li>
+      <li>Évènements</li>
+    </ul>
+  en: >
+    <ul class="list-style-none">
+      <li>Music videos</li>
+      <li>Promotional</li>
+      <li>Events</li>
+    </ul>
 image: "img/Snapshot_3.jpg"
 href: "videos"

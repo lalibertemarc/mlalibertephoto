@@ -1,10 +1,19 @@
 weight: 1
-title: "Restauration"
-description: >
-  <ul class="list-style-none">
-    <li>Enlever grain et flous</li>
-    <li>Éliminiation de rayures</li>
-    <li>Préparation pour impression</li>
-  </ul>
+title:
+  fr: "Restauration"
+  en: "Restoration"
+description:
+  fr: >
+    <ul class="list-style-none">
+      <li>Enlever grain et flous</li>
+      <li>Éliminiation de rayures</li>
+      <li>Préparation pour impression</li>
+    </ul>
+  en: >
+    <ul class="list-style-none">
+      <li>Remove grain and blurriness</li>
+      <li>Scratch removal</li>
+      <li>Print preparation</li>
+    </ul>
 image: "img/restauration thumbnail.jpg"
 href: "restauration"

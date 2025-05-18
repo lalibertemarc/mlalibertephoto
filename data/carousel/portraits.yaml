@@ -1,9 +1,17 @@
 weight: 2
-title: "Portraits"
-description: >
-  <ul class="list-style-none">
-     <li>Personnel</li>
-     <li>Corportatif</li>
-   </ul>
+title:
+  fr: "Portraits"
+  en: "Portraits"
+description:
+  fr: >
+    <ul class="list-style-none">
+      <li>Personnel</li>
+      <li>Corporatif</li>
+    </ul>
+  en: >
+    <ul class="list-style-none">
+      <li>Personal</li>
+      <li>Corporate</li>
+    </ul>
 image: "img/DSC00683_small.jpg"
 href: "photos/portraits"

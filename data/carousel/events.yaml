@@ -1,10 +1,19 @@
 weight: 4
-title: "Évènements"
-description: >
-  <ul class="list-style-none">
-    <li>Spectacles</li>
-    <li>Théatre</li>
-    <li>Danse</li>
-  </ul>
+title:
+  fr: "Évènements"
+  en: "Events"
+description:
+  fr: >
+    <ul class="list-style-none">
+      <li>Spectacles</li>
+      <li>Théatre</li>
+      <li>Danse</li>
+    </ul>
+  en: >
+    <ul class="list-style-none">
+      <li>Shows</li>
+      <li>Theater</li>
+      <li>Dance</li>
+    </ul>
 image: "img/DSC4217_small.jpg"
 href: "photos/events"

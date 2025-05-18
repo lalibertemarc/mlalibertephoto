@@ -1,11 +1,21 @@
 weight: 3
-title: "Groupes"
-description: >
-  <ul class="list-style-none">
-     <li>Familial</li>
-     <li>Couples</li>
-     <li>Bands</li>
-     <li>Équipe de travail</li>
-   </ul>
+title:
+  fr: "Groupes"
+  en: "Groups"
+description:
+  fr: >
+    <ul class="list-style-none">
+      <li>Familial</li>
+      <li>Couples</li>
+      <li>Bands</li>
+      <li>Équipe de travail</li>
+    </ul>
+  en: >
+    <ul class="list-style-none">
+      <li>Family</li>
+      <li>Couples</li>
+      <li>Bands</li>
+      <li>Work team</li>
+    </ul>
 image: "img/DSC00515.jpg"
 href: "photos/groups"
