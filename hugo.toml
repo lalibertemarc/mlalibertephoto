@@ -6,7 +6,7 @@ languageCode = "fr-ca"
 defaultContentLanguage = "fr"
 defaultContentLanguageInSubdir = true  
 enableMissingTranslationPlaceholders = false
-baseURL = "https://example.com/"
+baseURL = "https://mlalibertephoto.netlify.app"
 
 [languages]
   [languages.fr]

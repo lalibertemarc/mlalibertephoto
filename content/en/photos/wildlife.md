@@ -7,36 +7,36 @@ draft = false
 {{< image-modal 
     src="/img/20240918-_DSC5095-ARW - insta.jpg"
     width="400px"
-    alt="Jeune Pigargue à tête blanche"
+    alt="Young bald eagle"
 >}}
 {{< image-modal 
     src="/img/20240916-_DSC4779-ARW - insta.jpg"
     width="400px"
-    alt="Écureuil roux"
+    alt="Red squirrel"
 >}}
 {{< image-modal 
     src="/img/20240917-_DSC4963-ARW - insta.jpg"
     width="400px"
-    alt="Mésange à tête noire"
+    alt="Black-capped Chickadee"
 >}}
 {{< image-modal 
     src="/img/_DSC5260 - insta.jpg"
     width="400px"
-    alt="Écureuil roux"
+    alt="Red squirrel"
 >}}
 {{< image-modal 
     src="/img/20240917-_DSC5011-ARW - insta.jpg"
     width="400px"
-    alt="Canard colvert"
+    alt="Mallard"
 >}}
 {{< image-modal 
     src="/img/20240920-_DSC5219-ARW - insta.jpg"
     width="400px"
-    alt="Cormoran à aigrettes" 
+    alt="Double-crested cormorant" 
 >}}
 {{< image-modal 
     src="/img/_DSC6335-ARW-001 - insta.jpg"
     width="810px"
-    alt="Renard roux" 
+    alt="Red fox" 
 >}}
 {{< /fleximages >}}

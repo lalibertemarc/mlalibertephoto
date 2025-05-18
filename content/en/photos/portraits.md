@@ -3,7 +3,7 @@ title = 'Portraits'
 draft = false
 +++
 
-## Portraits corporatifs
+## Corporate portraits
 
 {{< fleximages >}}
 {{< image-modal 
@@ -15,7 +15,7 @@ draft = false
     width="400px" 
 >}}
 {{< /fleximages >}}
-## Portraits personnels et candides
+## Personal and candid portraits
 
 {{< fleximages >}}
 
