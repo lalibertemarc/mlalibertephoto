@@ -1,0 +1,34 @@
++++
+title = 'Portraits'
+draft = false
++++
+
+## Portraits corporatifs
+
+{{< fleximages >}}
+{{< image-modal 
+    src="/img/DSC00683 - insta-3.jpg" 
+    width="400px" 
+>}}
+{{< image-modal 
+    src="/img/_DSC6042.jpg"
+    width="400px" 
+>}}
+{{< /fleximages >}}
+## Portraits personnels et candides
+
+{{< fleximages >}}
+
+{{< image-modal 
+    src="/img/DSC00557.jpg"
+    width="400px" 
+>}}
+{{< image-modal 
+    src="/img/_DSC0186 - insta.jpg"
+    width="335px" 
+>}}
+{{< image-modal 
+    src="/img/DSC00542.jpg"
+    width="400px" 
+>}}
+{{< /fleximages >}}

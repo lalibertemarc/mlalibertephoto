@@ -1,17 +1,147 @@
-baseurl = "https://mlalibertephoto.netlify.app" 
-title = "Marc Laliberte Photo and Restauration"
+
 enableRobotsTXT = true
 disableHugoGeneratorInject = true
 theme = "hugo-universal-theme"
 languageCode = "fr-ca"
 defaultContentLanguage = "fr"
+defaultContentLanguageInSubdir = true  
+enableMissingTranslationPlaceholders = false
+baseURL = "https://example.com/"
+
 [languages]
   [languages.fr]
+    title = "Marc Laliberte Photo et Restauration"
     languageName = "Français"
     weight = 1
+    contentDir = "content/fr"
+    
+    [languages.fr.menu]
+      [[languages.fr.menu.main]]
+        name = "Bienvenue"
+        identifier = "menu.home"
+        url = "/fr/"
+        weight = 1
+
+      [[languages.fr.menu.main]]
+        name = "Restauration"
+        identifier = "menu.restauration"
+        url = "/fr/restauration"
+        weight = 2
+
+      [[languages.fr.menu.main]]
+        name = "Photos"
+        identifier = "menu.photos"
+        url = "/fr/photos"
+        weight = 3
+
+      [[languages.fr.menu.main]]
+        name = "Portraits"
+        url = "/fr/photos/portraits"
+        weight = 2
+        parent = "menu.photos"
+
+      [[languages.fr.menu.main]]
+        name = "Groupes"
+        url = "/fr/photos/groupes"
+        weight = 3
+        parent = "menu.photos"
+
+      [[languages.fr.menu.main]]
+        name = "Évènements"
+        url = "/fr/photos/evenements"
+        weight = 4
+        parent = "menu.photos"
+
+      [[languages.fr.menu.main]]
+        name = "Animalière"
+        url = "/fr/photos/animaux"
+        weight = 5
+        parent = "menu.photos"
+
+      [[languages.fr.menu.main]]
+        name = "Vidéos"
+        identifier = "menu.videos"
+        url = "/fr/videos"
+        weight = 3
+
+      [[languages.fr.menu.main]]
+        name = "Blog"
+        identifier = "menu.blog"
+        url = "/fr/blog"
+        weight = 4
+
+      [[languages.fr.menu.main]]
+        identifier = "contact"
+        name = "Contact"
+        url = "/fr/contact/"
+        weight = 7
+
   [languages.en]
     languageName = "English"
     weight = 2
+    contentDir = "content/en"
+    title = "Marc Laliberte Photo and Restoration"
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        name = "Welcome"
+        identifier = "menu.home"
+        url = "/en/"
+        weight = 1
+
+      [[languages.en.menu.main]]
+        name = "Restoration"
+        identifier = "menu.restauration"
+        url = "/en/restoration"
+        weight = 2
+
+      [[languages.en.menu.main]]
+        name = "Photos"
+        identifier = "menu.photos"
+        url = "/en/photos"
+        weight = 3
+
+      [[languages.en.menu.main]]
+        name = "Portraits"
+        url = "/en/photos/portraits"
+        weight = 2
+        parent = "menu.photos"
+
+      [[languages.en.menu.main]]
+        name = "Groups"
+        url = "/en/photos/groups"
+        weight = 3
+        parent = "menu.photos"
+
+      [[languages.en.menu.main]]
+        name = "Events"
+        url = "/en/photos/events"
+        weight = 4
+        parent = "menu.photos"
+
+      [[languages.en.menu.main]]
+        name = "Wildlife"
+        url = "/en/photos/wildlife"
+        weight = 5
+        parent = "menu.photos"
+
+      [[languages.en.menu.main]]
+        name = "Videos"
+        identifier = "menu.videos"
+        url = "/en/videos"
+        weight = 3
+
+      [[languages.en.menu.main]]
+        name = "Blog"
+        identifier = "menu.blog"
+        url = "/en/blog"
+        weight = 4
+
+      [[languages.en.menu.main]]
+        identifier = "contact"
+        name = "Contact"
+        url = "/en/contact/"
+        weight = 7
 
 # number of words of summarized post content (default 70)
 summaryLength = 70
@@ -44,70 +174,9 @@ pluralizelisttitles = false
 [pagination]
     pagerSize = 10
 
-# Main menu
-[menu]
-[[menu.main]]
-    name       = "Bienvenue"
-    identifier = "menu.home"
-    url        = "/"
-    weight     = 1
 
-[[menu.main]]
-    name       = "Restauration"
-    identifier = "menu.restauration"
-    url        = "/restauration"
-    weight     = 2
-
-[[menu.main]]
-    name       = "Photos"
-    identifier = "menu.photos"
-    url        = "/photos"
-    weight     = 3
-
-[[menu.main]]
-    name       = "Portraits"
-    url        = "/photos/Portraits"
-    weight     = 2
-    parent     = "menu.photos"
-
-[[menu.main]]
-    name       = "Groupes"
-    url        = "/photos/groups"
-    weight     = 3
-    parent     = "menu.photos"
-
-[[menu.main]]
-    name       = "Évènements"
-    url        = "/photos/events"
-    weight     = 4
-    parent     = "menu.photos"
-
-[[menu.main]]
-    name       = "Animalière"
-    url        = "/photos/wildlife"
-    weight     = 5
-    parent     = "menu.photos"
-
-[[menu.main]]
-    name       = "Vidéos"
-    identifier = "menu.videos"
-    url        = "/videos"
-    weight     = 3
-
-[[menu.main]]
-    name       = "Blog"
-    identifier = "menu.blog"
-    url        = "/blog"
-    weight     = 4
-
-[[menu.main]]
-    identifier = "contact"
-    name       = "Contact"
-    url        = "/contact/"
-    weight     = 7
 
 # Top bar social links menu
-
 
 [[menu.topbar]]
     weight = 3
@@ -200,6 +269,8 @@ pluralizelisttitles = false
   
 [permalinks]
     blog = "/blog/:year/:month/:day/:filename/"
+    en = "/:slug/"
+    fr = "/:slug/"
 
 # Enable or disable top bar with social icons
 [params.topbar]
