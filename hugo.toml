@@ -191,7 +191,7 @@ pluralizelisttitles = false
         shortname = ""
     # Enable Google Analytics by entering your tracking code
     [services.googleAnalytics]
-        id = "G-DT1RL3KDNZ"
+        id = "{{ if .Site.IsServer }}G-DEVELOPMENT{{ else }}G-DT1RL3KDNZ{{ end }}"
 
 # Define the number of posts per page
 [pagination]
