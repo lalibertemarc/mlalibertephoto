@@ -3,7 +3,7 @@ title = 'Events'
 draft = false
 +++
 
-## Shows
+## Live shows and concerts
 
 {{< fleximages >}}
 {{< image-modal 

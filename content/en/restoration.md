@@ -2,26 +2,6 @@
 title = "Restoration"
 date = 2025-05-14T19:53:25-04:00
 draft = false
-
-[[images]]
-src = "/img/_DSC7374 - insta-2.jpg"
-alt = "Before: Damaged old photo of a young lady"
-caption = "Before: Clearly visible scratches and texture on this old photo"
-
-[[images]]
-src = "/img/_DSC7374-001-Edit-Edit - insta.jpg"
-alt = "After: Restored photo of a radiant young lady"  
-caption = "After: The subject is very clear, all scratches have disappeared"
-
-[[images]]
-src = "/img/DSC01077 - insta.jpg"
-alt = "Before: Damaged old photo of a young lady"
-caption = "Before: The photo is blurry and yellowing is very apparent"
-
-[[images]]
-src = "/img/DSC01077-Edit-2 - insta.jpg"
-alt = "After: Restored photo of a young lady"  
-caption = "After: The photo is very clear, showing no signs of aging"
 +++
 
 # Give a second life to photos of your loved ones.
@@ -70,4 +50,21 @@ caption = "After: The photo is very clear, showing no signs of aging"
 >}}
 {{< /fleximages >}}
 
+<br>
+{{< fleximages >}}
+{{< image-modal 
+    src="/img/generationBefore.jpg" 
+    width="500px"
+    title="Before"
+    alt="Before: Old, damaged photo of four men from different generations"
+    caption="Before: The photo is blurry, damaged, and the faces are very hard to distinguish" 
+>}}
+{{< image-modal 
+    src="/img/generationAfter.jpg"
+    width="500px"
+    title="After"
+    alt="After: Restored photo of four men from different generations"  
+    caption="After: The faces are clearly visible, the photo is sharp, and all scratches have been removed"
+>}}
+{{< /fleximages >}}
 <br>
