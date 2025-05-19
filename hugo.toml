@@ -15,6 +15,12 @@ baseURL = "https://mlalibertephoto.netlify.app"
     weight = 1
     contentDir = "content/fr"
 
+    [languages.fr.params]
+      about_us = "<p>Photographe et vidéographe de la ville de Québec.</p>"
+      copyright = "Copyright (c) 2025 - 2026, Marc Laliberte Photo&Video; tous droits réservés."
+      author = "Marc Laliberte"
+      defaultDescription = "Photographe spécialisé en restauration de photographies anciennes pour préserver les souvenirs de famille"
+      
     [languages.fr.params.recent_posts]
       enable = true
       title = "Mes publications récentes"
@@ -86,6 +92,12 @@ baseURL = "https://mlalibertephoto.netlify.app"
     weight = 2
     contentDir = "content/en"
     title = "Marc Laliberte Photo and Restoration"
+
+    [languages.en.params]
+      about_us = "<p>Photographer and videographer based in Quebec City.</p>"
+      copyright = "Copyright (c) 2025 - 2026, Marc Laliberte Photo&Video; all rights reserved."
+      author = "Marc Laliberte"
+      defaultDescription = "Photographer specializing in restoration of old photographs to preserve family memories"
 
     [languages.en.params.recent_posts]
       enable = true
@@ -204,8 +216,6 @@ pluralizelisttitles = false
 
 [params]
     viewMorePostLink = "/blog/"
-    author = "Marc Laliberte"
-    defaultDescription = "Photographe spécialisé en restauration de photographies anciennes pour préserver les souvenirs de famille"
     defaultKeywords = ["restauration", "photographe", "numerisation",]
     mainSections = ["blog"]
 

@@ -18,14 +18,16 @@ draft = false
 <p>600$ pour 3h de prise de photos ou vidéos sur place.<p>
 <p>Édition photo incluse.</p> 
 <p>Édition vidéo : prix à discuter selon le projet.</p>
-<p>Restauration : 50$/photo, prix spéciaux pour plusieurs photos.</p>
 <p><b>Prix spéciaux pour artistes et spectacles.</b></p>
-<p>Contactez-moi pour connaître mes autres forfaits.</p>
 
-+1-514-503-2446
+**Restauration de photos** :
+- 50 $/photo non numérisée
+- 30 $/photo déjà numérisée
+- Tarifs préférentiels pour les photos multiples
 
-laliberte.marc1@gmail.com
+<p>Les photos sont livrées numérisées</p>
 
-Ville de Québec
-
-Québec, Canada
++1-514-503-2446 <br>
+laliberte.marc1@gmail.com  <br>
+Ville de Québec  <br>
+Québec, Canada <br>
