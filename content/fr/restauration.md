@@ -9,6 +9,7 @@ draft = false
 ### Service de restauration, numérisation et retouches de photos anciennes
 
 - Correction des photos floues
+- Colorisation de photos en noir et blanc
 - Suppression du grain
 - Réparation des rayures sur photos abîmées
 - Numérisation de vos vieilles photos pour un partage sur les réseaux sociaux
@@ -32,6 +33,24 @@ draft = false
 {{< /fleximages >}}
 
 <br>
+{{< fleximages >}}
+{{< image-modal 
+    src="/img/generationBefore.jpg" 
+    width="500px"
+    title="Avant"
+    alt="Avant, vieille photo abîmée de quatres hommes de différentes générations"
+    caption="Avant, la photo es floue, abîmée et on distingue très mal les visages" 
+>}}
+{{< image-modal 
+    src="/img/generationAfter.jpg"
+    width="500px"
+    title="Après"
+    alt="Après, photo restaurée de quatres hommes de différentes générations"  
+    caption="Après, on distingue très bien les visages, la photo est colorisée et toutes les rayures ont été supprimées"
+>}}
+{{< /fleximages >}}
+
+<br>
 
 {{< fleximages >}}
 {{< image-modal 
@@ -47,25 +66,6 @@ draft = false
     title="Après"
     alt="Après, photo restaurée d'une jeune dame"
     caption="Après, la photo est très claire, le photo ne montre plus de vieillissement" 
->}}
-{{< /fleximages >}}
-
-<br>
-
-{{< fleximages >}}
-{{< image-modal 
-    src="/img/generationBefore.jpg" 
-    width="500px"
-    title="Avant"
-    alt="Avant, vieille photo abîmée de quatres hommes de différentes générations"
-    caption="Avant, la photo es floue, abîmée et on distingue très mal les visages" 
->}}
-{{< image-modal 
-    src="/img/generationAfter.jpg"
-    width="500px"
-    title="Après"
-    alt="Après, photo restaurée de quatres hommes de différentes générations"  
-    caption="Après, on distingue très bien les visages, la photo est claire et n'a plus aucune égratigure"
 >}}
 {{< /fleximages >}}
 

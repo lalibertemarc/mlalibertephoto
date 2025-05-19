@@ -6,12 +6,14 @@ description:
   fr: >
     <ul class="list-style-none">
       <li>Enlever grain et flous</li>
+      <li>Colorisation</li>
       <li>Éliminiation de rayures</li>
       <li>Préparation pour impression</li>
     </ul>
   en: >
     <ul class="list-style-none">
       <li>Remove grain and blurriness</li>
+      <li>Colorization</li>
       <li>Scratch removal</li>
       <li>Print preparation</li>
     </ul>

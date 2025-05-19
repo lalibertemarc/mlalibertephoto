@@ -9,6 +9,7 @@ draft = false
 ### Old photo restoration, digitization and retouching services
 
 - Fixing blurry photos
+- Colorization of black and white photos
 - Grain removal
 - Repairing scratches on damaged photos
 - Digitizing your old photos for sharing on social media
@@ -35,6 +36,25 @@ draft = false
 
 {{< fleximages >}}
 {{< image-modal 
+    src="/img/generationBefore.jpg" 
+    width="500px"
+    title="Before"
+    alt="Before: Old, damaged photo of four men from different generations"
+    caption="Before: The photo is blurry, damaged, and the faces are very hard to distinguish" 
+>}}
+{{< image-modal 
+    src="/img/generationAfter.jpg"
+    width="500px"
+    title="After"
+    alt="After: Restored photo of four men from different generations"  
+    caption="After: The faces are clearly visible, the photo is sharp, colorized, and all scratches have been removed"
+>}}
+{{< /fleximages >}}
+
+<br>
+
+{{< fleximages >}}
+{{< image-modal 
     src="/img/DSC01077 - insta.jpg" 
     width="500px"
     title="Before"
@@ -50,21 +70,4 @@ draft = false
 >}}
 {{< /fleximages >}}
 
-<br>
-{{< fleximages >}}
-{{< image-modal 
-    src="/img/generationBefore.jpg" 
-    width="500px"
-    title="Before"
-    alt="Before: Old, damaged photo of four men from different generations"
-    caption="Before: The photo is blurry, damaged, and the faces are very hard to distinguish" 
->}}
-{{< image-modal 
-    src="/img/generationAfter.jpg"
-    width="500px"
-    title="After"
-    alt="After: Restored photo of four men from different generations"  
-    caption="After: The faces are clearly visible, the photo is sharp, and all scratches have been removed"
->}}
-{{< /fleximages >}}
 <br>

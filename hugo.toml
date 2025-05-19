@@ -216,7 +216,7 @@ pluralizelisttitles = false
 
 [params]
     viewMorePostLink = "/blog/"
-    defaultKeywords = ["restauration", "photographe", "numerisation",]
+    defaultKeywords = ["restauration", "photographe", "numerisation", "colorization"]
     mainSections = ["blog"]
 
 
