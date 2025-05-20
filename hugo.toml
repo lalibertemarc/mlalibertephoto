@@ -173,7 +173,7 @@ summaryLength = 70
 pluralizelisttitles = false
 
 [outputs]
-  home = ["HTML", "RSS", "ImageSitemap"]
+  home = ["HTML", "RSS",]
 
 [imaging]
   quality = 85
