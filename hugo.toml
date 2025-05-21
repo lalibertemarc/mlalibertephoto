@@ -25,7 +25,7 @@ baseURL = "https://mlalibertephoto.netlify.app"
       enable = true
       title = "Mes publications récentes"
       subtitle = ""
-      hide_summary = false
+      hide_summary = true
     [languages.fr.menu]
       [[languages.fr.menu.main]]
         name = "Bienvenue"
@@ -103,7 +103,7 @@ baseURL = "https://mlalibertephoto.netlify.app"
       enable = true
       title = "My recent posts"
       subtitle = ""
-      hide_summary = false
+      hide_summary = true
 
     [languages.en.menu]
       [[languages.en.menu.main]]
