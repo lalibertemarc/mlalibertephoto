@@ -124,17 +124,21 @@
                   {{ end }}
                   {{ end }}
 
-                  <!-- Language Switcher -->
-                  <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                      {{ .Language.LanguageName }} <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu">
-                      {{ range $.Site.Home.AllTranslations }}
+                 <!-- Language Switcher -->
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    {{ .Language.LanguageName }} <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    {{ range .Translations }}
+                    <li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
+                    {{ else }}
+                    {{ range $.Site.Home.AllTranslations }}
                         <li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
-                      {{ end }}
-                    </ul>
-                  </li>
+                    {{ end }}
+                    {{ end }}
+                </ul>
+                </li>
                 </ul>
             </div>
             <!--/.nav-collapse -->

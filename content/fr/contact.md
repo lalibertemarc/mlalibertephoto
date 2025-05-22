@@ -1,6 +1,5 @@
 +++
 title = 'Contact'
-date = 2025-04-04T12:14:02-04:00
 draft = false
 +++
 
@@ -22,7 +21,7 @@ draft = false
 <p>Édition vidéo : prix à discuter selon le projet.</p>
 <p><b>Prix spéciaux pour artistes et spectacles.</b></p>
 
-<h2>Restauration de photos </h2>
+## Restauration de photos {#restoration}
 
 **Service de base**
 

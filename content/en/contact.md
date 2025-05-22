@@ -1,6 +1,5 @@
 +++
 title = 'Contact'
-date = 2025-04-04T12:14:02-04:00
 draft = false
 +++
 
@@ -15,7 +14,7 @@ Marc Laliberte, Photographer and Videographer
 <p>Video editing: Price negotiable based on the project.</p>
 <p><b>Special rates for artists and performances.</b></p>
 
-<h2>Photo Restoration</h2>
+## Photo Restoration {#restoration}
 
 <p><strong>Basic Service</strong></p>
 <p>This service includes:</p>

@@ -36,7 +36,7 @@ baseURL = "https://mlalibertephoto.netlify.app"
       [[languages.fr.menu.main]]
         name = "Restauration"
         identifier = "menu.restauration"
-        url = "/fr/restauration"
+        url = "/fr/restoration"
         weight = 2
 
       [[languages.fr.menu.main]]
@@ -53,19 +53,19 @@ baseURL = "https://mlalibertephoto.netlify.app"
 
       [[languages.fr.menu.main]]
         name = "Groupes"
-        url = "/fr/photos/groupes"
+        url = "/fr/photos/groups"
         weight = 3
         parent = "menu.photos"
 
       [[languages.fr.menu.main]]
         name = "Évènements"
-        url = "/fr/photos/evenements"
+        url = "/fr/photos/events"
         weight = 4
         parent = "menu.photos"
 
       [[languages.fr.menu.main]]
         name = "Animalière"
-        url = "/fr/photos/animaux"
+        url = "/fr/photos/wildlife"
         weight = 5
         parent = "menu.photos"
 

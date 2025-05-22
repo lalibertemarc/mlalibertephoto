@@ -1,6 +1,5 @@
 +++
 title = "Restauration"
-date = 2025-05-14T19:53:25-04:00
 draft = false
 +++
 
@@ -69,4 +68,8 @@ draft = false
 >}}
 {{< /fleximages >}}
 
+
+{{< fleximages >}}
+{{< navbutton url="/fr/contact/#restoration" text="Cliquez ici pour consulter les tarifs" >}}
+{{< /fleximages >}}
 <br>

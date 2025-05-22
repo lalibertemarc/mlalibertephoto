@@ -1,6 +1,5 @@
 +++
 title = "Restoration"
-date = 2025-05-14T19:53:25-04:00
 draft = false
 +++
 
@@ -70,4 +69,7 @@ draft = false
 >}}
 {{< /fleximages >}}
 
+{{< fleximages >}}
+{{< navbutton url="/en/contact/#restoration" text="Click here to see the pricings" >}}
+{{< /fleximages >}}
 <br>
