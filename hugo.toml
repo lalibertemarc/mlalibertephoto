@@ -20,6 +20,7 @@ baseURL = "https://mlalibertephoto.netlify.app"
       copyright = "Copyright (c) 2025 - 2026, Marc Laliberte Photo&Video; tous droits réservés."
       author = "Marc Laliberte"
       defaultDescription = "Photographe spécialisé en restauration de photographies anciennes pour préserver les souvenirs de famille"
+      contact_url = "/fr/contact/"
       
     [languages.fr.params.recent_posts]
       enable = true
@@ -98,6 +99,7 @@ baseURL = "https://mlalibertephoto.netlify.app"
       copyright = "Copyright (c) 2025 - 2026, Marc Laliberte Photo&Video; all rights reserved."
       author = "Marc Laliberte"
       defaultDescription = "Photographer specializing in restoration of old photographs to preserve family memories"
+      contact_url = "/en/contact/"
 
     [languages.en.params.recent_posts]
       enable = true
@@ -213,7 +215,6 @@ pluralizelisttitles = false
     url = "https://www.instagram.com/marc.laliberte.photo"
     pre = "<i class='fab fa-2x fa-instagram'></i>"
 
-
 [params]
     viewMorePostLink = "/blog/"
     defaultKeywords = ["restauration", "photographe", "numerisation", "colorization"]
@@ -274,7 +275,7 @@ pluralizelisttitles = false
 
     logo = "img/logo.png"
     logo_small = "img/logo-small.png"
-    contact_url = "/contact"
+    contact_url = "/contact/"
     address = """<p class="text-uppercase"><strong>Marc Laliberte</strong>
         <br>514-503-2446
         <br>laliberte.marc1@gmail.com
