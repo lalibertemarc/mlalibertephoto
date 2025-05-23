@@ -8,6 +8,6 @@
 
 [[redirects]]
   from = "https://mlalibertephoto.netlify.app/*"
-  to = "https://marclaliberte.photo/:splat"
+  to = "https://marclaliberte.photos/:splat"
   status = 301
   force = true
