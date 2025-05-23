@@ -5,6 +5,5 @@ draft = false
 +++
 
 - [Portraits]({{< ref "photos/portraits.md" >}})
-- [Groups]({{< ref "photos/groups.md" >}})
 - [Évènements]({{< ref "photos/events.md" >}})
 - [Wildlife]({{< ref "photos/wildlife.md" >}})

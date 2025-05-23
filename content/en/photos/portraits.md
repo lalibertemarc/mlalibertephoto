@@ -19,25 +19,11 @@ draft = false
     caption="Promotional portrait for Kevin Bouchard, massage therapist in Gaspésie" 
 >}}
 {{< /fleximages >}}
-## Personal and candid portraits
 
-{{< fleximages >}}
+## Photos of music bands
 {{< image-modal 
-    src="/img/DSC00557.jpg"
-    width="400px"
-    alt="Candid portrait of a smiling host working on his laptop during a family gathering"
-    caption="Authentic moment captured during a warm family event" 
+    src="/img/_DSC6892.jpg"
+    width="900px"
+    alt="Billie Ballz and Max Shaft of Mother Rockers striking a pose in front of a studio mixing console"
+    caption="Mother Rockers in the studio: capturing rock energy and band chemistry" 
 >}}
-{{< image-modal 
-    src="/img/_DSC0186 - insta.jpg"
-    width="335px"
-    alt="Intimate black-and-white portrait of a man with a pensive expression, looking off-camera"
-    caption="Personal portrait highlighting subtle emotions" 
->}}
-{{< image-modal 
-    src="/img/DSC00542.jpg"
-    width="400px"
-    alt="Joyful portrait of a man laughing heartily in an armchair during a party"
-    caption="Genuine moment of laughter captured at a friends' evening" 
->}}
-{{< /fleximages >}}

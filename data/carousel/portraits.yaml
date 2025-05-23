@@ -7,12 +7,14 @@ description:
     <ul class="list-style-none">
       <li>Personnel</li>
       <li>Corporatif</li>
+      <li>Groupes</li>
       <li>Candide</li>
     </ul>
   en: >
     <ul class="list-style-none">
       <li>Personal</li>
       <li>Corporate</li>
+      <li>Groups</li>
       <li>Candid</li>
     </ul>
 image: "img/DSC00683_small.jpg"

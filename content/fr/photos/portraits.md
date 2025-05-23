@@ -20,25 +20,12 @@ draft = false
     caption="Portrait promotionnel pour Kevin Bouchard, massothérapeute en Gaspésie" 
 >}}
 {{< /fleximages >}}
-## Portraits personnels et candides
 
-{{< fleximages >}}
+
+## Photos de bands de musique
 {{< image-modal 
-    src="/img/DSC00557.jpg"
-    width="400px"
-    alt="Portrait spontané d'un animateur souriant devant son ordinateur portable lors d'une réunion familiale"
-    caption="Moment capturé d'un animateur pendant une soirée familiale chaleureuse" 
+    src="/img/_DSC6892.jpg"
+    width="900px"
+    alt="Billie Ballz et Max Shaft du groupe Mother Rockers posant avec attitude devant une console de studio"
+    caption="Session studio des Mother Rockers : ambiance rock et complicité entre les musiciens" 
 >}}
-{{< image-modal 
-    src="/img/_DSC0186 - insta.jpg"
-    width="335px"
-    alt="Portrait intimiste d'un homme avec une expression pensive, regardant hors cadre"
-    caption="Portrait personnel mettant en valeur les émotions subtiles" 
->}}
-{{< image-modal 
-    src="/img/DSC00542.jpg"
-    width="400px"
-    alt="Portrait joyeux d'un homme riant aux éclats dans un fauteuil pendant une fête"
-    caption="Instant de joie authentique capturé pendant une soirée entre amis" 
->}}
-{{< /fleximages >}}

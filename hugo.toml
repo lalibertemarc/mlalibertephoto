@@ -64,12 +64,6 @@ weight = 2
 parent = "menu.photos"
 
 [[languages.fr.menu.main]]
-name = "Groupes"
-url = "/fr/photos/groups"
-weight = 3
-parent = "menu.photos"
-
-[[languages.fr.menu.main]]
 name = "Évènements"
 url = "/fr/photos/events"
 weight = 4
@@ -152,12 +146,6 @@ weight = 3
 name = "Portraits"
 url = "/en/photos/portraits"
 weight = 2
-parent = "menu.photos"
-
-[[languages.en.menu.main]]
-name = "Groups"
-url = "/en/photos/groups"
-weight = 3
 parent = "menu.photos"
 
 [[languages.en.menu.main]]
