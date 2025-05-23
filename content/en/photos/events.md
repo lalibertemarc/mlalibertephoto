@@ -1,6 +1,7 @@
 +++
 title = 'Events'
 draft = false
+description = "Professional event photography for live shows and concerts. Capturing the energy, emotion, and unforgettable moments of your performances with dynamic and high-impact imagery."
 +++
 
 ## Live shows and concerts

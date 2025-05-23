@@ -1,6 +1,7 @@
 +++
 title = 'Wildlife'
 draft = false
+description = "Stunning wildlife photography capturing nature's raw beauty and untamed moments. From majestic mammals to delicate birds, I document wildlife in their natural habitats with patience and artistic vision."
 +++
 
 {{< fleximages >}}

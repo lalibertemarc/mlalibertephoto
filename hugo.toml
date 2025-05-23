@@ -7,6 +7,7 @@ defaultContentLanguage = "fr"
 defaultContentLanguageInSubdir = true
 enableMissingTranslationPlaceholders = false
 baseURL = "https://marclaliberte.photos"
+canonical = "https://marclaliberte.photos"
 
 [languages]
 [languages.fr]
@@ -20,7 +21,28 @@ about_us = "<p>Photographe et vidéographe de la ville de Québec.</p>"
 copyright = "Copyright (c) 2025 - 2026, Marc Laliberte Photo&Video; tous droits réservés."
 author = "Marc Laliberte"
 defaultDescription = "Photographe spécialisé en restauration de photographies anciennes pour préserver les souvenirs de famille"
+Description = "Photographe spécialisé en restauration de photographies anciennes pour préserver les souvenirs de famille"
 contact_url = "/fr/contact/"
+defaultKeywords = [
+  # Primary Services + Location
+  "restauration de photos Québec",
+  "réparer photos anciennes",
+  "restaurer photos abîmées près de moi",
+  "colorisation photos noir et blanc",
+
+  # Specific Repair Types
+  "réparer photos déchirées Québec",
+  "restaurer photos effacées",
+  "corriger photos floues",
+
+  # Service + Local SEO
+  "expert restauration photo Québec",
+  "numérisation et restauration de photos",
+
+  # Long-Tail/Conversational
+  "où faire restaurer de vieilles photos à Québec",
+  "meilleur service restauration photos Québec",
+]
 
 [languages.fr.params.recent_posts]
 enable = true
@@ -100,11 +122,33 @@ contentDir = "content/en"
 title = "Marc Laliberte Photo and Restoration"
 
 [languages.en.params]
+defaultKeywords = [
+# Primary Services + Location
+"photo restoration Quebec",
+"repair old photos",
+"restore damaged photos near me",
+"colorize black and white photos",
+
+# Specific Repair Types
+"repair torn photos Quebec",
+"restore deleted photos",
+"fix blurry photos",
+
+# Service + Local SEO
+"photo restoration expert Quebec",
+"photo scanning and restoration",
+
+# Long-Tail/Conversational
+"where to restore old photos in Quebec",
+"best photo restoration service Quebec"
+]
 about_us = "<p>Photographer and videographer based in Quebec City.</p>"
 copyright = "Copyright (c) 2025 - 2026, Marc Laliberte Photo&Video; all rights reserved."
 author = "Marc Laliberte"
 defaultDescription = "Photographer specializing in restoration of old photographs to preserve family memories"
+Description = "Photographer specializing in restoration of old photographs to preserve family memories"
 contact_url = "/en/contact/"
+
 
 [languages.en.params.recent_posts]
 enable = true
@@ -226,18 +270,12 @@ pre = "<i class='fab fa-2x fa-instagram'></i>"
 
 [params]
 viewMorePostLink = "/blog/"
-defaultKeywords = [
-  "restauration",
-  "photographe",
-  "numerisation",
-  "colorization",
-]
 mainSections = ["blog"]
 
 
 # Social media
 facebook_site = "https://www.facebook.com/profile.php?id=61567037645807"
-default_sharing_image = "img/sharing-default.png"
+default_sharing_image = "img/logo.png"
 
 # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
 style = "marsala"
@@ -382,3 +420,9 @@ enable = true
 category = "categories"
 tag = "tags"
 author = "authors"
+
+[params.localBusiness]
+name = "Marc Laliberte Photos et Restaurations"
+address = "Quebec City, QC, Canada"
+phone = "+1-514-503-2446"
+serviceArea = "Ville de Québec, Lévis, Beauport, Sainte-Foy, Portneuf, Charlevoix"

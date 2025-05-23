@@ -1,6 +1,7 @@
 +++
 title = 'Animalière'
 draft = false
+description = "Photographie animalière saisissante qui capture la beauté brute de la nature et ses moments sauvages. Des mammifères majestueux aux oiseaux délicats, je documente la faune dans son habitat naturel avec patience et vision artistique."
 +++
 
 {{< fleximages >}}

@@ -1,6 +1,7 @@
 +++
 title = 'Portraits'
 draft = false
+description = "Photographie de portrait professionnelle qui capture la personnalité, l'émotion et le style. Que ce soit pour des projets personnels, professionnels ou artistiques, je crée des portraits intemporels et percutants."
 +++
 
 ## Portraits corporatifs

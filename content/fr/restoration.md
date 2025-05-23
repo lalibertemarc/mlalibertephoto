@@ -1,6 +1,7 @@
 +++
 title = "Restauration"
 draft = false
+description= "Marc Laliberté offre des services professionnels de restauration photo pour redonner vie à vos souvenirs précieux. Spécialisé dans la réparation de photos endommagées, décolorées ou anciennes avec un souci du détail méticuleux."
 +++
 
 # Donnez une seconde vie aux photos de vos êtres chers.

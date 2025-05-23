@@ -1,6 +1,7 @@
 +++
 title = "Restoration"
 draft = false
+description= "Marc Laliberté offers professional photo restoration services to revive your precious memories. Specializing in repairing damaged, faded, or old photographs with meticulous attention to detail."
 +++
 
 # Give a second life to photos of your loved ones.

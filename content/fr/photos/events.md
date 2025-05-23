@@ -1,6 +1,7 @@
 +++
 title = 'Évènements'
 draft = false
+description = "Photographie professionnelle d'événements pour spectacles et concerts. Je capture l'énergie, l'émotion et les moments inoubliables de vos performances avec des images dynamiques et percutantes."
 +++
 
 ## Spectacles

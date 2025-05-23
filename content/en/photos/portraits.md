@@ -1,6 +1,7 @@
 +++
 title = 'Portraits'
 draft = false
+description = "Professional portrait photography that captures personality, emotion, and style. Whether for personal, professional, or artistic projects, I create timeless and striking portraits."
 +++
 
 ## Corporate portraits

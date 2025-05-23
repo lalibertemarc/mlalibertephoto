@@ -1,6 +1,7 @@
 +++
 title = 'Contact'
 draft = false
+description = "Get in touch with Marc Laliberté for professional photo restoration or videography services. Contact me to discuss your project, request a quote, or ask any questions."
 +++
 
 Marc Laliberte, Photographer and Videographer

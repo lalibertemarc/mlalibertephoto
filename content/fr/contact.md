@@ -1,6 +1,7 @@
 +++
 title = 'Contact'
 draft = false
+description = "Contactez Marc Laliberté pour des services professionnels de restauration photo ou de vidéographie. Discutons de votre projet, demandez un devis ou posez vos questions."
 +++
 
 **Marc Laliberte, photographe et vidéographe**
