@@ -1,13 +1,13 @@
 [build]
-    command = "hugo --gc --minify"
-    publish = "public"
+command = "hugo --gc --minify"
+publish = "public"
 
 [context.production.environment]
-    HUGO_VERSION = "0.126.1"
+HUGO_VERSION = "0.126.1"
 
 
 [[redirects]]
-  from = "https://mlalibertephoto.netlify.app/*"
-  to = "https://marclaliberte.photos/:splat"
-  status = 301
-  force = true
+from = "https://mlalibertephoto.netlify.app/*"
+to = "https://marclaliberte.photos/:splat"
+status = 301
+force = true
