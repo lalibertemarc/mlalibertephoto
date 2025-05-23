@@ -4,3 +4,10 @@
 
 [context.production.environment]
     HUGO_VERSION = "0.126.1"
+
+
+[[redirects]]
+  from = "https://mlalibertephoto.netlify.app/*"
+  to = "https://marclaliberte.photo/:splat"
+  status = 301
+  force = true
