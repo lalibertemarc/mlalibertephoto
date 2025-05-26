@@ -25,6 +25,7 @@ Description = "Photographe spécialisé en restauration de photographies ancienn
 contact_url = "/fr/contact/"
 defaultKeywords = [
   # Primary Services + Location
+  "retouches photos anciennes",
   "restauration de photos Québec",
   "réparer photos anciennes",
   "restaurer photos abîmées près de moi",
@@ -124,6 +125,7 @@ title = "Marc Laliberte Photo and Restoration"
 [languages.en.params]
 defaultKeywords = [
 # Primary Services + Location
+"old photos retouching",
 "photo restoration Quebec",
 "repair old photos",
 "restore damaged photos near me",
