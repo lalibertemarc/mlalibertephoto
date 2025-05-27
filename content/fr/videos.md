@@ -1,7 +1,7 @@
 +++
 title = 'Videos'
 draft = false
-description= "Vidéaste professionnel spécialisé dans les clips musicaux et les films d'entreprise de haute qualité. Je capture votre vision avec un récit cinématographique, des plans dynamiques et une post-production soignée."
+description= "Vidéaste professionnel spécialisé dans les clips musicaux et les films d'entreprise de haute qualité"
 +++
 
 ## Vidéos corporatifs - Vidéos promotionnels

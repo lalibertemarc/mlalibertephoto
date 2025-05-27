@@ -1,7 +1,7 @@
 +++
 title = 'Videos'
 draft = false
-description= "Professional videographer specializing in high-quality music videos and corporate films. Capturing your vision with cinematic storytelling, dynamic shots, and polished post-production."
+description= "Professional videographer specializing in high-quality music videos and corporate videos"
 +++
 
 <!-- Corporate Videos - Promotional Videos -->

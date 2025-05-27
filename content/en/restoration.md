@@ -1,5 +1,5 @@
 +++
-title = "Restoration"
+title = "Restoration of old photos"
 draft = false
 description= "Marc Laliberté offers professional photo restoration services to revive your precious memories. Specializing in repairing damaged, faded, or old photographs with meticulous attention to detail."
 +++

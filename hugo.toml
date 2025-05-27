@@ -4,7 +4,7 @@ disableHugoGeneratorInject = true
 theme = "hugo-universal-theme"
 languageCode = "fr-ca"
 defaultContentLanguage = "fr"
-defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = false
 enableMissingTranslationPlaceholders = false
 baseURL = "https://marclaliberte.photos"
 canonical = "https://marclaliberte.photos"
@@ -64,55 +64,55 @@ pre = "<i class='fab fa-2x fa-instagram'></i>"
 [[languages.fr.menu.main]]
 name = "Bienvenue"
 identifier = "menu.home"
-url = "/fr/"
+url = "/"
 weight = 1
 
 [[languages.fr.menu.main]]
 name = "Restauration"
 identifier = "menu.restauration"
-url = "/fr/restoration"
+url = "/restoration"
 weight = 2
 
 [[languages.fr.menu.main]]
 name = "Photos"
 identifier = "menu.photos"
-url = "/fr/photos"
+url = "/photos"
 weight = 3
 
 [[languages.fr.menu.main]]
 name = "Portraits"
-url = "/fr/photos/portraits"
+url = "/photos/portraits"
 weight = 2
 parent = "menu.photos"
 
 [[languages.fr.menu.main]]
 name = "Évènements"
-url = "/fr/photos/events"
+url = "/photos/events"
 weight = 4
 parent = "menu.photos"
 
 [[languages.fr.menu.main]]
 name = "Animalière"
-url = "/fr/photos/wildlife"
+url = "/photos/wildlife"
 weight = 5
 parent = "menu.photos"
 
 [[languages.fr.menu.main]]
 name = "Vidéos"
 identifier = "menu.videos"
-url = "/fr/videos"
+url = "/videos"
 weight = 3
 
 [[languages.fr.menu.main]]
 name = "Blog"
 identifier = "menu.blog"
-url = "/fr/blog"
+url = "/blog"
 weight = 4
 
 [[languages.fr.menu.main]]
 identifier = "contact"
 name = "Contact"
-url = "/fr/contact/"
+url = "/contact/"
 weight = 7
 
 [languages.en]
@@ -343,7 +343,7 @@ image_height = 630     # Facebook recommended ratio
 [permalinks]
 blog = "/blog/:year/:month/:day/:filename/"
 en = "/:slug/"
-fr = "/:slug/"
+fr = "/:sections/:filename/"
 
 # Enable or disable top bar with social icons
 [params.topbar]
