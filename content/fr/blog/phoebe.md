@@ -6,6 +6,8 @@ tags = ["oiseaux", "Moucherolle phébi", "wildlife"]
 categories = ["bird","wildlife",]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1748308172/_DSC8625-001_btw0mt.jpg"
+banner_width = 600
+banner_height = 600
 authors = ["Marc Laliberté"]
 +++
 

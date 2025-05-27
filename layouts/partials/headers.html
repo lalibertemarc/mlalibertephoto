@@ -74,7 +74,10 @@
   <meta property="og:image:type" content='image/{{ if eq $image_ext ".svg" }}svg+xml{{ else }}{{ trim $image_ext "." }}{{ end }}'>
   {{ with .Params.banner_alt }}<meta property="og:image:alt" content="{{ . | markdownify | plainify }}">{{ end }}
   
-  {{ if not $is_external }}
+  {{ if $is_external }}
+    {{ with .Params.banner_width }}<meta property="og:image:width" content="{{ . }}">{{ end }}
+    {{ with .Params.banner_height }}<meta property="og:image:height" content="{{ . }}">{{ end }}
+  {{ else }}
     {{ $image_local := printf "static/%s" $image }}
     {{ with (imageConfig $image_local) }}
       <meta property="og:image:width" content="{{ .Width }}">
