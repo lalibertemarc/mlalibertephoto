@@ -1,5 +1,5 @@
 +++
-title = 'Scureuil souriant'
+title = 'Smiling squirrel'
 date = 2025-05-28T07:59:24-04:00
 draft = false
 tags = ["wildlife","squirrel"]
