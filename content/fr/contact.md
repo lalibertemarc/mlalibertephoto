@@ -24,50 +24,60 @@ description = "Contactez Marc Laliberté pour des services professionnels de res
 
 ## Restauration de photos {#restoration}
 
-**Service de base**
+### Service de numérisation
+
+- **50$** pour le déplacement dans la région de Québec.
+- **100$** pour déplacement a l'éxtérieur de Québec.
+- **10 $/photo** numérisée sur place.
+
+### Service de base
+
+**30 $/photo**
 
 Ce service comprend :
 
-- L'élimination des imperfections (flou, grain, égratignures)
+- Amélioration de l'éclairage
+- Élimination des égratignures
+- Diminution du grain
+- Meilleur balance des couleures si photo en couleur.
+- Amélioration de la résolution si vous fournissez la photo numérisée
+- Deux (2) retouches supplémentaires selon vos demandes.
 
-- Les retouches supplémentaires selon vos demandes
+### Service premium
 
-**Service de colorisation**
+**50 $/photo**
 
-Je transforme vos photos noir et blanc en images colorisées pour leur redonner vie.
+Ce service comprend :
 
-**Tarification**
+- Tout ce qui est dans le service de base
+- Amélioration du flou et reconstruction des visages pour un réalisme a couper le soufle.
+- Cinq (5) retouches supplémentaires selon vos demandes.
 
-Pour les photos déjà numérisées (par exemple : photos prises avec un smartphone) :
+**Note importante**
 
-- 30 $/photo pour le service de base
-
-- 40 $/photo pour service de base + colorisation
-
-Pour les photos non numérisées :
-
-Je me déplace à votre domicile avec mon équipement professionnel pour numériser vos photos :
-
-- 50 $/photo pour le service de base
-
-- 60 $/photo pour service de base + colorisation
-
-<p><em>Des tarifs préférentiels sont applicables pour des commandes de 10 photos ou plus (négociables).</em></p>
-
-
-**Livraison**
-
-Toutes les photos restaurées vous seront livrées sous format numérique.
-
-**Important**
-
-Toutes les photos ne sont pas toujours restaurables. La faisabilité dépend :
+Le résultat de l'amélioration du flou et reconstruction des visages peut varier. La faisabilité dépend
 
 - De la qualité initiale de la photo
 
 - De son état de dégradation physique
 
-Dans le cas où une photo ne pourrait être restaurée, elle ne vous sera pas facturée.
+Dans le cas où ce résultat n'est pas a votre goût, seul le service de base sera facturé.
+
+### Service de colorisation
+
+**20 $/photo**
+
+Je transforme vos photos noir et blanc en images colorisées pour leur redonner vie.
+
+<hr>
+<p><em>Des tarifs préférentiels sont applicables pour des commandes de 10 photos ou plus (négociables) pour tous les services.</em></p>
+<hr>
+
+#### Livraison
+
+Toutes les photos restaurées vous seront livrées sous format numérique.
+
+<hr>
 
 +1-514-503-2446 <br>
 laliberte.marc1@gmail.com  <br>

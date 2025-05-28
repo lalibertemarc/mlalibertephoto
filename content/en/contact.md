@@ -17,43 +17,59 @@ Marc Laliberte, Photographer and Videographer
 
 ## Photo Restoration {#restoration}
 
-<p><strong>Basic Service</strong></p>
-<p>This service includes:</p>
-<ul>
-  <li>Removal of imperfections (blur, grain, scratches)</li>
-  <li>Additional touch-ups upon request</li>
-</ul>
+### Digitization Service
 
-<p><strong>Colorization Service</strong></p>
-<p>I bring your black-and-white photos to life by colorizing them.</p>
+- **$50** for travel within the Quebec region.
+- **$100** for travel outside Quebec.
+- **$10/photo** digitizated on-site.
 
-<p><strong>Pricing</strong></p>
+### Basic Service
 
-<p>For already digitized photos (e.g., smartphone photos):</p>
-<ul>
-  <li>$30/photo for basic service</li>
-  <li>$40/photo for basic service + colorization</li>
-</ul>
+**$30/photo**
 
-<p>For non-digitized photos:</p>
-<p>I travel to your home with professional equipment to digitize your photos:</p>
-<ul>
-  <li>$50/photo for basic service</li>
-  <li>$60/photo for basic service + colorization</li>
-</ul>
+This service includes:
 
-<p><em>Discounts available for orders of 10+ photos (negotiable).</em></p>
+- Lighting improvement
+- Scratch removal
+- Grain reduction
+- Better color balance for color photos
+- Resolution enhancement if you provide the digitizated photo
+- Two (2) additional touch-ups according to your requests
 
-<p><strong>Delivery</strong></p>
-<p>All restored photos will be delivered in digital format.</p>
+### Premium Service
 
-<p><strong>Important Note</strong></p>
-<p>Not all photos can be fully restored. Feasibility depends on:</p>
-<ul>
-  <li>The original quality of the photo</li>
-  <li>Its physical condition</li>
-</ul>
-<p>If a photo cannot be restored, you will not be charged for it.</p>
+**$50/photo**
+
+This service includes:
+
+- Everything in the basic service
+- Blur improvement and facial reconstruction for breathtaking realism
+- Five (5) additional touch-ups according to your requests
+
+**Important Note**
+
+The results of blur improvement and facial reconstruction may vary. Feasibility depends on:
+
+- The initial quality of the photo
+- Its physical degradation state
+
+If the result doesn't meet your expectations, only the basic service will be charged.
+
+### Colorization Service
+
+**$20/photo**
+
+I transform your black and white photos into colorized images to bring them back to life.
+
+<hr>
+<p><em>Preferential rates are available for orders of 10 photos or more (negotiable) for all services.</em></p>
+<hr>
+
+#### Delivery
+
+All restored photos will be delivered in digital format.
+
+<hr>
 
 +1-514-503-2446 <br>
 laliberte.marc1@gmail.com<br>
