@@ -337,8 +337,8 @@ address = """<p class="text-uppercase"><strong>Marc Laliberte</strong>
 [params.opengraph]
 enable = true
 image = "img/logo.png" # Default image for shares
-image_width = 1200
-image_height = 630     # Facebook recommended ratio
+image_width = 571
+image_height = 146     # Facebook recommended ratio
 
 [permalinks]
 blog = "/blog/:year/:month/:day/:filename/"
@@ -356,8 +356,8 @@ text = """<p class="hidden-sm hidden-xs">Contactez-moi au +1-514-503-2446 ou lal
 
 # Enable and disable widgets for the right sidebar
 [params.widgets]
-categories = false
-tags = false
+categories = true
+tags = true
 search = false
 
 [params.carouselCustomers]
