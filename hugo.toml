@@ -336,9 +336,9 @@ address = """<p class="text-uppercase"><strong>Marc Laliberte</strong>
       """
 [params.opengraph]
 enable = true
-image = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1748556897/logo_hhtdpe.png" # Default image for shares
-image_width = 571
-image_height = 146     # Facebook recommended ratio
+image = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1748557335/mlalibertephoto7_elf8ue.png"
+image_width = 782
+image_height = 200     # Facebook recommended ratio
 
 [permalinks]
 blog = "/blog/:year/:month/:day/:filename/"
