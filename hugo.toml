@@ -324,8 +324,8 @@ dropdown_mouse_over = false
 disabled_logo = false
 logo_text = "Marc Laliberte Photographe & Vidéographe"
 
-logo = "img/logo.png"
-logo_small = "img/logo-small.png"
+logo = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1748557335/mlalibertephoto7_elf8ue.png"
+logo_small = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1748557413/logo-small_nggpqi.png"
 contact_url = "/contact/"
 address = """<p class="text-uppercase"><strong>Marc Laliberte</strong>
         <br>514-503-2446
