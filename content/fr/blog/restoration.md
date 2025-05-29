@@ -2,8 +2,8 @@
 title = 'Restauration de photos'
 date = 2025-05-15T13:16:14-04:00
 draft = false
-tags = ["restoration", "digitization", "retouche"]
-categories = ["restoration", "digitization", "retouche"]
+tags = ["restoration", "digitization", "retouching"]
+categories = ["restoration", "digitization", "retouching"]
 banner = "img/_DSC7374-001-Edit-Edit - insta.jpg"
 authors = ["Marc Laliberté"]
 +++
