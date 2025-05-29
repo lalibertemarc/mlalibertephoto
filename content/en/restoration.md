@@ -1,76 +1,128 @@
 +++
-title = "Restoration of old photos"
+title = "Old Photo Restoration Service"
 draft = false
-description= "Marc Laliberté offers professional photo restoration services to revive your precious memories. Specializing in repairing damaged, faded, or old photographs with meticulous attention to detail."
+description= "Marc Laliberté offers professional photo restoration services to bring your precious memories back to life. Specialized in repairing damaged, faded or old photos with meticulous attention to detail."
 +++
 
 # Give a second life to photos of your loved ones.
-
-### Old photo restoration, digitization and retouching services
 
 - Fixing blurry photos
 - Colorization of black and white photos
 - Grain removal
 - Repairing scratches on damaged photos
-- Digitizing your old photos for sharing on social media
+- Digitization of your old photos for sharing on social media
 - Resolution enhancement for printing and framing
 
+<hr>
+
+# Pricing
+
+### Digitization Service
+
+- **$50** for travel within the Quebec City area.
+- **$100** for travel outside Quebec City.
+- **$10/photo** digitized on site.
+
+### Basic Service
+
+**$30/photo**
+
+This service includes:
+
+- Lighting improvement
+- Scratch removal
+- Grain reduction
+- Better color balance for color photos
+- Resolution enhancement if you provide the scanned photo
+- Two (2) additional edits according to your requests.
+
 {{< fleximages >}}
 {{< image-modal 
-    src="/img/_DSC7374 - insta-2.jpg"
-    width="500px"
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1748480913/_DSC7374_-_insta-2_rxgcsr.jpg"
+    width="350px"
     title="Before"
-    alt="Before: Damaged old photo of a young lady"
-    caption="Before: Clearly visible scratches and texture on this old photo" 
+    alt="Before, old damaged photo of a young lady"
+    caption="Before, you can clearly see the scratches and texture on this old photo" 
 >}}
 {{< image-modal 
-    src="/img/_DSC7374-001-Edit-Edit - insta.jpg"
-    width="500px"
-    title="After"
-    alt="After: Restored photo of a radiant young lady"
-    caption="After: The subject is very clear, all scratches have disappeared" 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1748480928/_DSC7374-001_bd6jm1.jpg"
+    width="350px"
+    title="After, basic service example"
+    alt="After, restored photo of a radiant young lady"
+    caption="After, basic service example where the subject is very clear, all scratches and grain have disappeared" 
+>}}
+{{< /fleximages >}}
+
+### Premium Service
+
+**$50/photo**
+
+This service includes:
+
+- Everything in the basic service
+- Blur improvement and facial reconstruction for breathtaking realism
+- Five (5) additional edits according to your requests.
+
+{{< fleximages >}}
+{{< image-modal 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1748480913/_DSC7374_-_insta-2_rxgcsr.jpg"
+    width="350px"
+    title="Before"
+    alt="Before, old damaged photo of a young lady"
+    caption="Before, you can clearly see the scratches and texture on this old photo" 
+>}}
+{{< image-modal 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1748480912/_DSC7374-001-Edit-Edit_-_insta_nemrfg.jpg"
+    width="350px"
+    title="After, premium service example"
+    alt="After, restored photo of a radiant young lady"
+    caption="After, premium service example where the subject is very clear, all scratches have disappeared" 
 >}}
 {{< /fleximages >}}
 
 <br>
 
+**Important note**
+
+The result of blur improvement and facial reconstruction may vary. Feasibility depends on:
+
+- The initial quality of the photo
+- Its physical degradation state
+
+If this result doesn't meet your expectations, only the basic service will be charged.
+
+### Colorization Service
+
+**$20/photo**
+
+I transform your black and white photos into colorized images to bring them back to life.
+
+Can be purchased separately or added to other services.
+
 {{< fleximages >}}
 {{< image-modal 
-    src="/img/generationBefore.jpg" 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1748481670/generationBefore_hfh4ha.jpg" 
     width="500px"
     title="Before"
-    alt="Before: Old, damaged photo of four men from different generations"
-    caption="Before: The photo is blurry, damaged, and the faces are very hard to distinguish" 
+    alt="Before, old damaged photo of four men from different generations"
+    caption="Before, the photo is blurry, damaged and the faces are barely distinguishable" 
 >}}
 {{< image-modal 
-    src="/img/generationAfter.jpg"
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1748481670/generationAfter_c7prcg.jpg"
     width="500px"
-    title="After"
-    alt="After: Restored photo of four men from different generations"  
-    caption="After: The faces are clearly visible, the photo is sharp, colorized, and all scratches have been removed"
+    title="After, premium service example with colorization"
+    alt="After, restored photo of four men from different generations"  
+    caption="After, the faces are clearly visible, the photo is colorized and all scratches have been removed"
 >}}
 {{< /fleximages >}}
 
 <br>
+<p><em>Preferential rates are available for orders of 10 photos or more (negotiable) for all services.</em></p>
+
+#### Delivery
+
+All restored photos will be delivered to you in digital format.
 
 {{< fleximages >}}
-{{< image-modal 
-    src="/img/DSC01077 - insta.jpg" 
-    width="500px"
-    title="Before"
-    alt="Before: Damaged old photo of a young lady"
-    caption="Before: The photo is blurry and yellowing is very apparent" 
->}}
-{{< image-modal 
-    src="/img/DSC01077-Edit-2 - insta.jpg"
-    width="500px"
-    title="After"
-    alt="After: Restored photo of a young lady"
-    caption="After: The photo is very clear, showing no signs of aging" 
->}}
+{{< navbutton url="/contact" text="Contact me for a free quote" >}}
 {{< /fleximages >}}
-
-{{< fleximages >}}
-{{< navbutton url="/en/contact/#restoration" text="Click here to see the pricings" >}}
-{{< /fleximages >}}
-<br>

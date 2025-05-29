@@ -68,7 +68,7 @@ url = "/"
 weight = 1
 
 [[languages.fr.menu.main]]
-name = "Restauration"
+name = "Restauration de photos"
 identifier = "menu.restauration"
 url = "/restoration"
 weight = 2
