@@ -25,7 +25,7 @@ description= "Marc Laliberté offers professional photo restoration services to 
 
 ### Basic Service
 
-**$30/photo**
+**$50/photo**
 
 This service includes:
 
@@ -55,7 +55,7 @@ This service includes:
 
 ### Premium Service
 
-**$50/photo**
+**$70/photo**
 
 This service includes:
 

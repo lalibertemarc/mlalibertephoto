@@ -25,7 +25,7 @@ description= "Marc Laliberté offre des services professionnels de restauration 
 
 ### Service de base
 
-**30 $/photo**
+**50 $/photo**
 
 Ce service comprend :
 
@@ -55,7 +55,7 @@ Ce service comprend :
 
 ### Service premium
 
-**50 $/photo**
+**70 $/photo**
 
 Ce service comprend :
 
