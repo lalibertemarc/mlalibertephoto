@@ -32,7 +32,7 @@ Ce service comprend :
 - Amélioration de l'éclairage
 - Élimination des égratignures
 - Diminution du grain
-- Meilleur balance des couleures si photo en couleur.
+- Meilleur balance des couleurs si photo en couleur.
 - Amélioration de la résolution si vous fournissez la photo numérisée
 - Deux (2) retouches supplémentaires selon vos demandes.
 
