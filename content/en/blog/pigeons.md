@@ -2,7 +2,7 @@
 title = 'Pigeons'
 date = 2025-05-19T16:26:00-04:00
 draft = false
-tags = ["oiseaux", "bird", "pigeons"]
+tags = [ "bird", "pigeons"]
 categories = ["bird","wildlife",]
 banner = "img/_DSC8399-001.jpg"
 authors = ["Marc Laliberté"]

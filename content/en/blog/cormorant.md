@@ -2,7 +2,7 @@
 title = 'Double-crested cormorant'
 date = 2025-05-05T14:02:49-04:00
 draft = false
-tags = ["oiseaux", "bird", "cormorant"]
+tags = [ "bird", "cormorant"]
 categories = ["bird","wildlife",]
 banner = "img/_DSC8195-001.jpg"
 authors = ["Marc Laliberté"]

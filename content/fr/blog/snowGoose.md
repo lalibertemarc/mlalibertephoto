@@ -2,7 +2,7 @@
 title = 'Oie des neiges'
 date = 2025-04-13T10:32:04-04:00
 draft = false
-tags = ["oiseaux", "bird", "goose", "snow"]
+tags = [ "bird", "goose", "snow"]
 categories = ["bird","wildlife",]
 banner = "img/_DSC7410 - insta.jpg"
 authors = ["Marc Laliberté"]

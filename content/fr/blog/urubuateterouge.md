@@ -2,7 +2,7 @@
 title = 'Urubu à tête rouge'
 date = 2025-04-29T10:15:50-04:00
 draft = false
-tags = ["oiseaux","bird","turkey vulture"]
+tags = ["bird","turkey vulture"]
 categories = ["bird","wildlife",]
 banner = "img/_DSC8074-001.jpg"
 authors = ["Marc Laliberté"]

@@ -2,7 +2,7 @@
 title = 'Moucherolle phébi'
 date = 2025-05-26T08:59:27-04:00
 draft = false
-tags = ["oiseaux", "Moucherolle phébi", "wildlife"]
+tags = [ "Moucherolle phébi", "wildlife"]
 categories = ["bird","wildlife",]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1748308172/_DSC8625-001_btw0mt.jpg"

@@ -2,7 +2,7 @@
 title = 'Jaseur boréal'
 date = 2025-05-30T10:23:40-04:00
 draft = false
-tags = ["oiseaux", "bird", "cedar", "waxwing"]
+tags = [ "bird", "cedar", "waxwing"]
 categories = ["bird","wildlife",]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1748615068/_DSC7512-2_gr1k3z.jpg"

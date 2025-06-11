@@ -2,7 +2,7 @@
 title = 'Pic nain'
 date = 2025-05-16T14:06:54-04:00
 draft = false
-tags = ["oiseaux", "bird", "downy","woodpecker"]
+tags = [ "bird", "downy","woodpecker"]
 categories = ["bird","wildlife","downy","woodpecker"]
 banner = "img/_DSC8475-001.jpg"
 authors = ["Marc Laliberté"]

@@ -2,7 +2,7 @@
 title = 'Paruline Flamboyante'
 date = 2025-05-23T08:11:47-04:00
 draft = false
-tags = ["oiseaux", "paruline flamboyante", "wildlife"]
+tags = [ "paruline flamboyante", "wildlife"]
 categories = ["bird","wildlife",]
 banner = "img/_DSC8604-001.jpg"
 authors = ["Marc Laliberté"]
