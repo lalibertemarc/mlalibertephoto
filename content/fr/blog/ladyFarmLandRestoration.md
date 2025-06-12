@@ -15,7 +15,7 @@ authors = ["Marc Laliberté"]
 
 ## Restauration d’histoire : Comment j’ai redonné vie à une photo vintage de campagne (étape par étape)
 
-Les photos anciennes sont des machines à remonter le temps—chaque rayure et décoloration raconte une histoire. Récemment, j’ai restauré une photo vintage des années 1900 d’une femme marchant sur un chemin de terre en campagne. Voici mon processus en 5 étapes, avec les améliorations clés et les défis rencontrés.
+Les photos anciennes sont des machines à remonter le temps—chaque rayure et décoloration raconte une histoire. Récemment, j’ai restauré une photo vintage d’une femme marchant sur un chemin de terre en campagne. Voici mon processus en 5 étapes, avec les améliorations clés et les défis rencontrés.
 
 <hr>
 

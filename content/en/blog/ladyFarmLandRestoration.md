@@ -14,7 +14,7 @@ authors = ["Marc Laliberté"]
 
 ## Restoring History: How I Brought a Vintage Countryside Photo Back to Life (Step-by-Step)
 
-Old photos are time machines—every scratch and fading tells a story. Recently, I restored a vintage 1900s photo of a woman walking on a dirt road in the countryside. Here's my 5-step process, with key improvements and challenges encountered.
+Old photos are time machines—every scratch and fading tells a story. Recently, I restored a vintage photo of a woman walking on a dirt road in the countryside. Here's my 5-step process, with key improvements and challenges encountered.
 
 <hr>
 
