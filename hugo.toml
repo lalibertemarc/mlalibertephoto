@@ -17,7 +17,7 @@ weight = 1
 contentDir = "content/fr"
 
 [languages.fr.params]
-about_us = "<p>Photographe et vidéographe de la ville de Québec.</p>"
+about_us = "<p>Photographe et vidéographe de la ville de Québec spécialisé en événementiel et restauration de photos anciennes.</p>"
 copyright = "Copyright (c) 2025 - 2026, Marc Laliberte Photo&Video; tous droits réservés."
 author = "Marc Laliberte"
 defaultDescription = "Photographe spécialisé en restauration de photos anciennes"
@@ -149,7 +149,7 @@ defaultKeywords = [
 "where to restore old photos in Quebec",
 "best photo restoration service Quebec"
 ]
-about_us = "<p>Photographer and videographer based in Quebec City.</p>"
+about_us = "<p>Photographer and videographer from Quebec City specializing in events and restoration of old photos.</p>"
 copyright = "Copyright (c) 2025 - 2026, Marc Laliberte Photo&Video; all rights reserved."
 author = "Marc Laliberte"
 defaultDescription = "Photographer specializing in restoration of old photos"

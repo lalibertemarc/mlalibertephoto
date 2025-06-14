@@ -18,6 +18,7 @@
 
             {{ range sort $items "weight" }}
               {{ $title := index .title $lang }}
+              {{ $alt := index .alt $lang }}
               {{ $desc := index .description $lang }}
               <div class="item">
                 {{ if .href }}
@@ -29,7 +30,7 @@
                         {{ $desc | safeHTML }}
                       </div>
                       <div class="col-sm-7">
-                        <img class="img-responsive" src="/{{ .image }}" alt="{{ $title }}">
+                        <img class="img-responsive" src="/{{ .image }}" alt="{{ $alt }}">
                       </div>
                     </div>
                 {{ if .href }}

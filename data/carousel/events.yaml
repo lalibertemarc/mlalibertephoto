@@ -16,4 +16,7 @@ description:
       <li>Dance</li>
     </ul>
 image: "img/DSC4217_small.jpg"
+alt:
+  fr : "Lutharo en spectacle"
+  en : "Lutharo live"
 href: "photos/events"
