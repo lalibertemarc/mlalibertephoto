@@ -11,7 +11,7 @@ canonical = "https://marclaliberte.photos"
 
 [languages]
 [languages.fr]
-title = "Marc Laliberte Photo et Restauration"
+title = "Marc Laliberte Photo et Vidéos"
 languageName = "Français"
 weight = 1
 contentDir = "content/fr"
@@ -125,7 +125,7 @@ weight = 7
 languageName = "English"
 weight = 2
 contentDir = "content/en"
-title = "Marc Laliberte Photo and Restoration"
+title = "Marc Laliberte Photo and Videos"
 
 [languages.en.params]
 defaultKeywords = [
