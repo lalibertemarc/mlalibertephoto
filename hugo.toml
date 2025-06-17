@@ -88,7 +88,7 @@ parent = "menu.photos"
 [[languages.fr.menu.main]]
 name = "Évènements"
 url = "/photos/events"
-weight = 4
+weight = 1
 parent = "menu.photos"
 
 [[languages.fr.menu.main]]
@@ -200,7 +200,7 @@ parent = "menu.photos"
 [[languages.en.menu.main]]
 name = "Events"
 url = "/en/photos/events"
-weight = 4
+weight = 1
 parent = "menu.photos"
 
 [[languages.en.menu.main]]
