@@ -17,7 +17,7 @@ description:
       <li>Scratch removal</li>
       <li>Print preparation</li>
     </ul>
-image: "img/restauration thumbnail.jpg"
+image: "https://res.cloudinary.com/dbjekf3b7/image/upload/v1750126862/restauration_thumbnail_frad1x.jpg"
 alt:
   fr : "Exemples d'avant et après de restauration de photos anciennes"
   en : "Before and after examples of old photo restoration"

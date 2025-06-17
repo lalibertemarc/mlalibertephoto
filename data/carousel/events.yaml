@@ -15,7 +15,7 @@ description:
       <li>Theater</li>
       <li>Dance</li>
     </ul>
-image: "img/DSC4217_small.jpg"
+image: "https://res.cloudinary.com/dbjekf3b7/image/upload/v1750126897/DSC4217_small_zq9v1p.jpg"
 alt:
   fr : "Lutharo en spectacle"
   en : "Lutharo live"
