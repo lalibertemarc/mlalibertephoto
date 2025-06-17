@@ -25,7 +25,7 @@ description= "Marc Laliberté offers professional photo restoration services to 
 
 ### Basic Service
 
-**$50/photo**
+**$30/photo**
 
 This service includes:
 
@@ -33,8 +33,7 @@ This service includes:
 - Scratch removal
 - Grain reduction
 - Better color balance for color photos
-- Resolution enhancement if you provide the scanned photo
-- Two (2) additional edits according to your requests.
+- Resolution enhancement if you provide the digitized photo
 
 {{< fleximages >}}
 {{< image-modal 
@@ -55,13 +54,12 @@ This service includes:
 
 ### Premium Service
 
-**$70/photo**
+**$40/photo**
 
 This service includes:
 
 - Everything in the basic service
 - Blur improvement and facial reconstruction for breathtaking realism
-- Five (5) additional edits according to your requests.
 
 {{< fleximages >}}
 {{< image-modal 

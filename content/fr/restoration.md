@@ -25,7 +25,7 @@ description= "Marc Laliberté offre des services professionnels de restauration 
 
 ### Service de base
 
-**50 $/photo**
+**30 $/photo**
 
 Ce service comprend :
 
@@ -33,8 +33,7 @@ Ce service comprend :
 - Élimination des égratignures
 - Diminution du grain
 - Meilleur balance des couleurs si photo en couleur.
-- Amélioration de la résolution si vous fournissez la photo numérisée
-- Deux (2) retouches supplémentaires selon vos demandes.
+- Amélioration de la résolution si vous fournissez la photo numérisée.
 
 {{< fleximages >}}
 {{< image-modal 
@@ -55,13 +54,12 @@ Ce service comprend :
 
 ### Service premium
 
-**70 $/photo**
+**40 $/photo**
 
 Ce service comprend :
 
 - Tout ce qui est dans le service de base
 - Amélioration du flou et reconstruction des visages pour un réalisme a couper le soufle.
-- Cinq (5) retouches supplémentaires selon vos demandes.
 
 {{< fleximages >}}
 {{< image-modal 
@@ -123,7 +121,6 @@ Peut être à part ou ajoutée aux autres services.
 #### Livraison
 
 Toutes les photos restaurées vous seront livrées sous format numérique.
-
 
 
 {{< fleximages >}}
