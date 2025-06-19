@@ -12,7 +12,7 @@ banner_height = 600
 authors = ["Marc Laliberté"]
 +++
 
-✨ Nouvelle Restauration : Alan Turing en Couleurs !
+## ✨ Nouvelle Restauration : Alan Turing en Couleurs !
 
 Cette semaine, un projet un peu différent de mes restaurations habituelles, mais tout aussi inspirant : la photo iconique d’Alan Turing, que j’ai restaurée et colorisée.
 
@@ -40,7 +40,8 @@ Mathématicien, cryptologue et pionnier de l’informatique, Turing a joué un r
 
 
 <hr>
-Vous aussi, vous avez une vieille photo à restaurer ou coloriser ? 📸
+
+**Vous aussi, vous avez une vieille photo à restaurer ou coloriser ?** 📸
 
 Que ce soit un portrait de famille, un souvenir d’enfance ou une image historique, envoyez-moi un message ! Je m’occupe de tout, des retouches les plus simples aux restaurations complexes.
 

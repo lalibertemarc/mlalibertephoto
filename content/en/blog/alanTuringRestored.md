@@ -12,7 +12,7 @@ banner_height = 600
 authors = ["Marc Laliberté"]
 +++
 
-✨ New Restoration: Alan Turing in Color!
+## ✨ New Restoration: Alan Turing in Color!
 
 This week, a slightly different project from my usual restorations, but just as inspiring: the iconic photo of Alan Turing that I've restored and colorized.
 
@@ -40,7 +40,8 @@ Mathematician, cryptologist, and computer science pioneer, Turing played a key r
 
 
 <hr>
-Do you have an old photo you'd like to restore or colorize too? 📸
+
+**Do you have an old photo you'd like to restore or colorize too?** 📸
 
 Whether it's a family portrait, childhood memory, or historical image, send me a message! I handle everything from simple touch-ups to complex restorations.
 
