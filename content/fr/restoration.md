@@ -19,21 +19,27 @@ description= "Marc Laliberté offre des services professionnels de restauration 
 
 ### Service de numérisation
 
+Si vous ne disposez pas d’une version numérisée de vos photos (par exemple, une prise avec votre téléphone cellulaire ou autre), je peux me déplacer pour les scanner directement avec mon appareil photo professionnel. Nous pouvons également convenir d’un rendez-vous afin que vous me confiez vos photos en mains propres.
+
+Pour un résultat optimal, je vous recommande fortement de faire numériser vos photos par mes soins. Bien que j’applique des retouches pour améliorer la qualité et la résolution de vos images, je ne peux malheureusement pas garantir la qualité d’impression si vous utilisez des fichiers déjà numérisés.
+
+Vous trouverez ci-dessous mes tarifs pour un éventuel déplacement.
+
 - **50$** pour le déplacement dans la région de Québec.
 - **100$** pour déplacement a l'éxtérieur de Québec.
-- **10 $/photo** numérisée sur place.
 
 ### Service de base
 
-**30 $/photo**
+- **15 $/photo, si déjà numérisée**
+- **30 $/photo, avec numérisation**
 
 Ce service comprend :
 
 - Amélioration de l'éclairage
-- Élimination des égratignures
+- Élimination des égratignures de surface
 - Diminution du grain
-- Meilleur balance des couleurs si photo en couleur.
-- Amélioration de la résolution si vous fournissez la photo numérisée.
+- Meilleur balance des couleurs si photo en couleur
+- Amélioration de la résolution si nécessaire
 
 {{< fleximages >}}
 {{< image-modal 
@@ -54,11 +60,13 @@ Ce service comprend :
 
 ### Service premium
 
-**40 $/photo**
+- **30 $/photo, si déjà numérisée**
+- **50 $/photo, avec numérisation**
 
 Ce service comprend :
 
 - Tout ce qui est dans le service de base
+- Élimination des égratignures et poussières en profondeur
 - Amélioration du flou et reconstruction des visages pour un réalisme a couper le soufle.
 
 {{< fleximages >}}
@@ -116,11 +124,13 @@ Peut être à part ou ajoutée aux autres services.
 {{< /fleximages >}}
 
 <br>
+
+**Note importante**
+
+Si vous vous souvenez des couleurs d'origine (vêtements, yeux, voitures, etc.), merci de me les indiquer. En effet, bien que je m'efforce de choisir des teintes cohérentes avec le contexte, je ne peux pas restituer avec certitude les couleurs originales à partir d'une photo en noir et blanc.
+
+<br>
 <p><em>Des tarifs préférentiels sont applicables pour des commandes de 10 photos ou plus (négociables) pour tous les services.</em></p>
-
-#### Livraison
-
-Toutes les photos restaurées vous seront livrées sous format numérique.
 
 
 {{< fleximages >}}

@@ -19,21 +19,27 @@ description= "Marc Laliberté offers professional photo restoration services to 
 
 ### Digitization Service
 
+If you don't have a digital version of your photos (for example, one taken with your cell phone or other device), I can come to you to scan them directly with my professional camera. We can also schedule an appointment for you to hand over your photos to me in person.
+
+For optimal results, I strongly recommend having your photos scanned by me. Although I apply editing to improve the quality and resolution of your images, I unfortunately cannot guarantee the print quality if you use already scanned files.
+
+You will find my rates for travel below:
+
 - **$50** for travel within the Quebec City area.
-- **$100** for travel outside Quebec City.
-- **$10/photo** digitized on site.
+- **$100** for travel outside of Quebec City.
 
 ### Basic Service
 
-**$30/photo**
+- **15 $/photo, if already digitized**
+- **30 $/photo, with digitization**
 
 This service includes:
 
 - Lighting improvement
-- Scratch removal
+- Basic scratch removal
 - Grain reduction
 - Better color balance for color photos
-- Resolution enhancement if you provide the digitized photo
+- Resolution enhancement if needed
 
 {{< fleximages >}}
 {{< image-modal 
@@ -54,11 +60,13 @@ This service includes:
 
 ### Premium Service
 
-**$40/photo**
+- **30 $/photo, if already digitized**
+- **50 $/photo, with digitization**
 
 This service includes:
 
 - Everything in the basic service
+- Deep scratch and dust removal
 - Blur improvement and facial reconstruction for breathtaking realism
 
 {{< fleximages >}}
@@ -114,12 +122,13 @@ Can be purchased separately or added to other services.
 >}}
 {{< /fleximages >}}
 
+
+**Important Note**
+
+If you remember the original colors (clothing, eyes, cars, etc.), please let me know. Although I strive to choose colors that are consistent with the context, I cannot reliably reproduce the actual original colors from a black and white photo.
+
 <br>
 <p><em>Preferential rates are available for orders of 10 photos or more (negotiable) for all services.</em></p>
-
-#### Delivery
-
-All restored photos will be delivered to you in digital format.
 
 {{< fleximages >}}
 {{< navbutton url="/contact" text="Contact me for a free quote" >}}
