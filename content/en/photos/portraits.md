@@ -4,6 +4,15 @@ draft = false
 description = "Professional portrait photography that captures personality, emotion, and style. Whether for personal, professional, or artistic projects, I create timeless and striking portraits."
 +++
 
+## Personal portraits
+
+{{< image-modal 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750860177/_DSC0187D-2_b1z8ig.jpg" 
+    width="400px"
+    alt="Personal portrait of a man on a pale brown background taken in the studio"
+    caption="Lightly retouched personal portrait of a man against a pale brown background taken in the studio" 
+>}}
+
 ## Corporate portraits
 
 {{< fleximages >}}

@@ -4,6 +4,15 @@ draft = false
 description = "Photographie de portrait professionnelle qui capture la personnalité, l'émotion et le style. Que ce soit pour des projets personnels, professionnels ou artistiques, je crée des portraits intemporels et percutants."
 +++
 
+## Portraits personnels
+
+{{< image-modal 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750860177/_DSC0187D-2_b1z8ig.jpg" 
+    width="400px"
+    alt="Portrait personnel d'un homme sur fond brun pâle prise en studio"
+    caption="Portrait personnel légèrement retouché d'un homme sur fond brun pâle prise en studio" 
+>}}
+
 ## Portraits corporatifs
 
 {{< fleximages >}}
