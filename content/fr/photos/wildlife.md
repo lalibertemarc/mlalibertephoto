@@ -48,3 +48,7 @@ description = "Photographie animalière saisissante qui capture la beauté brute
     caption="Renard roux à l'affût lors d'une soirée automnale québécoise"
 >}}
 {{< /fleximages >}}
+
+{{< fleximages >}}
+{{< navbutton url="/contact" text="Contactez-moi pour un devis gratuit" >}}
+{{< /fleximages >}}

@@ -39,3 +39,7 @@ description = "Photographie de portrait professionnelle qui capture la personnal
     alt="Billie Ballz et Max Shaft du groupe Mother Rockers posant avec attitude devant une console de studio"
     caption="Session studio des Mother Rockers : ambiance rock et complicité entre les musiciens" 
 >}}
+
+{{< fleximages >}}
+{{< navbutton url="/contact" text="Contactez-moi pour un devis gratuit" >}}
+{{< /fleximages >}}

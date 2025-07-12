@@ -48,3 +48,7 @@ description = "Stunning wildlife photography capturing nature's raw beauty and u
     caption="Red fox on the hunt during a Quebec autumn evening"
 >}}
 {{< /fleximages >}}
+
+{{< fleximages >}}
+{{< navbutton url="/contact" text="Contact me for a free quote" >}}
+{{< /fleximages >}}

@@ -36,3 +36,7 @@ description = "Photographie professionnelle d'événements pour spectacles et co
     alt="Spectacle de EBJM Danse au soleil couchant"
 >}}
 {{</ fleximages >}}
+
+{{< fleximages >}}
+{{< navbutton url="/contact" text="Contactez-moi pour un devis gratuit" >}}
+{{< /fleximages >}}

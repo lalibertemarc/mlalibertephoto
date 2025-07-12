@@ -36,3 +36,7 @@ description = "Professional event photography for live shows and concerts. Captu
     alt="EBJM Show Dancing at Sunset"
 >}}
 {{</ fleximages >}}
+
+{{< fleximages >}}
+{{< navbutton url="/contact" text="Contact me for a free quote" >}}
+{{< /fleximages >}}

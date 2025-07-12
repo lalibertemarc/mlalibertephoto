@@ -306,7 +306,8 @@ style = "marsala"
 #
 # Enable the contact form by entering your Formspree.io endpoint url
 formspree_action = "https://formspree.io/f/mjkyajaa"
-contact_form_ajax = true
+email = "laliberte.marc1@gmail.com"
+contact_form_ajax = false
 
 # Formspree form supports Google reCAPTCHA Key (type v2).
 # If you use this feature, you should enable reCAPTCHA feature in the Formspree dashboard.

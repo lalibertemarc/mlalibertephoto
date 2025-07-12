@@ -15,6 +15,10 @@ description= "Marc Laliberté offre des services professionnels de restauration 
 
 <hr>
 
+{{< fleximages >}}
+{{< navbutton url="/contact" text="Contactez-moi pour un devis gratuit" >}}
+{{< /fleximages >}}
+
 # Tarification
 
 ### Service de numérisation
@@ -58,6 +62,10 @@ Ce service comprend :
 >}}
 {{< /fleximages >}}
 
+{{< fleximages >}}
+{{< navbutton url="/contact" text="Contactez-moi pour un devis gratuit" >}}
+{{< /fleximages >}}
+
 ### Service premium
 
 - **30 $/photo, si déjà numérisée**
@@ -97,6 +105,10 @@ Le résultat de l'amélioration du flou et reconstruction des visages peut varie
 - De son état de dégradation physique
 
 Dans le cas où ce résultat n'est pas a votre goût, seul le service de base sera facturé.
+
+{{< fleximages >}}
+{{< navbutton url="/contact" text="Contactez-moi pour un devis gratuit" >}}
+{{< /fleximages >}}
 
 ### Service de colorisation
 

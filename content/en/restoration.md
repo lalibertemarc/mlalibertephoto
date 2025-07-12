@@ -15,6 +15,10 @@ description= "Marc Laliberté offers professional photo restoration services to 
 
 <hr>
 
+{{< fleximages >}}
+{{< navbutton url="/contact" text="Contact me for a free quote" >}}
+{{< /fleximages >}}
+
 # Pricing
 
 ### Digitization Service
@@ -58,6 +62,10 @@ This service includes:
 >}}
 {{< /fleximages >}}
 
+{{< fleximages >}}
+{{< navbutton url="/contact" text="Contact me for a free quote" >}}
+{{< /fleximages >}}
+
 ### Premium Service
 
 - **30 $/photo, if already digitized**
@@ -96,6 +104,10 @@ The result of blur improvement and facial reconstruction may vary. Feasibility d
 - Its physical degradation state
 
 If this result doesn't meet your expectations, only the basic service will be charged.
+
+{{< fleximages >}}
+{{< navbutton url="/contact" text="Contact me for a free quote" >}}
+{{< /fleximages >}}
 
 ### Colorization Service
 
