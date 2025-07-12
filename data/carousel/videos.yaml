@@ -2,6 +2,9 @@ weight: 4
 title:
   fr: "Vidéos"
   en: "Videos"
+contactText:
+  fr: "Contactez-moi pour un devis gratuit"
+  en: "Contact me for a free quote"
 description:
   fr: >
     <ul class="list-style-none">

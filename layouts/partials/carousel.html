@@ -20,6 +20,7 @@
               {{ $title := index .title $lang }}
               {{ $alt := index .alt $lang }}
               {{ $desc := index .description $lang }}
+              {{ $contact := index .contactText $lang}}
               <div class="item">
                 {{ if .href }}
                   <a href="{{ .href }}" target="_blank" title="{{ $title }}">
@@ -28,6 +29,7 @@
                       <div class="col-sm-5 right">
                         <h1>{{ $title }}</h1>
                         {{ $desc | safeHTML }}
+                        <a href="/contact" class="nav-button" target="_blank">{{ $contact }}</a>
                       </div>
                       <div class="col-sm-7">
                         <img class="img-responsive" src="{{ .image }}" alt="{{ $alt }}">
@@ -38,7 +40,6 @@
                 {{ end }}
               </div>
             {{ end }}
-
           </div>
         </div>
       </div>
