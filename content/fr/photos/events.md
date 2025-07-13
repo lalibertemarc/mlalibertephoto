@@ -5,6 +5,10 @@ description = "Photographie professionnelle d'événements pour spectacles et co
 +++
 
 {{< fleximages >}}
+{{< navbutton url="/contact" text="Contactez-moi pour un devis gratuit" >}}
+{{< /fleximages >}}
+
+{{< fleximages >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750165440/DSC01453_-_insta_vtfgof.jpg"
     width="400px" 

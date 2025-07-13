@@ -5,6 +5,40 @@ description = "Stunning wildlife photography capturing nature's raw beauty and u
 +++
 
 {{< fleximages >}}
+{{< navbutton url="/contact" text="Contact me for a free quote" >}}
+{{< /fleximages >}}
+
+## Pets
+
+{{< fleximages >}}
+{{< image-modal 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1752431409/_DSC3115-Enhanced-NR-4.web_cgzq8z.jpg"
+    width="400px"
+    alt="Cat hiding under the furnitures with eyes wide open"
+    caption="Cat hiding under the furnitures with eyes wide open"
+>}}
+{{< image-modal 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1752431409/_DSC3319-2.web_odaaq4.jpg"
+    width="400px"
+    alt="Jack Russell dog running with a ball in its mouth"
+    caption="Jack Russell dog running with a ball in its mouth"
+>}}
+{{< image-modal 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1752431409/_DSC4928.web_clbdnd.jpg"
+    width="400px"
+    alt="Cat watching ducks in a marsh"
+    caption="Cat watching ducks in a marsh"
+>}}
+{{< image-modal 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1752431409/_DSC6858-ARW-001.web_same48.jpg"
+    width="400px"
+    alt="Portrait of a black golden doodle dog with piercing eyes"
+    caption="Portrait of a black golden doodle dog with piercing eyes"
+>}}
+{{< /fleximages >}}
+
+## Wildlife
+{{< fleximages >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750126094/20240918-_DSC5095-ARW_-_insta_ikdsop.jpg"
     width="400px"

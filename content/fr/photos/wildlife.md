@@ -5,6 +5,41 @@ description = "Photographie animalière saisissante qui capture la beauté brute
 +++
 
 {{< fleximages >}}
+{{< navbutton url="/contact" text="Contactez-moi pour un devis gratuit" >}}
+{{< /fleximages >}}
+
+## Animaux de compagnie
+
+{{< fleximages >}}
+{{< image-modal 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1752431409/_DSC3115-Enhanced-NR-4.web_cgzq8z.jpg"
+    width="400px"
+    alt="Chat caché sous les meubles avec les yeux grands ouverts"
+    caption="Chat caché sous les meubles avec les yeux grands ouverts"
+>}}
+{{< image-modal 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1752431409/_DSC3319-2.web_odaaq4.jpg"
+    width="400px"
+    alt="Chien de race jack russell qui court avec une balle dans la bouche"
+    caption="Chien de race jack russell qui court avec une balle dans la bouche"
+>}}
+{{< image-modal 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1752431409/_DSC4928.web_clbdnd.jpg"
+    width="400px"
+    alt="Chat qui regarde attentivement les canards dans un marais"
+    caption="Chat qui regarde attentivement les canards dans un marais"
+>}}
+{{< image-modal 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1752431409/_DSC6858-ARW-001.web_same48.jpg"
+    width="400px"
+    alt="Portrait d'un chien golden doodle noir avec le regard percant"
+    caption="Portrait d'un chien golden doodle noir avec le regard percant"
+>}}
+{{< /fleximages >}}
+
+## Animaux sauvages
+
+{{< fleximages >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750126094/20240918-_DSC5095-ARW_-_insta_ikdsop.jpg"
     width="400px"
