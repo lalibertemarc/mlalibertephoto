@@ -74,7 +74,7 @@ url = "/restoration"
 weight = 2
 
 [[languages.fr.menu.main]]
-name = "Photos"
+name = "Portfolio"
 identifier = "menu.photos"
 url = "/photos"
 weight = 3
@@ -99,9 +99,9 @@ parent = "menu.photos"
 
 [[languages.fr.menu.main]]
 name = "Vidéos"
-identifier = "menu.videos"
+parent = "menu.photos"
 url = "/videos"
-weight = 3
+weight = 6
 
 [[languages.fr.menu.main]]
 name = "Blog"
@@ -186,7 +186,7 @@ url = "/en/restoration"
 weight = 2
 
 [[languages.en.menu.main]]
-name = "Photos"
+name = "Portfolio"
 identifier = "menu.photos"
 url = "/en/photos"
 weight = 3
@@ -211,9 +211,9 @@ parent = "menu.photos"
 
 [[languages.en.menu.main]]
 name = "Videos"
-identifier = "menu.videos"
+parent = "menu.photos"
 url = "/en/videos"
-weight = 3
+weight = 6
 
 [[languages.en.menu.main]]
 name = "Blog"
