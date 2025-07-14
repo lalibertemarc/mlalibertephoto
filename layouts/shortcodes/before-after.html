@@ -1,12 +1,13 @@
 {{ $before := .Get "before" }}
 {{ $after := .Get "after" }}
+{{ $width := .Get "width" | default "100%" }}
 {{ $altBefore := .Get "altBefore" | default "Avant restauration" }}
 {{ $altAfter := .Get "altAfter" | default "Après restauration" }}
 {{ $captionBefore := .Get "captionBefore" | default "" }}
 {{ $captionAfter := .Get "captionAfter" | default "" }}
 {{ $mainCaption := .Get "mainCaption" | default "" }}
 
-<div class="before-after-reveal">
+<div class="before-after-reveal" style="width: {{ $width }};">
   <div class="image-comparison">
     <img src="{{ $before }}" alt="{{ $altBefore }}" class="image-before">
     <img src="{{ $after }}" alt="{{ $altAfter }}" class="image-after">
@@ -14,8 +15,10 @@
     <div class="slider-button">
       <span class="slider-icon">↔</span>
     </div>
+    {{ with $captionBefore }}<div class="caption before-caption">{{ . }}</div>{{ end }}
+    {{ with $captionAfter }}<div class="caption after-caption">{{ . }}</div>{{ end }}
   </div>
-  {{ with $mainCaption }}<p class="image-caption">{{ . }}</p>{{ end }}
+  {{ with $mainCaption }}<p class="image-main-caption">{{ . }}</p>{{ end }}
 </div>
 
 <style>
@@ -56,6 +59,7 @@
   width: 100%;
   height: 100%;
   margin: 0;
+  -webkit-appearance: none;
   appearance: none;
   background: transparent;
   outline: none;
@@ -64,6 +68,7 @@
 }
 
 .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
   appearance: none;
   width: 4px;
   height: 100vh;
@@ -91,7 +96,26 @@
   color: #333;
 }
 
-.image-caption {
+.caption {
+  position: absolute;
+  padding: 8px 12px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  font-size: 0.85em;
+  border-radius: 3px;
+  pointer-events: none;
+  bottom: 10px;
+}
+
+.before-caption {
+  left: 10px;
+}
+
+.after-caption {
+  right: 10px;
+}
+
+.image-main-caption {
   text-align: center;
   font-style: italic;
   color: #666;
@@ -121,11 +145,17 @@ document.addEventListener('DOMContentLoaded', function() {
     const container = slider.closest('.image-comparison');
     const beforeImage = container.querySelector('.image-before');
     const sliderButton = container.querySelector('.slider-button');
+    const beforeCaption = container.querySelector('.before-caption');
+    const afterCaption = container.querySelector('.after-caption');
     
     slider.addEventListener('input', function(e) {
       const value = e.target.value;
       beforeImage.style.clipPath = `polygon(0 0, ${value}% 0, ${value}% 100%, 0 100%)`;
       sliderButton.style.left = `${value}%`;
+      
+      // Adjust caption visibility
+      if (beforeCaption) beforeCaption.style.opacity = value > 10 ? 1 : 0;
+      if (afterCaption) afterCaption.style.opacity = value < 90 ? 1 : 0;
     });
     
     // Initialize position

@@ -16,7 +16,8 @@ description= "Marc Laliberté offers professional photo restoration services to 
 <hr>
 
 {{< fleximages >}}
-{{< navbutton url="/contact" text="Contact me for a free quote" >}}
+{{< navbutton url="/en/contact" text="Contact me for a free quote" >}}
+{{< navbutton url="/en/categories/restoration/" text="See other examples of my restorations" >}}
 {{< /fleximages >}}
 
 # Pricing
@@ -45,25 +46,21 @@ This service includes:
 - Better color balance for color photos
 - Resolution enhancement if needed
 
+
+
 {{< fleximages >}}
-{{< image-modal 
-    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1748480913/_DSC7374_-_insta-2_rxgcsr.jpg"
-    width="350px"
-    title="Before"
-    alt="Before, old damaged photo of a young lady"
-    caption="Before, you can clearly see the scratches and texture on this old photo" 
->}}
-{{< image-modal 
-    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1748480928/_DSC7374-001_bd6jm1.jpg"
-    width="350px"
-    title="After, basic service example"
-    alt="After, restored photo of a radiant young lady"
-    caption="After, basic service example where the subject is very clear, all scratches and grain have disappeared" 
+{{< before-after 
+  before="https://res.cloudinary.com/dbjekf3b7/image/upload/v1748480913/_DSC7374_-_insta-2_rxgcsr.jpg" 
+  after="https://res.cloudinary.com/dbjekf3b7/image/upload/v1748480928/_DSC7374-001_bd6jm1.jpg" 
+  altBefore="Before, old damaged photo of a young lady"
+  altAfter="After, restored photo of a radiant young lady"
+  mainCaption="Basic service example where the subject is very clear, all scratches and grain have disappeared"  
+  width="600px"
 >}}
 {{< /fleximages >}}
 
 {{< fleximages >}}
-{{< navbutton url="/contact" text="Contact me for a free quote" >}}
+{{< navbutton url="/en/contact" text="Contact me for a free quote" >}}
 {{< /fleximages >}}
 
 ### Premium Service
@@ -77,20 +74,15 @@ This service includes:
 - Deep scratch and dust removal
 - Blur improvement and facial reconstruction for breathtaking realism
 
+
 {{< fleximages >}}
-{{< image-modal 
-    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1748480913/_DSC7374_-_insta-2_rxgcsr.jpg"
-    width="350px"
-    title="Before"
-    alt="Before, old damaged photo of a young lady"
-    caption="Before, you can clearly see the scratches and texture on this old photo" 
->}}
-{{< image-modal 
-    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1748480912/_DSC7374-001-Edit-Edit_-_insta_nemrfg.jpg"
-    width="350px"
-    title="After, premium service example"
-    alt="After, restored photo of a radiant young lady"
-    caption="After, premium service example where the subject is very clear, all scratches have disappeared" 
+{{< before-after 
+  before="https://res.cloudinary.com/dbjekf3b7/image/upload/v1748480913/_DSC7374_-_insta-2_rxgcsr.jpg" 
+  after="https://res.cloudinary.com/dbjekf3b7/image/upload/v1748480912/_DSC7374-001-Edit-Edit_-_insta_nemrfg.jpg"
+  altBefore="Before, old damaged photo of a young lady"
+  altAfter="After, restored photo of a radiant young lady"
+  mainCaption="Premium service example where the subject is very clear, all scratches have disappeared" 
+  width="600px"
 >}}
 {{< /fleximages >}}
 
@@ -106,7 +98,7 @@ The result of blur improvement and facial reconstruction may vary. Feasibility d
 If this result doesn't meet your expectations, only the basic service will be charged.
 
 {{< fleximages >}}
-{{< navbutton url="/contact" text="Contact me for a free quote" >}}
+{{< navbutton url="/en/contact" text="Contact me for a free quote" >}}
 {{< /fleximages >}}
 
 ### Colorization Service
@@ -118,22 +110,15 @@ I transform your black and white photos into colorized images to bring them back
 Can be purchased separately or added to other services.
 
 {{< fleximages >}}
-{{< image-modal 
-    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1748481670/generationBefore_hfh4ha.jpg" 
-    width="500px"
-    title="Before"
-    alt="Before, old damaged photo of four men from different generations"
-    caption="Before, the photo is blurry, damaged and the faces are barely distinguishable" 
->}}
-{{< image-modal 
-    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1748481670/generationAfter_c7prcg.jpg"
-    width="500px"
-    title="After, premium service example with colorization"
-    alt="After, restored photo of four men from different generations"  
-    caption="After, the faces are clearly visible, the photo is colorized and all scratches have been removed"
+{{< before-after 
+  before="https://res.cloudinary.com/dbjekf3b7/image/upload/v1748481670/generationBefore_hfh4ha.jpg" 
+  after="https://res.cloudinary.com/dbjekf3b7/image/upload/v1748481670/generationAfter_c7prcg.jpg"
+  altBefore="Before, old damaged photo of four men from different generations"
+  altAfter="After, restored photo of four men from different generations" 
+  mainCaption="The faces are clearly visible, the photo is colorized and all scratches have been removed" 
+  width="800px"
 >}}
 {{< /fleximages >}}
-
 
 **Important Note**
 
@@ -143,5 +128,5 @@ If you remember the original colors (clothing, eyes, cars, etc.), please let me 
 <p><em>Preferential rates are available for orders of 10 photos or more (negotiable) for all services.</em></p>
 
 {{< fleximages >}}
-{{< navbutton url="/contact" text="Contact me for a free quote" >}}
+{{< navbutton url="/en/contact" text="Contact me for a free quote" >}}
 {{< /fleximages >}}

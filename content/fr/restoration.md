@@ -17,6 +17,7 @@ description= "Marc Laliberté offre des services professionnels de restauration 
 
 {{< fleximages >}}
 {{< navbutton url="/contact" text="Contactez-moi pour un devis gratuit" >}}
+{{< navbutton url="/categories/restoration/" text="Voir d'autres exemples de mes restaurations" >}}
 {{< /fleximages >}}
 
 # Tarification
@@ -34,8 +35,7 @@ Vous trouverez ci-dessous mes tarifs pour un éventuel déplacement.
 
 ### Service de base
 
-- **15 $/photo, si déjà numérisée**
-- **30 $/photo, avec numérisation**
+- **30 $/photo**
 
 Ce service comprend :
 
@@ -45,20 +45,15 @@ Ce service comprend :
 - Meilleur balance des couleurs si photo en couleur
 - Amélioration de la résolution si nécessaire
 
+
 {{< fleximages >}}
-{{< image-modal 
-    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1748480913/_DSC7374_-_insta-2_rxgcsr.jpg"
-    width="350px"
-    title="Avant"
-    alt="Avant, vieille photo abîmée d'une jeune dame"
-    caption="Avant, on voit bien les rayures et la texture sur cette vielles photo" 
->}}
-{{< image-modal 
-    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1748480928/_DSC7374-001_bd6jm1.jpg"
-    width="350px"
-    title="Après, exemple de service de base"
-    alt="Après, photo restaurée d'une jeune dame resplendissante"
-    caption="Après, exemple de servide de base où le sujet est très clair, toutes les rayures et le grain sont disparus" 
+{{< before-after 
+  before="https://res.cloudinary.com/dbjekf3b7/image/upload/v1748480913/_DSC7374_-_insta-2_rxgcsr.jpg" 
+  after="https://res.cloudinary.com/dbjekf3b7/image/upload/v1748480928/_DSC7374-001_bd6jm1.jpg" 
+  altBefore="Avant, vieille photo abîmée d'une jeune dame"
+  altAfter="Après, photo restaurée d'une jeune dame resplendissante"
+  mainCaption="Exemple de service de base où le sujet est très clair, toutes les rayures et le grain sont disparus" 
+  width="600px"
 >}}
 {{< /fleximages >}}
 
@@ -68,8 +63,7 @@ Ce service comprend :
 
 ### Service premium
 
-- **30 $/photo, si déjà numérisée**
-- **50 $/photo, avec numérisation**
+- **50 $/photo**
 
 Ce service comprend :
 
@@ -78,19 +72,13 @@ Ce service comprend :
 - Amélioration du flou et reconstruction des visages pour un réalisme a couper le soufle.
 
 {{< fleximages >}}
-{{< image-modal 
-    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1748480913/_DSC7374_-_insta-2_rxgcsr.jpg"
-    width="350px"
-    title="Avant"
-    alt="Avant, vieille photo abîmée d'une jeune dame"
-    caption="Avant, on voit bien les rayures et la texture sur cette vielles photo" 
->}}
-{{< image-modal 
-    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1748480912/_DSC7374-001-Edit-Edit_-_insta_nemrfg.jpg"
-    width="350px"
-    title="Après, exemple de service premium"
-    alt="Après, photo restaurée d'une jeune dame resplendissante"
-    caption="Après, exemple de service premium où le sujet est très clair, toutes les rayures sont disparues" 
+{{< before-after 
+  before="https://res.cloudinary.com/dbjekf3b7/image/upload/v1748480913/_DSC7374_-_insta-2_rxgcsr.jpg" 
+  after="https://res.cloudinary.com/dbjekf3b7/image/upload/v1748480912/_DSC7374-001-Edit-Edit_-_insta_nemrfg.jpg"
+  altBefore="Avant, vieille photo abîmée d'une jeune dame"
+  altAfter="Après, photo restaurée d'une jeune dame resplendissante"
+  mainCaption="Exemple de service premium où le sujet est très clair, toutes les rayures sont disparues" 
+  width="600px"
 >}}
 {{< /fleximages >}}
 
@@ -119,19 +107,13 @@ Je transforme vos photos noir et blanc en images colorisées pour leur redonner 
 Peut être à part ou ajoutée aux autres services.
 
 {{< fleximages >}}
-{{< image-modal 
-    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1748481670/generationBefore_hfh4ha.jpg" 
-    width="500px"
-    title="Avant"
-    alt="Avant, vieille photo abîmée de quatres hommes de différentes générations"
-    caption="Avant, la photo es floue, abîmée et on distingue très mal les visages" 
->}}
-{{< image-modal 
-    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1748481670/generationAfter_c7prcg.jpg"
-    width="500px"
-    title="Après, exemple de service premium avec colorisation"
-    alt="Après, photo restaurée de quatres hommes de différentes générations"  
-    caption="Après, on distingue très bien les visages, la photo est colorisée et toutes les rayures ont été supprimées"
+{{< before-after 
+  before="https://res.cloudinary.com/dbjekf3b7/image/upload/v1748481670/generationBefore_hfh4ha.jpg" 
+  after="https://res.cloudinary.com/dbjekf3b7/image/upload/v1748481670/generationAfter_c7prcg.jpg"
+  altBefore="Avant, vieille photo abîmée de quatres hommes de différentes générations"
+  altAfter="Après, photo restaurée et colorisée de quatres hommes de différentes générations"  
+  mainCaption="Après, on distingue très bien les visages, la photo est colorisée et toutes les rayures ont été supprimées" 
+  width="800px"
 >}}
 {{< /fleximages >}}
 
