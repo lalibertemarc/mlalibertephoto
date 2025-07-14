@@ -6,6 +6,7 @@ description = "Photographie animalière saisissante qui capture la beauté brute
 
 {{< fleximages >}}
 {{< navbutton url="/contact" text="Contactez-moi pour un devis gratuit" >}}
+{{< navbutton url="/categories/wildlife/" text="Voir mes publications animalière" >}}
 {{< /fleximages >}}
 
 ## Animaux de compagnie
