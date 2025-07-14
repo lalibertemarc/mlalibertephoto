@@ -14,9 +14,9 @@ authors = ["Marc Laliberté"]
 
 ## Portrait de reaction de thumbnails
 
-En fin de semaine, j'ai eu la chance de pouvoir avoir un photoshoot avec le youtuber : [That It Lawyer](https://www.youtube.com/@that.it.lawyer).
+En fin de semaine, j'ai eu la chance d'avoir un photoshoot avec le youtuber : [That It Lawyer](https://www.youtube.com/@that.it.lawyer).
 
-Il avait besoin de plusieurs portraits de réaction pour ses thumbnails et autre besoins pour sa chaîne.
+Il avait besoin de plusieurs portraits de réaction pour ses thumbnails et autres besoins pour sa chaîne.
 
 Voici quelques extraits : 
 
