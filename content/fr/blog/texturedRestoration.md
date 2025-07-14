@@ -2,8 +2,8 @@
 title = 'AVANT/APRÈS'
 date = 2025-07-13T10:06:10-04:00
 draft = false
-tags = ["restauration", "colorisation", "retouche", "numérisation"]
-categories = ["restauration", "colorisation", "retouche", "numérisation"]
+tags = ["restoration", "colorization", "retouching", "digitization"]
+categories = ["restoration", "colorization", "retouching", "digitization"]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1752502765/_DSC3210B_restoredE.thumb_bbc2fe.jpg"
 banner_alt = "Deux couples posent amicalement sur une route de compagne"
@@ -21,7 +21,6 @@ authors = ["Marc Laliberté"]
   altBefore="Vieilles photo de deux couples posent amicalement sur une route de compagne"
   altAfter="Photo restaurée et colorizée de deux couples qui posent amicalement sur une route de compagne"
   mainCaption="Avant et après de la restauration qui met en évidence les changements"
-  
 >}}
 
 Cette semaine, je voulais partager avec vous une restauration où les couleurs et les textures jouent un rôle clé, particulièrement sur la peau et les vêtements des sujets ! 🌟

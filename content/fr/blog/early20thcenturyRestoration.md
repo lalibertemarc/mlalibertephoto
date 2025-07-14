@@ -2,8 +2,8 @@
 title = 'Femmes dans les années 1900'
 date = 2025-06-12T10:19:03-04:00
 draft = false
-tags = ["restauration", "colorisation", "retouche", "numérisation"]
-categories = ["restauration", "colorisation", "retouche", "numérisation"]
+tags = ["restoration", "colorization", "retouching", "digitization"]
+categories = ["restoration", "colorization", "retouching", "digitization"]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1749738652/_DSC3162-Edit-Edit-Edit-Edit-Edit-2_zplerj.jpg"
 banner_alt = "Trois femmes posant pour une photographie au début du 20ème siècle"

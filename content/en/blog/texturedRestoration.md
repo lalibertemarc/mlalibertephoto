@@ -2,8 +2,8 @@
 title = 'BEFORE/AFTER'
 date = 2025-07-13T10:06:10-04:00
 draft = false
-tags = ["restauration", "colorisation", "retouche", "numérisation"]
-categories = ["restauration", "colorisation", "retouche", "numérisation"]
+tags = ["restoration", "colorization", "retouching", "digitization"]
+categories = ["restoration", "colorization", "retouching", "digitization"]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1752502765/_DSC3210B_restoredE.thumb_bbc2fe.jpg"
 banner_alt = "Two couples pose amicably on a country road"
