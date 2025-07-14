@@ -5,7 +5,7 @@ description= "Professional videographer specializing in high-quality music video
 +++
 
 {{< fleximages >}}
-{{< navbutton url="/contact" text="Contact me for a free quote" >}}
+{{< navbutton url="/en/contact" text="Contact me for a free quote" >}}
 {{< /fleximages >}}
 
 <!-- Corporate Videos - Promotional Videos -->
@@ -25,5 +25,5 @@ description= "Professional videographer specializing in high-quality music video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JNiLmfdMx1c?si=xyPLKQCUzFS_cntD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 {{< fleximages >}}
-{{< navbutton url="/contact" text="Contact me for a free quote" >}}
+{{< navbutton url="/en/contact" text="Contact me for a free quote" >}}
 {{< /fleximages >}}

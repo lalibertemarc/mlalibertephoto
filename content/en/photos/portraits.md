@@ -5,18 +5,25 @@ description = "Professional portrait photography that captures personality, emot
 +++
 
 {{< fleximages >}}
-{{< navbutton url="/contact" text="Contact me for a free quote" >}}
+{{< navbutton url="/en/contact" text="Contact me for a free quote" >}}
 {{< /fleximages >}}
 
 ## Personal portraits
 
+{{< fleximages >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750860177/_DSC0187D-2_b1z8ig.jpg" 
     width="400px"
     alt="Personal portrait of a man on a pale brown background taken in the studio"
     caption="Lightly retouched personal portrait of a man against a pale brown background taken in the studio" 
 >}}
-
+{{< image-modal 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1752508057/_DSC3458-retouched.web_xuk3oq.jpg"
+    width="400px"
+    alt="That IT Lawyer's perplexed face about today's topic"
+    caption="That IT Lawyer questions himself about the video's subject"
+>}}
+{{< /fleximages >}}
 ## Corporate portraits
 
 {{< fleximages >}}
@@ -43,5 +50,5 @@ description = "Professional portrait photography that captures personality, emot
 >}}
 
 {{< fleximages >}}
-{{< navbutton url="/contact" text="Contact me for a free quote" >}}
+{{< navbutton url="/en/contact" text="Contact me for a free quote" >}}
 {{< /fleximages >}}

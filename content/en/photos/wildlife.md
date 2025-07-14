@@ -5,7 +5,7 @@ description = "Stunning wildlife photography capturing nature's raw beauty and u
 +++
 
 {{< fleximages >}}
-{{< navbutton url="/contact" text="Contact me for a free quote" >}}
+{{< navbutton url="/en/contact" text="Contact me for a free quote" >}}
 {{< navbutton url="/en/categories/wildlife/" text="See my wildlife posts" >}}
 {{< /fleximages >}}
 
@@ -85,5 +85,5 @@ description = "Stunning wildlife photography capturing nature's raw beauty and u
 {{< /fleximages >}}
 
 {{< fleximages >}}
-{{< navbutton url="/contact" text="Contact me for a free quote" >}}
+{{< navbutton url="/en/contact" text="Contact me for a free quote" >}}
 {{< /fleximages >}}

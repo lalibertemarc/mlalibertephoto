@@ -8,14 +8,20 @@ description = "Photographie de portrait professionnelle qui capture la personnal
 {{< /fleximages >}}
 
 ## Portraits personnels
-
+{{< fleximages >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750860177/_DSC0187D-2_b1z8ig.jpg" 
     width="400px"
     alt="Portrait personnel d'un homme sur fond brun pâle prise en studio"
     caption="Portrait personnel légèrement retouché d'un homme sur fond brun pâle prise en studio" 
 >}}
-
+{{< image-modal 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1752508057/_DSC3458-retouched.web_xuk3oq.jpg"
+    width="400px"
+    alt="That IT Lawyer et son visage perplexe face au sujet du jour"
+    caption="That IT Lawyer se questionnne face au sujet du vidéo"
+>}}
+{{< /fleximages >}}
 ## Portraits corporatifs
 
 {{< fleximages >}}
