@@ -1,0 +1,5 @@
+- id: Blog
+  translation: "Voir toutes mes publications"
+
+- id: blogLink
+  translation: "/blog"

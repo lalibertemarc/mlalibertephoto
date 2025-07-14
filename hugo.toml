@@ -104,12 +104,6 @@ url = "/videos"
 weight = 6
 
 [[languages.fr.menu.main]]
-name = "Blog"
-identifier = "menu.blog"
-url = "/blog"
-weight = 4
-
-[[languages.fr.menu.main]]
 name = "Boutique"
 identifier = "menu.store"
 url = "https://store.marclaliberte.photos/"
@@ -214,12 +208,6 @@ name = "Videos"
 parent = "menu.photos"
 url = "/en/videos"
 weight = 6
-
-[[languages.en.menu.main]]
-name = "Blog"
-identifier = "menu.blog"
-url = "/en/blog"
-weight = 4
 
 [[languages.en.menu.main]]
 name = "Store"

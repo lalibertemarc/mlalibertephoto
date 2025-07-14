@@ -1,0 +1,4 @@
+- id: Blog
+  translation: "See all my posts"
+- id: blogLink
+  translation: "/en/blog"
