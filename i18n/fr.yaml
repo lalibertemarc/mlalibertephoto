@@ -3,3 +3,9 @@
 
 - id: blogLink
   translation: "/blog"
+
+- id: testimonialsTitle
+  translation: "Ce que disent nos clients"
+
+- id: testimonialsSubtitle
+  translation: "Nous avons travaillé avec de nombreux clients et nous sommes toujours ravis de les entendre repartir satisfaits de notre collaboration. Découvrez ce qu'ils ont pensé de nous."
