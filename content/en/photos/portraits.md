@@ -43,8 +43,15 @@ description = "Professional portrait photography that captures personality, emot
 
 ## Photos of music bands
 {{< image-modal 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1759939420/_DSC9989.web_unc7c2.jpg"
+    width="1350"
+    alt="ButterButtButler in chefs outfit"
+    caption="ButterButtButler is cooking up a new album that sounds like a ton of bricks" 
+>}}
+<br>
+{{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750126658/_DSC6892_kenmim.jpg"
-    width="900px"
+    width="1350px"
     alt="Billie Ballz and Max Shaft of Mother Rockers striking a pose in front of a studio mixing console"
     caption="Mother Rockers in the studio: capturing rock energy and band chemistry" 
 >}}
