@@ -14,6 +14,10 @@ authors = ["Marc Laliberté"]
 
 I had the chance to do a photoshoot with ButterButtButler, who's cooking up a new concept album for us. I really like the result! Go listen to them, the album 666 Sainte Saucisse is a blast.
 
+- [Bandcamp](https://butterbuttbutler.bandcamp.com/album/666-sainte-saucisse)
+- [Spotify](https://open.spotify.com/album/7vhcKmNMWYxxlX3oJ5gWuK?si=1vmIYKt0QHKT3ktTUB2AzA)
+- [Youtube](https://www.youtube.com/watch?v=39pkxvmyXss&list=OLAK5uy_mCZMZBWD8-L0rMzu-WpiqXSab5siU1Uvo)
+
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1759939420/_DSC9989.web_unc7c2.jpg"
     width="1350"
