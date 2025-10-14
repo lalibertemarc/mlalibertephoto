@@ -10,7 +10,9 @@
         loading="lazy"
         data-caption="{{ if .Get "caption" }}{{ .Get "caption" }}{{ end }}"
         {{ if .Get "srcset" }}srcset="{{ .Get "srcset" }}" sizes="(max-width: 768px) 100vw, 50vw"{{ end }}
-        style="cursor: zoom-in; {{ with .Get "width" }}width: {{ . }};{{ else }}max-width: 100%;{{ end }} height: auto;"
+        style="cursor: zoom-in; 
+               {{ with .Get "width" }}width: {{ . }};{{ else }}max-width: 100%;{{ end }}
+               {{ with .Get "height" }}height: {{ . }};{{ else }}height: auto;{{ end }}"
     >
 </figure>
 
