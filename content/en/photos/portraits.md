@@ -12,16 +12,22 @@ description = "Professional portrait photography that captures personality, emot
 
 {{< fleximages >}}
 {{< image-modal 
-    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750860177/_DSC0187D-2_b1z8ig.jpg" 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1760456532/_DSC4074-Edit.web_bwivzo.jpg"
     width="400px"
-    alt="Personal portrait of a man on a pale brown background taken in the studio"
-    caption="Lightly retouched personal portrait of a man against a pale brown background taken in the studio" 
+    alt="Portrait of a young man, slightly retouched"
+    caption="Personnal portrait of Simon"
 >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1752508057/_DSC3458-retouched.web_xuk3oq.jpg"
     width="400px"
     alt="That IT Lawyer's perplexed face about today's topic"
     caption="That IT Lawyer questions himself about the video's subject"
+>}}
+{{< image-modal 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750860177/_DSC0187D-2_b1z8ig.jpg" 
+    width="400px"
+    alt="Personal portrait of a man on a pale brown background taken in the studio"
+    caption="Lightly retouched personal portrait of a man against a pale brown background taken in the studio" 
 >}}
 {{< /fleximages >}}
 ## Corporate portraits
@@ -41,12 +47,19 @@ description = "Professional portrait photography that captures personality, emot
 >}}
 {{< /fleximages >}}
 
-## Photos of music bands
+## Group photos
+{{< image-modal 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1760456786/_DSC3417-2.web_r6zv6g.jpg"
+    width="1350px"
+    alt="Group photos of some men who seem very friendly"
+    caption="Friends reunite after many years and pose for a group photo" 
+>}}
+
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1759939420/_DSC9989.web_unc7c2.jpg"
-    width="1350"
-    alt="ButterButtButler in chefs outfit"
-    caption="ButterButtButler is cooking up a new album that sounds like a ton of bricks" 
+    width="1350px"
+    alt="ButterButtButler en tenue de chef"
+    caption="ButterButtButler prépare un nouvel album qui sonne comme une tonne de briques" 
 >}}
 <br>
 {{< image-modal 

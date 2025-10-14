@@ -10,16 +10,22 @@ description = "Photographie de portrait professionnelle qui capture la personnal
 ## Portraits personnels
 {{< fleximages >}}
 {{< image-modal 
-    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750860177/_DSC0187D-2_b1z8ig.jpg" 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1760456532/_DSC4074-Edit.web_bwivzo.jpg"
     width="400px"
-    alt="Portrait personnel d'un homme sur fond brun pâle prise en studio"
-    caption="Portrait personnel légèrement retouché d'un homme sur fond brun pâle prise en studio" 
+    alt="Portrait d'un jeune homme, légèrement retouché"
+    caption="Portrait personnel de Simon"
 >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1752508057/_DSC3458-retouched.web_xuk3oq.jpg"
     width="400px"
     alt="That IT Lawyer et son visage perplexe face au sujet du jour"
     caption="That IT Lawyer se questionnne face au sujet du vidéo"
+>}}
+{{< image-modal 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750860177/_DSC0187D-2_b1z8ig.jpg" 
+    width="400px"
+    alt="Portrait personnel d'un homme sur fond brun pâle prise en studio"
+    caption="Portrait personnel légèrement retouché d'un homme sur fond brun pâle prise en studio" 
 >}}
 {{< /fleximages >}}
 ## Portraits corporatifs
@@ -41,8 +47,15 @@ description = "Photographie de portrait professionnelle qui capture la personnal
 {{< /fleximages >}}
 
 
-## Photos de bands de musique
+## Photos de groupes
 
+{{< image-modal 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1760456786/_DSC3417-2.web_r6zv6g.jpg"
+    width="1350px"
+    alt="Photos de groupes de quelques hommes qui semblent très amicaux"
+    caption="Des amis se retrouvent après plusieurs années et posent pour une photo de groupe" 
+>}}
+<br>
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1759939420/_DSC9989.web_unc7c2.jpg"
     width="1350"
