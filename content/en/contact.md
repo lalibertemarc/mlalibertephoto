@@ -16,10 +16,6 @@ Quebec, Canada
 
 <hr>
 
-{{< fleximages >}}
-{{< navbutton url="/en/restoration" text="Pricing for Old Photo Restoration Services" >}}
-{{</ fleximages >}}
-
 <div class="heading">
   <h3>Contact me for a free quote</h3>
 </div>

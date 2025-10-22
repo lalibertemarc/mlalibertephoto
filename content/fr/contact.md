@@ -23,10 +23,6 @@ Québec, Canada <br>
 
 <hr>
 
-{{< fleximages >}}
-{{< navbutton url="/restoration" text="Tarification pour les services de restauration de photos anciennes" >}}
-{{</ fleximages >}}
-
 <div class="heading">
   <h3>Contactez-moi pour un devis gratuit</h3>
 </div>

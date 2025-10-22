@@ -20,7 +20,6 @@ description= "Marc Laliberté offre des services professionnels de restauration 
 {{< navbutton url="/categories/restoration/" text="Voir d'autres exemples de mes restaurations" >}}
 {{< /fleximages >}}
 
-# Tarification
 
 ### Service de numérisation
 
@@ -28,14 +27,8 @@ Si vous ne disposez pas d’une version numérisée de vos photos (par exemple, 
 
 Pour un résultat optimal, je vous recommande fortement de faire numériser vos photos par mes soins. Bien que j’applique des retouches pour améliorer la qualité et la résolution de vos images, je ne peux malheureusement pas garantir la qualité d’impression si vous utilisez des fichiers déjà numérisés.
 
-Vous trouverez ci-dessous mes tarifs pour un éventuel déplacement.
-
-- **50$** pour le déplacement dans la région de Québec.
-- **100$** pour déplacement a l'éxtérieur de Québec.
 
 ### Service de base
-
-- **30 $/photo**
 
 Ce service comprend :
 
@@ -62,8 +55,6 @@ Ce service comprend :
 {{< /fleximages >}}
 
 ### Service premium
-
-- **50 $/photo**
 
 Ce service comprend :
 
@@ -100,7 +91,6 @@ Dans le cas où ce résultat n'est pas a votre goût, seul le service de base se
 
 ### Service de colorisation
 
-**20 $/photo**
 
 Je transforme vos photos noir et blanc en images colorisées pour leur redonner vie.
 

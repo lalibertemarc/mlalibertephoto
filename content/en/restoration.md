@@ -28,15 +28,7 @@ If you don't have a digital version of your photos (for example, one taken with 
 
 For optimal results, I strongly recommend having your photos scanned by me. Although I apply editing to improve the quality and resolution of your images, I unfortunately cannot guarantee the print quality if you use already scanned files.
 
-You will find my rates for travel below:
-
-- **$50** for travel within the Quebec City area.
-- **$100** for travel outside of Quebec City.
-
 ### Basic Service
-
-- **15 $/photo, if already digitized**
-- **30 $/photo, with digitization**
 
 This service includes:
 
@@ -64,9 +56,6 @@ This service includes:
 {{< /fleximages >}}
 
 ### Premium Service
-
-- **30 $/photo, if already digitized**
-- **50 $/photo, with digitization**
 
 This service includes:
 
@@ -102,8 +91,6 @@ If this result doesn't meet your expectations, only the basic service will be ch
 {{< /fleximages >}}
 
 ### Colorization Service
-
-**$20/photo**
 
 I transform your black and white photos into colorized images to bring them back to life.
 
