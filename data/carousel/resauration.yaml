@@ -8,16 +8,16 @@ contactText:
 description:
   fr: >
     <ul class="list-style-none">
+      <li>Éliminiation de rayures</li>
       <li>Enlever grain et flous</li>
       <li>Colorisation</li>
-      <li>Éliminiation de rayures</li>
       <li>Préparation pour impression</li>
     </ul>
   en: >
     <ul class="list-style-none">
+      <li>Scratch removal</li>
       <li>Remove grain and blurriness</li>
       <li>Colorization</li>
-      <li>Scratch removal</li>
       <li>Print preparation</li>
     </ul>
 image: "https://res.cloudinary.com/dbjekf3b7/image/upload/v1750126862/restauration_thumbnail_frad1x.jpg"

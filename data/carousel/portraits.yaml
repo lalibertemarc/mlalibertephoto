@@ -10,15 +10,15 @@ description:
     <ul class="list-style-none">
       <li>Personnel</li>
       <li>Corporatif</li>
+      <li>Casting</li>
       <li>Groupes</li>
-      <li>Candide</li>
     </ul>
   en: >
     <ul class="list-style-none">
       <li>Personal</li>
       <li>Corporate</li>
+      <li>Casting</li>
       <li>Groups</li>
-      <li>Candid</li>
     </ul>
 image: "https://res.cloudinary.com/dbjekf3b7/image/upload/v1750860055/_DSC0187D_vrq26l.jpg"
 alt:
