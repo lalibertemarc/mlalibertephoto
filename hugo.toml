@@ -25,6 +25,7 @@ contact_url = "/fr/contact/"
 defaultKeywords = [
   "portrait",
   "portrait corporatif",
+  "portrait casting",
   "événementiel",
   # Primary Services + Location
   "retouches photos anciennes",
@@ -85,13 +86,13 @@ weight = 3
 [[languages.fr.menu.main]]
 name = "Portraits"
 url = "/photos/portraits"
-weight = 2
+weight = 1
 parent = "menu.photos"
 
 [[languages.fr.menu.main]]
 name = "Évènements"
 url = "/photos/events"
-weight = 1
+weight = 2
 parent = "menu.photos"
 
 [[languages.fr.menu.main]]
@@ -127,6 +128,7 @@ title = "Marc Laliberte Photo and Videos"
 [languages.en.params]
 defaultKeywords = [
 "portrait",
+"casting portrait",
 "corporate portrait",
 "events",
 # Primary Services + Location
@@ -194,13 +196,13 @@ weight = 3
 [[languages.en.menu.main]]
 name = "Portraits"
 url = "/en/photos/portraits"
-weight = 2
+weight = 1
 parent = "menu.photos"
 
 [[languages.en.menu.main]]
 name = "Events"
 url = "/en/photos/events"
-weight = 1
+weight = 2
 parent = "menu.photos"
 
 [[languages.en.menu.main]]

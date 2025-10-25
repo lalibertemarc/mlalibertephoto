@@ -30,3 +30,10 @@ Il est possible de combiner plusieurs forfaits pour un tarif préférentiel, à 
 <br>
 
 *2* : *Le prix sous-entend que je dois être sur place pendant plus que 1h et/ou me déplacer plusieurs fois pour avoir tout le footage nécessaire.*
+
+{{< image-modal 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750126658/_DSC6892_kenmim.jpg"
+    width="1350px"
+    alt="Billie Ballz et Max Shaft du groupe Mother Rockers posant avec attitude devant une console de studio"
+    caption="Session studio des Mother Rockers : ambiance rock et complicité entre les musiciens" 
+>}}

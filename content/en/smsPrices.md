@@ -32,3 +32,10 @@ It is possible to combine several packages for a preferential rate, to be discus
 <br>
 
 *2*: *The price implies that I must be on location for more than 1 hour and/or travel several times to get all the necessary footage.*
+
+{{< image-modal 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750126658/_DSC6892_kenmim.jpg"
+    width="1350px"
+    alt="Billie Ballz and Max Shaft of Mother Rockers striking a pose in front of a studio mixing console"
+    caption="Mother Rockers in the studio: capturing rock energy and band chemistry" 
+>}}
