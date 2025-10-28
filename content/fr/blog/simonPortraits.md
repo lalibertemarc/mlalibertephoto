@@ -1,5 +1,5 @@
 +++
-title = 'Portrait de Simon Gagnon'
+title = 'Portraits de Simon Gagnon'
 date = 2025-10-28T11:39:58-04:00
 draft = false
 tags = ["portraits", "studio","corporate portrait", "casting portrait", "Simon Gagnon"]
