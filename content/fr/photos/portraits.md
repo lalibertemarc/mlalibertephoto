@@ -7,19 +7,23 @@ description = "Photographie de portrait professionnelle qui capture la personnal
 {{< navbutton url="/contact" text="Contactez-moi pour un devis gratuit" >}}
 {{< /fleximages >}}
 
-## Portraits personnels
+## Portraits personnels & portraits de casting
 {{< fleximages >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1760456532/_DSC4074-Edit.web_bwivzo.jpg"
     width="400px"
     alt="Portrait d'un jeune homme, légèrement retouché"
-    caption="Portrait personnel de Simon"
+    caption="Portrait personnel de Simon Gagnon"
+    button-url="/blog/2025/10/28/simonportraits/" 
+    button-text="Voir toutes les photos de ce shoot" 
 >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1752508057/_DSC3458-retouched.web_xuk3oq.jpg"
     width="400px"
     alt="That IT Lawyer et son visage perplexe face au sujet du jour"
     caption="That IT Lawyer se questionnne face au sujet du vidéo"
+    button-url="/blog/2025/07/14/thatitlawyer/" 
+    button-text="Voir toutes les photos de ce shoot" 
 >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750860177/_DSC0187D-2_b1z8ig.jpg" 
@@ -28,6 +32,7 @@ description = "Photographie de portrait professionnelle qui capture la personnal
     caption="Portrait personnel légèrement retouché d'un homme sur fond brun pâle prise en studio" 
 >}}
 {{< /fleximages >}}
+
 ## Portraits corporatifs
 
 {{< fleximages >}}
@@ -60,10 +65,11 @@ description = "Photographie de portrait professionnelle qui capture la personnal
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1759939420/_DSC9989.web_unc7c2.jpg"
     width="1350"
     alt="ButterButtButler en habit de chef"
-    caption="ButterButtButler qui nous cuisine un nouvel album qui sonne la tonne de brique" 
+    caption="ButterButtButler qui nous cuisine un nouvel album qui sonne la tonne de brique"
+    button-url="/blog/2025/10/08/butterbuttbutler/" 
+    button-text="Voir toutes les photos de ce shoot" 
 >}}
 
-<br>
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750126658/_DSC6892_kenmim.jpg"
     width="1350px"

@@ -14,6 +14,13 @@
                {{ with .Get "width" }}width: {{ . }};{{ else }}max-width: 100%;{{ end }}
                {{ with .Get "height" }}height: {{ . }};{{ else }}height: auto;{{ end }}"
     >
+    {{ if .Get "button-url" }}
+    <div class="image-button-container" style="text-align: center; margin-top: 10px;">
+        <a href="{{ .Get "button-url" }}" class="nav-button" target="_blank">
+            {{ if .Get "button-text" }}{{ .Get "button-text" }}{{ else }}Learn More{{ end }}
+        </a>
+    </div>
+    {{ end }}
 </figure>
 
 {{ if not (.Page.Scratch.Get "modal_created") }}
