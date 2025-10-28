@@ -1,0 +1,47 @@
++++
+title = 'Portrait de Simon Gagnon'
+date = 2025-10-28T11:39:58-04:00
+draft = false
+tags = ["portraits", "studio","corporate portrait", "casting portrait", "Simon Gagnon"]
+categories = ["portraits", "studio","corporate portrait", "casting portrait", "Simon Gagnon"]
+external_banner = true
+banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1761665967/_DSC4052-Edit.thumb_hruvhq.jpg"
+banner_alt = "Portrait de style casting d'un homme prise en studio"
+banner_width = 600
+banner_height = 600
+authors = ["Marc Laliberté"]
++++
+
+{{< fleximages >}}
+{{< image-modal 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761665966/_DSC4052-Edit.web_z5v6ue.jpg"
+    width="400px"
+    alt="Portrait d'un jeune homme, légèrement retouché"
+    caption="Portrait de casting de Simon Gagnon"
+>}}
+{{< image-modal 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761665966/_DSC3993.web_uvxjzu.jpg"
+    width="400px"
+    alt="Portrait d'un jeune homme, légèrement retouché"
+    caption="Portrait de casting de Simon Gagnon"
+>}}
+{{< image-modal 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761665967/_DSC4015.web_un7ng5.jpg"
+    width="400px"
+    alt="Portrait d'un jeune homme, légèrement retouché"
+    caption="Portrait de casting de Simon Gagnon"
+>}}
+{{< image-modal 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761665966/_DSC4074-Edit.web_tdakl5.jpg"
+    width="400px"
+    alt="Portrait d'un jeune homme, légèrement retouché"
+    caption="Portrait de casting de Simon Gagnon"
+>}}
+{{< image-modal 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761665966/_DSC4023.web_mfjbvi.jpg"
+    width="400px"
+    alt="Portrait d'un jeune homme, légèrement retouché"
+    caption="Portrait de casting de Simon Gagnon"
+>}}
+
+{{< /fleximages >}}
