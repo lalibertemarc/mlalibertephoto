@@ -2,8 +2,8 @@
 title = 'The Mother Rockers au Sonum Fest'
 date = 2025-03-02T14:02:19-04:00
 draft = false
-tags = ["live","event", "MotherRockers", "spectacle", "rock", "metal"]
-categories = ["live","event","MotherRockers","spectacle","rock","metal"]
+tags = ["MotherRockers", "rock", "metal", "sonum fest"]
+categories = ["live","event"]
 banner = "/img/_DSC7107 - insta.jpg"
 authors = ["Marc Laliberté"]
 +++

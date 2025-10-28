@@ -2,7 +2,7 @@
 title = 'American redstart'
 date = 2025-05-23T08:11:47-04:00
 draft = false
-tags = ["bird", "american redstart", "wildlife"]
+tags = ["american redstart"]
 categories = ["bird","wildlife",]
 banner = "img/_DSC8604-001.jpg"
 authors = ["Marc Laliberté"]

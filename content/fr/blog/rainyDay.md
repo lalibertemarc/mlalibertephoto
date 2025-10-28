@@ -2,8 +2,8 @@
 title = 'Journée pluvieuse à la chute'
 date = 2025-05-25T10:57:44-04:00
 draft = false
-tags = ["nature","fall"]
-categories = ["nature","fall"]
+tags = ["rain","waterfall"]
+categories = ["nature", "tourism"]
 banner = "img/_DSC8402.jpg"
 authors = ["Marc Laliberté"]
 +++

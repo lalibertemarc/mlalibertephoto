@@ -2,8 +2,8 @@
 title = 'Cedar waxwing'
 date = 2025-05-30T10:23:40-04:00
 draft = false
-tags = [ "bird", "cedar", "waxwing"]
-categories = ["bird","wildlife",]
+tags = ["cedar waxwing"]
+categories = ["bird","wildlife"]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1748615068/_DSC7512-2_gr1k3z.jpg"
 banner_alt = "Cedar waxwing on a branch"

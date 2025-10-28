@@ -2,8 +2,8 @@
 title = 'Couleuvre rayée'
 date = 2025-06-02T08:36:08-04:00
 draft = false
-tags = ["wildlife", "ribbon snake"]
-categories = ["wildlife", "ribbon snake"]
+tags = ["Common garter snake"]
+categories = ["wildlife"]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1748867813/_DSC1988-001-3_k0mjcg.jpg"
 banner_alt = "Une Couleuvre rayée camouflée parmi les voies ferrées"

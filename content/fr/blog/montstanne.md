@@ -2,8 +2,8 @@
 title = 'Mont-Sainte-Anne'
 date = 2025-04-19T10:46:56-04:00
 draft = false
-tags = ["nature"]
-categories = ["nature"]
+tags = ["Mont-Sainte-Anne"]
+categories = ["nature", "tourism"]
 banner = "img/_DSC7363.jpg"
 authors = ["Marc Laliberté"]
 +++

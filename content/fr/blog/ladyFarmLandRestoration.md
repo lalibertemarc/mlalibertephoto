@@ -2,7 +2,7 @@
 title = 'Dame à la ferme'
 date = 2025-06-04T16:19:03-04:00
 draft = false
-tags = ["restoration", "colorization", "retouching", "digitization"]
+tags = ["history", "women"]
 categories = ["restoration", "colorization", "retouching", "digitization"]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1749068617/_DSC8818-Edit-Edit-Edit-3_q8pkzx.jpg"

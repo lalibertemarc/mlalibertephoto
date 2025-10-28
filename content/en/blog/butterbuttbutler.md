@@ -2,8 +2,8 @@
 title = 'Butterbuttbutler'
 date = 2025-10-08T12:03:00-04:00
 draft = false
-tags = [ "band", "butterbuttbutler",]
-categories = ["portraits","groups","metal"]
+tags = [ "band", "butterbuttbutler","metal"]
+categories = ["portraits","groups"]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1759939419/_DSC9989.thumb_iflolp.jpg"
 banner_alt = "ButterButtButler in chefs outfit"

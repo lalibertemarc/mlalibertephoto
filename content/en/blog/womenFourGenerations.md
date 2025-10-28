@@ -2,7 +2,7 @@
 title = 'Four generations of women'
 date = 2025-10-27T08:03:45-04:00
 draft = false
-tags = ["restoration", "colorization", "retouching", "digitization"]
+tags = ["history", "family", "women", "generations"]
 categories = ["restoration", "colorization", "retouching", "digitization"]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1761566671/_DSC3225G.thumb_plsys8.jpg"

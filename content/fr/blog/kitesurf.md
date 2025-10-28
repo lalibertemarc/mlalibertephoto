@@ -2,8 +2,8 @@
 title = 'Kitesurf'
 date = 2025-06-17T10:06:10-04:00
 draft = false
-tags = ["sport", "kitesurf"]
-categories = ["sport", "kitesurf"]
+tags = ["kitesurf"]
+categories = ["sport"]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1750169124/_DSC8547-2_mzpucq.jpg"
 banner_alt = "Un homme fait du kitesurf sur le fleuve Saint-Laurent face à l'île d'Orléans"

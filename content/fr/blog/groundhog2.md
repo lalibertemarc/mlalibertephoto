@@ -2,8 +2,8 @@
 title = 'Jolie marmotte'
 date = 2025-05-01T09:09:37-04:00
 draft = false
-tags = ["wildlife","groundhog"]
-categories = ["wildlife","groundhog"]
+tags = ["groundhog"]
+categories = ["wildlife"]
 banner = "img/_DSC8033-001.jpg"
 authors = ["Marc Laliberté"]
 +++

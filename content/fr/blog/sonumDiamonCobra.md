@@ -2,8 +2,8 @@
 title = 'Diamond Cobra au Sonum Fest'
 date = 2025-03-02T12:02:19-04:00
 draft = false
-tags = ["live","event", "Diamond Cobra", "spectacle", "rock", "metal"]
-categories = ["live","event","DiamondCobra","spectacle","rock","metal"]
+tags = ["Diamond Cobra", "rock", "metal", "sonum fest"]
+categories = ["live","event"]
 banner = "/img/_DSC6905 - insta.jpg"
 authors = ["Marc Laliberté"]
 +++

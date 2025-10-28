@@ -2,8 +2,8 @@
 title = 'Solution de contournement pour un plugin Lightroom'
 date = 2025-07-08T11:07:29-04:00
 draft = false
-tags = ["technical", "coding", "ImageMagick", "LR/Mogrify 2"]
-categories = ["technical", "coding", "ImageMagick", "LR/Mogrify 2"]
+tags = ["ImageMagick", "LR/Mogrify 2"]
+categories = ["technical", "coding"]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1751993440/Lightroom_TY0JPyjIvv.thumb_xjfnwq.png"
 banner_alt = "Image d'un message d'erreur dans Lightroom disant : ./LRMogrifyExportTask.lua:128: attempt to index local 'handle' (a nil value) (2)"

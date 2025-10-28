@@ -2,8 +2,8 @@
 title = 'Dangerous groundhog'
 date = 2025-10-25T10:34:45-04:00
 draft = false
-tags = ["wildlife","groundhog"]
-categories = ["wildlife","groundhog"]
+tags = ["groundhog"]
+categories = ["wildlife"]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1761402858/_DSC9059.thumb_nttmkc.jpg"
 banner_alt = "Portrait of a marmot on the grass"

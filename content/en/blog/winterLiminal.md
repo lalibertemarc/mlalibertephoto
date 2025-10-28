@@ -2,8 +2,8 @@
 title = 'Hivernal Liminal'
 date = 2025-03-21T13:49:35-04:00
 draft = false
-tags = ["winter", "liminal", "bnw", "nature"]
-categories = ["winter","liminal","bnw","nature"]
+tags = ["winter", "liminal", "bnw"]
+categories = ["nature"]
 banner = "img/DSC00622 - insta.jpg"
 authors = ["Marc Laliberté"]
 +++

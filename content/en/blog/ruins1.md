@@ -3,7 +3,7 @@ title = 'Petite Chute Ruins'
 date = 2025-05-03T10:06:36-04:00
 draft = false
 tags = ["ruins","history"]
-categories = ["ruins","history"]
+categories = ["architecture","tourism"]
 banner = "img/DSC01304.jpg"
 authors = ["Marc Laliberté"]
 +++

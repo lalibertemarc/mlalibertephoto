@@ -3,7 +3,7 @@ title = 'Montmills Ruins'
 date = 2025-05-12T14:05:05-04:00
 draft = false
 tags = ["ruins","history"]
-categories = ["ruins","history"]
+categories = ["architecture","tourism"]
 banner = "img/DSC01719.jpg"
 authors = ["Marc Laliberté"]
 +++

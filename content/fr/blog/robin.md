@@ -2,8 +2,8 @@
 title = "Merle d'Amérique"
 date = 2025-06-25T09:49:23-04:00
 draft = false
-tags = [ "bird", "wildlife", "american robin"]
-categories = ["bird","wildlife",]
+tags = ["american robin"]
+categories = ["bird","wildlife"]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1750859190/_DSC8745B-thumbnail_yipwuk.jpg"
 banner_alt = "Merle d'Amérique (Turdus migratorius) en plumage éclatant, posé sur une branche, arrière-plan monochrome pour un effet artistique."

@@ -2,8 +2,8 @@
 title = 'Guitbassdrom au Sonum Fest'
 date = 2025-03-02T13:02:19-04:00
 draft = false
-tags = ["live","event", "Guitbassdrom", "spectacle", "rock", "metal"]
-categories = ["live","event","Guitbassdrom","spectacle","rock","metal"]
+tags = ["Guitbassdrom", "rock", "metal", "sonum fest"]
+categories = ["live","event"]
 banner = "/img/_DSC7025 - insta.jpg"
 authors = ["Marc Laliberté"]
 +++

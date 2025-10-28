@@ -2,8 +2,8 @@
 title = 'Manoir Montmorency'
 date = 2025-04-23T09:09:25-04:00
 draft = false
-tags = ["nature","horror","tourism"]
-categories = ["nature","horror","tourism"]
+tags = ["creative","horror"]
+categories = ["architecture","tourism"]
 banner = "img/_DSC7964.jpg"
 authors = ["Marc Laliberté"]
 +++

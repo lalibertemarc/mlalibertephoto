@@ -2,8 +2,8 @@
 title = 'Stealthy Sparrow'
 date = 2025-07-22T10:25:18-04:00
 draft = false
-tags = [ "bird", "song sparrow"]
-categories = ["bird","wildlife",]
+tags = ["song sparrow"]
+categories = ["bird","wildlife"]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1753194211/_DSC9124-3.thumb_c4j2xs.jpg"
 banner_alt = "Song sparrow hidden in the bushes"

@@ -2,7 +2,7 @@
 title = 'Thinking Black-backed Gull'
 date = 2025-10-23T10:53:07-04:00
 draft = false
-tags = ["bird","wildlife","gull"]
+tags = ["gull"]
 categories = ["bird","wildlife","bnw"]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1761231138/_DSC9477.thumb_zez9ro.jpg"

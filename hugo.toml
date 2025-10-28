@@ -154,7 +154,7 @@ defaultKeywords = [
 about_us = "<p>Photographer and videographer from Quebec City specializing in portraits, events and restoration of old photos.</p>"
 copyright = "Copyright (c) 2025 - 2026, Marc Laliberte Photo&Video; all rights reserved."
 author = "Marc Laliberte"
-defaultDescription = "Photographer specializing in restoration of old photos"
+defaultDescription = "Photographer specializing in portraits, events and restoration of old photos"
 contact_url = "/en/contact/"
 
 [languages.en.params.recent_posts]
@@ -258,7 +258,7 @@ id = "G-DT1RL3KDNZ"
 
 # Define the number of posts per page
 [pagination]
-pagerSize = 10
+pagerSize = 30
 
 
 # Top bar social links menu
@@ -326,9 +326,9 @@ about_us = "<p>Photographe et vidéographe de la ville de Québec.</p>"
 copyright = "Copyright (c) 2025 - 2026, Marc Laliberte Photo&Video; all rights reserved."
 
 # Format dates with Go's time formatting
-date_format = "January 2, 2006"
+date_format = "2 January, 2006"
 
-dropdown_mouse_over = false
+dropdown_mouse_over = true
 
 disabled_logo = false
 logo_text = "Marc Laliberte Photographe & Vidéographe"
@@ -391,7 +391,7 @@ slide_speed = 2000
 pagination_speed = 1000
 
 [params.features]
-enable = false
+enable = true
 cols = 2       # Default: 3, Available values 2,3,4,6
 # All features are defined in their own files. You can find example items
 # at 'exampleSite/data/features'.

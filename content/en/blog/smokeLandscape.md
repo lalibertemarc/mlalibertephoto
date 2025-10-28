@@ -2,8 +2,8 @@
 title = 'Maritime landscape in smoke'
 date = 2025-06-09T08:55:32-04:00
 draft = false
-tags = ["nature", "wildfire smoke", "gaspesie", "quebec"]
-categories = ["nature", "wildfire smoke", "gaspesie", "quebec"]
+tags = ["wildfire smoke", "gaspesie", "quebec"]
+categories = ["nature", "tourism"]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1749473692/_DSC8922-thumnail_border_boknd7.jpg"
 banner_alt = "Wharf in a smoky landscape"

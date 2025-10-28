@@ -2,8 +2,8 @@
 title = 'Jaseurs Boréal'
 date = 2025-04-11T10:44:21-04:00
 draft = false
-tags = [ "bird", "cedar", "waxwing"]
-categories = ["bird","wildlife",]
+tags = ["cedar waxwing"]
+categories = ["bird","wildlife"]
 banner = "img/_DSC7377-001 - insta.jpg"
 authors = ["Marc Laliberté"]
 +++

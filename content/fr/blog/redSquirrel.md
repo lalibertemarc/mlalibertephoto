@@ -2,8 +2,8 @@
 title = 'Écureuil roux dramatique'
 date = 2025-06-20T10:22:08-04:00
 draft = false
-tags = ["wildlife","squirrel"]
-categories = ["wildlife","squirrel"]
+tags = ["squirrel"]
+categories = ["wildlife"]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1750429292/_DSC8704-001-2_je20hu.jpg"
 banner_alt = "Écureuil roux américain (Tamiasciurus hudsonicus) en posture dramatique"

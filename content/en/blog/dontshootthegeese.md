@@ -2,8 +2,8 @@
 title = 'Dont shoot the geese'
 date = 2025-06-16T14:08:14-04:00
 draft = false
-tags = [ "bird", "goose", "snow"]
-categories = ["bird","wildlife",]
+tags = ["snow goose"]
+categories = ["bird","wildlife"]
 authors = ["Marc Laliberté"]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1750097278/_DSC1869-2_onqc6m.jpg"

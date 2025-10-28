@@ -2,8 +2,8 @@
 title = 'Alan Turing in color'
 date = 2025-06-19T12:42:35-04:00
 draft = false
-tags = ["restoration", "colorization", "retouching", "history"]
-categories = ["restoration", "colorization", "retouching", "history"]
+tags = ["alan turing", "history"]
+categories = ["restoration", "colorization", "retouching", ]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1750352310/Alan_Turing__1951__thumb_bldibz.jpg"
 banner_alt = "Historical black and white portrait of Alan Turing"

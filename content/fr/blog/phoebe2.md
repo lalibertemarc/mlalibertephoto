@@ -2,8 +2,8 @@
 title = 'Moucherolle phébi attrape son repas'
 date = 2025-07-30T11:01:37-04:00
 draft = false
-tags = [ "eastern phoebe", "wildlife",]
-categories = ["bird","wildlife",]
+tags = [ "Eastern Phoebe"]
+categories = ["bird","wildlife"]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1753887667/_DSC9242-Edit-2.thumb_yrldkg.jpg"
 banner_alt = "Moucherolle phébi mange une sauterelle"

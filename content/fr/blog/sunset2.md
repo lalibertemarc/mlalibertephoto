@@ -2,7 +2,7 @@
 title = 'Coucher de Soleil à Cap-Chat'
 date = 2025-06-13T08:16:43-04:00
 draft = false
-tags = ["nature", "sunset"]
+tags = ["Cap-Chat", "gaspesie", "quebec"]
 categories = ["nature", "sunset"]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1749820680/_DSC3158-3_y8nnve.jpg"

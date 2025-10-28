@@ -2,8 +2,8 @@
 title = 'Mallard'
 date = 2025-05-14T11:19:03-04:00
 draft = false
-tags = [ "bird", "mallard",]
-categories = ["bird","wildlife",]
+tags = ["mallard"]
+categories = ["bird","wildlife"]
 banner = "img/_DSC8306-001.jpg"
 authors = ["Marc Laliberté"]
 +++

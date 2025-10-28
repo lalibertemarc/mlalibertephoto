@@ -2,8 +2,8 @@
 title = 'Toad portrait'
 date = 2025-10-24T11:49:43-04:00
 draft = false
-tags = ["toad","wildlife"]
-categories = ["toad","wildlife",]
+tags = ["toad"]
+categories = ["wildlife"]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1761321049/_DSC9568-2.thumb_hs5tnb.jpg"
 banner_alt = "Portrait close-up of a toad"

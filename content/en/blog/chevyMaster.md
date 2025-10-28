@@ -2,7 +2,7 @@
 title = 'Chevy Master'
 date = 2025-05-31T11:25:17-04:00
 draft = false
-tags = ["restoration", "colorization", "retouching", "digitization"]
+tags = ["history", "car", "chevy"]
 categories = ["restoration", "colorization", "retouching", "digitization"]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1748705273/_DSC8798-Edit-Edit-Edit-Edit-Edit-2_ebhvze.jpg"

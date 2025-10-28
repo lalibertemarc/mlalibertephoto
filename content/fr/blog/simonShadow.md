@@ -2,8 +2,8 @@
 title = 'Simon et son ombre'
 date = 2025-10-26T11:15:58-04:00
 draft = false
-tags = ["portraits","creative", "natural light", "Simon Gagnon"]
-categories = ["portraits","creative", "natural light", "Simon Gagnon"]
+tags = ["bnw","creative","Simon Gagnon"]
+categories = ["portraits","natural light"]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1761491735/_DSC4587-2.thumb_zpifvp.jpg"
 banner_alt = "Portrait d'un homme en lumière naturelle avec retouches créative en noir et blanc"

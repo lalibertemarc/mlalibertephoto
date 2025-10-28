@@ -2,8 +2,8 @@
 title = 'Carouge à épaulettes'
 date = 2025-04-05T13:30:23-04:00
 draft = false
-tags = ["bird", "carouge", "black-bird"]
-categories = ["bird","wildlife",]
+tags = ["carouge", "black-bird"]
+categories = ["bird","wildlife"]
 banner = "img/_DSC7310 - insta.jpg"
 authors = ["Marc Laliberté"]
 +++

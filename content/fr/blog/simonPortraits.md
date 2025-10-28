@@ -2,8 +2,8 @@
 title = 'Portraits de Simon Gagnon'
 date = 2025-10-28T11:39:58-04:00
 draft = false
-tags = ["portraits", "studio","corporate portrait", "casting portrait", "Simon Gagnon"]
-categories = ["portraits", "studio","corporate portrait", "casting portrait", "Simon Gagnon"]
+tags = ["Simon Gagnon"]
+categories = ["portraits" ,"corporate portrait", "casting portrait"]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1761665967/_DSC4052-Edit.thumb_hruvhq.jpg"
 banner_alt = "Portrait de style casting d'un homme prise en studio"

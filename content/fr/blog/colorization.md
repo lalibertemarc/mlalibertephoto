@@ -2,8 +2,8 @@
 title = 'Un mariage en couleur'
 date = 2025-05-29T09:38:07-04:00
 draft = false
-tags = ["restoration", "colorization", "retouching", "digitization"]
-categories = ["restoration", "colorization", "retouching", "digitization"]
+tags = ["history", "wedding"]
+categories = ["restoration", "colorization", "retouching"]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1748526280/DSC01062-Edit-3_mmbjhn.jpg"
 banner_alt = "Un mariage en couleur"

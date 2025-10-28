@@ -2,7 +2,7 @@
 title = 'Ladies in the 1900s'
 date = 2025-06-12T10:19:03-04:00
 draft = false
-tags = ["restoration", "colorization", "retouching", "digitization"]
+tags = ["history", "family", "generation", "women"]
 categories = ["restoration", "colorization", "retouching", "digitization"]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1749738652/_DSC3162-Edit-Edit-Edit-Edit-Edit-2_zplerj.jpg"

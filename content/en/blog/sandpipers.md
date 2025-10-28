@@ -2,8 +2,8 @@
 title = 'Solitary Sandpiper'
 date = 2025-06-04T10:06:06-04:00
 draft = false
-tags = ["bird", "solitary sandpiper", "wildlife"]
-categories = ["bird", "solitary sandpiper", "wildlife"]
+tags = ["solitary sandpiper"]
+categories = ["bird", "wildlife"]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1749046040/_DSC8656-001-4_gaux0q.jpg"
 banner_alt = "Solitary Sandpipers on a log in a marsh"

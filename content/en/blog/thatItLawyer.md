@@ -2,8 +2,8 @@
 title = 'That IT Lawyer'
 date = 2025-07-14T11:46:56-04:00
 draft = false
-tags = ["portrait"]
-categories = ["portrait", "casting",  "That It Lawyer"]
+tags = ["That It Lawyer"]
+categories = ["portrait", "casting"]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1752508069/_DSC3458-retouched.thumb_tzznxg.jpg"
 banner_alt = "That IT Lawyer and his puzzled face about the topic of the day"

@@ -2,8 +2,8 @@
 title = 'Chubby squirrel'
 date = 2025-05-09T08:51:21-04:00
 draft = false
-tags = ["wildlife","squirrel"]
-categories = ["wildlife","squirrel"]
+tags = ["squirrel"]
+categories = ["wildlife"]
 banner = "img/_DSC1771.jpg"
 authors = ["Marc Laliberté"]
 +++

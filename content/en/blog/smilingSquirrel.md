@@ -2,7 +2,7 @@
 title = 'Smiling squirrel'
 date = 2025-05-28T07:59:24-04:00
 draft = false
-tags = ["wildlife","squirrel"]
+tags = ["squirrel"]
 categories = ["wildlife","squirrel"]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1748433540/_DSC8662-001-2_zkx3hv.jpg"

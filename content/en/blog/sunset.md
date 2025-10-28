@@ -2,7 +2,7 @@
 title = 'Sunset'
 date = 2025-06-03T11:16:43-04:00
 draft = false
-tags = ["nature", "sunset"]
+tags = ["St-Lawrence river"]
 categories = ["nature", "sunset"]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1748964078/_DSC1740-5_d1jaq3.jpg"

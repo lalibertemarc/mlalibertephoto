@@ -2,8 +2,8 @@
 title = 'The Mother Rockers au Bateau de Nuit'
 date = 2025-04-26T10:03:52-04:00
 draft = false
-tags = ["live","event", "MotherRockers", "spectacle", "rock", "metal"]
-categories = ["live","event","MotherRockers","spectacle","rock","metal"]
+tags = ["MotherRockers",  "rock", "metal"]
+categories = ["live","event",]
 banner = "/img/DSC01453.jpg"
 authors = ["Marc Laliberté"]
 +++

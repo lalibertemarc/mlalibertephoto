@@ -2,8 +2,8 @@
 title = 'Wildlife Collection in store'
 date = 2025-06-18T11:54:33-04:00
 draft = false
-tags = ["store", "wildlife"]
-categories = ["store", "wildlife"]
+tags = ["store", "new service"]
+categories = [ "wildlife"]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1750126094/20240918-_DSC5095-ARW_-_insta_ikdsop.jpg"
 banner_alt = "Young bald eagle in a pine tree"
