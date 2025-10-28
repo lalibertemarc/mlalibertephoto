@@ -34,6 +34,19 @@ description = "Professional portrait photography that captures personality, emot
     caption="Lightly retouched personal portrait of a man against a pale brown background taken in the studio" 
 >}}
 {{< /fleximages >}}
+
+
+## Portraits in natural light
+
+{{< image-modal 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761668396/_DSC9812-2.web_nooc9n.jpg"
+    width="1000px"
+    alt="Portrait of a young man in natural light"
+    caption="Portrait of Simon Gagnon taken in natural light"
+    button-url="/en/blog/2025/10/28/simonnaturallight/" 
+    button-text="See all photos of this shoot" 
+>}}
+
 ## Corporate portraits
 
 {{< fleximages >}}

@@ -12,6 +12,7 @@ description:
       <li>Corporatif</li>
       <li>Casting</li>
       <li>Groupes</li>
+      <li>Lumière naturelle</li>
     </ul>
   en: >
     <ul class="list-style-none">
@@ -19,6 +20,7 @@ description:
       <li>Corporate</li>
       <li>Casting</li>
       <li>Groups</li>
+      <li>Natural Light</li>
     </ul>
 image: "https://res.cloudinary.com/dbjekf3b7/image/upload/v1750860055/_DSC0187D_vrq26l.jpg"
 alt:

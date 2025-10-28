@@ -33,6 +33,16 @@ description = "Photographie de portrait professionnelle qui capture la personnal
 >}}
 {{< /fleximages >}}
 
+## Portraits en lumière naturelle
+
+{{< image-modal 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761668396/_DSC9812-2.web_nooc9n.jpg"
+    width="1000px"
+    alt="Portrait d'un jeune homme en lumière naturelle"
+    caption="Portrait de Simon Gagnon prise en lumière naturelle"
+    button-url="/blog/2025/10/28/simonnaturallight/" 
+    button-text="Voir toutes les photos de ce shoot" 
+>}}
 ## Portraits corporatifs
 
 {{< fleximages >}}
