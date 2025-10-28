@@ -26,35 +26,30 @@ Voici quelques extraits :
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1752508056/_DSC3441-retouched.web_glmbsw.jpg"
     width="500px"
-    title="That IT Lawyer 1"
     alt="Portrait de base et sobre de That IT Lawyer"
     caption="Portrait de base et sobre qui est présentement utilisé comme photo principale pour la chaîne"
 >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1752508057/_DSC3484-retouched.web_tpvh96.jpg"
     width="500px"
-    title="That IT Lawyer 2"
     alt="That IT Lawyer est sur le point de donner son point vue"
     caption="That IT Lawyer est sur le point de donner son point vue sur le sujet du jour"
 >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1752508056/_DSC3502-retouched.web_znaa99.jpg"
     width="500px"
-    title="That IT Lawyer 3"
     alt="That IT Lawyer fait un visage curieux"
     caption="That IT Lawyer fait un visage curieux face au sujet du jour"
 >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1752508056/_DSC3453-retouched.web_ss4bqw.jpg"
     width="500px"
-    title="That IT Lawyer 4"
     alt="That IT Lawyer fait un visage surpris"
     caption="That IT Lawyer est incroyablement surpris face au sujet du jour"
 >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1752508057/_DSC3458-retouched.web_xuk3oq.jpg"
     width="500px"
-    title="That IT Lawyer 5"
     alt="That IT Lawyer et son visage perplexe face au sujet du jour"
     caption="That IT Lawyer se questionnne face au sujet du vidéo"
 >}}

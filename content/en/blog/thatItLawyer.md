@@ -25,35 +25,30 @@ Here are some excerpts:
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1752508056/_DSC3441-retouched.web_glmbsw.jpg"
     width="500px"
-    title="That IT Lawyer 1"
     alt="Basic and sober portrait of That IT Lawyer"
     caption="Basic and sober portrait currently used as the main photo for the channel"
 >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1752508057/_DSC3484-retouched.web_tpvh96.jpg"
     width="500px"
-    title="That IT Lawyer 2"
     alt="That IT Lawyer is about to give his point of view"
     caption="That IT Lawyer is about to give his perspective on today's topic"
 >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1752508056/_DSC3502-retouched.web_znaa99.jpg"
     width="500px"
-    title="That IT Lawyer 3"
     alt="That IT Lawyer makes a curious face"
     caption="That IT Lawyer makes a curious face about today's topic"
 >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1752508056/_DSC3453-retouched.web_ss4bqw.jpg"
     width="500px"
-    title="That IT Lawyer 4"
     alt="That IT Lawyer makes a surprised face"
     caption="That IT Lawyer is incredibly surprised by today's topic"
 >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1752508057/_DSC3458-retouched.web_xuk3oq.jpg"
     width="500px"
-    title="That IT Lawyer 5"
     alt="That IT Lawyer's perplexed face about today's topic"
     caption="That IT Lawyer questions himself about the video's subject"
 >}}
