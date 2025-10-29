@@ -73,7 +73,7 @@ weight = 1
 
 [[languages.fr.menu.main]]
 name = "Restauration de photos"
-identifier = "menu.restauration"
+parent = "menu.photos"
 url = "/restoration"
 weight = 2
 
@@ -82,6 +82,13 @@ name = "Portfolio"
 identifier = "menu.photos"
 url = "/photos"
 weight = 3
+
+
+[[languages.fr.menu.main]]
+name = "Blog"
+identifier = "menu.blog"
+url = "/blog"
+weight = 4
 
 [[languages.fr.menu.main]]
 name = "Portraits"
@@ -92,7 +99,7 @@ parent = "menu.photos"
 [[languages.fr.menu.main]]
 name = "Évènements"
 url = "/photos/events"
-weight = 2
+weight = 3
 parent = "menu.photos"
 
 [[languages.fr.menu.main]]
@@ -182,16 +189,16 @@ url = "/en/"
 weight = 1
 
 [[languages.en.menu.main]]
-name = "Restoration"
-identifier = "menu.restauration"
-url = "/en/restoration"
-weight = 2
-
-[[languages.en.menu.main]]
 name = "Portfolio"
 identifier = "menu.photos"
 url = "/en/photos"
 weight = 3
+
+[[languages.en.menu.main]]
+name = "Blog"
+identifier = "menu.blog"
+url = "/en/blog"
+weight = 4
 
 [[languages.en.menu.main]]
 name = "Portraits"
@@ -200,9 +207,15 @@ weight = 1
 parent = "menu.photos"
 
 [[languages.en.menu.main]]
+name = "Restoration"
+parent = "menu.photos"
+url = "/en/restoration"
+weight = 2
+
+[[languages.en.menu.main]]
 name = "Events"
 url = "/en/photos/events"
-weight = 2
+weight = 3
 parent = "menu.photos"
 
 [[languages.en.menu.main]]
