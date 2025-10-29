@@ -12,7 +12,6 @@ description = "Photographie de portrait professionnelle qui capture la personnal
     alt="Portrait d'un jeune homme, légèrement retouché"
     caption="Portrait personnel de Simon Gagnon"
     button-url="/blog/2025/10/28/simonportraits/" 
-    button-text="Voir toutes les photos de ce shoot" 
 >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1752508057/_DSC3458-retouched.web_xuk3oq.jpg"
@@ -20,7 +19,6 @@ description = "Photographie de portrait professionnelle qui capture la personnal
     alt="That IT Lawyer et son visage perplexe face au sujet du jour"
     caption="That IT Lawyer se questionnne face au sujet du vidéo"
     button-url="/blog/2025/07/14/thatitlawyer/" 
-    button-text="Voir toutes les photos de ce shoot" 
 >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750860177/_DSC0187D-2_b1z8ig.jpg" 
@@ -39,7 +37,6 @@ description = "Photographie de portrait professionnelle qui capture la personnal
     alt="Portrait d'un jeune homme en lumière naturelle"
     caption="Portrait de Simon Gagnon prise en lumière naturelle"
     button-url="/blog/2025/10/28/simonnaturallight/" 
-    button-text="Voir toutes les photos de ce shoot" 
 >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761750180/_DSC9600-2.web_jtmqby.jpg"
@@ -47,7 +44,6 @@ description = "Photographie de portrait professionnelle qui capture la personnal
     alt="Portrait de Michel Rondeau du groupe Prohibition pris en plein action"
     caption="Prohibition donne une performance de style chansonnier/crooner dans les rues de Limoilou, Québec"
     button-url="/blog/2025/10/29/prohibition/" 
-    button-text="Voir toutes les photos de ce shoot"  
 >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761750180/_DSC9723.web_ptw3sn.jpg"
@@ -55,7 +51,6 @@ description = "Photographie de portrait professionnelle qui capture la personnal
     alt="Portrait d'une femme pris en lumière naturelle"
     caption="Portrait de Sylvie St-Cyr pris pendant un spectacle de Prohibition"
     button-url="/blog/2025/10/29/prohibition/" 
-    button-text="Voir toutes les photos de ce shoot"
 >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761755199/_DSC3284.web_zvsnua.jpg"
@@ -98,7 +93,6 @@ description = "Photographie de portrait professionnelle qui capture la personnal
     alt="ButterButtButler en habit de chef"
     caption="ButterButtButler qui nous cuisine un nouvel album qui sonne la tonne de brique"
     button-url="/blog/2025/10/08/butterbuttbutler/" 
-    button-text="Voir toutes les photos de ce shoot" 
 >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761750180/_DSC4447.web_sgifty.jpg"
@@ -106,7 +100,6 @@ description = "Photographie de portrait professionnelle qui capture la personnal
     alt="Le groupe Prohibition en spectacle le 15 septembre 2025 dans les rues de Limoilou"
     caption="Prohibition donne une performance de style chansonnier/crooner dans les rues de Limoilou, Québec" 
     button-url="/blog/2025/10/29/prohibition/" 
-    button-text="Voir toutes les photos de ce shoot"  
 >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750126658/_DSC6892_kenmim.jpg"

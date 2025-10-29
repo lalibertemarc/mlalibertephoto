@@ -13,7 +13,6 @@ description = "Professional portrait photography that captures personality, emot
     alt="Portrait of a young man, slightly retouched"
     caption="Personnal portrait of Simon Gagnon"
     button-url="/en/blog/2025/10/28/simonportraits/" 
-    button-text="See all photos of this shoot" 
 >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1752508057/_DSC3458-retouched.web_xuk3oq.jpg"
@@ -21,7 +20,6 @@ description = "Professional portrait photography that captures personality, emot
     alt="That IT Lawyer's perplexed face about today's topic"
     caption="That IT Lawyer questions himself about the video's subject"
     button-url="/en/blog/2025/07/14/thatitlawyer/" 
-    button-text="See all photos of this shoot"
 >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750860177/_DSC0187D-2_b1z8ig.jpg" 
@@ -40,7 +38,6 @@ description = "Professional portrait photography that captures personality, emot
     alt="Portrait of a young man in natural light"
     caption="Portrait of Simon Gagnon taken in natural light"
     button-url="/en/blog/2025/10/28/simonnaturallight/" 
-    button-text="See all photos of this shoot" 
 >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761750180/_DSC9600-2.web_jtmqby.jpg"
@@ -48,7 +45,6 @@ description = "Professional portrait photography that captures personality, emot
     alt="Portrait of Michel Rondeau of the band Prohibition caught in action"
     caption="Prohibition gives a singer-songwriter/crooner style performance in the streets of Limoilou, Quebec"
     button-url="/en/blog/2025/10/29/prohibition/" 
-    button-text="See all photos of this shoot" 
 >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761750180/_DSC9723.web_ptw3sn.jpg"
@@ -56,7 +52,6 @@ description = "Professional portrait photography that captures personality, emot
     alt="Portrait of a woman taken in natural light"
     caption="Portrait of Sylvie St-Cyr taken during a Prohibition performance"
     button-url="/en/blog/2025/10/29/prohibition/" 
-    button-text="See all photos of this shoot"
 >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761755199/_DSC3284.web_zvsnua.jpg"
@@ -96,7 +91,6 @@ description = "Professional portrait photography that captures personality, emot
     alt="ButterButtButler in chef's attire"
     caption="ButterButtButler is preparing a new album that sounds like a ton of bricks"
     button-url="/en/blog/2025/10/08/butterbuttbutler/" 
-    button-text="See all photos of this shoot"  
 >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761750180/_DSC4447.web_sgifty.jpg"
@@ -104,7 +98,6 @@ description = "Professional portrait photography that captures personality, emot
     alt="The band Prohibition will be performing on September 15, 2025 in the streets of Limoilou."
     caption="Prohibition gives a singer-songwriter/crooner style performance in the streets of Limoilou, Quebec" 
     button-url="/en/blog/2025/10/29/prohibition/" 
-    button-text="See all photos of this shoot"  
 >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750126658/_DSC6892_kenmim.jpg"

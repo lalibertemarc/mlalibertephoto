@@ -17,7 +17,7 @@
     {{ if .Get "button-url" }}
     <div class="image-button-container" style="text-align: center; margin-top: 10px;">
         <a href="{{ .Get "button-url" }}" class="nav-button" target="_blank">
-            {{ if .Get "button-text" }}{{ .Get "button-text" }}{{ else }}Learn More{{ end }}
+            {{ if .Get "button-text" }}{{ .Get "button-text" }}{{ else }}{{ i18n "moreFromShoot" }}{{ end }}
         </a>
     </div>
     {{ end }}
