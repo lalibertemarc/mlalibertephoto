@@ -37,7 +37,7 @@ description = "Professional portrait photography that captures personality, emot
 
 
 ## Portraits in natural light
-
+{{< fleximages >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761668396/_DSC9812-2.web_nooc9n.jpg"
     width="1000px"
@@ -46,7 +46,23 @@ description = "Professional portrait photography that captures personality, emot
     button-url="/en/blog/2025/10/28/simonnaturallight/" 
     button-text="See all photos of this shoot" 
 >}}
-
+{{< image-modal 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761750180/_DSC9600-2.web_jtmqby.jpg"
+    width="500px"
+    alt="Portrait of Michel Rondeau of the band Prohibition caught in action"
+    caption="Prohibition gives a singer-songwriter/crooner style performance in the streets of Limoilou, Quebec"
+    button-url="/en/blog/2025/10/29/prohibition/" 
+    button-text="See all photos of this shoot" 
+>}}
+{{< image-modal 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761750180/_DSC9723.web_ptw3sn.jpg"
+    width="500px"
+    alt="Portrait of a woman taken in natural light"
+    caption="Portrait of Sylvie St-Cyr taken during a Prohibition performance"
+    button-url="/en/blog/2025/10/29/prohibition/" 
+    button-text="See all photos of this shoot"
+>}}
+{{< /fleximages >}}
 ## Corporate portraits
 
 {{< fleximages >}}
@@ -75,9 +91,17 @@ description = "Professional portrait photography that captures personality, emot
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1759939420/_DSC9989.web_unc7c2.jpg"
     width="1350px"
-    alt="ButterButtButler en tenue de chef"
-    caption="ButterButtButler prépare un nouvel album qui sonne comme une tonne de briques"
+    alt="ButterButtButler in chef's attire"
+    caption="ButterButtButler is preparing a new album that sounds like a ton of bricks"
     button-url="/en/blog/2025/10/08/butterbuttbutler/" 
+    button-text="See all photos of this shoot"  
+>}}
+{{< image-modal 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761750180/_DSC4447.web_sgifty.jpg"
+    width="1350px"
+    alt="The band Prohibition will be performing on September 15, 2025 in the streets of Limoilou."
+    caption="Prohibition gives a singer-songwriter/crooner style performance in the streets of Limoilou, Quebec" 
+    button-url="/en/blog/2025/10/29/prohibition/" 
     button-text="See all photos of this shoot"  
 >}}
 {{< image-modal 

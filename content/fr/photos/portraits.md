@@ -35,6 +35,7 @@ description = "Photographie de portrait professionnelle qui capture la personnal
 
 ## Portraits en lumière naturelle
 
+{{< fleximages >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761668396/_DSC9812-2.web_nooc9n.jpg"
     width="1000px"
@@ -43,6 +44,23 @@ description = "Photographie de portrait professionnelle qui capture la personnal
     button-url="/blog/2025/10/28/simonnaturallight/" 
     button-text="Voir toutes les photos de ce shoot" 
 >}}
+{{< image-modal 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761750180/_DSC9600-2.web_jtmqby.jpg"
+    width="500px"
+    alt="Portrait de Michel Rondeau du groupe Prohibition pris en plein action"
+    caption="Prohibition donne une performance de style chansonnier/crooner dans les rues de Limoilou, Québec"
+    button-url="/blog/2025/10/29/prohibition/" 
+    button-text="Voir toutes les photos de ce shoot"  
+>}}
+{{< image-modal 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761750180/_DSC9723.web_ptw3sn.jpg"
+    width="500px"
+    alt="Portrait d'une femme pris en lumière naturelle"
+    caption="Portrait de Sylvie St-Cyr pris pendant un spectacle de Prohibition"
+    button-url="/blog/2025/10/29/prohibition/" 
+    button-text="Voir toutes les photos de ce shoot"
+>}}
+{{< /fleximages >}}
 ## Portraits corporatifs
 
 {{< fleximages >}}
@@ -79,7 +97,14 @@ description = "Photographie de portrait professionnelle qui capture la personnal
     button-url="/blog/2025/10/08/butterbuttbutler/" 
     button-text="Voir toutes les photos de ce shoot" 
 >}}
-
+{{< image-modal 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761750180/_DSC4447.web_sgifty.jpg"
+    width="1350px"
+    alt="Le groupe Prohibition en spectacle le 15 septembre 2025 dans les rues de Limoilou"
+    caption="Prohibition donne une performance de style chansonnier/crooner dans les rues de Limoilou, Québec" 
+    button-url="/blog/2025/10/29/prohibition/" 
+    button-text="Voir toutes les photos de ce shoot"  
+>}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750126658/_DSC6892_kenmim.jpg"
     width="1350px"
