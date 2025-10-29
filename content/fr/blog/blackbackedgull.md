@@ -2,8 +2,8 @@
 title = 'Goéland marin penseur'
 date = 2025-10-23T10:53:07-04:00
 draft = false
-tags = ["gull"]
-categories = ["bird","wildlife","bnw"]
+tags = ["gull","bnw"]
+categories = ["bird","wildlife"]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1761231138/_DSC9477.thumb_zez9ro.jpg"
 banner_alt = "Portrait d'un Goéland marin"

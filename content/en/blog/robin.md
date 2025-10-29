@@ -2,7 +2,7 @@
 title = "American Robin"
 date = 2025-06-25T09:49:23-04:00
 draft = false
-tags = ["american robin"]
+tags = ["american robin", "creative"]
 categories = ["bird","wildlife"]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1750859190/_DSC8745B-thumbnail_yipwuk.jpg"

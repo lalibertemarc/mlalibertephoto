@@ -2,8 +2,8 @@
 title = 'Prohibition'
 date = 2025-10-29T11:14:01-04:00
 draft = false
-tags = ["Prohibition",  "chansonnier", "crooner"]
-categories = ["live","event"]
+tags = ["Prohibition",  "chansonnier", "crooner", "bnw"]
+categories = ["live","event", "groups"]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1761750179/_DSC9600-2.thumb_iggi62.jpg"
 banner_alt = "Portrait of Michel Rondeau of the band Prohibition caught in action"
