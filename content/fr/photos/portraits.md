@@ -60,6 +60,12 @@ description = "Photographie de portrait professionnelle qui capture la personnal
     button-url="/blog/2025/10/29/prohibition/" 
     button-text="Voir toutes les photos de ce shoot"
 >}}
+{{< image-modal 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761755199/_DSC3284.web_zvsnua.jpg"
+    width="500px"
+    alt="Portrait candide d'une homme pris en lumière naturelle"
+    caption="Portrait de Kevin Bouchard pris dehors pendant une soirée entre amis"
+>}}
 {{< /fleximages >}}
 ## Portraits corporatifs
 

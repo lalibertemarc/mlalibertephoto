@@ -62,6 +62,12 @@ description = "Professional portrait photography that captures personality, emot
     button-url="/en/blog/2025/10/29/prohibition/" 
     button-text="See all photos of this shoot"
 >}}
+{{< image-modal 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761755199/_DSC3284.web_zvsnua.jpg"
+    width="500px"
+    alt="A candid portrait of a man captured in natural light"
+    caption="Portrait of Kevin Bouchard taken outdoors during an evening with friends"
+>}}
 {{< /fleximages >}}
 ## Corporate portraits
 
