@@ -16,7 +16,8 @@
     gap: 1rem; /* Space between images */
     flex-wrap: wrap; /* Allow wrapping on small screens */
     justify-content: center; /* Center images horizontally */
-    align-items: center; /* Center vertically */
+    align-items: flex-start; /* Center vertically */
+    overflow: hidden; /* Hide the cropped parts */
   }
   
 .flex-images img {
@@ -24,6 +25,7 @@
   height: auto;
   flex: 1 1 auto; 
   min-width: 200px; 
+  
 }
 
   .nav-button {
