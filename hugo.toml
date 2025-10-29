@@ -328,7 +328,7 @@ copyright = "Copyright (c) 2025 - 2026, Marc Laliberte Photo&Video; all rights r
 # Format dates with Go's time formatting
 date_format = "2 January, 2006"
 
-dropdown_mouse_over = true
+dropdown_mouse_over = false
 
 disabled_logo = false
 logo_text = "Marc Laliberte Photographe & Vidéographe"
