@@ -21,6 +21,11 @@
               {{ $alt := index .alt $lang }}
               {{ $desc := index .description $lang }}
               {{ $contact := index .contactText $lang}}
+              
+              {{/* Get width and height from parameters */}}
+              {{ $width := .width }}
+              {{ $height := .height }}
+              
               <div class="item">
                 {{ if .href }}
                   <a href="{{ .href }}" target="_blank" title="{{ $title }}">
@@ -32,7 +37,10 @@
                         <a href="/contact" class="nav-button" target="_blank">{{ $contact }}</a>
                       </div>
                       <div class="col-sm-7">
-                        <img class="img-responsive" src="{{ .image }}" alt="{{ $alt }}">
+                        {{/* Apply width and height as inline styles */}}
+                        <img class="img-responsive" src="{{ .image }}" alt="{{ $alt }}" 
+                          {{ with $width }}style="width: {{ . }}px;"{{ end }}
+                          {{ with $height }}style="height: {{ . }}px;"{{ end }}>
                       </div>
                     </div>
                 {{ if .href }}
