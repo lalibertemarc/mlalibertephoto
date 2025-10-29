@@ -2,7 +2,7 @@
 title = 'Simon in natural light'
 date = 2025-10-28T12:18:18-04:00
 tags = ["Simon Gagnon", "bnw"]
-categories = ["portraits", "natural light"]
+categories = ["portrait", "natural light"]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1761668395/_DSC9812-2.thumb_gg8zwd.jpg"
 banner_alt = "Portrait of Simon Gagnon in natural light"
