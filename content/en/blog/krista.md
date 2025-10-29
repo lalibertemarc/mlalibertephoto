@@ -14,7 +14,7 @@ authors = ["Marc Laliberté"]
 
 
 I recently learned that the talented [Krista Shipperbottom](https://www.instagram.com/kristashipperbottom/) has left the band [Lutharo](https://www.instagram.com/lutharo_official/).
-
+<br>
 I had the chance to see and photograph them during their performance in Quebec City on September 12, 2024, at La Source de la Martinière, and I wanted to pay tribute to her with this post because I've rarely been so impressed by a vocalist. As a metal vocalist myself, her voice and charisma made a huge impression on me.
 
 {{< fleximages >}}
