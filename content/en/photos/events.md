@@ -3,9 +3,6 @@ title = 'Events'
 draft = false
 description = "Professional event photography for live shows and concerts. Capturing the energy, emotion, and unforgettable moments of your performances with dynamic and high-impact imagery."
 +++
-{{< fleximages >}}
-{{< navbutton url="/contact" text="Contact me for a free quote" >}}
-{{< /fleximages >}}
 
 {{< fleximages >}}
 {{< image-modal 

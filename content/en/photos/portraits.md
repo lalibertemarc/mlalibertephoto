@@ -4,10 +4,6 @@ draft = false
 description = "Professional portrait photography that captures personality, emotion, and style. Whether for personal, professional, or artistic projects, I create timeless and striking portraits."
 +++
 
-{{< fleximages >}}
-{{< navbutton url="/en/contact" text="Contact me for a free quote" >}}
-{{< /fleximages >}}
-
 ## Personal portraits & casting portraits
 
 {{< fleximages >}}

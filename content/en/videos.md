@@ -4,10 +4,6 @@ draft = false
 description= "Professional videographer specializing in high-quality music videos and corporate videos"
 +++
 
-{{< fleximages >}}
-{{< navbutton url="/en/contact" text="Contact me for a free quote" >}}
-{{< /fleximages >}}
-
 <!-- Corporate Videos - Promotional Videos -->
 <h2>Corporate Videos - Promotional Videos</h2>
 <p><strong>Camera, lighting, editing, music composition, and sound mixing</strong></p>
