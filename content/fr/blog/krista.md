@@ -50,13 +50,13 @@ J'ai eu la chance de pouvoir les voir et de les photographier lors de leur passa
     caption="Krista Shipperbottom démontre bien son charisme et son énergie pendant le spectacle de Lutharo à Québec." 
 >}}
 {{< image-modal 
-    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761751829/_DSC4207-Enhanced-NR.web_v5yd9b.jpg"
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761751830/_DSC4172-Enhanced-NR.web_fa22u4.jpg"
     width="500px"
     alt="Krista Shipperbottom et le groupe Lutharo donne une performance à Québec"
     caption="Krista Shipperbottom démontre bien son charisme et son énergie pendant le spectacle de Lutharo à Québec." 
 >}}
 {{< image-modal 
-    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761751830/_DSC4172-Enhanced-NR.web_fa22u4.jpg"
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761751829/_DSC4207-Enhanced-NR.web_v5yd9b.jpg"
     width="500px"
     alt="Krista Shipperbottom et le groupe Lutharo donne une performance à Québec"
     caption="Krista Shipperbottom démontre bien son charisme et son énergie pendant le spectacle de Lutharo à Québec." 

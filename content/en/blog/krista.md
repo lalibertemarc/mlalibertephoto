@@ -50,13 +50,13 @@ I had the chance to see and photograph them during their performance in Quebec C
     caption="Krista Shipperbottom clearly demonstrates her charisma and energy during Lutharo's show in Quebec City." 
 >}}
 {{< image-modal 
-    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761751829/_DSC4207-Enhanced-NR.web_v5yd9b.jpg"
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761751830/_DSC4172-Enhanced-NR.web_fa22u4.jpg"
     width="500px"
     alt="Krista Shipperbottom and the Lutharo group give a performance in Quebec City"
     caption="Krista Shipperbottom clearly demonstrates her charisma and energy during Lutharo's show in Quebec City." 
 >}}
 {{< image-modal 
-    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761751830/_DSC4172-Enhanced-NR.web_fa22u4.jpg"
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761751829/_DSC4207-Enhanced-NR.web_v5yd9b.jpg"
     width="500px"
     alt="Krista Shipperbottom and the Lutharo group give a performance in Quebec City"
     caption="Krista Shipperbottom clearly demonstrates her charisma and energy during Lutharo's show in Quebec City." 
