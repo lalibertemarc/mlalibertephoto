@@ -15,6 +15,7 @@
       <link rel="canonical" href="{{ .Permalink }}" />
     {{- end }}
   </head>
+{{ if hugo.IsProduction }}
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DT1RL3KDNZ"></script>
 <script>
@@ -22,8 +23,9 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-DT1RL3KDNZ');
+  gtag('config', '{{ site.Config.Services.GoogleAnalytics.ID }}');
 </script>
+{{ end }}
   <body>
 
     <div id="all">
