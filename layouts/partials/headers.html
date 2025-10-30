@@ -7,11 +7,20 @@
 <meta name="author" content="{{ .Param "author" }}" />
 {{ $keywords := .Site.Params.defaultKeywords | default (slice "" | first 0) }}
 {{ if isset .Params "tags" }}{{ range .Params.tags }}{{ $keywords = $keywords | append . }}{{ end }}{{ end }}
-{{ if isset .Params "keywords" }}{{ range .Params.keywords }}{{ $keywords = $keywords | append . }}{{ end }}{{ end }}
+
+{{ $keywords := slice }}
+{{ if isset .Params "keywords" }}
+    {{ $keywords = .Params.keywords }}
+{{ else }}
+    {{ $keywords = .Site.Params.defaultKeywords }}
+{{ end }}
+
 {{ if gt (len $keywords) 0 }}
 <meta name="keywords" content="{{ delimit (uniq $keywords) ", " }}">
 {{ end }}
-{{ $description_plain := default .Site.Params.defaultDescription .Description | markdownify | plainify }}
+
+{{ $description := .Description | default .Site.Params.defaultDescription }}
+{{ $description_plain := $description | markdownify | plainify }}
 <meta name="description" content="{{ $description_plain }}">
 
 {{ hugo.Generator }}

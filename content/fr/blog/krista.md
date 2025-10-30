@@ -2,6 +2,8 @@
 title = 'Hommage à Krista Shipperbottom'
 date = 2025-10-29T11:31:10-04:00
 draft = false
+description = "Un hommage à Krista Shipperbottom de Lutharo avec quelques-unes de ses photos de concert"
+keywords= ["Krista Shipperbottom",  "Lutharo", "metal", "Live in Quebec City", "vocalist"]
 tags = ["Krista Shipperbottom",  "Lutharo", "Source de la Martinière"]
 categories = ["live","event"]
 external_banner = true

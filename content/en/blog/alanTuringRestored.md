@@ -2,9 +2,11 @@
 title = 'Alan Turing in color'
 date = 2025-06-19T12:42:35-04:00
 draft = false
+keywords=["alan turing", "color portrait", "color photo"]
 tags = ["alan turing", "history"]
 categories = ["restoration", "colorization", "retouching", ]
 external_banner = true
+description="Restored and colorized portrait of Alan Turing"
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1750352310/Alan_Turing__1951__thumb_bldibz.jpg"
 banner_alt = "Historical black and white portrait of Alan Turing"
 banner_width = 600

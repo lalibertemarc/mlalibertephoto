@@ -2,6 +2,8 @@
 title = 'Bernache du Canada'
 date = 2025-04-15T10:31:12-04:00
 draft = false
+keywords=[ "outarde", "bernache", "Bernache du Canada"]
+description="Ma meilleure photo de Bernache du Canada à date"
 tags = ["goose", "canada", "outarde", "bernache"]
 categories = ["bird","wildlife"]
 banner = "img/_DSC7455 - insta.jpg"
