@@ -11,6 +11,7 @@ description:
       <li>Éliminiation de rayures</li>
       <li>Enlever grain et flous</li>
       <li>Colorisation</li>
+      <li>Numérisation</li>
       <li>Préparation pour impression</li>
     </ul>
   en: >
@@ -18,6 +19,7 @@ description:
       <li>Scratch removal</li>
       <li>Remove grain and blurriness</li>
       <li>Colorization</li>
+      <li>Digitization</li>
       <li>Print preparation</li>
     </ul>
 image: "https://res.cloudinary.com/dbjekf3b7/image/upload/v1748480912/_DSC7374-001-Edit-Edit_-_insta_nemrfg.jpg"
