@@ -1,8 +1,10 @@
 +++
 title = 'Montmills Ruins'
+meta_title="Ruins of Montmills near the Lac du Délaissé in Beauport."
+description="The ruins of the Montmills debarking plant, located near Lac du Délaissé in Beauport."
 date = 2025-05-12T14:05:05-04:00
 draft = false
-tags = ["ruins","history"]
+tags = ["ruins","history", "Ruines de Montmills", "Beauport", "Quebec"]
 categories = ["architecture","tourism"]
 banner = "img/DSC01719.jpg"
 authors = ["Marc Laliberté"]

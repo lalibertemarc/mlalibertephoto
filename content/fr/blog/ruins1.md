@@ -1,8 +1,10 @@
 +++
 title = 'Ruines de la Petite Chute'
+meta_title="Ruines de la Petite Chute près de la Chute‑Montmorency"
+description="Ruines de la centrale hydroélectrique de la Petite Chute, située près de la chute de la Dame Blanche."
 date = 2025-05-03T10:06:36-04:00
 draft = false
-tags = ["ruins","history"]
+tags = ["ruins","history", "Petite Chute", "Parc de la Chute‑Montmorency", "Quebec"]
 categories = ["architecture","tourism"]
 banner = "img/DSC01304.jpg"
 authors = ["Marc Laliberté"]

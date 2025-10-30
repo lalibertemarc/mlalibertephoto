@@ -1,8 +1,10 @@
 +++
 title = 'Petite Chute Ruins'
+meta_title="Ruins of the Little Falls near Montmorency Falls"
+description="Ruins of the Petite Chute hydroelectric power station, located near the Dame Blanche waterfall."
 date = 2025-05-03T10:06:36-04:00
 draft = false
-tags = ["ruins","history"]
+tags = ["ruins","history", "Petite Chute", "Parc de la Chute‑Montmorency", "Quebec"]
 categories = ["architecture","tourism"]
 banner = "img/DSC01304.jpg"
 authors = ["Marc Laliberté"]

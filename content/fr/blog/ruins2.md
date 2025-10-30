@@ -1,8 +1,10 @@
 +++
 title = 'Ruines de Montmills'
+meta_title="Ruines de Montmills près du lac du Délaissé à Beauport."
+description="Les ruines de l'usine d’écorçage Montmills, situées près du lac du Délaissé à Beauport."
 date = 2025-05-12T14:05:05-04:00
 draft = false
-tags = ["ruins","history"]
+tags = ["ruins","history", "Ruines de Montmills", "Beauport", "Quebec"]
 categories = ["architecture","tourism"]
 banner = "img/DSC01719.jpg"
 authors = ["Marc Laliberté"]
