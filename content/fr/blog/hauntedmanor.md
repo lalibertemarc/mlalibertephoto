@@ -1,5 +1,6 @@
 +++
 title = 'Manoir Montmorency'
+description="Le manoir Montmorency dans une ambiance de brouillard"
 date = 2025-04-23T09:09:25-04:00
 draft = false
 tags = ["creative","horror"]

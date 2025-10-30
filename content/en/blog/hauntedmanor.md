@@ -1,8 +1,9 @@
 +++
 title = 'Manoir Montmorency'
+description="The Montmorency manor in a foggy atmosphere"
 date = 2025-04-23T09:09:25-04:00
 draft = false
-tags = ["creative","horror"]
+tags = ["creative","horror", "Parc de la Chute‑Montmorency", "Quebec"]
 categories = ["architecture","tourism"]
 banner = "img/_DSC7964.jpg"
 authors = ["Marc Laliberté"]
