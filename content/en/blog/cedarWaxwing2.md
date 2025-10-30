@@ -1,4 +1,5 @@
 +++
+meta_title='Cedar waxwing in Quebec City'
 title = 'Cedar waxwing'
 date = 2025-05-30T10:23:40-04:00
 draft = false

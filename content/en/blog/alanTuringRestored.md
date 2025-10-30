@@ -1,4 +1,5 @@
 +++
+meta_title= "Alan Turing color photo"
 title = 'Alan Turing in color'
 date = 2025-06-19T12:42:35-04:00
 draft = false

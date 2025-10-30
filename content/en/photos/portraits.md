@@ -1,7 +1,8 @@
 +++
-title = 'Portraits'
+meta_title = 'Portrait Photographer Quebec | Portraits, Casting & Natural Light'
+title='Portolio | Portraits'
 draft = false
-description = "Professional portrait photography that captures personality, emotion, and style. Whether for personal, professional, or artistic projects, I create timeless and striking portraits."
+description = "Professional photographer specializing in casting portraits, natural light portraits, and group portraits in Quebec City. Whether for personal, professional, or artistic projects, I create timeless and impactful portraits. Book your unique photo session."
 +++
 
 ## Personal portraits & casting portraits

@@ -1,7 +1,8 @@
 +++
-title = 'Portraits'
+meta_title = 'Photographe Portrait Québec | Portraits Casting & Lumière Naturelle'
+title='Portolio | Portraits'
 draft = false
-description = "Photographie de portrait professionnelle qui capture la personnalité, l'émotion et le style. Que ce soit pour des projets personnels, professionnels ou artistiques, je crée des portraits intemporels et percutants."
+description = "Photographe professionnel spécialisé en portraits de casting, portraits en lumière naturelle et portraits de groupe à Québec. Que ce soit pour des projets personnels, professionnels ou artistiques, je crée des portraits intemporels et percutants. Réservez votre séance photo unique."
 +++
 
 ## Portraits personnels & portraits de casting

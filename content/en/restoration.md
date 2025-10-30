@@ -1,7 +1,8 @@
 +++
+meta_title="Photo restoration Quebec City | Digitization old photostos"
 title = "Old Photo Restoration Service"
 draft = false
-description= "Marc Laliberté offers professional photo restoration services to bring your precious memories back to life. Specialized in repairing damaged, faded or old photos with meticulous attention to detail."
+description= "Marc Laliberté offers professional photo scanning and restoration services to bring your precious memories back to life. He specializes in repairing damaged, faded, or old photos with meticulous attention to detail."
 +++
 
 # Give a second life to photos of your loved ones.

@@ -23,29 +23,12 @@ author = "Marc Laliberte"
 defaultDescription = "Photographe spécialisé en portrait, événementiel et restauration de photos anciennes."
 contact_url = "/fr/contact/"
 defaultKeywords = [
-  "portrait",
+  "photographe portrait",
+  "photographe Québec",
   "portrait corporatif",
   "portrait casting",
   "événementiel",
-  # Primary Services + Location
-  "retouches photos anciennes",
-  "restauration de photos Québec",
-  "réparer photos anciennes",
-  "restaurer photos abîmées près de moi",
-  "colorisation photos noir et blanc",
-
-  # Specific Repair Types
-  "réparer photos déchirées Québec",
-  "restaurer photos effacées",
-  "corriger photos floues",
-
-  # Service + Local SEO
-  "expert restauration photo Québec",
-  "numérisation et restauration de photos",
-
-  # Long-Tail/Conversational
-  "où faire restaurer de vieilles photos à Québec",
-  "meilleur service restauration photos Québec",
+  "restauration de photos",
 ]
 
 [languages.fr.params.recent_posts]
@@ -134,29 +117,13 @@ title = "Marc Laliberte Photo and Videos"
 
 [languages.en.params]
 defaultKeywords = [
+"portrait photographer",
 "portrait",
 "casting portrait",
 "corporate portrait",
 "events",
-# Primary Services + Location
-"old photos retouching",
-"photo restoration Quebec",
-"repair old photos",
-"restore damaged photos near me",
-"colorize black and white photos",
-
-# Specific Repair Types
-"repair torn photos Quebec",
-"restore deleted photos",
-"fix blurry photos",
-
-# Service + Local SEO
-"photo restoration expert Quebec",
-"photo scanning and restoration",
-
-# Long-Tail/Conversational
-"where to restore old photos in Quebec",
-"best photo restoration service Quebec"
+"photographer Quebec",
+"photo restoration",
 ]
 about_us = "<p>Photographer and videographer from Quebec City specializing in portraits, events and restoration of old photos.</p>"
 copyright = "Copyright (c) 2025 - 2026, Marc Laliberte Photo&Video; all rights reserved."

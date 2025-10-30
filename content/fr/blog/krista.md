@@ -1,4 +1,5 @@
 +++
+meta_title= "Hommage à Krista Shipperbottom | Lutharo"
 title = 'Hommage à Krista Shipperbottom'
 date = 2025-10-29T11:31:10-04:00
 draft = false
