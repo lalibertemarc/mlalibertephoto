@@ -46,9 +46,11 @@ description = "Event photographer in Quebec City, specializing in concerts and l
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750165666/_DSC2795_lkfozw.jpg"
     width="400px"
     alt="EBJM Show Dancing at Sunset"
+    button-url="/en/blog/2025/10/30/ebjmdanse/" 
 >}}
 {{</ fleximages >}}
 
+<hr>
 {{< fleximages >}}
 {{< navbutton url="/contact" text="Contact me for a free quote" >}}
 {{< /fleximages >}}

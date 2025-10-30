@@ -46,9 +46,11 @@ description = "Photographe d'événement à Québec, spécialiste des concerts e
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750165666/_DSC2795_lkfozw.jpg"
     width="400px"
     alt="Spectacle de EBJM Danse au soleil couchant"
+    button-url="/blog/2025/10/30/ebjmdanse/" 
 >}}
 {{</ fleximages >}}
 
+<hr>
 {{< fleximages >}}
 {{< navbutton url="/contact" text="Contactez-moi pour un devis gratuit" >}}
 {{< /fleximages >}}
