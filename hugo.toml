@@ -20,7 +20,7 @@ contentDir = "content/fr"
 about_us = "<p>Photographe et vidéographe de la ville de Québec spécialisé en portrait, événementiel et restauration de photos anciennes.</p>"
 copyright = "Copyright (c) 2025 - 2026, Marc Laliberte Photo&Video; tous droits réservés."
 author = "Marc Laliberte"
-defaultDescription = "Photographe spécialisé en portrait, événementiel et restauration de photos anciennes."
+defaultDescription = "Photographe de la ville de Québec spécialisé en portrait, événementiel et restauration de photos anciennes."
 contact_url = "/fr/contact/"
 defaultKeywords = [
   "photographe portrait",
@@ -128,7 +128,7 @@ defaultKeywords = [
 about_us = "<p>Photographer and videographer from Quebec City specializing in portraits, events and restoration of old photos.</p>"
 copyright = "Copyright (c) 2025 - 2026, Marc Laliberte Photo&Video; all rights reserved."
 author = "Marc Laliberte"
-defaultDescription = "Photographer specializing in portraits, events and restoration of old photos"
+defaultDescription = "Photographer in Quebec City specializing in portraits, events and restoration of old photos"
 contact_url = "/en/contact/"
 
 [languages.en.params.recent_posts]
