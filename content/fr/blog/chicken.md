@@ -2,7 +2,7 @@
 title = 'Dinosaure moderne'
 date = 2025-10-27T08:39:53-04:00
 draft = false
-tags = ["chicken", "dinosaur","farm"]
+tags = ["chicken", "dinosaur","farm", "ILCE-7CM2", "Sony AC7II", "FE 85mm F1.8"]
 categories = ["bird","wildlife"]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1761568777/_DSC4876.thumb_b77lcy.jpg"

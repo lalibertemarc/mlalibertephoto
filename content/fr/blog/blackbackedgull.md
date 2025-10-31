@@ -2,7 +2,7 @@
 title = 'Goéland marin penseur'
 date = 2025-10-23T10:53:07-04:00
 draft = false
-tags = ["gull","bnw"]
+tags = ["gull","bnw",  "ZV-E10", "E 70–350mm F4.5–6.3 G OSS"]
 categories = ["bird","wildlife"]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1761231138/_DSC9477.thumb_zez9ro.jpg"

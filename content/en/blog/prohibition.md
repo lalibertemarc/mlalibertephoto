@@ -2,7 +2,7 @@
 title = 'Prohibition'
 date = 2025-10-29T11:14:01-04:00
 draft = false
-tags = ["Prohibition",  "chansonnier", "crooner", "bnw"]
+tags = ["Prohibition",  "chansonnier", "crooner", "bnw", "ILCE-7CM2", "Sony AC7II", "Sigma 24-70mm F2.8 DG DN II Art", "ZV-E10", "E 70–350mm F4.5–6.3 G OSS"]
 categories = ["live","event", "groups"]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1761750179/_DSC9600-2.thumb_iggi62.jpg"

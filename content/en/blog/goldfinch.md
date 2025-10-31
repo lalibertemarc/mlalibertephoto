@@ -2,7 +2,7 @@
 title = 'American Goldfinch'
 date = 2025-10-28T14:06:32-04:00
 draft = false
-tags = ["goldfinch"]
+tags = ["goldfinch", "ZV-E10", "E 70–350mm F4.5–6.3 G OSS"]
 categories = ["bird","wildlife"]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1761674777/_DSC9322.thumb_y6bm6v.jpg"
