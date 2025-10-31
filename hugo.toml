@@ -319,7 +319,8 @@ contact_url = "/contact/"
 address = """<p class="text-uppercase"><strong>Marc Laliberte</strong>
         <br>514-503-2446
         <br>laliberte.marc1@gmail.com
-        <br>Québec
+        <br>Ville de Québec et environs
+        <br>
         <strong>Canada</strong>
       </p>
       """
@@ -408,9 +409,3 @@ enable = true
 category = "categories"
 tag = "tags"
 author = "authors"
-
-[params.localBusiness]
-name = "Marc Laliberte Photos et Restaurations"
-address = "Quebec City, QC, Canada"
-phone = "+1-514-503-2446"
-serviceArea = "Ville de Québec, Lévis, Beauport, Sainte-Foy, Portneuf, Charlevoix"
