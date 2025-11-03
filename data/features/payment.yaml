@@ -1,0 +1,9 @@
+weight: 5
+name:
+  fr: "Paiements Sécurisés"
+  en: "Secure Payments"
+icon: "fas fa-cart-shopping"
+url: ""
+description: 
+  fr: "Les paiements se font via des plateformes sécurisées pour garantir la protection de vos informations. Carte de crédit, PayPal ou virement bancaire sont acceptés."
+  en: "Payments are processed through secure platforms to ensure the protection of your information. Credit cards, PayPal, and bank transfers are accepted."
