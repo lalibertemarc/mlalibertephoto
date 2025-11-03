@@ -14,6 +14,16 @@ description= "Marc Laliberté offre des services professionnels de numérisation
 - Numérisation de vos vieilles photos pour un partage sur les réseaux sociaux
 - Amélioration de la résolution pour impression et encadrement
 
+<br>
+
+{{< fleximages >}}
+{{< image-modal 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1748480912/_DSC7374-001-Edit-Edit_-_insta_nemrfg.jpg"
+    width="400px"
+    alt="Photo restaurée d'une jeune dame resplendissante"
+    caption="Exemple de service premium où le sujet est très clair, toutes les rayures sont disparues" 
+>}}
+{{< /fleximages >}}
 <hr>
 
 {{< fleximages >}}

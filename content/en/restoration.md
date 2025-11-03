@@ -13,7 +13,16 @@ description= "Marc Laliberté offers professional photo scanning and restoration
 - Repairing scratches on damaged photos
 - Digitization of your old photos for sharing on social media
 - Resolution enhancement for printing and framing
+<br>
 
+{{< fleximages >}}
+{{< image-modal 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1748480912/_DSC7374-001-Edit-Edit_-_insta_nemrfg.jpg"
+    width="400px"
+    alt="Restored photo of a radiant young lady"
+    caption="Example of a premium service where the subject is very clear and in focus, all the scratches have disappeared." 
+>}}
+{{< /fleximages >}}
 <hr>
 
 {{< fleximages >}}
