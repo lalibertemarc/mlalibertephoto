@@ -2,7 +2,7 @@
 meta_title = "Concert photographer Quebec | Event photographer Quebec"
 title='Portolio | Events'
 draft = false
-description = "Event photographer in Quebec City, specializing in concerts and live shows. Discreet and professional, I capture the energy, emotion, and unforgettable moments of your performances, corporate events, and cultural events through dynamic and impactful images."
+description = "Event photographer in Quebec City, specializing in concerts and music live shows. Discreet and professional, I capture the energy, emotion, and unforgettable moments of your performances, corporate events, and cultural events through dynamic and impactful images."
 +++
 
 {{< fleximages >}}

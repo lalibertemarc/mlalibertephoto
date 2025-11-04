@@ -1,8 +1,8 @@
 +++
-meta_title = "Photographe de concert Québec | Photographe d'événement Québec"
+meta_title = "Photographe de concerts Québec | Photographe d'événements Québec"
 title='Portolio | Évènements'
 draft = false
-description = "Photographe d'événement à Québec, spécialiste des concerts et des spectacles live. Discret et professionnel, je capture l'énergie, l'émotion et les moments inoubliables de vos performances, de vos événements corporatifs et culturels grâce à des images dynamiques et percutantes."
+description = "Photographe d'événements à Québec, spécialiste des concerts et des spectacles de musique. Discret et professionnel, je capture l'énergie, l'émotion et les moments inoubliables de vos performances, de vos événements corporatifs et culturels grâce à des images dynamiques et percutantes."
 +++
 
 {{< fleximages >}}
