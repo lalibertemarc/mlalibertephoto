@@ -1,5 +1,6 @@
 +++
-title = 'Contact'
+title = 'Contactez-moi'
+meta_title='Contactez Marc Laliberté Photographe'
 id = "contact"
 draft = false
 description = "Contactez Marc Laliberté pour des services professionnels de restauration photo, photographie ou de vidéographie. Discutons de votre projet, demandez un devis ou posez vos questions."

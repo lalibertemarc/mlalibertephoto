@@ -1,5 +1,6 @@
 +++
-title = 'Contact and pricing for restoration of old photos'
+title = 'Contact me'
+meta_title='Contact Marc Laliberté Photographer'
 draft = false
 description = "Get in touch with Marc Laliberté for professional photo restoration or videography services. Contact me to discuss your project, request a quote, or ask any questions."
 +++
