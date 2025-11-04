@@ -1,12 +1,20 @@
 +++
-title = 'Animalière'
+title = 'Portfolio | Animalière'
+meta_title = "Portfolio de photographie animalière, animaux sauvages et de compagnie | Marc Laliberté"
 draft = false
-description = "Photographie animalière saisissante qui capture la beauté brute de la nature et ses moments sauvages. Des mammifères majestueux aux oiseaux délicats, je documente la faune dans son habitat naturel avec patience et vision artistique."
+description = "Photographe animalier professionnel spécialisé dans la capture du caractère unique des animaux. Consultez mon portfolio et réservez votre séance photo personnalisée."
 +++
 
+Je suis un photographe animalièr professionnel spécialisé dans la capture du caractère unique des animaux sauvage et de compagnie.
+
 {{< fleximages >}}
-{{< navbutton url="/categories/wildlife/" text="Voir mes publications animalière" >}}
+{{< navbutton url="/contact" text="Réservez votre séance photo personnalisée" >}}
+{{< navbutton url="https://store.marclaliberte.photos/wildlife/" text="Consultez ma boutique animalière" >}}
+{{< navbutton url="/categories/wildlife/" text="Voir toutes mes publications animalière" >}}
 {{< /fleximages >}}
+
+
+<hr>
 
 ## Animaux de compagnie
 
@@ -84,6 +92,10 @@ description = "Photographie animalière saisissante qui capture la beauté brute
 >}}
 {{< /fleximages >}}
 
+<hr>
+
 {{< fleximages >}}
-{{< navbutton url="/contact" text="Contactez-moi pour un devis gratuit" >}}
+{{< navbutton url="/contact" text="Réservez votre séance photo personnalisée" >}}
+{{< navbutton url="https://store.marclaliberte.photos/wildlife/" text="Consultez ma boutique animalière" >}}
+{{< navbutton url="/categories/wildlife/" text="Voir toutes mes publications animalière" >}}
 {{< /fleximages >}}

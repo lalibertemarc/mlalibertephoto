@@ -1,12 +1,20 @@
 +++
-title = 'Wildlife'
+title = 'Portfolio | Wildlife'
+meta_title = "Wildlife photography portfolio, featuring wild animals and pets | Marc Laliberté"
 draft = false
-description = "Stunning wildlife photography capturing nature's raw beauty and untamed moments. From majestic mammals to delicate birds, I document wildlife in their natural habitats with patience and artistic vision."
+description = "Professional wildlife photographer specializing in capturing the unique character of animals. View my portfolio and book your personalized photo session."
 +++
 
+I am a professional wildlife photographer specializing in capturing the unique character of wild animals and pets.
+
+
 {{< fleximages >}}
-{{< navbutton url="/en/categories/wildlife/" text="See my wildlife posts" >}}
+{{< navbutton url="/en/contact" text="Book your personalized photo session." >}}
+{{< navbutton url="https://store.marclaliberte.photos/wildlife/" text="Check out my wildlife shop" >}}
+{{< navbutton url="/en/categories/wildlife/" text="See all my wildlife posts" >}}
 {{< /fleximages >}}
+
+<hr>
 
 ## Pets
 
@@ -83,6 +91,10 @@ description = "Stunning wildlife photography capturing nature's raw beauty and u
 >}}
 {{< /fleximages >}}
 
+<hr>
+
 {{< fleximages >}}
-{{< navbutton url="/en/contact" text="Contact me for a free quote" >}}
+{{< navbutton url="/en/contact" text="Book your personalized photo session." >}}
+{{< navbutton url="https://store.marclaliberte.photos/wildlife/" text="Check out my wildlife shop" >}}
+{{< navbutton url="/en/categories/wildlife/" text="See all my wildlife posts" >}}
 {{< /fleximages >}}

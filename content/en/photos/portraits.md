@@ -130,6 +130,7 @@ Professional photographer specializing in casting portraits, corporate portraits
     caption="Mother Rockers in the studio: capturing rock energy and band chemistry" 
 >}}
 
+<hr>
 {{< fleximages >}}
 {{< navbutton url="/en/contact" text="Book your unique photo session" >}}
 {{< /fleximages >}}

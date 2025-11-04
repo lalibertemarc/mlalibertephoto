@@ -131,6 +131,7 @@ Photographe professionnel spécialisé en portraits de casting, portraits corpor
     caption="Session studio des Mother Rockers : ambiance rock et complicité entre les musiciens" 
 >}}
 
+<hr>
 {{< fleximages >}}
 {{< navbutton url="/contact" text="Réservez votre séance photo unique" >}}
 {{< /fleximages >}}
