@@ -8,6 +8,21 @@ description = "Contactez Marc Laliberté pour des services professionnels de res
 
 **Marc Laliberte, photographe et vidéographe**
 
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-970863056/Kx_YCOfV67kbENDj-M4D',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
 <p>
 <a href="https://www.facebook.com/profile.php?id=61567037645807" target="_blank">
   <i class='fab fa-2x fa-facebook'></i>
@@ -23,6 +38,7 @@ Ville de Québec  <br>
 Québec, Canada <br>
 
 <hr>
+
 
 <div class="heading">
   <h3>Contactez-moi pour un devis gratuit</h3>

@@ -7,6 +7,21 @@ description = "Get in touch with Marc Laliberté for professional photo restorat
 
 **Marc Laliberte, Photographer and Videographer**
 
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-970863056/Kx_YCOfV67kbENDj-M4D',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
 <p> <a href="https://www.facebook.com/profile.php?id=61567037645807" target="_blank"> <i class='fab fa-2x fa-facebook'></i> </a> <a href="https://www.instagram.com/marc.laliberte.photo" target="_blank"> <i class='fab fa-2x fa-instagram'></i> </a> </p> 
 
 
