@@ -5,6 +5,8 @@ draft = false
 description= "Marc Laliberté offers professional photo scanning and restoration services to bring your precious memories back to life. He specializes in repairing damaged, faded, or old photos with meticulous attention to detail."
 +++
 
+Marc Laliberté offers professional photo scanning and restoration services to bring your precious memories back to life. He specializes in repairing damaged, faded, or old photos with meticulous attention to detail.
+
 # Give a second life to photos of your loved ones.
 
 - Fixing blurry photos
@@ -23,12 +25,12 @@ description= "Marc Laliberté offers professional photo scanning and restoration
     caption="Example of a premium service where the subject is very clear and in focus, all the scratches have disappeared." 
 >}}
 {{< /fleximages >}}
-<hr>
 
 {{< fleximages >}}
 {{< navbutton url="/en/contact" text="Contact me for a free quote" >}}
 {{< navbutton url="/en/categories/restoration/" text="See other examples of my restorations" >}}
 {{< /fleximages >}}
+<hr>
 
 # Pricing
 

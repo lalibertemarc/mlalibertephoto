@@ -5,6 +5,8 @@ draft = false
 description= "Marc Laliberté offre des services professionnels de numérisation et restauration photo pour redonner vie à vos souvenirs précieux. Spécialisé dans la réparation de photos endommagées, décolorées ou anciennes avec un souci du détail méticuleux."
 +++
 
+Marc Laliberté offre des services professionnels de numérisation et restauration photo pour redonner vie à vos souvenirs précieux. Spécialisé dans la réparation de photos endommagées, décolorées ou anciennes avec un souci du détail méticuleux.
+
 # Donnez une seconde vie aux photos de vos êtres chers.
 
 - Correction des photos floues
@@ -24,13 +26,12 @@ description= "Marc Laliberté offre des services professionnels de numérisation
     caption="Exemple de service premium où le sujet est très clair, toutes les rayures sont disparues" 
 >}}
 {{< /fleximages >}}
-<hr>
 
 {{< fleximages >}}
 {{< navbutton url="/contact" text="Contactez-moi pour un devis gratuit" >}}
 {{< navbutton url="/categories/restoration/" text="Voir d'autres exemples de mes restaurations" >}}
 {{< /fleximages >}}
-
+<hr>
 
 ### Service de numérisation
 
