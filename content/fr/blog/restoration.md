@@ -16,6 +16,15 @@ Je propose désormais un service de restauration de photos anciennes !
 - Numérisation de vos vieilles photos pour un partage sur les réseaux sociaux
 - Amélioration de la résolution pour impression et encadrement
 
-Contactez-moi pour plus d'informations !
+Vous avez une photo à restaurer ?
 
+Si vous avez une photo abîmée qui mérite une seconde vie :
+
+{{< navbutton url="/contact" text="Contactez-moi ici" >}}
+
+or 
+
+{{< navbutton url="/restoration" text="Découvrez mes forfaits ici" >}}
+
+<hr>
 <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02RiWRLkMyGkr7ArHoGA3ZYDHUSZ9xrTQNsAWSNEsJr3RT7e4gR8spTGUbjsGrw53cl%26id%3D61567037645807&show_text=true&width=500" width="500" height="455" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
