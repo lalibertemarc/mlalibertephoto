@@ -56,17 +56,17 @@ Photographe professionnel spécialisé en portraits de casting, portraits corpor
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761750180/_DSC9600-2.web_jtmqby.jpg"
     width="500px"
     title="Michel Rondeau"
-    alt="Portrait de Michel Rondeau du groupe Prohibition pris en plein action"
-    caption="Prohibition donne une performance de style chansonnier/crooner dans les rues de Limoilou, Québec"
-    button-url="/blog/2025/10/29/prohibition/" 
+    alt="Portrait de Michel Rondeau du groupe Prohibition5 pris en plein action"
+    caption="Prohibition5 donne une performance de style chansonnier/crooner dans les rues de Limoilou, Québec"
+    button-url="/blog/2025/10/29/Prohibition5/" 
 >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761750180/_DSC9723.web_ptw3sn.jpg"
     width="500px"
     title="Sylvie St-Cyr"
     alt="Portrait d'une femme pris en lumière naturelle"
-    caption="Portrait de Sylvie St-Cyr pris pendant un spectacle de Prohibition"
-    button-url="/blog/2025/10/29/prohibition/" 
+    caption="Portrait de Sylvie St-Cyr pris pendant un spectacle de Prohibition5"
+    button-url="/blog/2025/10/29/Prohibition5/" 
 >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761755199/_DSC3284.web_zvsnua.jpg"
@@ -118,10 +118,10 @@ Photographe professionnel spécialisé en portraits de casting, portraits corpor
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761750180/_DSC4447.web_sgifty.jpg"
     width="1350px"
-    title="Prohibition"
-    alt="Le groupe Prohibition en spectacle le 15 septembre 2025 dans les rues de Limoilou"
-    caption="Prohibition donne une performance de style chansonnier/crooner dans les rues de Limoilou, Québec" 
-    button-url="/blog/2025/10/29/prohibition/" 
+    title="Prohibition5"
+    alt="Le groupe Prohibition5 en spectacle le 15 septembre 2025 dans les rues de Limoilou"
+    caption="Prohibition5 donne une performance de style chansonnier/crooner dans les rues de Limoilou, Québec" 
+    button-url="/blog/2025/10/29/Prohibition5/" 
 >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750126658/_DSC6892_kenmim.jpg"

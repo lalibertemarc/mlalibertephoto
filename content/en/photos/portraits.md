@@ -58,17 +58,17 @@ Professional photographer specializing in casting portraits, corporate portraits
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761750180/_DSC9600-2.web_jtmqby.jpg"
     width="500px"
     title="Michel Rondeau"
-    alt="Portrait of Michel Rondeau of the band Prohibition caught in action"
-    caption="Prohibition gives a singer-songwriter/crooner style performance in the streets of Limoilou, Quebec"
-    button-url="/en/blog/2025/10/29/prohibition/" 
+    alt="Portrait of Michel Rondeau of the band Prohibition5 caught in action"
+    caption="Prohibition5 gives a singer-songwriter/crooner style performance in the streets of Limoilou, Quebec"
+    button-url="/en/blog/2025/10/29/Prohibition5/" 
 >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761750180/_DSC9723.web_ptw3sn.jpg"
     width="500px"
     title="Sylvie St-Cyr"
     alt="Portrait of a woman taken in natural light"
-    caption="Portrait of Sylvie St-Cyr taken during a Prohibition performance"
-    button-url="/en/blog/2025/10/29/prohibition/" 
+    caption="Portrait of Sylvie St-Cyr taken during a Prohibition5 performance"
+    button-url="/en/blog/2025/10/29/Prohibition5/" 
 >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761755199/_DSC3284.web_zvsnua.jpg"
@@ -117,10 +117,10 @@ Professional photographer specializing in casting portraits, corporate portraits
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761750180/_DSC4447.web_sgifty.jpg"
     width="1350px"
-    title="Prohibition"
-    alt="The band Prohibition will be performing on September 15, 2025 in the streets of Limoilou."
-    caption="Prohibition gives a singer-songwriter/crooner style performance in the streets of Limoilou, Quebec" 
-    button-url="/en/blog/2025/10/29/prohibition/" 
+    title="Prohibition5"
+    alt="The band Prohibition5 will be performing on September 15, 2025 in the streets of Limoilou."
+    caption="Prohibition5 gives a singer-songwriter/crooner style performance in the streets of Limoilou, Quebec" 
+    button-url="/en/blog/2025/10/29/Prohibition5/" 
 >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750126658/_DSC6892_kenmim.jpg"

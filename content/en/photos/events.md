@@ -35,10 +35,10 @@ Ask about my special rates for smaller events.
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761750181/_DSC4243.web_pvwfwt.jpg"
     width="400px" 
-    title="Prohibition"
-    alt="Prohibition live"
-    caption="Prohibition live"
-    button-url="/blog/2025/10/29/prohibition/"  
+    title="Prohibition5"
+    alt="Prohibition5 live"
+    caption="Prohibition5 live"
+    button-url="/blog/2025/10/29/Prohibition5/"  
 >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750165440/_DSC4217-Enhanced-NR_-_insta-2_v9iavk.jpg"

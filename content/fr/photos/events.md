@@ -35,10 +35,10 @@ Demandez pour mes prix spéciaux pour petits spectacles.
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761750181/_DSC4243.web_pvwfwt.jpg"
     width="400px" 
-    title="Prohibition"
-    alt="Prohibition en spectacle"
-    caption="Prohibition en spectacle"
-    button-url="/blog/2025/10/29/prohibition/"  
+    title="Prohibition5"
+    alt="Prohibition5 en spectacle"
+    caption="Prohibition5 en spectacle"
+    button-url="/blog/2025/10/29/Prohibition5/"  
 >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750165440/_DSC4217-Enhanced-NR_-_insta-2_v9iavk.jpg"
