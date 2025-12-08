@@ -19,6 +19,14 @@ Professional photographer specializing in casting portraits, corporate portraits
 
 {{< fleximages >}}
 {{< image-modal 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1765203192/1_DSC7997_edit.web_ciloqz.jpg"
+    width="400px"
+    title="Maya Therienne Peña"
+   alt="Portrait of a woman wearing a green outfit against a mauve background"
+    caption="Casting portrait of Maya Therienne Peña"
+    button-url="/en/blog/2025/12/08/mayagreenset/" 
+>}}
+{{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1760456532/_DSC4074-Edit.web_bwivzo.jpg"
     width="400px"
     title="Simon Gagnon"

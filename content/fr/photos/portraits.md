@@ -17,6 +17,14 @@ Photographe professionnel spécialisé en portraits de casting, portraits corpor
 ## Portraits personnels & portraits de casting
 {{< fleximages >}}
 {{< image-modal 
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1765203192/1_DSC7997_edit.web_ciloqz.jpg"
+    width="400px"
+    title="Maya Therienne Peña"
+    alt="Portrait d'une femme avec tenue verte et fond mauve"
+    caption="Portrait de casting de Maya Therienne Peña"
+    button-url="/blog/2025/12/08/mayagreenset/" 
+>}}
+{{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1760456532/_DSC4074-Edit.web_bwivzo.jpg"
     width="400px"
     title="Simon Gagnon"
@@ -54,7 +62,7 @@ Photographe professionnel spécialisé en portraits de casting, portraits corpor
 >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761750180/_DSC9600-2.web_jtmqby.jpg"
-    width="500px"
+    width="400px"
     title="Michel Rondeau"
     alt="Portrait de Michel Rondeau du groupe Prohibition5 pris en plein action"
     caption="Prohibition5 donne une performance de style chansonnier/crooner dans les rues de Limoilou, Québec"
@@ -62,7 +70,7 @@ Photographe professionnel spécialisé en portraits de casting, portraits corpor
 >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761750180/_DSC9723.web_ptw3sn.jpg"
-    width="500px"
+    width="400px"
     title="Sylvie St-Cyr"
     alt="Portrait d'une femme pris en lumière naturelle"
     caption="Portrait de Sylvie St-Cyr pris pendant un spectacle de Prohibition5"
@@ -70,7 +78,7 @@ Photographe professionnel spécialisé en portraits de casting, portraits corpor
 >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761755199/_DSC3284.web_zvsnua.jpg"
-    width="500px"
+    width="400px"
     title="Kevin Bouchard"
     alt="Portrait candide d'une homme pris en lumière naturelle"
     caption="Portrait de Kevin Bouchard pris dehors pendant une soirée entre amis"
