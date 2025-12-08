@@ -14,6 +14,12 @@ authors = ["Marc Laliberté"]
 
 {{< fleximages >}}
 {{< image-modal 
+    src=src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1765204238/_DSC4655.web_zteqyq.jpg"
+    width="800px"
+    alt="Portrait of a young man in natural light"
+    caption="Portrait of Simon Gagnon taken in natural light"
+>}}
+{{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761668396/_DSC9812-2.web_nooc9n.jpg"
     width="1000px"
     alt="Portrait of a young man in natural light"

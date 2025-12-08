@@ -53,8 +53,8 @@ Photographe professionnel spécialisé en portraits de casting, portraits corpor
 
 {{< fleximages >}}
 {{< image-modal 
-    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761668396/_DSC9812-2.web_nooc9n.jpg"
-    width="1000px"
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1765204238/_DSC4655.web_zteqyq.jpg"
+    width="800px"
     title="Simon Gagnon"
     alt="Portrait d'un jeune homme en lumière naturelle"
     caption="Portrait de Simon Gagnon prise en lumière naturelle"

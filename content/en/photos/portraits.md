@@ -55,8 +55,8 @@ Professional photographer specializing in casting portraits, corporate portraits
 ## Portraits in natural light
 {{< fleximages >}}
 {{< image-modal 
-    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761668396/_DSC9812-2.web_nooc9n.jpg"
-    width="1000px"
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1765204238/_DSC4655.web_zteqyq.jpg"
+    width="800px"
     title="Simon Gagnon"
     alt="Portrait of a young man in natural light"
     caption="Portrait of Simon Gagnon taken in natural light"
@@ -64,7 +64,7 @@ Professional photographer specializing in casting portraits, corporate portraits
 >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761750180/_DSC9600-2.web_jtmqby.jpg"
-    width="500px"
+    width="400px"
     title="Michel Rondeau"
     alt="Portrait of Michel Rondeau of the band Prohibition5 caught in action"
     caption="Prohibition5 gives a singer-songwriter/crooner style performance in the streets of Limoilou, Quebec"
@@ -72,7 +72,7 @@ Professional photographer specializing in casting portraits, corporate portraits
 >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761750180/_DSC9723.web_ptw3sn.jpg"
-    width="500px"
+    width="400px"
     title="Sylvie St-Cyr"
     alt="Portrait of a woman taken in natural light"
     caption="Portrait of Sylvie St-Cyr taken during a Prohibition5 performance"
@@ -80,7 +80,7 @@ Professional photographer specializing in casting portraits, corporate portraits
 >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761755199/_DSC3284.web_zvsnua.jpg"
-    width="500px"
+    width="400px"
     title="Kevin Bouchard"
     alt="A candid portrait of a man captured in natural light"
     caption="Portrait of Kevin Bouchard taken outdoors during an evening with friends"
