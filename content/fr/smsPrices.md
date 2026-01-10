@@ -1,7 +1,7 @@
 +++
 title = 'Partenariat avec SMS Studio'
 draft = false
-description = "Forfaits photo et vidéo exclusifs pour les clients de Sleeping Mexican Studio."
+noindex = true
 +++
 
 {{< image-modal 
