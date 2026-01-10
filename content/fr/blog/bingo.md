@@ -2,6 +2,7 @@
 title = 'Une soirée au bingo'
 date = 2025-10-29T12:08:29-04:00
 draft = false
+description = "Une soirée au bingo"
 tags = ["moody", "liminal", "night", "ILCE-7CM2", "Sony AC7II", "FE 16mm F1.8 G"]
 categories = ["street","low light"]
 external_banner = true

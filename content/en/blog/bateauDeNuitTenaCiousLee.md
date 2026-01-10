@@ -2,6 +2,7 @@
 title = 'Tenacious Lee au Bateau de Nuit'
 date = 2025-04-26T09:55:50-04:00
 draft = false
+description = "Tenacious Lee au Bateau de Nuit"
 tags = ["Tenacious Lee", "rock", "metal", "Bateau de Nuit"]
 categories = ["live","event"]
 banner = "/img/DSC01669.jpg"

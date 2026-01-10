@@ -2,8 +2,9 @@
 title = 'Quiscale bronzé'
 date = 2025-04-24T09:22:42-04:00
 draft = false
+description = "Quiscale bronzé"
 tags = ["grackle"]
-categories = ["bird","wildlife",]
+categories = ["bird","wildlife"]
 banner = "img/_DSC7450.jpg"
 authors = ["Marc Laliberté"]
 +++

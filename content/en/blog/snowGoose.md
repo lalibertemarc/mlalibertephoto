@@ -2,6 +2,7 @@
 title = 'Oie des neiges'
 date = 2025-04-13T10:32:04-04:00
 draft = false
+description = "Oie des neiges"
 tags = ["snow goose"]
 categories = ["bird","wildlife"]
 banner = "img/_DSC7410 - insta.jpg"

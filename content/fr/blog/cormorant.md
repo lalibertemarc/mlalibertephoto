@@ -2,6 +2,7 @@
 title = 'Cormoran à aigrettes'
 date = 2025-05-05T14:02:49-04:00
 draft = false
+description = "Cormoran à aigrettes"
 tags = ["cormorant"]
 categories = ["bird","wildlife"]
 banner = "img/_DSC8195-001.jpg"

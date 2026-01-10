@@ -2,6 +2,7 @@
 title = 'Rainy day at the fall'
 date = 2025-05-25T10:57:44-04:00
 draft = false
+description = "Rainy day at the fall"
 tags = ["rain","waterfall", "moody", "creative"]
 categories = ["nature", "tourism"]
 banner = "img/_DSC8402.jpg"

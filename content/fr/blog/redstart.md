@@ -2,8 +2,9 @@
 title = 'Paruline Flamboyante'
 date = 2025-05-23T08:11:47-04:00
 draft = false
+description = "Paruline Flamboyante"
 tags = ["american redstart"]
-categories = ["bird","wildlife",]
+categories = ["bird","wildlife"]
 banner = "img/_DSC8604-001.jpg"
 authors = ["Marc Laliberté"]
 +++

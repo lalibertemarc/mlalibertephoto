@@ -2,6 +2,7 @@
 title = 'Roger-Van den Hende Botanical Garden'
 date = 2025-11-01T12:27:10-04:00
 draft = false
+description = "Roger-Van den Hende Botanical Garden"
 tags = ["jardin botanique Roger-Van den Hende",  "ILCE-7CM2", "Sony AC7II", "FE 16mm F1.8 G"]
 categories = ["architecture","tourism"]
 external_banner = true

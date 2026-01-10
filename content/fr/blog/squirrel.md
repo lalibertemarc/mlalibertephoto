@@ -2,6 +2,7 @@
 title = 'Écureuil potelé'
 date = 2025-05-09T08:51:21-04:00
 draft = false
+description = "Écureuil potelé"
 tags = ["squirrel"]
 categories = ["wildlife"]
 banner = "img/_DSC1771.jpg"

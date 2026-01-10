@@ -2,6 +2,7 @@
 title = 'Pic nain'
 date = 2025-05-16T14:06:54-04:00
 draft = false
+description = "Pic nain"
 tags = ["downy woodpecker"]
 categories = ["bird","wildlife"]
 banner = "img/_DSC8475-001.jpg"

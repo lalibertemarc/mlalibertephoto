@@ -2,6 +2,7 @@
 title = 'The Mother Rockers au Sonum Fest'
 date = 2025-03-02T14:02:19-04:00
 draft = false
+description = "The Mother Rockers au Sonum Fest"
 tags = ["MotherRockers", "rock", "metal", "sonum fest"]
 categories = ["live","event"]
 banner = "/img/_DSC7107 - insta.jpg"

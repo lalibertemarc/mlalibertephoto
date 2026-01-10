@@ -2,6 +2,7 @@
 title = 'Savka Design'
 date = 2025-04-26T10:00:53-04:00
 draft = false
+description = "Savka Design"
 tags = ["merch", "savka"]
 categories = ["product"]
 banner = "/img/DSC01626.jpg"

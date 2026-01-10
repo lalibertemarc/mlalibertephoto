@@ -2,6 +2,7 @@
 title = 'Journée pluvieuse à la chute'
 date = 2025-05-25T10:57:44-04:00
 draft = false
+description = "Journée pluvieuse à la chute"
 tags = ["rain","waterfall", "moody", "creative"]
 categories = ["nature", "tourism"]
 banner = "img/_DSC8402.jpg"

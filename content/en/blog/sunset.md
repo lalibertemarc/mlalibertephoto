@@ -2,6 +2,7 @@
 title = 'Sunset'
 date = 2025-06-03T11:16:43-04:00
 draft = false
+description = "Sunset"
 tags = ["St-Lawrence river"]
 categories = ["nature", "sunset"]
 external_banner = true

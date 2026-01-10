@@ -2,6 +2,7 @@
 title = 'Maritime landscape in smoke'
 date = 2025-06-09T08:55:32-04:00
 draft = false
+description = "Maritime landscape in smoke"
 tags = ["wildfire smoke", "gaspesie", "quebec"]
 categories = ["nature", "tourism"]
 external_banner = true

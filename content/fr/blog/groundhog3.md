@@ -2,6 +2,7 @@
 title = 'Marmotte dangereuse'
 date = 2025-10-25T10:34:45-04:00
 draft = false
+description = "Marmotte dangereuse"
 tags = ["groundhog"]
 categories = ["wildlife"]
 external_banner = true

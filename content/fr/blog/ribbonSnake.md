@@ -2,6 +2,7 @@
 title = 'Couleuvre rayée'
 date = 2025-06-02T08:36:08-04:00
 draft = false
+description = "Couleuvre rayée"
 tags = ["Common garter snake"]
 categories = ["wildlife"]
 external_banner = true

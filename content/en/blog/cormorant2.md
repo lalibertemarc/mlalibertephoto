@@ -2,6 +2,7 @@
 title = 'Cormorants'
 date = 2025-06-11T10:35:02-04:00
 draft = false
+description = "Cormorants"
 external_banner = true
 tags = ["cormorant"]
 categories = ["bird","wildlife"]

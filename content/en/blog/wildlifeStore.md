@@ -2,6 +2,7 @@
 title = 'Wildlife Collection in store'
 date = 2025-06-18T11:54:33-04:00
 draft = false
+description = "Wildlife Collection in store"
 tags = ["store", "new service"]
 categories = [ "wildlife"]
 external_banner = true

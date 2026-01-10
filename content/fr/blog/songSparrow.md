@@ -2,8 +2,9 @@
 title = 'Bruant Chanteur'
 date = 2025-04-25T12:45:51-04:00
 draft = false
+description = "Bruant Chanteur"
 tags = ["song sparrow"]
-categories = ["bird","wildlife",]
+categories = ["bird","wildlife"]
 banner = "img/_DSC8046-001.jpg"
 authors = ["Marc Laliberté"]
 +++

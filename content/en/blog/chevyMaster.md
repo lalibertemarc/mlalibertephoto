@@ -2,6 +2,7 @@
 title = 'Chevy Master'
 date = 2025-05-31T11:25:17-04:00
 draft = false
+description = "Chevy Master"
 tags = ["history", "car", "chevy"]
 categories = ["restoration", "colorization", "retouching", "digitization"]
 external_banner = true

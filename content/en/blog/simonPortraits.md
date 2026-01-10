@@ -2,8 +2,9 @@
 title = 'Portraits of Simon Gagnon'
 date = 2025-10-28T11:39:58-04:00
 draft = false
-tags = ["Simon Gagnon"]
-categories = ["portrait" ,"corporate portrait", "casting portrait", "ILCE-7CM2", "Sony AC7II", "Sigma 24-70mm F2.8 DG DN II Art"]
+description = "Portraits of Simon Gagnon"
+tags = ["Simon Gagnon", "ILCE-7CM2", "Sony AC7II", "Sigma 24-70mm F2.8 DG DN II Art"]
+categories = ["portrait" ,"corporate portrait", "casting portrait"]
 external_banner = true
 banner = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1761665967/_DSC4052-Edit.thumb_hruvhq.jpg"
 banner_alt = "Casting portraits of a man taken in a studio"

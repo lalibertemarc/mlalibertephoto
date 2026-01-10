@@ -2,6 +2,7 @@
 title = 'Butterbuttbutler'
 date = 2025-10-08T12:03:00-04:00
 draft = false
+description = "Butterbuttbutler"
 tags = [ "band", "butterbuttbutler","metal"]
 categories = ["portrait","groups"]
 external_banner = true

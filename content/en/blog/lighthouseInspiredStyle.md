@@ -3,6 +3,7 @@ title = 'A style inspired by The Lighthouse'
 meta_title="A photo editing style inspired by The Lighthouse"
 date = 2025-11-02T17:23:35-05:00
 draft = false
+description = "A style inspired by The Lighthouse"
 tags = [ "creative","horror","bnw", "ILCE-7CM2", "Sony AC7II", "FE 50mm F1.8"]
 categories = ["portrait"]
 external_banner = true

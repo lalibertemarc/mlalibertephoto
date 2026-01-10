@@ -2,6 +2,7 @@
 title = "Merle d'Amérique"
 date = 2025-06-25T09:49:23-04:00
 draft = false
+description = "Merle d'Amérique"
 tags = ["american robin", "creative"]
 categories = ["bird","wildlife"]
 external_banner = true

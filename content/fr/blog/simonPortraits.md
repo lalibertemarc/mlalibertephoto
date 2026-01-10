@@ -2,6 +2,7 @@
 title = 'Portraits de Simon Gagnon'
 date = 2025-10-28T11:39:58-04:00
 draft = false
+description = "Portraits de Simon Gagnon"
 tags = ["Simon Gagnon", "ILCE-7CM2", "Sony AC7II", "Sigma 24-70mm F2.8 DG DN II Art"]
 categories = ["portrait" ,"corporate portrait", "casting portrait"]
 external_banner = true

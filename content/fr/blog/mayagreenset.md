@@ -2,6 +2,7 @@
 title = "De la pose à l'éclat de rire"
 date = 2025-12-08T09:13:36-05:00
 draft = false
+description = "De la pose à l'éclat de rire"
 tags = ["Maya Therienne", "ILCE-7CM2", "Sony AC7II", "Sony FE 85mm F1.8"]
 categories = ["portrait", "casting portrait", "studio portrait"]
 external_banner = true

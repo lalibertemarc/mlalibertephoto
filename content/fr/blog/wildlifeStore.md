@@ -2,6 +2,7 @@
 title = 'Collection Animalière en boutique'
 date = 2025-06-18T11:54:33-04:00
 draft = false
+description = "Collection Animalière en boutique"
 tags = ["store", "new service"]
 categories = [ "wildlife"]
 external_banner = true

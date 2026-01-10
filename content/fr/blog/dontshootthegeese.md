@@ -2,6 +2,7 @@
 title = 'Ne tirez pas sur les oies!'
 date = 2025-06-16T14:08:14-04:00
 draft = false
+description = "Ne tirez pas sur les oies!"
 tags = ["snow goose"]
 categories = ["bird","wildlife"]
 authors = ["Marc Laliberté"]
