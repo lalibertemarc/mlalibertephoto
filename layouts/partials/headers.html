@@ -1,6 +1,11 @@
 <meta charset="utf-8">
+{{- if .Params.noindex -}}
+<meta name="robots" content="noindex,nofollow">
+<meta name="googlebot" content="noindex,nofollow,nosnippet,noarchive">
+{{- else -}}
 <meta name="robots" content="all,follow">
 <meta name="googlebot" content="index,follow,snippet,archive">
+{{- end }}
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -32,6 +37,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="description" content="{{ $description_plain }}">
 
 {{ hugo.Generator }}
+
+{{- if isset .Params "canonical" -}}
+  <link rel="canonical" href="{{ .Params.canonical }}" />
+{{- else -}}
+  <link rel="canonical" href="{{ .Permalink }}" />
+{{- end }}
 
 <!-- Font -->
 <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
