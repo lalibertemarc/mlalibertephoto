@@ -1,6 +1,7 @@
 +++
 title = 'Partenariat avec SMS Studio'
 draft = false
+noindex = true
 +++
 
 {{< image-modal 
