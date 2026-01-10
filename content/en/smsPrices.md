@@ -1,6 +1,7 @@
 +++
 title = 'Partnership with SMS Studio'
 draft = false
+description = "Exclusive photo and video packages for Sleeping Mexican Studio clients."
 +++
 
 {{< image-modal 
