@@ -4,16 +4,6 @@
   <head>
     {{ partial "headers.html" . }}
     {{ partial "custom_headers.html" . }}
-    {{- if .IsHome -}}
-      <meta name="description" content="{{ site.Params.Description }}" />
-    {{- else -}}
-      <meta name="description" content="{{ .Params.Description }}" />
-    {{- end }}
-    {{- if isset .Params "canonical" -}}
-      <link rel="canonical" href="{{ .Params.canonical }}" />
-    {{- else -}}
-      <link rel="canonical" href="{{ .Permalink }}" />
-    {{- end }}
   </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DT1RL3KDNZ"></script>
