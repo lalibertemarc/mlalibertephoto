@@ -4,3 +4,9 @@ publish = "public"
 
 [context.production.environment]
     HUGO_VERSION = "0.147.4"
+
+[[redirects]]
+  from = "https://www.marclaliberte.photos/*"
+  to = "https://marclaliberte.photos/:splat"
+  status = 301
+  force = true
