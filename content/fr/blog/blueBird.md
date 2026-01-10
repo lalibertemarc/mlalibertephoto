@@ -2,8 +2,9 @@
 title = 'Merlebleu'
 date = 2025-05-21T08:25:26-04:00
 draft = false
+description = "Merlebleu"
 tags = ["bluebird"]
-categories = ["bird","wildlife",]
+categories = ["bird","wildlife"]
 banner = "img/_DSC8478-001.jpg"
 authors = ["Marc Laliberté"]
 +++

@@ -2,6 +2,7 @@
 title = 'Thinking Black-backed Gull'
 date = 2025-10-23T10:53:07-04:00
 draft = false
+description = "Thinking Black-backed Gull"
 tags = ["gull", "bnw", "ZV-E10", "E 70–350mm F4.5–6.3 G OSS"]
 categories = ["bird","wildlife"]
 external_banner = true

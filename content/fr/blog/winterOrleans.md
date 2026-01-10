@@ -2,6 +2,7 @@
 title = 'Hiver à Ste-Pétronille'
 date = 2025-03-07T13:57:22-04:00
 draft = false
+description = "Hiver à Ste-Pétronille"
 tags = ["quebec", "snow", "ice", "Ste-Pétronille", "Île d'Orléans"]
 categories = ["nature"]
 banner = "img/DSC00645 - insta.jpg"

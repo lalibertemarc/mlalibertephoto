@@ -2,6 +2,7 @@
 title = 'Femmes dans les années 1900'
 date = 2025-06-12T10:19:03-04:00
 draft = false
+description = "Femmes dans les années 1900"
 tags = ["history", "family", "generations", "women"]
 categories = ["restoration", "colorization", "retouching", "digitization"]
 external_banner = true

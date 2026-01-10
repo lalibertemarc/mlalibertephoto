@@ -2,6 +2,7 @@
 title = 'Quatre générations de femmes'
 date = 2025-10-27T08:03:45-04:00
 draft = false
+description = "Quatre générations de femmes"
 tags = ["history", "family", "women", "generations"]
 categories = ["restoration", "colorization", "retouching", "digitization"]
 external_banner = true

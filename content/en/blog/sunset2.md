@@ -2,6 +2,7 @@
 title = 'Sunset in Cap-Chat'
 date = 2025-06-13T08:16:43-04:00
 draft = false
+description = "Sunset in Cap-Chat"
 tags = ["Cap-Chat", "gaspesie", "quebec"]
 categories = ["nature", "sunset"]
 external_banner = true

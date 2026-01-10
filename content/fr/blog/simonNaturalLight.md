@@ -9,6 +9,7 @@ banner_alt = "Portrait de Simon Gagnon en lumière naturelle"
 banner_width = 600
 banner_height = 600
 authors = ["Marc Laliberté"]
+description = "Simon en lumière naturelle"
 +++
 
 

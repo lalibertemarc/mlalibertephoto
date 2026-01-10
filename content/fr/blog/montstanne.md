@@ -2,6 +2,7 @@
 title = 'Mont-Sainte-Anne'
 date = 2025-04-19T10:46:56-04:00
 draft = false
+description = "Mont-Sainte-Anne"
 tags = ["Mont-Sainte-Anne"]
 categories = ["nature", "tourism"]
 banner = "img/_DSC7363.jpg"

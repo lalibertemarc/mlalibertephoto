@@ -2,6 +2,7 @@
 title = 'Moineau furtif'
 date = 2025-07-22T10:25:18-04:00
 draft = false
+description = "Moineau furtif"
 tags = ["song sparrow"]
 categories = ["bird","wildlife"]
 external_banner = true

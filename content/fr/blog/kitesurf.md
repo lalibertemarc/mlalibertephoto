@@ -2,6 +2,7 @@
 title = 'Kitesurf'
 date = 2025-06-17T10:06:10-04:00
 draft = false
+description = "Kitesurf"
 tags = ["kitesurf"]
 categories = ["sport"]
 external_banner = true

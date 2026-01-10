@@ -2,6 +2,7 @@
 title = 'Simon et son ombre'
 date = 2025-10-26T11:15:58-04:00
 draft = false
+description = "Simon et son ombre"
 tags = ["bnw","creative","Simon Gagnon"]
 categories = ["portrait","natural light"]
 external_banner = true

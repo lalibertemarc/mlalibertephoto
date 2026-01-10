@@ -2,6 +2,7 @@
 title = 'Simon and his shadow'
 date = 2025-10-26T11:15:57-04:00
 draft = false
+description = "Simon and his shadow"
 tags = ["bnw","creative","Simon Gagnon"]
 categories = ["portrait","natural light"]
 external_banner = true

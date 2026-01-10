@@ -2,6 +2,7 @@
 title = 'BEFORE/AFTER'
 date = 2025-07-13T10:06:10-04:00
 draft = false
+description = "BEFORE/AFTER"
 tags = ["history", "family"]
 categories = ["restoration", "colorization", "retouching", "digitization"]
 external_banner = true

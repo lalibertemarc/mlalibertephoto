@@ -2,6 +2,7 @@
 title = 'Red-winged Blackbird'
 date = 2025-05-07T09:25:13-04:00
 draft = false
+description = "Red-winged Blackbird"
 tags = ["carouge", "black-bird"]
 categories = ["bird","wildlife"]
 banner = "img/_DSC8133-001.jpg"

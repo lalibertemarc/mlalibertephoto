@@ -2,6 +2,7 @@
 title = 'Dont shoot the geese'
 date = 2025-06-16T14:08:14-04:00
 draft = false
+description = "Dont shoot the geese"
 tags = ["snow goose"]
 categories = ["bird","wildlife"]
 authors = ["Marc Laliberté"]

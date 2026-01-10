@@ -2,6 +2,7 @@
 title = 'Toad portrait'
 date = 2025-10-24T11:49:43-04:00
 draft = false
+description = "Toad portrait"
 tags = ["toad"]
 categories = ["wildlife"]
 external_banner = true

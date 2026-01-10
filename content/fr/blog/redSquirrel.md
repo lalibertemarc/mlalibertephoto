@@ -2,6 +2,7 @@
 title = 'Écureuil roux dramatique'
 date = 2025-06-20T10:22:08-04:00
 draft = false
+description = "Écureuil roux dramatique"
 tags = ["squirrel"]
 categories = ["wildlife"]
 external_banner = true

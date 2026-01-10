@@ -2,6 +2,7 @@
 title = 'Jaseurs Boréal'
 date = 2025-04-11T10:44:21-04:00
 draft = false
+description = "Jaseurs Boréal"
 tags = ["cedar waxwing"]
 categories = ["bird","wildlife"]
 banner = "img/_DSC7377-001 - insta.jpg"

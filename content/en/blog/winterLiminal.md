@@ -2,6 +2,7 @@
 title = 'Hivernal Liminal'
 date = 2025-03-21T13:49:35-04:00
 draft = false
+description = "Hivernal Liminal"
 tags = ["winter", "liminal", "bnw"]
 categories = ["nature", "low light"]
 banner = "img/DSC00622 - insta.jpg"

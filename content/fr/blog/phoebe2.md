@@ -2,6 +2,7 @@
 title = 'Moucherolle phébi attrape son repas'
 date = 2025-07-30T11:01:37-04:00
 draft = false
+description = "Moucherolle phébi attrape son repas"
 tags = [ "Eastern Phoebe"]
 categories = ["bird","wildlife"]
 external_banner = true

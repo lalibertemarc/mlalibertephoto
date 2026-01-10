@@ -2,6 +2,7 @@
 title = 'Chardonneret jaune'
 date = 2025-10-28T14:06:32-04:00
 draft = false
+description = "Chardonneret jaune"
 tags = ["goldfinch", "ZV-E10", "E 70–350mm F4.5–6.3 G OSS"]
 categories = ["bird","wildlife"]
 external_banner = true

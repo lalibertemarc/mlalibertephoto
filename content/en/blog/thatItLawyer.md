@@ -2,6 +2,7 @@
 title = 'That IT Lawyer'
 date = 2025-07-14T11:46:56-04:00
 draft = false
+description = "That IT Lawyer"
 tags = ["That It Lawyer"]
 categories = ["portrait", "corporate portrait", "casting portrait"]
 external_banner = true

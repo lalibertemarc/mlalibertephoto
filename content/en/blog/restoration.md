@@ -2,6 +2,7 @@
 title = 'Photo Restoration'
 date = 2025-05-15T13:16:14-04:00
 draft = false
+description = "Photo Restoration"
 tags = ["new service"]
 categories = ["restoration", "digitization", "retouching"]
 banner = "img/_DSC7374-001-Edit-Edit - insta.jpg"

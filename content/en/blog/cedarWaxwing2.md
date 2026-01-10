@@ -3,6 +3,7 @@ meta_title='Cedar waxwing in Quebec City'
 title = 'Cedar waxwing'
 date = 2025-05-30T10:23:40-04:00
 draft = false
+description = "Cedar waxwing"
 tags = ["cedar waxwing"]
 categories = ["bird","wildlife"]
 external_banner = true

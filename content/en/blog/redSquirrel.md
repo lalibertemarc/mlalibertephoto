@@ -2,6 +2,7 @@
 title = 'Dramatic american red squirrel'
 date = 2025-06-20T10:22:08-04:00
 draft = false
+description = "Dramatic american red squirrel"
 tags = ["squirrel"]
 categories = ["wildlife"]
 external_banner = true

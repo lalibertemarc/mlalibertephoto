@@ -2,6 +2,7 @@
 title = 'Carouge à épaulettes'
 date = 2025-05-07T09:25:13-04:00
 draft = false
+description = "Carouge à épaulettes"
 tags = ["carouge", "black-bird"]
 categories = ["bird","wildlife"]
 banner = "img/_DSC8133-001.jpg"

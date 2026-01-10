@@ -2,6 +2,7 @@
 title = 'Dame à la ferme'
 date = 2025-06-04T16:19:03-04:00
 draft = false
+description = "Dame à la ferme"
 tags = ["history", "women"]
 categories = ["restoration", "colorization", "retouching", "digitization"]
 external_banner = true

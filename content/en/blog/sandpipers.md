@@ -2,6 +2,7 @@
 title = 'Solitary Sandpiper'
 date = 2025-06-04T10:06:06-04:00
 draft = false
+description = "Solitary Sandpiper"
 tags = ["solitary sandpiper"]
 categories = ["bird", "wildlife"]
 external_banner = true

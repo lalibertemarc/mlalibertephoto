@@ -2,6 +2,7 @@
 title = 'Guitbassdrom au Sonum Fest'
 date = 2025-03-02T13:02:19-04:00
 draft = false
+description = "Guitbassdrom au Sonum Fest"
 tags = ["Guitbassdrom", "rock", "metal", "sonum fest"]
 categories = ["live","event"]
 banner = "/img/_DSC7025 - insta.jpg"

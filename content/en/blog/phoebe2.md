@@ -2,6 +2,7 @@
 title = 'Eastern Phoebe catches its meal'
 date = 2025-07-30T11:01:37-04:00
 draft = false
+description = "Eastern Phoebe catches its meal"
 tags = [ "Eastern Phoebe"]
 categories = ["bird","wildlife"]
 external_banner = true

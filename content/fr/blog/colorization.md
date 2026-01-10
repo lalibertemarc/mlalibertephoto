@@ -2,6 +2,7 @@
 title = 'Un mariage en couleur'
 date = 2025-05-29T09:38:07-04:00
 draft = false
+description = "Un mariage en couleur"
 tags = ["history", "wedding"]
 categories = ["restoration", "colorization", "retouching"]
 external_banner = true

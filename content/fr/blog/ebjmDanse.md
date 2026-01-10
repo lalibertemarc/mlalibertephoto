@@ -3,6 +3,7 @@ title = 'EBJM Danse'
 meta_title="Spectacle de EBJM le 10 juin 2025 à Cap-Chat"
 date = 2025-10-30T12:30:01-04:00
 draft = false
+description = "EBJM Danse"
 tags = ["ebjm", "sunset", "gaspesie", "ILCE-7CM2", "Sony AC7II", "Sigma 24-70mm F2.8 DG DN II Art"]
 categories = ["event", "dance"]
 external_banner = true

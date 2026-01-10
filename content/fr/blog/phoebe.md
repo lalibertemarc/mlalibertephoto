@@ -2,6 +2,7 @@
 title = 'Moucherolle phébi'
 date = 2025-05-26T08:59:27-04:00
 draft = false
+description = "Moucherolle phébi"
 tags = [ "Eastern Phoebe"]
 categories = ["bird","wildlife"]
 external_banner = true
