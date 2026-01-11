@@ -58,14 +58,13 @@ weight = 1
 name = "Restauration de photos"
 parent = "menu.photos"
 url = "/restoration"
-weight = 2
+weight = 3
 
 [[languages.fr.menu.main]]
 name = "Portfolio"
 identifier = "menu.photos"
 url = "/photos"
 weight = 3
-
 
 [[languages.fr.menu.main]]
 name = "Blog"
@@ -82,7 +81,7 @@ parent = "menu.photos"
 [[languages.fr.menu.main]]
 name = "Évènements"
 url = "/photos/events"
-weight = 3
+weight = 2
 parent = "menu.photos"
 
 [[languages.fr.menu.main]]
@@ -177,12 +176,12 @@ parent = "menu.photos"
 name = "Restoration"
 parent = "menu.photos"
 url = "/en/restoration"
-weight = 2
+weight = 3
 
 [[languages.en.menu.main]]
 name = "Events"
 url = "/en/photos/events"
-weight = 3
+weight = 2
 parent = "menu.photos"
 
 [[languages.en.menu.main]]
