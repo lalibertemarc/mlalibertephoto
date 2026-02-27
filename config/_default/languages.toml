@@ -1,0 +1,214 @@
+# =============================================================================
+# French (primary language)
+# =============================================================================
+
+[fr]
+title = "Marc Laliberte Photo et Vidéos"
+languageName = "Français"
+weight = 1
+contentDir = "content/fr"
+
+[fr.params]
+about_us = "<p>Photographe et vidéographe de la ville de Québec spécialisé en portrait, événementiel et restauration de photos anciennes.</p>"
+copyright = "Copyright (c) 2025 - 2026, Marc Laliberte Photo&Video; tous droits réservés."
+author = "Marc Laliberte"
+defaultDescription = "Photographe de la ville de Québec spécialisé en portrait, événementiel et restauration de photos anciennes."
+contact_url = "/fr/contact/"
+defaultKeywords = [
+  "photographe portrait",
+  "photographe Québec",
+  "portrait corporatif",
+  "portrait casting",
+  "événementiel",
+  "restauration de photos",
+]
+
+[fr.params.recent_posts]
+enable = true
+title = "Mes publications récentes"
+subtitle = ""
+hide_summary = true
+
+# --- French topbar ---
+
+[[fr.menu.topbar]]
+weight = 3
+name = "Facebook"
+url = "https://www.facebook.com/profile.php?id=61567037645807"
+pre = "<i class='fab fa-2x fa-facebook'></i>"
+
+[[fr.menu.topbar]]
+weight = 4
+name = "Instagram"
+url = "https://www.instagram.com/marc.laliberte.photo"
+pre = "<i class='fab fa-2x fa-instagram'></i>"
+
+# --- French main menu ---
+
+[[fr.menu.main]]
+name = "Bienvenue"
+identifier = "menu.home"
+url = "/"
+weight = 1
+
+[[fr.menu.main]]
+name = "Portfolio"
+identifier = "menu.photos"
+url = "/photos"
+weight = 3
+
+[[fr.menu.main]]
+name = "Portraits"
+url = "/photos/portraits"
+weight = 1
+parent = "menu.photos"
+
+[[fr.menu.main]]
+name = "Évènements"
+url = "/photos/events"
+weight = 2
+parent = "menu.photos"
+
+[[fr.menu.main]]
+name = "Restauration de photos"
+parent = "menu.photos"
+url = "/restoration"
+weight = 3
+
+[[fr.menu.main]]
+name = "Animalière"
+url = "/photos/wildlife"
+weight = 5
+parent = "menu.photos"
+
+[[fr.menu.main]]
+name = "Vidéos"
+parent = "menu.photos"
+url = "/videos"
+weight = 6
+
+[[fr.menu.main]]
+name = "Blog"
+identifier = "menu.blog"
+url = "/blog"
+weight = 4
+
+[[fr.menu.main]]
+name = "Boutique"
+identifier = "menu.store"
+url = "https://store.marclaliberte.photos/"
+weight = 5
+
+[[fr.menu.main]]
+identifier = "contact"
+name = "Contact"
+url = "/contact/"
+weight = 7
+
+# =============================================================================
+# English (secondary language)
+# =============================================================================
+
+[en]
+title = "Marc Laliberte Photo and Videos"
+languageName = "English"
+weight = 2
+contentDir = "content/en"
+
+[en.params]
+about_us = "<p>Photographer and videographer from Quebec City specializing in portraits, events and restoration of old photos.</p>"
+copyright = "Copyright (c) 2025 - 2026, Marc Laliberte Photo&Video; all rights reserved."
+author = "Marc Laliberte"
+defaultDescription = "Photographer in Quebec City specializing in portraits, events and restoration of old photos"
+contact_url = "/en/contact/"
+defaultKeywords = [
+  "portrait photographer",
+  "portrait",
+  "casting portrait",
+  "corporate portrait",
+  "events",
+  "photographer Quebec",
+  "photo restoration",
+]
+
+[en.params.recent_posts]
+enable = true
+title = "My recent posts"
+subtitle = ""
+hide_summary = true
+
+# --- English topbar ---
+
+[[en.menu.topbar]]
+weight = 3
+name = "Facebook"
+url = "https://www.facebook.com/profile.php?id=61567037645807"
+pre = "<i class='fab fa-2x fa-facebook'></i>"
+
+[[en.menu.topbar]]
+weight = 4
+name = "Instagram"
+url = "https://www.instagram.com/marc.laliberte.photo"
+pre = "<i class='fab fa-2x fa-instagram'></i>"
+
+# --- English main menu ---
+
+[[en.menu.main]]
+name = "Welcome"
+identifier = "menu.home"
+url = "/en/"
+weight = 1
+
+[[en.menu.main]]
+name = "Portfolio"
+identifier = "menu.photos"
+url = "/en/photos"
+weight = 3
+
+[[en.menu.main]]
+name = "Portraits"
+url = "/en/photos/portraits"
+weight = 1
+parent = "menu.photos"
+
+[[en.menu.main]]
+name = "Events"
+url = "/en/photos/events"
+weight = 2
+parent = "menu.photos"
+
+[[en.menu.main]]
+name = "Restoration"
+parent = "menu.photos"
+url = "/en/restoration"
+weight = 3
+
+[[en.menu.main]]
+name = "Wildlife"
+url = "/en/photos/wildlife"
+weight = 5
+parent = "menu.photos"
+
+[[en.menu.main]]
+name = "Videos"
+parent = "menu.photos"
+url = "/en/videos"
+weight = 6
+
+[[en.menu.main]]
+name = "Blog"
+identifier = "menu.blog"
+url = "/en/blog"
+weight = 4
+
+[[en.menu.main]]
+name = "Store"
+identifier = "menu.store"
+url = "https://store.marclaliberte.photos/"
+weight = 5
+
+[[en.menu.main]]
+identifier = "contact"
+name = "Contact"
+url = "/en/contact/"
+weight = 7

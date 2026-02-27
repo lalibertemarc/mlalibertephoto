@@ -1,0 +1,15 @@
+# =============================================================================
+# Default Social Links (topbar)
+# =============================================================================
+
+[[topbar]]
+weight = 3
+name = "Facebook"
+url = "https://www.facebook.com/profile.php?id=61567037645807"
+pre = "<i class='fab fa-2x fa-facebook'></i>"
+
+[[topbar]]
+weight = 4
+name = "Instagram"
+url = "https://www.instagram.com/marc.laliberte.photo"
+pre = "<i class='fab fa-2x fa-instagram'></i>"

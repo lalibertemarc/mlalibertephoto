@@ -1,0 +1,151 @@
+# =============================================================================
+# General
+# =============================================================================
+
+viewMorePostLink = "/blog/"
+mainSections = ["blog"]
+
+facebook_site = "https://www.facebook.com/profile.php?id=61567037645807"
+default_sharing_image = "img/logo.png"
+
+# Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
+style = "marsala"
+
+date_format = "2 January, 2006"
+
+about_us = "<p>Photographe et vidéographe de la ville de Québec.</p>"
+copyright = "Copyright (c) 2025 - 2026, Marc Laliberte Photo&Video; all rights reserved."
+
+# =============================================================================
+# Branding
+# =============================================================================
+
+disabled_logo = false
+logo_text = "Marc Laliberte Photographe & Vidéographe"
+logo = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1748557335/mlalibertephoto7_elf8ue.png"
+logo_small = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1748557413/logo-small_nggpqi.png"
+
+# =============================================================================
+# Contact / Formspree
+# =============================================================================
+
+contact_url = "/contact/"
+email = "laliberte.marc1@gmail.com"
+formspree_action = "https://formspree.io/f/mjkyajaa"
+contact_form_ajax = false
+
+enableRecaptchaInContactForm = false
+googleRecaptchaKey = "site_key_for_google_recaptcha"
+
+address = """<p class="text-uppercase"><strong>Marc Laliberte</strong>
+        <br>514-503-2446
+        <br>laliberte.marc1@gmail.com
+        <br>Ville de Québec et environs
+        <br>
+        <strong>Canada</strong>
+      </p>
+      """
+
+# =============================================================================
+# Navigation
+# =============================================================================
+
+dropdown_mouse_over = false
+
+# =============================================================================
+# Topbar
+# =============================================================================
+
+[topbar]
+enable = false
+text = """<p class="hidden-sm hidden-xs">Contactez-moi au +1-514-503-2446 ou laliberte.marc1@gmail.com.</p>
+      <p class="hidden-md hidden-lg"><a href="tel:+1-514-503-2446" data-animate-hover="pulse"><i class="fas fa-phone"></i></a>
+      <a href="mailto:laliberte.marc1@gmail.com" data-animate-hover="pulse"><i class="fas fa-envelope"></i></a>
+      </p>
+      """
+
+# =============================================================================
+# OpenGraph
+# =============================================================================
+
+[opengraph]
+enable = true
+image = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1748557335/mlalibertephoto7_elf8ue.png"
+image_width = 782
+image_height = 200
+
+# =============================================================================
+# Sidebar Widgets
+# =============================================================================
+
+[widgets]
+categories = true
+tags = true
+search = false
+
+# =============================================================================
+# Homepage Carousel
+# =============================================================================
+
+[carouselHomepage]
+enable = true
+auto_play = true
+slide_speed = 2000
+pagination_speed = 1000
+
+# =============================================================================
+# Features Section
+# =============================================================================
+
+[features]
+enable = true
+cols = 3
+
+# =============================================================================
+# Testimonials Section
+# =============================================================================
+
+[testimonials]
+enable = true
+title = "Testimonials"
+subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+
+# =============================================================================
+# Carousel (Customers)
+# =============================================================================
+
+[carouselCustomers]
+items = 6
+auto_play = false
+slide_speed = 2000
+pagination_speed = 1000
+
+[carouselTestimonials]
+items = 4
+auto_play = false
+slide_speed = 2000
+pagination_speed = 1000
+
+# =============================================================================
+# Disabled Sections
+# =============================================================================
+
+[see_more]
+enable = false
+icon = "far fa-file-alt"
+title = "Do you want to see more?"
+subtitle = "We have prepared for you more than 40 different HTML pages, including 5 variations of homepage."
+link_url = "#"
+link_text = "Check other homepages"
+
+[clients]
+enable = false
+title = "Our Clients"
+subtitle = ""
+
+# =============================================================================
+# Footer
+# =============================================================================
+
+[footer.recent_posts]
+enable = true
