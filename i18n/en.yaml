@@ -12,3 +12,21 @@
 
 - id: moreFromShoot
   translation: "See all photos from this shoot"
+
+- id: featuresTitle
+  translation: "Why choose me"
+
+- id: featuresSubtitle
+  translation: "Professional, flexible service tailored to your needs."
+
+- id: ctaTitle
+  translation: "Ready to capture your moments?"
+
+- id: ctaSubtitle
+  translation: "Book your photo session now."
+
+- id: ctaLink
+  translation: "/en/contact/"
+
+- id: ctaButtonText
+  translation: "Contact me"

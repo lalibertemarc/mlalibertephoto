@@ -69,6 +69,7 @@ Homepage sections pull from YAML files in `data/`:
 - `docs/carousel-implementation.md` — carousel architecture, data flow, JS init, and CSS details
 - `docs/site-styling-context.md` — CSS/JS load order, color scheme, custom components, override patterns
 - `docs/gallery-pages.md` — dark gallery layout, CSS Grid, hover overlays, modal navigation
+- `docs/homepage-redesign.md` — dark homepage design tokens, section classes, CSS scoping, i18n keys
 
 ## Rules
 

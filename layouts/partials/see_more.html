@@ -1,0 +1,15 @@
+{{ if isset .Site.Params "see_more" }}
+{{ if .Site.Params.see_more.enable }}
+<section class="bar hp-cta no-mb">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 class="hp-cta__title">{{ i18n "ctaTitle" }}</h3>
+                <p class="hp-cta__subtitle">{{ i18n "ctaSubtitle" }}</p>
+                <a href="{{ i18n "ctaLink" }}" class="nav-button hp-cta__button">{{ i18n "ctaButtonText" }}</a>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}

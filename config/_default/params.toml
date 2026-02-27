@@ -22,8 +22,8 @@ copyright = "Copyright (c) 2025 - 2026, Marc Laliberte Photo&Video; all rights r
 
 disabled_logo = false
 logo_text = "Marc Laliberte Photographe & Vidéographe"
-logo = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1748557335/mlalibertephoto7_elf8ue.png"
-logo_small = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1748557413/logo-small_nggpqi.png"
+logo = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1770857743/mlalibertephoto3_pn6qpx.png"
+logo_small = "https://res.cloudinary.com/dbjekf3b7/image/upload/v1770857743/mlalibertephoto3_pn6qpx.png"
 
 # =============================================================================
 # Contact / Formspree
@@ -98,7 +98,7 @@ pagination_speed = 1000
 # =============================================================================
 
 [features]
-enable = false
+enable = true
 cols = 3
 
 # =============================================================================
@@ -131,12 +131,7 @@ pagination_speed = 1000
 # =============================================================================
 
 [see_more]
-enable = false
-icon = "far fa-file-alt"
-title = "Do you want to see more?"
-subtitle = "We have prepared for you more than 40 different HTML pages, including 5 variations of homepage."
-link_url = "#"
-link_text = "Check other homepages"
+enable = true
 
 [clients]
 enable = false
