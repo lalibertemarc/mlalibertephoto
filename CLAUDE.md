@@ -63,3 +63,7 @@ Homepage sections pull from YAML files in `data/`:
 - Main config: `hugo.toml` — contains site params, menu structure per language, taxonomy settings
 - Deployment: `netlify.toml` — build command, Hugo version, redirects
 - Markdown rendering allows unsafe HTML (`[markup.goldmark.renderer] unsafe = true`) for embedded content (Facebook posts, iframes)
+
+## Detailed Documentation
+- `docs/carousel-implementation.md` — carousel architecture, data flow, JS init, and CSS details
+- `docs/site-styling-context.md` — CSS/JS load order, color scheme, custom components, override patterns

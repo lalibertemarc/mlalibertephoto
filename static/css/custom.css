@@ -148,3 +148,271 @@
   transform: scale(1.02);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
 }
+
+/* ==========================================================================
+   Modern Carousel — Full-bleed editorial hero
+   Scoped under .home-carousel--modern to override theme defaults
+   ========================================================================== */
+
+/* --- Reset theme base styles --- */
+.home-carousel--modern {
+  background: #1e1414 !important;
+  background-image: none !important;
+  text-align: left !important;
+}
+.home-carousel--modern .dark-mask {
+  display: none !important;
+}
+.home-carousel--modern .owl-carousel {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* --- Ken Burns keyframes --- */
+@keyframes kenBurns {
+  from { transform: scale(1); }
+  to   { transform: scale(1.04); }
+}
+
+/* --- Staggered entrance --- */
+@keyframes carouselFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- Slide container --- */
+.home-carousel--modern .carousel-slide {
+  position: relative;
+  height: 75vh;
+  min-height: 450px;
+  max-height: 700px;
+  overflow: hidden;
+  background: #1e1414;
+}
+
+/* --- Full-bleed image --- */
+.home-carousel--modern .carousel-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  will-change: transform;
+}
+
+/* Ken Burns: only the active slide animates */
+.home-carousel--modern .owl-item.active .carousel-image {
+  animation: kenBurns 6s ease-out forwards;
+}
+
+/* --- Cinematic gradient vignette --- */
+.home-carousel--modern .carousel-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 72%;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(
+    to top,
+    rgba(22, 14, 14, 0.88) 0%,
+    rgba(22, 14, 14, 0.72) 18%,
+    rgba(22, 14, 14, 0.45) 40%,
+    rgba(22, 14, 14, 0.12) 65%,
+    transparent 100%
+  );
+}
+
+/* --- Text overlay --- */
+.home-carousel--modern .carousel-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  padding: 0 0 58px 42px;
+  max-width: 550px;
+}
+
+/* --- Typography overrides --- */
+
+/* Title */
+.home-carousel--modern h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 3rem;
+  text-transform: none !important;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin: 0 0 0.3em;
+  line-height: 1.15;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
+}
+
+/* Description list */
+.home-carousel--modern ul,
+.home-carousel--modern p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  text-transform: none !important;
+  letter-spacing: 0.015em;
+  color: rgba(255, 255, 255, 0.85);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  padding: 0;
+  margin: 0;
+}
+.home-carousel--modern ul {
+  list-style: none;
+}
+.home-carousel--modern ul li {
+  margin-bottom: 5px;
+  line-height: 1.55;
+}
+
+/* Title link */
+.home-carousel--modern .carousel-link,
+.home-carousel--modern .carousel-link:hover,
+.home-carousel--modern .carousel-link:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* CTA — outline style over gradient */
+.home-carousel--modern .nav-button {
+  background: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.7);
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  font-size: 0.875rem;
+  padding: 0.6em 1.6em 0.6em 1.2em;
+  margin-top: 1em;
+  box-shadow: none;
+  border-radius: 2px;
+  transition: background 0.25s ease, border-color 0.25s ease, transform 0.2s ease;
+}
+.home-carousel--modern .nav-button:hover,
+.home-carousel--modern .nav-button:focus {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #fff;
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: none;
+}
+
+/* --- Staggered entrance animations --- */
+
+/* Elements start invisible */
+.home-carousel--modern .carousel-overlay h1,
+.home-carousel--modern .carousel-overlay ul,
+.home-carousel--modern .carousel-overlay p,
+.home-carousel--modern .carousel-overlay .nav-button {
+  opacity: 0;
+}
+
+/* Animate in when slide is active */
+.home-carousel--modern .owl-item.active .carousel-overlay h1 {
+  animation: carouselFadeUp 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s forwards;
+}
+.home-carousel--modern .owl-item.active .carousel-overlay ul,
+.home-carousel--modern .owl-item.active .carousel-overlay p {
+  animation: carouselFadeUp 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s forwards;
+}
+.home-carousel--modern .owl-item.active .carousel-overlay .nav-button {
+  animation: carouselFadeUp 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.55s forwards;
+}
+
+/* --- Pagination — line indicators --- */
+.home-carousel--modern .owl-theme .owl-controls {
+  position: absolute;
+  bottom: 28px;
+  right: 42px;
+  left: auto;
+  width: auto;
+  margin: 0;
+  text-align: right;
+  z-index: 3;
+}
+.home-carousel--modern .owl-theme .owl-controls .owl-page {
+  display: inline-block;
+  vertical-align: middle;
+}
+.home-carousel--modern .owl-theme .owl-controls .owl-page span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  margin: 0 4px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.4);
+  opacity: 1;
+  transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1), background 0.3s ease;
+}
+.home-carousel--modern .owl-theme .owl-controls .owl-page.active span,
+.home-carousel--modern .owl-theme .owl-controls .owl-page:hover span {
+  width: 44px;
+  background: #fff;
+  opacity: 1;
+}
+
+/* --- Responsive: Tablet (≤991px) --- */
+@media (max-width: 991px) {
+  .home-carousel--modern .carousel-slide {
+    height: 60vh;
+    min-height: 380px;
+  }
+  .home-carousel--modern h1 {
+    font-size: 2.4rem;
+  }
+  .home-carousel--modern .carousel-overlay {
+    padding: 0 0 44px 32px;
+    max-width: 460px;
+  }
+  .home-carousel--modern .owl-theme .owl-controls {
+    right: 32px;
+    bottom: 22px;
+  }
+}
+
+/* --- Responsive: Mobile (≤767px) --- */
+@media (max-width: 767px) {
+  .home-carousel--modern {
+    text-align: center !important;
+  }
+  .home-carousel--modern .carousel-slide {
+    height: 85vh;
+    min-height: 400px;
+    max-height: none;
+  }
+  .home-carousel--modern h1 {
+    font-size: 2rem;
+  }
+  .home-carousel--modern .carousel-overlay {
+    padding: 0 24px 40px;
+    max-width: 100%;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  .home-carousel--modern ul {
+    display: inline-block;
+    text-align: left;
+  }
+  .home-carousel--modern .carousel-gradient {
+    height: 80%;
+  }
+  .home-carousel--modern .owl-theme .owl-controls {
+    right: 0;
+    left: 0;
+    text-align: center;
+    bottom: 14px;
+  }
+}

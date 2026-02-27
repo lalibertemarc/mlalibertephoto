@@ -8,9 +8,8 @@
 
   {{ if gt (len $items) 0 }}
     <section>
-      <div class="home-carousel">
-        <div class="dark-mask"></div>
-        <div class="container">
+      <div class="home-carousel home-carousel--modern">
+        <div class="container-fluid" style="padding: 0;">
           <div class="homepage owl-carousel"
                data-autoplay="{{ default true .Site.Params.CarouselHomepage.auto_play }}"
                data-slide-speed="{{ default 2000 .Site.Params.CarouselHomepage.slide_speed }}"
@@ -20,32 +19,24 @@
               {{ $title := index .title $lang }}
               {{ $alt := index .alt $lang }}
               {{ $desc := index .description $lang }}
-              {{ $contact := index .contactText $lang}}
-              
-              {{/* Get width and height from parameters */}}
-              {{ $width := .width }}
-              {{ $height := .height }}
-              
+              {{ $contact := index .contactText $lang }}
+
               <div class="item">
-                {{ if .href }}
-                  <a href="{{ .href }}" target="_blank" title="{{ $title }}">
-                {{ end }}
-                    <div class="row">
-                      <div class="col-sm-5 right">
+                <div class="carousel-slide">
+                  <img class="carousel-image" src="{{ .image }}" alt="{{ $alt }}">
+                  <div class="carousel-gradient"></div>
+                  <div class="carousel-overlay">
+                    {{ if .href }}
+                      <a href="{{ .href }}" class="carousel-link" title="{{ $title }}">
                         <h1>{{ $title }}</h1>
-                        {{ $desc | safeHTML }}
-                        <a href="/contact" class="nav-button" target="_blank">{{ $contact }}</a>
-                      </div>
-                      <div class="col-sm-7">
-                        {{/* Apply width and height as inline styles */}}
-                        <img class="img-responsive" src="{{ .image }}" alt="{{ $alt }}" 
-                          {{ with $width }}style="width: {{ . }}px;"{{ end }}
-                          {{ with $height }}style="height: {{ . }}px;"{{ end }}>
-                      </div>
-                    </div>
-                {{ if .href }}
-                  </a>
-                {{ end }}
+                      </a>
+                    {{ else }}
+                      <h1>{{ $title }}</h1>
+                    {{ end }}
+                    {{ $desc | safeHTML }}
+                    <a href="/contact" class="nav-button">{{ $contact }}</a>
+                  </div>
+                </div>
               </div>
             {{ end }}
           </div>
