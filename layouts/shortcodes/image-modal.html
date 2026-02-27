@@ -25,9 +25,9 @@
 
 {{ if not (.Page.Scratch.Get "modal_created") }}
   {{ .Page.Scratch.Set "modal_created" true }}
-  <div id="imageModal" class="modal" role="dialog" aria-modal="true" aria-label="Enlarged image view" onclick="this.style.display='none'">
+  <div id="imageModal" class="modal" role="dialog" aria-modal="true" aria-label="Enlarged image view">
     <button class="close" aria-label="Close image modal">&times;</button>
-    <img class="modal-content" id="modalImage" alt="" style="max-width: 90vw; max-height: 90vh;">
+    <img class="modal-content" id="modalImage" alt="">
     <div id="modalCaption" class="modal-caption" aria-live="polite"></div>
   </div>
 
@@ -51,43 +51,70 @@
 
   <script>
   document.addEventListener('DOMContentLoaded', function() {
-    if (document.getElementById('imageModal')) {
-      document.querySelectorAll('.click-to-enlarge').forEach(img => {
-        img.onclick = function(){
-          const modalImg = document.getElementById('modalImage');
-          const modalCaption = document.getElementById('modalCaption');
-          modalImg.src = this.src;
-          modalImg.alt = this.alt;
-          modalCaption.innerHTML = this.dataset.caption || ""; // Show caption if it exists
-          document.getElementById('imageModal').style.display = "block";
-          
-          // Reset image size first
-          modalImg.style.width = 'auto';
-          modalImg.style.height = 'auto';
-          
-          // Adjust if image is larger than viewport
-          if (modalImg.naturalWidth > window.innerWidth || 
-              modalImg.naturalHeight > window.innerHeight) {
-            const ratio = Math.min(
-              window.innerWidth / modalImg.naturalWidth,
-              window.innerHeight / modalImg.naturalHeight
-            ) * 0.9;
-            modalImg.style.width = (modalImg.naturalWidth * ratio) + 'px';
-          }
+    var modal = document.getElementById('imageModal');
+    if (!modal) return;
+
+    function openModal() {
+      modal.style.display = 'flex';
+      // Force reflow so the transition triggers
+      modal.offsetHeight;
+      modal.classList.add('active');
+    }
+
+    function closeModal() {
+      modal.classList.remove('active');
+      modal.addEventListener('transitionend', function handler() {
+        if (!modal.classList.contains('active')) {
+          modal.style.display = 'none';
         }
-      });
-      
-      document.querySelector('.close').onclick = function() {
-        document.getElementById('imageModal').style.display = "none";
-      }
-      
-      // Close modal on ESC key
-      document.addEventListener('keydown', function(e) {
-        if (e.key === "Escape") {
-          document.getElementById('imageModal').style.display = "none";
-        }
+        modal.removeEventListener('transitionend', handler);
       });
     }
+
+    document.querySelectorAll('.click-to-enlarge').forEach(function(img) {
+      img.onclick = function() {
+        var modalImg = document.getElementById('modalImage');
+        var modalCaption = document.getElementById('modalCaption');
+        modalImg.src = this.src;
+        modalImg.alt = this.alt;
+        modalCaption.innerHTML = this.dataset.caption || '';
+
+        modalImg.style.width = 'auto';
+        modalImg.style.height = 'auto';
+
+        openModal();
+
+        if (modalImg.naturalWidth > window.innerWidth ||
+            modalImg.naturalHeight > window.innerHeight) {
+          var ratio = Math.min(
+            window.innerWidth / modalImg.naturalWidth,
+            window.innerHeight / modalImg.naturalHeight
+          ) * 0.9;
+          modalImg.style.width = (modalImg.naturalWidth * ratio) + 'px';
+        }
+      };
+    });
+
+    // Close on backdrop click (not on image/caption)
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) closeModal();
+    });
+
+    // Stop propagation on image and caption so clicking them doesn't close
+    document.getElementById('modalImage').addEventListener('click', function(e) {
+      e.stopPropagation();
+    });
+    document.getElementById('modalCaption').addEventListener('click', function(e) {
+      e.stopPropagation();
+    });
+
+    document.querySelector('.close').onclick = function() {
+      closeModal();
+    };
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeModal();
+    });
   });
   </script>
 {{ end }}
