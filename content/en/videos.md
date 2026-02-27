@@ -1,6 +1,7 @@
 +++
 title = 'Videos'
 draft = false
+page_class = "dark-gallery"
 description= "Professional videographer specializing in high-quality music videos and corporate videos"
 +++
 

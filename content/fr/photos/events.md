@@ -2,6 +2,7 @@
 meta_title = "Photographe de concerts Québec | Photographe d'événements Québec"
 title='Portolio | Évènements'
 draft = false
+page_class = "dark-gallery"
 description = "Photographe d'événements à Québec, spécialiste des concerts et des spectacles de musique. Discret et professionnel, je capture l'énergie, l'émotion et les moments inoubliables de vos performances, de vos événements corporatifs et culturels grâce à des images dynamiques et percutantes."
 +++
 
@@ -15,64 +16,57 @@ Demandez pour mes prix spéciaux pour petits spectacles.
 
 <hr>
 
-{{< fleximages >}}
-{{< image-modal 
+{{< gallery >}}
+{{< image-modal
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750165440/DSC01453_-_insta_vtfgof.jpg"
-    width="400px" 
     title="The Mother Rockers"
     alt="Billie Ballz de The Mother Rockers"
     caption="Billie Ballz de The Mother Rockers"
-    button-url="/blog/2025/04/26/bateaudenuitmotherrockers/" 
+    button-url="/blog/2025/04/26/bateaudenuitmotherrockers/"
 >}}
-{{< image-modal 
+{{< image-modal
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750165440/DSC01554_-_insta_cfkfog.jpg"
-    width="400px" 
     title="The Mother Rockers"
     alt="Bobby Coxx de The Mother Rockers"
     caption="Bobby Coxx de The Mother Rockers"
-    button-url="/blog/2025/04/26/bateaudenuitmotherrockers/" 
+    button-url="/blog/2025/04/26/bateaudenuitmotherrockers/"
 >}}
-{{< image-modal 
+{{< image-modal
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761750181/_DSC4243.web_pvwfwt.jpg"
-    width="400px" 
     title="Prohibition5"
     alt="Prohibition5 en spectacle"
     caption="Prohibition5 en spectacle"
-    button-url="/blog/2025/10/29/Prohibition5/"  
+    button-url="/blog/2025/10/29/Prohibition5/"
 >}}
-{{< image-modal 
+{{< image-modal
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750165440/_DSC4217-Enhanced-NR_-_insta-2_v9iavk.jpg"
-    width="400px" 
     title="Krista Shipperbottom (ex-Lutharo)"
     caption="Krista Shipperbottom (ex-Lutharo)"
     alt="Lutharo"
-    button-url="/blog/2025/10/29/krista/"  
+    button-url="/blog/2025/10/29/krista/"
 >}}
-{{< image-modal 
+{{< image-modal
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750165440/_DSC7025_-_insta_frefml.jpg"
-    width="400px"
     title="Guitbassdrom"
     caption="Guitbassdrom"
     alt="Guitbassdrom"
-    button-url="/blog/2025/03/02/sonumguitbassdrom/" 
+    button-url="/blog/2025/03/02/sonumguitbassdrom/"
 >}}
-{{< image-modal 
+{{< image-modal
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750165978/_DSC6905_-_insta_p8bqkg.jpg"
-    width="400px"
     title="Diamond Cobra"
     caption="Diamond Cobra"
     alt="Diamond Cobra"
-    button-url="/blog/2025/03/02/sonumdiamoncobra/" 
+    button-url="/blog/2025/03/02/sonumdiamoncobra/"
 >}}
-{{< image-modal 
+{{< image-modal
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750165666/_DSC2795_lkfozw.jpg"
-    width="400px"
     title="EBJM Danse"
     caption="Spectacle de EBJM Danse au soleil couchant"
     alt="Spectacle de EBJM Danse au soleil couchant"
-    button-url="/blog/2025/10/30/ebjmdanse/" 
+    button-url="/blog/2025/10/30/ebjmdanse/"
 >}}
-{{</ fleximages >}}
+{{< /gallery >}}
 
 <hr>
 {{< fleximages >}}

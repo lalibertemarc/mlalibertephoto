@@ -35,7 +35,7 @@
 
                     <!-- *** LEFT COLUMN *** -->
 
-                    <div id="blog-post">
+                    <div id="blog-post"{{ with .Params.page_class }} class="{{ . }}"{{ end }}>
 
                         {{ if or .Params.author .Params.date }}
                           <p class="text-muted text-uppercase mb-small text-right">

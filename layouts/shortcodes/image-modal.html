@@ -1,16 +1,16 @@
-<figure class="enlargeable-image" itemscope itemtype="https://schema.org/ImageObject">
+<figure class="enlargeable-image{{ with .Get "class" }} enlargeable-image--{{ . }}{{ end }}" itemscope itemtype="https://schema.org/ImageObject">
     {{ if .Get "title" }}
       <figcaption class="image-title" itemprop="name">{{ .Get "title" }}</figcaption>
     {{ end }}
-    <img 
-        src="{{ .Get "src" }}" 
-        alt="{{ .Get "alt" }}" 
-        class="click-to-enlarge" 
+    <img
+        src="{{ .Get "src" }}"
+        alt="{{ .Get "alt" }}"
+        class="click-to-enlarge"
         itemprop="contentUrl"
         loading="lazy"
         data-caption="{{ if .Get "caption" }}{{ .Get "caption" }}{{ end }}"
         {{ if .Get "srcset" }}srcset="{{ .Get "srcset" }}" sizes="(max-width: 768px) 100vw, 50vw"{{ end }}
-        style="cursor: zoom-in; 
+        style="cursor: zoom-in;
                {{ with .Get "width" }}width: {{ . }};{{ else }}max-width: 100%;{{ end }}
                {{ with .Get "height" }}height: {{ . }};{{ else }}height: auto;{{ end }}"
     >
@@ -27,8 +27,11 @@
   {{ .Page.Scratch.Set "modal_created" true }}
   <div id="imageModal" class="modal" role="dialog" aria-modal="true" aria-label="Enlarged image view">
     <button class="close" aria-label="Close image modal">&times;</button>
+    <button class="modal-prev" aria-label="Previous image">&#8249;</button>
+    <button class="modal-next" aria-label="Next image">&#8250;</button>
     <img class="modal-content" id="modalImage" alt="">
     <div id="modalCaption" class="modal-caption" aria-live="polite"></div>
+    <div id="modalCounter" class="modal-counter" aria-live="polite"></div>
   </div>
 
 {{ if not (.Page.Scratch.Get "jsonld_created") }}
@@ -54,9 +57,67 @@
     var modal = document.getElementById('imageModal');
     if (!modal) return;
 
+    var galleryImages = [];
+    var currentIndex = -1;
+    var isGalleryMode = false;
+
+    function collectGalleryImages(clickedImg) {
+      var gallery = clickedImg.closest('.photo-gallery');
+      if (gallery) {
+        isGalleryMode = true;
+        galleryImages = Array.prototype.slice.call(gallery.querySelectorAll('.click-to-enlarge'));
+        currentIndex = galleryImages.indexOf(clickedImg);
+      } else {
+        isGalleryMode = false;
+        galleryImages = [];
+        currentIndex = -1;
+      }
+      updateNavVisibility();
+    }
+
+    function updateNavVisibility() {
+      var prevBtn = modal.querySelector('.modal-prev');
+      var nextBtn = modal.querySelector('.modal-next');
+      var counter = document.getElementById('modalCounter');
+      if (isGalleryMode && galleryImages.length > 1) {
+        prevBtn.style.display = 'flex';
+        nextBtn.style.display = 'flex';
+        counter.style.display = 'block';
+        counter.textContent = (currentIndex + 1) + ' / ' + galleryImages.length;
+      } else {
+        prevBtn.style.display = 'none';
+        nextBtn.style.display = 'none';
+        counter.style.display = 'none';
+      }
+    }
+
+    function showImage(img) {
+      var modalImg = document.getElementById('modalImage');
+      var modalCaption = document.getElementById('modalCaption');
+      modalImg.src = img.src;
+      modalImg.alt = img.alt;
+      modalCaption.innerHTML = img.dataset.caption || '';
+      modalImg.style.width = 'auto';
+      modalImg.style.height = 'auto';
+
+      if (img.naturalWidth > window.innerWidth || img.naturalHeight > window.innerHeight) {
+        var ratio = Math.min(
+          window.innerWidth / img.naturalWidth,
+          window.innerHeight / img.naturalHeight
+        ) * 0.9;
+        modalImg.style.width = (img.naturalWidth * ratio) + 'px';
+      }
+      updateNavVisibility();
+    }
+
+    function navigate(direction) {
+      if (!isGalleryMode || galleryImages.length <= 1) return;
+      currentIndex = (currentIndex + direction + galleryImages.length) % galleryImages.length;
+      showImage(galleryImages[currentIndex]);
+    }
+
     function openModal() {
       modal.style.display = 'flex';
-      // Force reflow so the transition triggers
       modal.offsetHeight;
       modal.classList.add('active');
     }
@@ -73,34 +134,27 @@
 
     document.querySelectorAll('.click-to-enlarge').forEach(function(img) {
       img.onclick = function() {
-        var modalImg = document.getElementById('modalImage');
-        var modalCaption = document.getElementById('modalCaption');
-        modalImg.src = this.src;
-        modalImg.alt = this.alt;
-        modalCaption.innerHTML = this.dataset.caption || '';
-
-        modalImg.style.width = 'auto';
-        modalImg.style.height = 'auto';
-
+        collectGalleryImages(this);
+        showImage(this);
         openModal();
-
-        if (modalImg.naturalWidth > window.innerWidth ||
-            modalImg.naturalHeight > window.innerHeight) {
-          var ratio = Math.min(
-            window.innerWidth / modalImg.naturalWidth,
-            window.innerHeight / modalImg.naturalHeight
-          ) * 0.9;
-          modalImg.style.width = (modalImg.naturalWidth * ratio) + 'px';
-        }
       };
     });
 
-    // Close on backdrop click (not on image/caption)
+    // Prev/Next buttons
+    modal.querySelector('.modal-prev').onclick = function(e) {
+      e.stopPropagation();
+      navigate(-1);
+    };
+    modal.querySelector('.modal-next').onclick = function(e) {
+      e.stopPropagation();
+      navigate(1);
+    };
+
+    // Close on backdrop click
     modal.addEventListener('click', function(e) {
       if (e.target === modal) closeModal();
     });
 
-    // Stop propagation on image and caption so clicking them doesn't close
     document.getElementById('modalImage').addEventListener('click', function(e) {
       e.stopPropagation();
     });
@@ -108,13 +162,31 @@
       e.stopPropagation();
     });
 
-    document.querySelector('.close').onclick = function() {
+    modal.querySelector('.close').onclick = function() {
       closeModal();
     };
 
     document.addEventListener('keydown', function(e) {
+      if (!modal.classList.contains('active')) return;
       if (e.key === 'Escape') closeModal();
+      if (e.key === 'ArrowLeft') navigate(-1);
+      if (e.key === 'ArrowRight') navigate(1);
     });
+
+    // Touch/swipe support
+    var touchStartX = 0;
+    var touchEndX = 0;
+    modal.addEventListener('touchstart', function(e) {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+    modal.addEventListener('touchend', function(e) {
+      touchEndX = e.changedTouches[0].screenX;
+      var diff = touchStartX - touchEndX;
+      if (Math.abs(diff) > 50) {
+        if (diff > 0) navigate(1);
+        else navigate(-1);
+      }
+    }, { passive: true });
   });
   </script>
 {{ end }}

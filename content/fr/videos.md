@@ -1,6 +1,7 @@
 +++
 title = 'Videos'
 draft = false
+page_class = "dark-gallery"
 description= "Vidéaste professionnel spécialisé dans les clips musicaux et les films d'entreprise de haute qualité"
 +++
 

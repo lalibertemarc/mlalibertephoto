@@ -416,3 +416,351 @@
     bottom: 14px;
   }
 }
+
+/* ==========================================================================
+   Dark Gallery — Editorial grid layout for portfolio pages
+   Scoped under .dark-gallery and .photo-gallery
+   ========================================================================== */
+
+/* --- Full-bleed dark background breakout --- */
+.dark-gallery #post-content {
+  position: relative;
+}
+.dark-gallery #post-content::before {
+  content: '';
+  position: absolute;
+  top: -2rem;
+  bottom: -2rem;
+  left: calc(-50vw + 50%);
+  width: 100vw;
+  background: #1a1212;
+  z-index: -1;
+}
+
+/* --- Base typography on dark --- */
+.dark-gallery #post-content {
+  color: rgba(255, 255, 255, 0.85);
+}
+.dark-gallery #post-content > p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1.05rem;
+  letter-spacing: 0.015em;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* --- Section headers (h2) — quiet uppercase labels --- */
+.dark-gallery #post-content h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: rgba(255, 255, 255, 0.45);
+  text-align: center;
+  margin: 3rem 0 1.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+.dark-gallery #post-content h2:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+/* --- HR separator --- */
+.dark-gallery #post-content hr {
+  border-color: rgba(255, 255, 255, 0.08);
+  margin: 2.5rem 0;
+}
+
+/* --- Photo gallery grid --- */
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  margin: 1rem 0 2rem;
+}
+
+/* --- Image card cells --- */
+.photo-gallery .enlargeable-image {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+  margin: 0;
+  cursor: pointer;
+}
+.photo-gallery .enlargeable-image img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.photo-gallery .enlargeable-image:hover img {
+  transform: scale(1.04);
+}
+
+/* --- Wide images (group shots) span full width --- */
+.photo-gallery .enlargeable-image--wide {
+  grid-column: 1 / -1;
+  aspect-ratio: 16 / 9;
+}
+
+/* --- Hover gradient overlay via ::after --- */
+.photo-gallery .enlargeable-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(26, 18, 18, 0.85) 0%,
+    rgba(26, 18, 18, 0.4) 40%,
+    transparent 100%
+  );
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+.photo-gallery .enlargeable-image:hover::after {
+  opacity: 1;
+}
+
+/* --- Title repositioned as absolute overlay --- */
+.photo-gallery .image-title {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  text-align: center;
+  padding: 0 12px;
+  margin: 0;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+  pointer-events: none;
+}
+.photo-gallery .enlargeable-image:hover .image-title {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- Button repositioned as overlay --- */
+.photo-gallery .image-button-container {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  margin: 0 !important;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+.photo-gallery .enlargeable-image:hover .image-button-container {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- CTA buttons: outline style on dark background --- */
+.dark-gallery .photo-gallery .nav-button {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: #fff;
+  font-weight: 400;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  padding: 0.4em 1em 0.4em 0.8em;
+  box-shadow: none;
+  border-radius: 2px;
+}
+.dark-gallery .photo-gallery .nav-button:hover,
+.dark-gallery .photo-gallery .nav-button:focus {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #fff;
+  color: #fff;
+  box-shadow: none;
+}
+
+/* --- Top CTA area (fleximages with navbuttons) on dark --- */
+.dark-gallery .flex-images .nav-button {
+  background: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.7);
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  box-shadow: none;
+  border-radius: 2px;
+}
+.dark-gallery .flex-images .nav-button:hover,
+.dark-gallery .flex-images .nav-button:focus {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #fff;
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: none;
+}
+
+/* --- Modal prev/next navigation --- */
+.modal-prev,
+.modal-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 48px;
+  font-weight: 200;
+  cursor: pointer;
+  width: 56px;
+  height: 56px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.2s ease, color 0.2s ease;
+  z-index: 1001;
+  padding: 0;
+  line-height: 1;
+}
+.modal-prev { left: 16px; }
+.modal-next { right: 16px; }
+.modal-prev:hover,
+.modal-prev:focus,
+.modal-next:hover,
+.modal-next:focus {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  outline: none;
+}
+
+/* --- Modal image counter --- */
+.modal-counter {
+  display: none;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  margin-top: 8px;
+}
+
+/* --- Dark gallery: before-after slider captions --- */
+.dark-gallery .image-main-caption {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* --- Dark gallery: bold / strong text --- */
+.dark-gallery #post-content strong {
+  color: #fff;
+}
+
+/* --- Dark gallery: h1 — page title --- */
+.dark-gallery #post-content h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: rgba(255, 255, 255, 0.55);
+  text-align: center;
+  margin: 2rem 0 1.5rem;
+}
+
+/* --- Dark gallery: h3 — service tier labels --- */
+.dark-gallery #post-content h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1.1rem;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.85);
+  text-align: center;
+  margin: 2.5rem 0 1rem;
+}
+
+/* --- Dark gallery: bullet lists --- */
+.dark-gallery #post-content ul {
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.dark-gallery #post-content ul li {
+  margin-bottom: 0.3em;
+}
+
+/* --- Dark gallery: YouTube iframes — responsive 16:9 --- */
+.dark-gallery #post-content iframe {
+  display: block;
+  max-width: 100%;
+  width: 560px;
+  margin: 1rem auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  aspect-ratio: 16 / 9;
+  height: auto;
+}
+
+/* --- Responsive: Tablet (≤991px) --- */
+@media (max-width: 991px) {
+  .photo-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* --- Responsive: Mobile (≤767px) --- */
+@media (max-width: 767px) {
+  .photo-gallery {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .photo-gallery .enlargeable-image {
+    aspect-ratio: 4 / 5;
+  }
+  .photo-gallery .enlargeable-image--wide {
+    aspect-ratio: 16 / 9;
+  }
+  /* No hover on mobile: title always visible below image */
+  .photo-gallery .enlargeable-image::after {
+    display: none;
+  }
+  .photo-gallery .image-title {
+    position: static;
+    opacity: 1;
+    transform: none;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 8px 0 0;
+    font-size: 0.85rem;
+    pointer-events: auto;
+  }
+  .photo-gallery .image-button-container {
+    position: static;
+    opacity: 1;
+    transform: none;
+    margin-top: 6px !important;
+  }
+  .photo-gallery .enlargeable-image:hover img {
+    transform: none;
+  }
+  /* Modal nav arrows smaller on mobile */
+  .modal-prev,
+  .modal-next {
+    font-size: 36px;
+    width: 44px;
+    height: 44px;
+  }
+  .modal-prev { left: 8px; }
+  .modal-next { right: 8px; }
+}

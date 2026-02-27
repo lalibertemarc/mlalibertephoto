@@ -39,7 +39,8 @@ Hugo version: **0.147.4** (pinned in netlify.toml).
 - Key overrides: `index.html`, `_default/single.html`, `partials/carousel.html`, `partials/headers.html`
 
 ### Custom Shortcodes (`layouts/shortcodes/`)
-- `image-modal` — click-to-enlarge image with modal
+- `image-modal` — click-to-enlarge image with modal (supports `class` param for BEM modifiers)
+- `gallery` — wrapper shortcode for photo gallery grid (creates `.photo-gallery` CSS Grid container)
 - `fleximages` — flexible image grid layout
 - `before-after` — before/after image comparison slider
 - `navbutton` — styled CTA buttons
@@ -67,3 +68,13 @@ Homepage sections pull from YAML files in `data/`:
 ## Detailed Documentation
 - `docs/carousel-implementation.md` — carousel architecture, data flow, JS init, and CSS details
 - `docs/site-styling-context.md` — CSS/JS load order, color scheme, custom components, override patterns
+- `docs/gallery-pages.md` — dark gallery layout, CSS Grid, hover overlays, modal navigation
+
+## Rules
+
+### Document-as-you-explore
+When exploring a flow, system, or area of the codebase that is **not already covered** by an existing doc in `docs/`, you **must**:
+1. Create a new Markdown file in `docs/` describing your findings (e.g., `docs/contact-form-flow.md`).
+2. Add a reference to it in the **Detailed Documentation** section above.
+
+This ensures future sessions can reuse the knowledge without re-exploring the same code.

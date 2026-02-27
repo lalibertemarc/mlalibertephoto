@@ -2,6 +2,7 @@
 meta_title="Restauration photo Québec | Numérisation vieilles photos"
 title = "Service de restauration de photos anciennes"
 draft = false
+page_class = "dark-gallery"
 description= "Marc Laliberté offre des services professionnels de numérisation et restauration photo pour redonner vie à vos souvenirs précieux. Spécialisé dans la réparation de photos endommagées, décolorées ou anciennes avec un souci du détail méticuleux."
 +++
 
@@ -16,10 +17,8 @@ Marc Laliberté offre des services professionnels de numérisation et restaurati
 - Numérisation de vos vieilles photos pour un partage sur les réseaux sociaux
 - Amélioration de la résolution pour impression et encadrement
 
-<br>
-
 {{< fleximages >}}
-{{< image-modal 
+{{< image-modal
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1748480912/_DSC7374-001-Edit-Edit_-_insta_nemrfg.jpg"
     width="400px"
     alt="Photo restaurée d'une jeune dame resplendissante"
@@ -85,8 +84,6 @@ Ce service comprend :
 >}}
 {{< /fleximages >}}
 
-<br>
-
 **Note importante**
 
 Le résultat de l'amélioration du flou et reconstruction des visages peut varier. La faisabilité dépend
@@ -119,13 +116,10 @@ Peut être à part ou ajoutée aux autres services.
 >}}
 {{< /fleximages >}}
 
-<br>
-
 **Note importante**
 
 Si vous vous souvenez des couleurs d'origine (vêtements, yeux, voitures, etc.), merci de me les indiquer. En effet, bien que je m'efforce de choisir des teintes cohérentes avec le contexte, je ne peux pas restituer avec certitude les couleurs originales à partir d'une photo en noir et blanc.
 
-<br>
 <p><em>Des tarifs préférentiels sont applicables pour des commandes de 10 photos ou plus (négociables) pour tous les services.</em></p>
 
 

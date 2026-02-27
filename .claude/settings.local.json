@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__hugo-mcp__check_hugo_installation",
+      "WebSearch",
+      "mcp__hugo-mcp__build_site",
+      "mcp__hugo-mcp__start_preview",
+      "mcp__hugo-mcp__stop_preview",
+      "Bash(taskkill:*)",
+      "Bash(ls:*)",
+      "Bash(hugo:*)"
+    ]
+  }
+}

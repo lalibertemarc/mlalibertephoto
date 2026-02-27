@@ -2,6 +2,7 @@
 meta_title="Photo restoration Quebec City | Digitization old photostos"
 title = "Old Photo Restoration Service"
 draft = false
+page_class = "dark-gallery"
 description= "Marc Laliberté offers professional photo scanning and restoration services to bring your precious memories back to life. He specializes in repairing damaged, faded, or old photos with meticulous attention to detail."
 +++
 
@@ -15,7 +16,6 @@ Marc Laliberté offers professional photo scanning and restoration services to b
 - Repairing scratches on damaged photos
 - Digitization of your old photos for sharing on social media
 - Resolution enhancement for printing and framing
-<br>
 
 {{< fleximages >}}
 {{< image-modal 
@@ -87,8 +87,6 @@ This service includes:
 >}}
 {{< /fleximages >}}
 
-<br>
-
 **Important note**
 
 The result of blur improvement and facial reconstruction may vary. Feasibility depends on:
@@ -123,7 +121,6 @@ Can be purchased separately or added to other services.
 
 If you remember the original colors (clothing, eyes, cars, etc.), please let me know. Although I strive to choose colors that are consistent with the context, I cannot reliably reproduce the actual original colors from a black and white photo.
 
-<br>
 <p><em>Preferential rates are available for orders of 10 photos or more (negotiable) for all services.</em></p>
 
 {{< fleximages >}}
