@@ -20,7 +20,7 @@ J'ai été me promener dans le [Jardin Botanique Roger-Van den Hende](https://ww
 
 Voici quelques clichés du building principal que j'aime bien. Je leur ai donné une teinte froide qui met bien en valeur les fleurs.
 
-{{< fleximages >}}
+{{< gallery >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1762014538/_DSC3589.web_acuwo2.jpg"
     width="1350px"
@@ -49,4 +49,4 @@ Voici quelques clichés du building principal que j'aime bien. Je leur ai donné
     caption="Une vue grand angle de l'entrée du jardin botanique" 
 >}}
 
-{{</ fleximages >}}
+{{</ gallery >}}

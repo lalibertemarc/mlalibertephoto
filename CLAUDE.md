@@ -70,6 +70,7 @@ Homepage sections pull from YAML files in `data/`:
 - `docs/site-styling-context.md` — CSS/JS load order, color scheme, custom components, override patterns
 - `docs/gallery-pages.md` — dark gallery layout, CSS Grid, hover overlays, modal navigation
 - `docs/homepage-redesign.md` — dark homepage design tokens, section classes, CSS scoping, i18n keys
+- `docs/blog-post-styling.md` — blog post rendering flow, dark-blog vs dark-gallery CSS, typography hierarchy
 
 ## Rules
 

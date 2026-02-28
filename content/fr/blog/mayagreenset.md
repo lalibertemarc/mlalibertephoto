@@ -16,7 +16,7 @@ authors = ["Marc Laliberté"]
 De la pose au maintien d'un sourire, jusqu'à l'éclat de rire puis retour au travail avec Maya Therienne Peña
 
 
-{{< fleximages >}}
+{{< gallery >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1765203192/1_DSC7997_edit.web_ciloqz.jpg"
     width="400px"
@@ -71,4 +71,4 @@ De la pose au maintien d'un sourire, jusqu'à l'éclat de rire puis retour au tr
     alt="Portrait d'une femme avec tenue verte et fond mauve"
     caption="Portrait de casting de Maya Therienne Peña"
 >}}
-{{< /fleximages >}}
+{{< /gallery >}}

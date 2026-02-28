@@ -1,5 +1,5 @@
 +++
-title = 'ButterButtButlerLive'
+title = 'ButterButtButler Live'
 date = 2026-02-27T14:30:00-05:00
 draft = false
 description = "ButterButtButler live at la Source de la Martinière, January 16, 2026"

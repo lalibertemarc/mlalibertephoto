@@ -35,7 +35,11 @@
 
                     <!-- *** LEFT COLUMN *** -->
 
-                    <div id="blog-post"{{ with .Params.page_class }} class="{{ . }}"{{ end }}>
+                    {{ $pageClass := .Params.page_class | default "" }}
+                    {{ if and (eq .Section "blog") (not $pageClass) }}
+                      {{ $pageClass = "dark-blog" }}
+                    {{ end }}
+                    <div id="blog-post"{{ with $pageClass }} class="{{ . }}"{{ end }}>
 
                         {{ if or .Params.author .Params.date }}
                           <p class="text-muted text-uppercase mb-small text-right">

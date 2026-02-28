@@ -67,7 +67,7 @@ authors = ["Marc Laliberté"]
 
 ## <header text from arguments>
 
-{{< fleximages >}}
+{{< gallery >}}
 {{< image-modal
     src="<cloudinary URL 1>"
     width="500px"
@@ -81,7 +81,7 @@ authors = ["Marc Laliberté"]
     caption="<generated caption 2>"
 >}}
 ... (one image-modal block per uploaded image) ...
-{{< /fleximages >}}
+{{< /gallery >}}
 ```
 
 ### 5. Create the English blog post file
@@ -98,12 +98,12 @@ After creating both files, output:
   - Translate the English title and header
   - Add `description`, `tags`, `categories` to both files
   - Review and adjust `alt` and `caption` for each image in both languages
-  - Add any body text between the `## h2` header and the `{{< fleximages >}}` block
+  - Add any body text between the `## h2` header and the `{{< gallery >}}` block
   - Set `draft = false` when ready to publish
 
 ## Important rules
 
-- Always add the header text as an `## h2` before the `{{< fleximages >}}` block.
+- Always add the header text as an `## h2` before the `{{< gallery >}}` block.
 - Always set `draft = true`.
 - Always set `external_banner = true`.
 - Always set `banner_width = 600` and `banner_height = 600`.

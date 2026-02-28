@@ -16,7 +16,7 @@ authors = ["Marc Laliberté"]
 
 Voici mes clichés préférés du spectacle de danse de EBJM Danse le 10 juin 2025 à Cap-Chat
 
-{{< fleximages >}}
+{{< gallery >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761842337/_DSC2325.web_jaysiu.jpg"
     width="800px"
@@ -113,4 +113,4 @@ Voici mes clichés préférés du spectacle de danse de EBJM Danse le 10 juin 20
     alt="EBJM Danse en spectacle à Cap-Chat"
     caption="Les danseurs sont actions pendant leur performance de danse à l'extérieur à Cap-Chat" 
 >}}
-{{< /fleximages >}}
+{{< /gallery >}}

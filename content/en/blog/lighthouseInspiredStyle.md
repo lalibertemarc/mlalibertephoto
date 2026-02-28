@@ -23,7 +23,7 @@ Furthermore, the film is shot on orthochromatic film, which is a type of black a
 
 Here are some examples from the film:
 
-{{< fleximages >}}
+{{< gallery >}}
 {{< image-modal 
     src="https://compote.slate.com/images/b29c0b5f-fe88-4d0c-967d-e9d668766e09.jpeg?crop=1500%2C1000%2Cx0%2Cy0&width=840"
     width="400px"
@@ -42,7 +42,7 @@ Here are some examples from the film:
     alt="Willem Dafoe in The Lighthouse. A24"
     caption="Willem Dafoe in The Lighthouse. A24" 
 >}}
-{{</ fleximages >}}
+{{</ gallery >}}
 <br>
 <hr>
 
@@ -62,7 +62,7 @@ Before showing you the photos, here are the editing steps to achieve a style ins
 
 Here are some of my photos in this style that I really like. Furthermore, I used my [Sony FE 50mm F1.8](https://www.sony.ca/en/electronics/camera-lenses/sel50f18f) lens, which does not help at all to beautify the subject.
 
-{{< fleximages >}}
+{{< gallery >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1762122546/_DSC4618-Edit.web_r2krpu.jpg"
     width="1000px"
@@ -99,4 +99,4 @@ Here are some of my photos in this style that I really like. Furthermore, I used
     alt="A portrait of a man that highlights his facial flaws"
     caption="Portrait of a man that doesn't flatter him at all and, on the contrary, makes him look 30 years older." 
 >}}
-{{</ fleximages >}}
+{{</ gallery >}}

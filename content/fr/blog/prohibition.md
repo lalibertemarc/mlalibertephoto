@@ -15,7 +15,7 @@ authors = ["Marc Laliberté"]
 
 Voici quelques clichés du spectacle du groupe Prohibition5 le 15 septembre 2025 dans les rues de Limoilou, Québec.
 
-{{< fleximages >}}
+{{< gallery >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761750182/_DSC4173.web_bwfl7u.jpg"
     width="1000px"
@@ -100,4 +100,4 @@ Voici quelques clichés du spectacle du groupe Prohibition5 le 15 septembre 2025
     alt="Le groupe Prohibition5 en spectacle le 15 septembre 2025 dans les rues de Limoilou"
     caption="Prohibition5 donne une performance de style chansonnier/crooner dans les rues de Limoilou, Québec" 
 >}}
-{{< /fleximages >}}
+{{< /gallery >}}

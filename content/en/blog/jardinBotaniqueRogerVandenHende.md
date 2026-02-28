@@ -20,7 +20,7 @@ I went for a walk in the [Roger-Van den Hende Botanical Garden](https://www.jard
 
 Here are some photos of the main building that I like. I gave them a cold tint which really highlights the flowers.
 
-{{< fleximages >}}
+{{< gallery >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1762014538/_DSC3589.web_acuwo2.jpg"
     width="1350px"
@@ -49,4 +49,4 @@ Here are some photos of the main building that I like. I gave them a cold tint w
     caption="Une vue grand angle de l'entrée du jardin botanique" 
 >}}
 
-{{</ fleximages >}}
+{{</ gallery >}}

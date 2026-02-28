@@ -15,7 +15,7 @@ authors = ["Marc Laliberté"]
 
 Here are some pictures of the Prohibition5 group's show on September 15, 2025 in the streets of Limoilou, Quebec.
 
-{{< fleximages >}}
+{{< gallery >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761750182/_DSC4173.web_bwfl7u.jpg"
     width="1000px"
@@ -100,4 +100,4 @@ Here are some pictures of the Prohibition5 group's show on September 15, 2025 in
     alt="The band Prohibition5 will be performing on September 15, 2025 in the streets of Limoilou."
     caption="Prohibition5 gives a singer-songwriter/crooner style performance in the streets of Limoilou, Quebec" 
 >}}
-{{< /fleximages >}}
+{{< /gallery >}}

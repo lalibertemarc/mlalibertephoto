@@ -20,7 +20,7 @@ J'ai récemment appris que la talentueuse [Krista Shipperbottom](https://www.ins
 J'ai eu la chance de pouvoir les voir et de les photographier lors de leur passage à Québec, le 12 septembre 2024 à la Source de la Martinière et je voulais lui rendre hommage avec cette publication car j'ai rarement été impressionné de la sorte par un(e) vocaliste. Étant moi-même un vocaliste de métal, son vocal et son charisme ont fait une grosse impression sur moi.
 
 
-{{< fleximages >}}
+{{< gallery >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750165440/_DSC4217-Enhanced-NR_-_insta-2_v9iavk.jpg"
     width="500px"
@@ -76,4 +76,4 @@ J'ai eu la chance de pouvoir les voir et de les photographier lors de leur passa
     alt="Krista Shipperbottom et le groupe Lutharo donne une performance à Québec"
     caption="Krista Shipperbottom démontre bien son charisme et son énergie pendant le spectacle de Lutharo à Québec." 
 >}}
-{{< /fleximages >}}
+{{< /gallery >}}

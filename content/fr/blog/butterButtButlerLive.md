@@ -1,5 +1,5 @@
 +++
-title = 'ButterButtButlerLive'
+title = 'ButterButtButler en concert'
 date = 2026-02-27T14:30:00-05:00
 draft = false
 description = "ButterButtButler en concert à la Source de la Martinière, 16 janvier 2026"
@@ -17,7 +17,7 @@ authors = ["Marc Laliberté"]
 
 Super concert de ButtButtButler à la Source de la Martinière, Québec, le 16 janvier 2026.
 
-{{< fleximages >}}
+{{< gallery >}}
 {{< image-modal
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1772237471/blog/kv6a8ujdev1e7hlpurwp.jpg"
     width="500px"
@@ -61,4 +61,4 @@ Super concert de ButtButtButler à la Source de la Martinière, Québec, le 16 j
     alt="ButterButtButler live à la Source de la Martinière"
     caption="ButterButtButler, une soirée inoubliable à la Martinière"
 >}}
-{{< /fleximages >}}
+{{< /gallery >}}

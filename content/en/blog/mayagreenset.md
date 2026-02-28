@@ -15,7 +15,7 @@ authors = ["Marc Laliberté"]
 
 From posing to holding on to a smile, to bursting into laughter and then back to work with Maya Therienne Peña
 
-{{< fleximages >}}
+{{< gallery >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1765203192/1_DSC7997_edit.web_ciloqz.jpg"
     width="400px"
@@ -70,4 +70,4 @@ From posing to holding on to a smile, to bursting into laughter and then back to
     alt="Portrait of a woman wearing a green outfit against a mauve background"
     caption="Casting portrait of Maya Therienne Peña"
 >}}
-{{< /fleximages >}}
+{{< /gallery >}}

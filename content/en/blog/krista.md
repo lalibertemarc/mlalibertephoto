@@ -20,7 +20,7 @@ I recently learned that the talented [Krista Shipperbottom](https://www.instagra
 <br>
 I had the chance to see and photograph them during their performance in Quebec City on September 12, 2024, at La Source de la Martinière, and I wanted to pay tribute to her with this post because I've rarely been so impressed by a vocalist. As a metal vocalist myself, her voice and charisma made a huge impression on me.
 
-{{< fleximages >}}
+{{< gallery >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750165440/_DSC4217-Enhanced-NR_-_insta-2_v9iavk.jpg"
     width="500px"
@@ -76,4 +76,4 @@ I had the chance to see and photograph them during their performance in Quebec C
     alt="Krista Shipperbottom and the Lutharo group give a performance in Quebec City"
     caption="Krista Shipperbottom clearly demonstrates her charisma and energy during Lutharo's show in Quebec City." 
 >}}
-{{< /fleximages >}}
+{{< /gallery >}}

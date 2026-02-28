@@ -16,7 +16,7 @@ authors = ["Marc Laliberté"]
 
 Here are my favorite photos from the EBJM Danse dance show on June 10, 2025 in Cap-Chat
 
-{{< fleximages >}}
+{{< gallery >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761842337/_DSC2325.web_jaysiu.jpg"
     width="800px"
@@ -113,4 +113,4 @@ Here are my favorite photos from the EBJM Danse dance show on June 10, 2025 in C
     alt="EBJM Danse Show in Cap-Chat"
     caption="The dancers are in action during their outdoor dance performance in Cap-Chat." 
 >}}
-{{< /fleximages >}}
+{{< /gallery >}}

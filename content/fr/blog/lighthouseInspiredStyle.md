@@ -23,7 +23,7 @@ De plus, le film et filmé sur pellicule orthochromatique, qui est un type de pe
 
 Voici quelques exemples du film :
 
-{{< fleximages >}}
+{{< gallery >}}
 {{< image-modal 
     src="https://compote.slate.com/images/b29c0b5f-fe88-4d0c-967d-e9d668766e09.jpeg?crop=1500%2C1000%2Cx0%2Cy0&width=840"
     width="400px"
@@ -42,7 +42,7 @@ Voici quelques exemples du film :
     alt="Willem Dafoe dans The Lighthouse. A24"
     caption="Willem Dafoe dans The Lighthouse. A24" 
 >}}
-{{</ fleximages >}}
+{{</ gallery >}}
 <br>
 <hr>
 
@@ -63,7 +63,7 @@ Avant de vous montrer les photos, voici les étapes de l'édition pour un avoir 
 
 Voici quelques unes de mes photos dans ce style que j'aime beaucoup. De plus, j'ai utilisé ma lentille [Sony FE 50mm F1.8](https://www.sony.ca/en/electronics/camera-lenses/sel50f18f), ce qui n'aide pas du tout pour embellir le sujet.
 
-{{< fleximages >}}
+{{< gallery >}}
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1762122546/_DSC4618-Edit.web_r2krpu.jpg"
     width="1000px"
@@ -100,4 +100,4 @@ Voici quelques unes de mes photos dans ce style que j'aime beaucoup. De plus, j'
     alt="Un portrait d'un homme qui met les défauts du visage en évidence"
     caption="Portrait d'un homme qui ne le met pas du tout en valeur et au contraire, doit lui donner 30 ans de plus." 
 >}}
-{{</ fleximages >}}
+{{</ gallery >}}
