@@ -19,9 +19,9 @@ Ask about my special rates for smaller events.
 {{< gallery >}}
 {{< image-modal
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1772301698/blog/vfa9k0azt4rdhwjm3k9i.jpg"
-    title="KungFu Hotline"
-    alt="KungFu Hotline in full swing at Sonum fest"
-    caption="Under the spotlights, KungFu Hotline gives it all"
+    title="Kung Fu Hotline"
+    alt="Kung Fu Hotline in full swing at Sonum fest"
+    caption="Under the spotlights, Kung Fu Hotline gives it all"
     button-url="/blog/2026/02/28/kungFuHotlineLive/"
 >}}
 {{< image-modal
