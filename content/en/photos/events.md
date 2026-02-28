@@ -18,6 +18,13 @@ Ask about my special rates for smaller events.
 
 {{< gallery >}}
 {{< image-modal
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1772237471/blog/kv6a8ujdev1e7hlpurwp.jpg"
+    title="ButterButtButler"
+    alt="ButterButtButler live at la Source de la Martinière"
+    caption="ButterButtButler sets la Source de la Martinière on fire"
+    button-url="/blog/2026/02/27/butterButtButlerLive/"
+>}}
+{{< image-modal
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750165440/DSC01453_-_insta_vtfgof.jpg"
     title="The Mother Rockers"
     alt="Billie Ballz from The Mother Rockers"

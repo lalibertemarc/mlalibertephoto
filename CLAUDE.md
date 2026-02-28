@@ -36,7 +36,7 @@ Hugo version: **0.147.4** (pinned in netlify.toml).
 ### Theme & Template Overrides
 - Base theme: `hugo-universal-theme` (git submodule in `themes/`), Bootstrap 3.3.7-based
 - Overridden templates live in `layouts/` and take precedence over `themes/hugo-universal-theme/layouts/`
-- Key overrides: `index.html`, `_default/single.html`, `partials/carousel.html`, `partials/headers.html`
+- Key overrides: `index.html`, `_default/single.html`, and partials: `carousel.html`, `headers.html`, `nav.html`, `features.html`, `testimonials.html`, `see_more.html`, `recent_posts.html`, `footer.html`
 
 ### Custom Shortcodes (`layouts/shortcodes/`)
 - `image-modal` — click-to-enlarge image with modal (supports `class` param for BEM modifiers)
@@ -61,7 +61,7 @@ Homepage sections pull from YAML files in `data/`:
 - **Google Analytics** (G-DT1RL3KDNZ) and **Google Tag Manager** (GTM-TNS3FT57)
 
 ## Configuration
-- Main config: `hugo.toml` — contains site params, menu structure per language, taxonomy settings
+- Config directory: `config/_default/` — split into `hugo.toml` (core settings), `languages.toml`, `menus.toml` (menu structure per language), `params.toml` (site params), `permalinks.toml`
 - Deployment: `netlify.toml` — build command, Hugo version, redirects
 - Markdown rendering allows unsafe HTML (`[markup.goldmark.renderer] unsafe = true`) for embedded content (Facebook posts, iframes)
 
