@@ -13,7 +13,9 @@
       "Bash(SETX CLOUDINARY_URL:*)",
       "Bash(export:*)",
       "Bash(./uploadBlogImages.sh:*)",
-      "Bash(choco install:*)"
+      "Bash(choco install:*)",
+      "Bash(tasklist:*)",
+      "Bash(netstat:*)"
     ]
   }
 }

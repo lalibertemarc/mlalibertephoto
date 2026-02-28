@@ -1,28 +1,13 @@
-# CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
-
-## Project Overview
-
-Professional photography portfolio for Marc Laliberte (marclaliberte.photos). Built with **Hugo** static site generator, deployed on **Netlify**. Bilingual site (French primary, English secondary).
-
-## Build & Development Commands
+## Commands
 
 ```bash
-# Local dev server
-hugo server
-
-# Production build (same as Netlify)
-hugo --gc --minify --environment production
-
-# Create new bilingual blog post
-./newBlog.sh post-slug-name
-
-# Create new bilingual page
-./newPage.sh path/page-name
+hugo server -D          # Local dev server with drafts at http://localhost:1313
+hugo --gc --minify      # Production build (outputs to public/)
 ```
 
-Hugo version: **0.147.4** (pinned in netlify.toml).
+- Hugo version: `0.147.4` (pinned in `netlify.toml`)
+- Deployed via **Netlify** — pushes to `master` trigger automatic builds
 
 ## Architecture
 
@@ -36,7 +21,7 @@ Hugo version: **0.147.4** (pinned in netlify.toml).
 ### Theme & Template Overrides
 - Base theme: `hugo-universal-theme` (git submodule in `themes/`), Bootstrap 3.3.7-based
 - Overridden templates live in `layouts/` and take precedence over `themes/hugo-universal-theme/layouts/`
-- Key overrides: `index.html`, `_default/single.html`, and partials: `carousel.html`, `headers.html`, `nav.html`, `features.html`, `testimonials.html`, `see_more.html`, `recent_posts.html`, `footer.html`
+- Key overrides: `index.html`, `_default/single.html`, and partials: `breadcrumbs.html`, `carousel.html`, `headers.html`, `nav.html`, `features.html`, `testimonials.html`, `see_more.html`, `recent_posts.html`, `footer.html`
 
 ### Custom Shortcodes (`layouts/shortcodes/`)
 - `image-modal` — click-to-enlarge image with modal (supports `class` param for BEM modifiers)
@@ -66,6 +51,7 @@ Homepage sections pull from YAML files in `data/`:
 - Markdown rendering allows unsafe HTML (`[markup.goldmark.renderer] unsafe = true`) for embedded content (Facebook posts, iframes)
 
 ## Detailed Documentation
+You **must** consult these files before launching any exploration related to these topics.
 - `docs/carousel-implementation.md` — carousel architecture, data flow, JS init, and CSS details
 - `docs/site-styling-context.md` — CSS/JS load order, color scheme, custom components, override patterns
 - `docs/gallery-pages.md` — dark gallery layout, CSS Grid, hover overlays, modal navigation
