@@ -18,6 +18,13 @@ Ask about my special rates for smaller events.
 
 {{< gallery >}}
 {{< image-modal
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1772301698/blog/vfa9k0azt4rdhwjm3k9i.jpg"
+    title="KungFu Hotline"
+    alt="KungFu Hotline in full swing at Sonum fest"
+    caption="Under the spotlights, KungFu Hotline gives it all"
+    button-url="/blog/2026/02/28/kungFuHotlineLive/"
+>}}
+{{< image-modal
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1772237471/blog/kv6a8ujdev1e7hlpurwp.jpg"
     title="ButterButtButler"
     alt="ButterButtButler live at la Source de la Martinière"
