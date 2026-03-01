@@ -18,6 +18,13 @@ Demandez pour mes prix spéciaux pour petits spectacles.
 
 {{< gallery >}}
 {{< image-modal
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1772375688/blog/jpo2e0otj7b57nqnysug.jpg"
+    title="Mother Rockers"
+    alt="Chanteur de Mother Rockers devant la foule du Sonum Fest"
+    caption="Le micro crache l'énergie brute de la St-Valentin Kinky"
+    button-url="/blog/2026/03/01/motherRockersValentinesDayPart1/"
+>}}
+{{< image-modal
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1772301698/blog/vfa9k0azt4rdhwjm3k9i.jpg"
     title="Kung Fu Hotline"
     alt="Kung Fu Hotline en pleine action au Sonum fest"

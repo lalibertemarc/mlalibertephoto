@@ -100,13 +100,14 @@ authors = ["Marc Laliberté"]
 ### 5. Create the English blog post file
 
 Create `content/en/blog/<camelCaseFilename>.md` with the same structure as the French file, but use all **English (EN)** generated text from step 3:
+- `title` → translate the French title to English
 - `description` → description (EN)
 - `banner_alt` → banner_alt (EN)
 - `## h2` header → English header text from arguments
 - Each image `alt` → alt (EN)
 - Each image `caption` → caption (EN)
 
-The `title`, `date`, `banner`, `tags`, `categories`, and other frontmatter fields remain the same as the French file.
+The `date`, `banner`, `tags`, `categories`, and other frontmatter fields remain the same as the French file.
 
 ### 6. Report results
 
@@ -115,7 +116,7 @@ After creating both files, output:
 - The number of images uploaded and included
 - All the Cloudinary URLs
 - A reminder that the user should:
-  - Review the English title (update if needed)
+  - Review the English title (auto-translated — update if needed)
   - Add `tags`, `categories` to both files
   - Review and adjust `alt` and `caption` for each image in both languages
   - Add any body text between the `## h2` header and the `{{< gallery >}}` block
