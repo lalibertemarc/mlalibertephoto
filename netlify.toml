@@ -10,3 +10,20 @@ publish = "public"
   to = "https://marclaliberte.photos/:splat"
   status = 301
   force = true
+
+# Fix case-sensitive blog slug (GSC indexed wrong URL)
+[[redirects]]
+  from = "/blog/2025/10/29/Prohibition5/*"
+  to = "/blog/2025/10/29/prohibition/"
+  status = 301
+
+[[redirects]]
+  from = "/en/blog/2025/10/29/Prohibition5/*"
+  to = "/en/blog/2025/10/29/prohibition/"
+  status = 301
+
+# French is the default language (no /fr/ prefix) — redirect /fr/* to root
+[[redirects]]
+  from = "/fr/*"
+  to = "/:splat"
+  status = 301
