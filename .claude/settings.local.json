@@ -19,7 +19,9 @@
       "Bash(pip show:*)",
       "Bash(gsc-cli:*)",
       "Bash(npx gsc-cli:*)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(npm install:*)"
     ]
   }
 }
