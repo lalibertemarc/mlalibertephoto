@@ -15,7 +15,11 @@
       "Bash(./uploadBlogImages.sh:*)",
       "Bash(choco install:*)",
       "Bash(tasklist:*)",
-      "Bash(netstat:*)"
+      "Bash(netstat:*)",
+      "Bash(pip show:*)",
+      "Bash(gsc-cli:*)",
+      "Bash(npx gsc-cli:*)",
+      "Bash(node:*)"
     ]
   }
 }
