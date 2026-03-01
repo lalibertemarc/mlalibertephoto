@@ -20,8 +20,8 @@ Ask about my special rates for smaller events.
 {{< image-modal
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1772375688/blog/jpo2e0otj7b57nqnysug.jpg"
     title="Mother Rockers"
-    alt="Mother Rockers singer facing the Sonum Fest crowd"
-    caption="The mic spits the raw energy of Kinky Valentine's Day"
+    alt="Mother Rockers guitarist facing the Sonum Fest crowd"
+    caption="Love was in the air on Valentine's Day concert at the @sonum_fest, literally."
     button-url="/blog/2026/03/01/motherRockersValentinesDayPart1/"
 >}}
 {{< image-modal

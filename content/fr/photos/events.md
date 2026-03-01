@@ -20,8 +20,8 @@ Demandez pour mes prix spéciaux pour petits spectacles.
 {{< image-modal
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1772375688/blog/jpo2e0otj7b57nqnysug.jpg"
     title="Mother Rockers"
-    alt="Chanteur de Mother Rockers devant la foule du Sonum Fest"
-    caption="Le micro crache l'énergie brute de la St-Valentin Kinky"
+    alt="Guitariste de Mother Rockers devant la foule du Sonum Fest"
+    caption="L'amour était littéralement dans l'air lors du concert de la Saint-Valentin au @sonum_fest."
     button-url="/blog/2026/03/01/motherRockersValentinesDayPart1/"
 >}}
 {{< image-modal
