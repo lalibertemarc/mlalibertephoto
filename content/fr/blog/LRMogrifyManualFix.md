@@ -87,4 +87,6 @@ Fonctionnalités actuelles :
 - Application de différents filigranes
 - Exécution de tous mes préréglages fréquemment utilisés
 
-Pour l'instant, les configurations des préréglages sont en dur dans le code (hardcoded) (filigranes centrés, bordures à 0.5% du côté le plus long, etc.), ce qui correspond parfaitement à mes besoins. Mais je planifie déjà des améliorations - plus d'options de personnalisation et des améliorations de l'interface - qui pourraient éventuellement faire de cette petite application un remplacement complet du plugin Lightroom. Restez à l'écoute pour les mises à jour !
+Pour l'instant, les configurations des préréglages sont en dur dans le code (hardcoded) (filigranes centrés, bordures à 0.5% du côté le plus long, etc.), ce qui correspond parfaitement à mes besoins. Mais je planifie déjà des améliorations - plus d'options de personnalisation et des améliorations de l'interface - qui pourraient éventuellement faire de cette petite application un remplacement complet du plugin Lightroom.
+
+**Mise à jour :** L'application est maintenant disponible publiquement sur GitHub! Consultez l'[article de suivi](/blog/imagemagickscriptsrelease/) pour plus de détails et le lien de téléchargement.
