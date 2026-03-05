@@ -43,9 +43,9 @@ All appended after the homepage responsive rules:
 | Element | Size | Weight | Color |
 |---------|------|--------|-------|
 | Page title (breadcrumbs h1) | 2rem | 300 | `#fff` |
-| Section header (h2) | 1.5rem | 400 | `rgba(255,255,255,0.9)` |
-| Subsection (h3) | 1.15rem | 400 | `rgba(255,255,255,0.8)` |
-| Body text (p) | 1.05rem | 300 | `rgba(255,255,255,0.75)` |
+| Section header (h2) | 1.75rem | 400 | `rgba(255,255,255,0.9)` |
+| Subsection (h3) | 1.35rem | 400 | `rgba(255,255,255,0.8)` |
+| Body text (p) | 1.2rem | 300 | `rgba(255,255,255,0.75)` |
 | Metadata | 0.8rem | 300 | `rgba(255,255,255,0.45)` |
 | Bold/strong | inherit | inherit | `#fff` |
 | Links | inherit | inherit | `var(--primary-accent)` gold |
