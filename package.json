@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "google-auth-library": "^10.6.1"
+  },
+  "devDependencies": {
+    "wrangler": "^4.71.0"
   }
 }

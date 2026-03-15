@@ -22,7 +22,11 @@
       "Bash(node:*)",
       "Bash(npm uninstall:*)",
       "Bash(npm install:*)",
-      "Bash(sed:*)"
+      "Bash(sed:*)",
+      "Bash(grep:*)",
+      "Bash(cld uploader:*)",
+      "Skill(humanizer)",
+      "Bash(bash uploadBlogImages.sh)"
     ]
   }
 }

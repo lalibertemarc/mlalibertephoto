@@ -97,16 +97,8 @@
       modalImg.src = img.src;
       modalImg.alt = img.alt;
       modalCaption.innerHTML = img.dataset.caption || '';
-      modalImg.style.width = 'auto';
-      modalImg.style.height = 'auto';
-
-      if (img.naturalWidth > window.innerWidth || img.naturalHeight > window.innerHeight) {
-        var ratio = Math.min(
-          window.innerWidth / img.naturalWidth,
-          window.innerHeight / img.naturalHeight
-        ) * 0.9;
-        modalImg.style.width = (img.naturalWidth * ratio) + 'px';
-      }
+      modalImg.style.width = '';
+      modalImg.style.height = '';
       updateNavVisibility();
     }
 

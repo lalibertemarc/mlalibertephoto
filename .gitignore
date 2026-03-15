@@ -5,3 +5,4 @@ node_modules/
 # Google service account credentials & indexing script
 marclalibertephoto-*.json
 gsc-index.js
+/trends-reports
