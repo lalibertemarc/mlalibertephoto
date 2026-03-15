@@ -27,3 +27,221 @@ publish = "public"
   from = "/fr/*"
   to = "/:splat"
   status = 301
+
+# ── GSC 404 fixes: taxonomy type swaps (tags↔categories) ──
+
+# Tags that should be categories (FR)
+[[redirects]]
+  from = "/tags/bird/*"
+  to = "/categories/bird/"
+  status = 301
+[[redirects]]
+  from = "/tags/portrait/*"
+  to = "/categories/portrait/"
+  status = 301
+[[redirects]]
+  from = "/tags/restoration/*"
+  to = "/categories/restoration/"
+  status = 301
+[[redirects]]
+  from = "/tags/technical/*"
+  to = "/categories/technical/"
+  status = 301
+[[redirects]]
+  from = "/tags/colorization"
+  to = "/categories/colorization/"
+  status = 301
+[[redirects]]
+  from = "/tags/live"
+  to = "/categories/live/"
+  status = 301
+[[redirects]]
+  from = "/tags/tourism/*"
+  to = "/categories/tourism/"
+  status = 301
+[[redirects]]
+  from = "/tags/wildlife-photography/*"
+  to = "/categories/wildlife/"
+  status = 301
+[[redirects]]
+  from = "/tags/bird-photography/*"
+  to = "/categories/bird/"
+  status = 301
+[[redirects]]
+  from = "/tags/retouche/*"
+  to = "/categories/retouching/"
+  status = 301
+
+# Tags that should be categories (EN)
+[[redirects]]
+  from = "/en/tags/restoration/*"
+  to = "/en/categories/restoration/"
+  status = 301
+[[redirects]]
+  from = "/en/tags/nature"
+  to = "/en/categories/nature/"
+  status = 301
+[[redirects]]
+  from = "/en/tags/coding/*"
+  to = "/en/categories/coding/"
+  status = 301
+[[redirects]]
+  from = "/en/tags/digitization/*"
+  to = "/en/categories/digitization/"
+  status = 301
+[[redirects]]
+  from = "/en/tags/colorization/*"
+  to = "/en/categories/colorization/"
+  status = 301
+[[redirects]]
+  from = "/en/tags/casting-portrait"
+  to = "/en/categories/casting-portrait/"
+  status = 301
+[[redirects]]
+  from = "/en/tags/product/*"
+  to = "/en/categories/product/"
+  status = 301
+[[redirects]]
+  from = "/en/tags/portrait"
+  to = "/en/categories/portrait/"
+  status = 301
+[[redirects]]
+  from = "/en/tags/sport/*"
+  to = "/en/categories/sport/"
+  status = 301
+[[redirects]]
+  from = "/en/tags/prohibition/*"
+  to = "/en/tags/prohibition5/"
+  status = 301
+[[redirects]]
+  from = "/en/tags/bird/*"
+  to = "/en/categories/bird/"
+  status = 301
+[[redirects]]
+  from = "/en/tags/woodpecker"
+  to = "/en/tags/downy-woodpecker/"
+  status = 301
+[[redirects]]
+  from = "/en/tags/sparrow"
+  to = "/en/tags/song-sparrow/"
+  status = 301
+
+# Categories that should be tags (FR)
+[[redirects]]
+  from = "/categories/groundhog/*"
+  to = "/tags/groundhog/"
+  status = 301
+[[redirects]]
+  from = "/categories/tenacious-lee/*"
+  to = "/tags/tenacious-lee/"
+  status = 301
+[[redirects]]
+  from = "/categories/gaspesie/*"
+  to = "/tags/gaspesie/"
+  status = 301
+[[redirects]]
+  from = "/categories/that-it-lawyer"
+  to = "/tags/that-it-lawyer/"
+  status = 301
+[[redirects]]
+  from = "/categories/colorisation/*"
+  to = "/categories/colorization/"
+  status = 301
+[[redirects]]
+  from = "/categories/portraits"
+  to = "/categories/portrait/"
+  status = 301
+
+# Categories that should be tags (EN)
+[[redirects]]
+  from = "/en/categories/diamondcobra/*"
+  to = "/en/tags/diamond-cobra/"
+  status = 301
+[[redirects]]
+  from = "/en/categories/sony-ac7ii/*"
+  to = "/en/tags/sony-ac7ii/"
+  status = 301
+[[redirects]]
+  from = "/en/categories/sigma-24-70mm-f2.8-dg-dn-ii-art/*"
+  to = "/en/tags/sigma-24-70mm-f2.8-dg-dn-ii-art/"
+  status = 301
+[[redirects]]
+  from = "/en/categories/store"
+  to = "/en/tags/store/"
+  status = 301
+[[redirects]]
+  from = "/en/categories/creative"
+  to = "/en/tags/creative/"
+  status = 301
+[[redirects]]
+  from = "/en/categories/casting"
+  to = "/en/categories/casting-portrait/"
+  status = 301
+[[redirects]]
+  from = "/en/categories/woodpecker/*"
+  to = "/en/tags/downy-woodpecker/"
+  status = 301
+[[redirects]]
+  from = "/en/categories/studio"
+  to = "/en/categories/studio-portrait/"
+  status = 301
+[[redirects]]
+  from = "/en/categories/farm"
+  to = "/en/tags/farm/"
+  status = 301
+[[redirects]]
+  from = "/en/categories/portraits/*"
+  to = "/en/categories/portrait/"
+  status = 301
+[[redirects]]
+  from = "/en/categories/spectacle/*"
+  to = "/en/categories/event/"
+  status = 301
+[[redirects]]
+  from = "/en/categories/lr/*"
+  to = "/en/tags/lr/:splat"
+  status = 301
+[[redirects]]
+  from = "/en/categories/îledorléans/*"
+  to = "/en/tags/île-dorléans/"
+  status = 301
+
+# ── GSC 404 fixes: slug changes ──
+[[redirects]]
+  from = "/tags/prohibition/*"
+  to = "/tags/prohibition5/"
+  status = 301
+[[redirects]]
+  from = "/tags/cedar/*"
+  to = "/tags/cedar-waxwing/"
+  status = 301
+[[redirects]]
+  from = "/tags/bw"
+  to = "/tags/bnw/"
+  status = 301
+[[redirects]]
+  from = "/tags/generation"
+  to = "/tags/generations/"
+  status = 301
+[[redirects]]
+  from = "/tags/paruline-flamboyante"
+  to = "/tags/american-redstart/"
+  status = 301
+[[redirects]]
+  from = "/categories/bw/*"
+  to = "/tags/bnw/"
+  status = 301
+[[redirects]]
+  from = "/categories/spectacle"
+  to = "/categories/event/"
+  status = 301
+
+# ── GSC 404 fixes: old pagination pages ──
+[[redirects]]
+  from = "/blog/page/4/"
+  to = "/blog/"
+  status = 301
+[[redirects]]
+  from = "/en/blog/page/6/"
+  to = "/en/blog/"
+  status = 301
