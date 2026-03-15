@@ -18,6 +18,18 @@ Photographe professionnel spécialisé en portraits de casting, portraits corpor
 ## Portraits personnels & portraits de casting
 {{< gallery >}}
 {{< image-modal
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1773585258/blog/gerqkljxtqbnknlifcje.jpg"
+    title="Maya Therienne Peña"
+    alt="Portrait d'une femme avec lunettes et haut en filet noir en studio"
+    caption="Le regard captivant de Maya Therienne Peña, entre force et vulnérabilité"
+>}}
+{{< image-modal
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1773585260/blog/cgnb7wco8exunjtyqhk7.jpg"
+    title="Lyne Foisy"
+    alt="Portrait d'une femme aux cheveux blonds courts portant une chemise bleue en studio"
+    caption="Le sourire lumineux et l'assurance tranquille de Lyne Foisy"
+>}}
+{{< image-modal
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1765203192/1_DSC7997_edit.web_ciloqz.jpg"
     title="Maya Therienne Peña"
     alt="Portrait d'une femme avec tenue verte et fond mauve"

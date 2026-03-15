@@ -20,6 +20,18 @@ Professional photographer specializing in casting portraits, corporate portraits
 
 {{< gallery >}}
 {{< image-modal
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1773585258/blog/gerqkljxtqbnknlifcje.jpg"
+    title="Maya Therienne Peña"
+    alt="Portrait of a woman with glasses and a black mesh top in studio"
+    caption="The captivating gaze of Maya Therienne Peña, between strength and vulnerability"
+>}}
+{{< image-modal
+    src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1773585260/blog/cgnb7wco8exunjtyqhk7.jpg"
+    title="Lyne Foisy"
+    alt="Portrait of a woman with short blonde hair wearing a blue shirt in studio"
+    caption="The radiant smile and quiet confidence of Lyne Foisy"
+>}}
+{{< image-modal
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1765203192/1_DSC7997_edit.web_ciloqz.jpg"
     title="Maya Therienne Peña"
    alt="Portrait of a woman wearing a green outfit against a mauve background"
