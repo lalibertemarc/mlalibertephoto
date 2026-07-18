@@ -1,0 +1,30 @@
+{
+  "slug": "robin",
+  "date": "2025-06-25T09:49:23-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "06",
+    "day": "25"
+  },
+  "permalink": {
+    "fr": "/blog/2025/06/25/robin/",
+    "en": "/en/blog/2025/06/25/robin/"
+  },
+  "tags": [
+    "american robin",
+    "creative"
+  ],
+  "categories": [
+    "bird",
+    "wildlife"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1750859190/_DSC8745B-thumbnail_yipwuk.jpg",
+    "alt": "Merle d'Amérique (Turdus migratorius) en plumage éclatant, posé sur une branche, arrière-plan monochrome pour un effet artistique.",
+    "width": 600,
+    "height": 600
+  }
+}

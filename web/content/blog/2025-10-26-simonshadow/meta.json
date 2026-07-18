@@ -1,0 +1,31 @@
+{
+  "slug": "simonshadow",
+  "date": "2025-10-26T11:15:58-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "10",
+    "day": "26"
+  },
+  "permalink": {
+    "fr": "/blog/2025/10/26/simonshadow/",
+    "en": "/en/blog/2025/10/26/simonshadow/"
+  },
+  "tags": [
+    "bnw",
+    "creative",
+    "Simon Gagnon"
+  ],
+  "categories": [
+    "portrait",
+    "natural light"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1761491735/_DSC4587-2.thumb_zpifvp.jpg",
+    "alt": "Portrait d'un homme en lumière naturelle avec retouches créative en noir et blanc",
+    "width": 600,
+    "height": 600
+  }
+}

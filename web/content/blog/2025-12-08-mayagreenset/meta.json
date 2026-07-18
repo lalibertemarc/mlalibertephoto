@@ -1,0 +1,33 @@
+{
+  "slug": "mayagreenset",
+  "date": "2025-12-08T09:13:36-05:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "12",
+    "day": "08"
+  },
+  "permalink": {
+    "fr": "/blog/2025/12/08/mayagreenset/",
+    "en": "/en/blog/2025/12/08/mayagreenset/"
+  },
+  "tags": [
+    "Maya Therienne",
+    "ILCE-7CM2",
+    "Sony AC7II",
+    "Sony FE 85mm F1.8"
+  ],
+  "categories": [
+    "portrait",
+    "casting portrait",
+    "studio portrait"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1765203191/1_DSC7997_edit.thumb_pzlww0.jpg",
+    "alt": "Portrait de style casting d'une femme prise en studio",
+    "width": 600,
+    "height": 600
+  }
+}

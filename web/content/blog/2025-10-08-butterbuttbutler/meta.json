@@ -1,0 +1,31 @@
+{
+  "slug": "butterbuttbutler",
+  "date": "2025-10-08T12:03:00-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "10",
+    "day": "08"
+  },
+  "permalink": {
+    "fr": "/blog/2025/10/08/butterbuttbutler/",
+    "en": "/en/blog/2025/10/08/butterbuttbutler/"
+  },
+  "tags": [
+    "band",
+    "butterbuttbutler",
+    "metal"
+  ],
+  "categories": [
+    "portrait",
+    "groups"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1759939419/_DSC9989.thumb_iflolp.jpg",
+    "alt": "ButterButtButler en habit de chef",
+    "width": 600,
+    "height": 600
+  }
+}

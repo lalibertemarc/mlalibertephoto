@@ -1,0 +1,8 @@
+{
+  "path": "photos/portraits",
+  "permalink": {
+    "fr": "/photos/portraits/",
+    "en": "/en/photos/portraits/"
+  },
+  "pageClass": "dark-gallery"
+}

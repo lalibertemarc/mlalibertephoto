@@ -1,0 +1,30 @@
+{
+  "slug": "lrmogrifymanualfix",
+  "date": "2025-07-08T11:07:29-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "07",
+    "day": "08"
+  },
+  "permalink": {
+    "fr": "/blog/2025/07/08/lrmogrifymanualfix/",
+    "en": "/en/blog/2025/07/08/lrmogrifymanualfix/"
+  },
+  "tags": [
+    "ImageMagick",
+    "LR/Mogrify 2"
+  ],
+  "categories": [
+    "technical",
+    "coding"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1751993440/Lightroom_TY0JPyjIvv.thumb_xjfnwq.png",
+    "alt": "Image d'un message d'erreur dans Lightroom disant : ./LRMogrifyExportTask.lua:128: attempt to index local 'handle' (a nil value) (2)",
+    "width": 600,
+    "height": 600
+  }
+}

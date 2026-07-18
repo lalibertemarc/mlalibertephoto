@@ -1,0 +1,28 @@
+{
+  "slug": "toad",
+  "date": "2025-10-24T11:49:43-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "10",
+    "day": "24"
+  },
+  "permalink": {
+    "fr": "/blog/2025/10/24/toad/",
+    "en": "/en/blog/2025/10/24/toad/"
+  },
+  "tags": [
+    "toad"
+  ],
+  "categories": [
+    "wildlife"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1761321049/_DSC9568-2.thumb_hs5tnb.jpg",
+    "alt": "Portrait en gros plan d'un crapaud",
+    "width": 600,
+    "height": 600
+  }
+}

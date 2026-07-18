@@ -1,0 +1,31 @@
+{
+  "slug": "sunset2",
+  "date": "2025-06-13T08:16:43-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "06",
+    "day": "13"
+  },
+  "permalink": {
+    "fr": "/blog/2025/06/13/sunset2/",
+    "en": "/en/blog/2025/06/13/sunset2/"
+  },
+  "tags": [
+    "Cap-Chat",
+    "gaspesie",
+    "quebec"
+  ],
+  "categories": [
+    "nature",
+    "sunset"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1749820680/_DSC3158-3_y8nnve.jpg",
+    "alt": "Coucher de soleil sur le fleuve St-Laurent",
+    "width": 600,
+    "height": 600
+  }
+}

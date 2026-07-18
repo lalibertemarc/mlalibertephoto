@@ -1,0 +1,27 @@
+{
+  "slug": "squirrel",
+  "date": "2025-05-09T08:51:21-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "05",
+    "day": "09"
+  },
+  "permalink": {
+    "fr": "/blog/2025/05/09/squirrel/",
+    "en": "/en/blog/2025/05/09/squirrel/"
+  },
+  "tags": [
+    "squirrel"
+  ],
+  "categories": [
+    "wildlife"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "/img/_DSC1771.jpg",
+    "width": 600,
+    "height": 600
+  }
+}

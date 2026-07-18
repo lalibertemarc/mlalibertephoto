@@ -1,0 +1,86 @@
+[
+  {
+    "weight": 2,
+    "title": {
+      "fr": "Évènements",
+      "en": "Events"
+    },
+    "contactText": {
+      "fr": "Contactez-moi pour un devis gratuit",
+      "en": "Contact me for a free quote"
+    },
+    "description": {
+      "fr": "<ul class=\"list-style-none\">\n  <li>Spectacles</li>\n  <li>Théatre</li>\n  <li>Danse</li>\n</ul>\n",
+      "en": "<ul class=\"list-style-none\">\n  <li>Shows</li>\n  <li>Theater</li>\n  <li>Dance</li>\n</ul>\n"
+    },
+    "image": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1772160311/_DSC0034.quality_e6e8ke.jpg",
+    "alt": {
+      "fr": "Lutharo en spectacle",
+      "en": "Lutharo live"
+    },
+    "href": "photos/events"
+  },
+  {
+    "weight": 1,
+    "title": {
+      "fr": "Portraits",
+      "en": "Portraits"
+    },
+    "contactText": {
+      "fr": "Contactez-moi pour un devis gratuit",
+      "en": "Contact me for a free quote"
+    },
+    "description": {
+      "fr": "<ul class=\"list-style-none\">\n  <li>Personnel</li>\n  <li>Corporatif</li>\n  <li>Casting</li>\n  <li>Groupes</li>\n  <li>Lumière naturelle</li>\n</ul>\n",
+      "en": "<ul class=\"list-style-none\">\n  <li>Personal</li>\n  <li>Corporate</li>\n  <li>Casting</li>\n  <li>Groups</li>\n  <li>Natural Light</li>\n</ul>\n"
+    },
+    "image": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1772160685/20251123-_DSC7997_ms4qru.jpg",
+    "alt": {
+      "fr": "Portrait personnel d'une femme",
+      "en": "Personnal portrait of a woman"
+    },
+    "href": "photos/portraits"
+  },
+  {
+    "weight": 3,
+    "title": {
+      "fr": "Restauration de photos",
+      "en": "Photo Restoration"
+    },
+    "contactText": {
+      "fr": "Contactez-moi pour un devis gratuit",
+      "en": "Contact me for a free quote"
+    },
+    "description": {
+      "fr": "<ul class=\"list-style-none\">\n  <li>Éliminiation de rayures</li>\n  <li>Enlever grain et flous</li>\n  <li>Colorisation</li>\n  <li>Numérisation</li>\n  <li>Préparation pour impression</li>\n</ul>\n",
+      "en": "<ul class=\"list-style-none\">\n  <li>Scratch removal</li>\n  <li>Remove grain and blurriness</li>\n  <li>Colorization</li>\n  <li>Digitization</li>\n  <li>Print preparation</li>\n</ul>\n"
+    },
+    "image": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1748480912/_DSC7374-001-Edit-Edit_-_insta_nemrfg.jpg",
+    "alt": {
+      "fr": "Exemples d'avant et après de restauration de photos anciennes",
+      "en": "Before and after examples of old photo restoration"
+    },
+    "href": "restoration"
+  },
+  {
+    "weight": 4,
+    "title": {
+      "fr": "Vidéos",
+      "en": "Videos"
+    },
+    "contactText": {
+      "fr": "Contactez-moi pour un devis gratuit",
+      "en": "Contact me for a free quote"
+    },
+    "description": {
+      "fr": "<ul class=\"list-style-none\">\n  <li>Vidéo clips</li>\n  <li>Promotionnel</li>\n  <li>Évènements</li>\n</ul>\n",
+      "en": "<ul class=\"list-style-none\">\n  <li>Music videos</li>\n  <li>Promotional</li>\n  <li>Events</li>\n</ul>\n"
+    },
+    "image": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1772161398/20241107-_DSC6882_mowv4d.jpg",
+    "alt": {
+      "fr": "Capture d'ecran du video de Cold Tomorrow de Metempsykoze",
+      "en": "Screenshot of the video for Cold Tomorrow by Metempsykoze"
+    },
+    "href": "videos"
+  }
+]

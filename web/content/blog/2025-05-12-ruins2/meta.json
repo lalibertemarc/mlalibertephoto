@@ -1,0 +1,32 @@
+{
+  "slug": "ruins2",
+  "date": "2025-05-12T14:05:05-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "05",
+    "day": "12"
+  },
+  "permalink": {
+    "fr": "/blog/2025/05/12/ruins2/",
+    "en": "/en/blog/2025/05/12/ruins2/"
+  },
+  "tags": [
+    "ruins",
+    "history",
+    "Ruines de Montmills",
+    "Beauport",
+    "Quebec"
+  ],
+  "categories": [
+    "architecture",
+    "tourism"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "/img/DSC01719.jpg",
+    "width": 600,
+    "height": 600
+  }
+}

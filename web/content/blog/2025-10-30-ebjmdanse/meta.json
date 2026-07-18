@@ -1,0 +1,34 @@
+{
+  "slug": "ebjmdanse",
+  "date": "2025-10-30T12:30:01-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "10",
+    "day": "30"
+  },
+  "permalink": {
+    "fr": "/blog/2025/10/30/ebjmdanse/",
+    "en": "/en/blog/2025/10/30/ebjmdanse/"
+  },
+  "tags": [
+    "ebjm",
+    "sunset",
+    "gaspesie",
+    "ILCE-7CM2",
+    "Sony AC7II",
+    "Sigma 24-70mm F2.8 DG DN II Art"
+  ],
+  "categories": [
+    "event",
+    "dance"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1761842370/_DSC2114.thumb_mx5kbp.jpg",
+    "alt": "Danseuse de EBJM prise en pleine action pendant une performance",
+    "width": 600,
+    "height": 600
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "cedarwaxwing2",
+  "date": "2025-05-30T10:23:40-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "05",
+    "day": "30"
+  },
+  "permalink": {
+    "fr": "/blog/2025/05/30/cedarwaxwing2/",
+    "en": "/en/blog/2025/05/30/cedarwaxwing2/"
+  },
+  "tags": [
+    "cedar waxwing"
+  ],
+  "categories": [
+    "bird",
+    "wildlife"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1748615068/_DSC7512-2_gr1k3z.jpg",
+    "alt": "Jaseur boréal sur une branche",
+    "width": 1525,
+    "height": 1525
+  }
+}

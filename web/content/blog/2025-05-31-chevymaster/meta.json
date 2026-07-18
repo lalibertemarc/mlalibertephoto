@@ -1,0 +1,33 @@
+{
+  "slug": "chevymaster",
+  "date": "2025-05-31T11:25:17-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "05",
+    "day": "31"
+  },
+  "permalink": {
+    "fr": "/blog/2025/05/31/chevymaster/",
+    "en": "/en/blog/2025/05/31/chevymaster/"
+  },
+  "tags": [
+    "history",
+    "car",
+    "chevy"
+  ],
+  "categories": [
+    "restoration",
+    "colorization",
+    "retouching",
+    "digitization"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1748705273/_DSC8798-Edit-Edit-Edit-Edit-Edit-2_ebhvze.jpg",
+    "alt": "Chevrolet Master 1394",
+    "width": 600,
+    "height": 600
+  }
+}

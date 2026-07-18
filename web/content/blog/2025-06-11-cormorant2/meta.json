@@ -1,0 +1,29 @@
+{
+  "slug": "cormorant2",
+  "date": "2025-06-11T10:35:02-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "06",
+    "day": "11"
+  },
+  "permalink": {
+    "fr": "/blog/2025/06/11/cormorant2/",
+    "en": "/en/blog/2025/06/11/cormorant2/"
+  },
+  "tags": [
+    "cormorant"
+  ],
+  "categories": [
+    "bird",
+    "wildlife"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1749652264/_DSC8731-001-4_ylr1uo.jpg",
+    "alt": "Deux cormorans séchant leurs ailes sur un tronc d'arbre près de l'eau.",
+    "width": 600,
+    "height": 600
+  }
+}

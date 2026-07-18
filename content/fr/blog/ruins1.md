@@ -10,7 +10,7 @@ banner = "img/DSC01304.jpg"
 authors = ["Marc Laliberté"]
 +++
 
-<p>Ruines de la centrale hydroélectrique de la Petite Chute, située près de la chute de la Dame Blanche. <br> L'installation fut démolie en 1974 après dix ans d'inactivité, suite à la prise de contrôle par Hydro-Québec de la distribution électrique à l'échelle nationale. <p>
+<p>Ruines de la centrale hydroélectrique de la Petite Chute, située près de la chute de la Dame Blanche. <br> L'installation fut démolie en 1974 après dix ans d'inactivité, suite à la prise de contrôle par Hydro-Québec de la distribution électrique à l'échelle nationale. </p>
 
 <a href="https://www.ville.quebec.qc.ca/citoyens/patrimoine/quartiers/montmorency/interet/chute-de-la-dame-blanche.aspx" target="_blank" rel="noopener noreferrer">Source</a>
 

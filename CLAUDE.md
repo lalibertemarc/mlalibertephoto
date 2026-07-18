@@ -59,6 +59,7 @@ You **must** consult these files before launching any exploration related to the
 - `docs/homepage-redesign.md` — dark homepage design tokens, section classes, CSS scoping, i18n keys
 - `docs/blog-post-styling.md` — blog post rendering flow, dark-blog vs dark-gallery CSS, typography hierarchy
 - `docs/nextjs-scaffold.md` — Next.js app in `web/`, static-export config, design token extraction and conventions
+- `docs/content-migration.md` — Hugo→MDX migration script, the URL contract and why dates never become `Date` objects, shortcode/raw-HTML transforms, known data quirks
 - `docs/bootstrap-dependency-map.md` — which Bootstrap 3 classes/JS the site actually uses, Tailwind mapping, dead code
 
 ## Rules

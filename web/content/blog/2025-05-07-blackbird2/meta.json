@@ -1,0 +1,29 @@
+{
+  "slug": "blackbird2",
+  "date": "2025-05-07T09:25:13-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "05",
+    "day": "07"
+  },
+  "permalink": {
+    "fr": "/blog/2025/05/07/blackbird2/",
+    "en": "/en/blog/2025/05/07/blackbird2/"
+  },
+  "tags": [
+    "carouge",
+    "black-bird"
+  ],
+  "categories": [
+    "bird",
+    "wildlife"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "/img/_DSC8133-001.jpg",
+    "width": 600,
+    "height": 600
+  }
+}

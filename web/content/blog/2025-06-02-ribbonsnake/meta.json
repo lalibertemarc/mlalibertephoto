@@ -1,0 +1,28 @@
+{
+  "slug": "ribbonsnake",
+  "date": "2025-06-02T08:36:08-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "06",
+    "day": "02"
+  },
+  "permalink": {
+    "fr": "/blog/2025/06/02/ribbonsnake/",
+    "en": "/en/blog/2025/06/02/ribbonsnake/"
+  },
+  "tags": [
+    "Common garter snake"
+  ],
+  "categories": [
+    "wildlife"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1748867813/_DSC1988-001-3_k0mjcg.jpg",
+    "alt": "Une Couleuvre rayée camouflée parmi les voies ferrées",
+    "width": 600,
+    "height": 600
+  }
+}

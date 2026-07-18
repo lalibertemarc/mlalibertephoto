@@ -1,0 +1,28 @@
+{
+  "slug": "groundhog3",
+  "date": "2025-10-25T10:34:45-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "10",
+    "day": "25"
+  },
+  "permalink": {
+    "fr": "/blog/2025/10/25/groundhog3/",
+    "en": "/en/blog/2025/10/25/groundhog3/"
+  },
+  "tags": [
+    "groundhog"
+  ],
+  "categories": [
+    "wildlife"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1761402858/_DSC9059.thumb_nttmkc.jpg",
+    "alt": "Portrait d'une marmotte sur le gazon",
+    "width": 600,
+    "height": 600
+  }
+}

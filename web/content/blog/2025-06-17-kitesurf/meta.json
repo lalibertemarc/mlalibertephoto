@@ -1,0 +1,28 @@
+{
+  "slug": "kitesurf",
+  "date": "2025-06-17T10:06:10-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "06",
+    "day": "17"
+  },
+  "permalink": {
+    "fr": "/blog/2025/06/17/kitesurf/",
+    "en": "/en/blog/2025/06/17/kitesurf/"
+  },
+  "tags": [
+    "kitesurf"
+  ],
+  "categories": [
+    "sport"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1750169124/_DSC8547-2_mzpucq.jpg",
+    "alt": "Un homme fait du kitesurf sur le fleuve Saint-Laurent face à l'île d'Orléans",
+    "width": 600,
+    "height": 600
+  }
+}

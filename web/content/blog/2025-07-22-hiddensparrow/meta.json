@@ -1,0 +1,29 @@
+{
+  "slug": "hiddensparrow",
+  "date": "2025-07-22T10:25:18-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "07",
+    "day": "22"
+  },
+  "permalink": {
+    "fr": "/blog/2025/07/22/hiddensparrow/",
+    "en": "/en/blog/2025/07/22/hiddensparrow/"
+  },
+  "tags": [
+    "song sparrow"
+  ],
+  "categories": [
+    "bird",
+    "wildlife"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1753194211/_DSC9124-3.thumb_c4j2xs.jpg",
+    "alt": "Moineau caché dans les buissons",
+    "width": 600,
+    "height": 600
+  }
+}

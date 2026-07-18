@@ -1,0 +1,32 @@
+{
+  "slug": "ruins1",
+  "date": "2025-05-03T10:06:36-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "05",
+    "day": "03"
+  },
+  "permalink": {
+    "fr": "/blog/2025/05/03/ruins1/",
+    "en": "/en/blog/2025/05/03/ruins1/"
+  },
+  "tags": [
+    "ruins",
+    "history",
+    "Petite Chute",
+    "Parc de la Chute‑Montmorency",
+    "Quebec"
+  ],
+  "categories": [
+    "architecture",
+    "tourism"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "/img/DSC01304.jpg",
+    "width": 600,
+    "height": 314
+  }
+}

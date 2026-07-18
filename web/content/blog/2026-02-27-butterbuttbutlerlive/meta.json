@@ -1,0 +1,31 @@
+{
+  "slug": "butterbuttbutlerlive",
+  "date": "2026-02-27T14:30:00-05:00",
+  "urlDate": {
+    "year": "2026",
+    "month": "02",
+    "day": "27"
+  },
+  "permalink": {
+    "fr": "/blog/2026/02/27/butterbuttbutlerlive/",
+    "en": "/en/blog/2026/02/27/butterbuttbutlerlive/"
+  },
+  "tags": [
+    "band",
+    "butterbuttbutler",
+    "metal"
+  ],
+  "categories": [
+    "live",
+    "event"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1772237471/blog/kv6a8ujdev1e7hlpurwp.jpg",
+    "alt": "ButterButtButler en concert à la Source de la Martinière",
+    "width": 600,
+    "height": 600
+  }
+}

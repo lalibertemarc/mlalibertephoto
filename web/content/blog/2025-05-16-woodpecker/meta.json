@@ -1,0 +1,28 @@
+{
+  "slug": "woodpecker",
+  "date": "2025-05-16T14:06:54-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "05",
+    "day": "16"
+  },
+  "permalink": {
+    "fr": "/blog/2025/05/16/woodpecker/",
+    "en": "/en/blog/2025/05/16/woodpecker/"
+  },
+  "tags": [
+    "downy woodpecker"
+  ],
+  "categories": [
+    "bird",
+    "wildlife"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "/img/_DSC8475-001.jpg",
+    "width": 600,
+    "height": 600
+  }
+}

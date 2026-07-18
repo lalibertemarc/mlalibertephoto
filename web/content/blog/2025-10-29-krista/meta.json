@@ -1,0 +1,31 @@
+{
+  "slug": "krista",
+  "date": "2025-10-29T11:31:10-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "10",
+    "day": "29"
+  },
+  "permalink": {
+    "fr": "/blog/2025/10/29/krista/",
+    "en": "/en/blog/2025/10/29/krista/"
+  },
+  "tags": [
+    "Krista Shipperbottom",
+    "Lutharo",
+    "Source de la Martinière"
+  ],
+  "categories": [
+    "live",
+    "event"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1761751828/_DSC4260-Enhanced-NR.thumb_mrn695.jpg",
+    "alt": "Krista Shipperbottom et Lutharo en spectacle à Québec",
+    "width": 600,
+    "height": 600
+  }
+}

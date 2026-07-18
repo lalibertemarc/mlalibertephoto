@@ -1,0 +1,31 @@
+{
+  "slug": "colorization",
+  "date": "2025-05-29T09:38:07-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "05",
+    "day": "29"
+  },
+  "permalink": {
+    "fr": "/blog/2025/05/29/colorization/",
+    "en": "/en/blog/2025/05/29/colorization/"
+  },
+  "tags": [
+    "history",
+    "wedding"
+  ],
+  "categories": [
+    "restoration",
+    "colorization",
+    "retouching"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1748526280/DSC01062-Edit-3_mmbjhn.jpg",
+    "alt": "Un mariage en couleur",
+    "width": 600,
+    "height": 600
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "pigeons",
+  "date": "2025-05-19T16:25:49-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "05",
+    "day": "19"
+  },
+  "permalink": {
+    "fr": "/blog/2025/05/19/pigeons/",
+    "en": "/en/blog/2025/05/19/pigeons/"
+  },
+  "tags": [
+    "pigeons"
+  ],
+  "categories": [
+    "bird",
+    "wildlife"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "/img/_DSC8399-001.jpg",
+    "width": 1350,
+    "height": 1350
+  }
+}

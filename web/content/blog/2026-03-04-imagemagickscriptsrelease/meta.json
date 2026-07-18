@@ -1,0 +1,32 @@
+{
+  "slug": "imagemagickscriptsrelease",
+  "date": "2026-03-04T10:00:00-04:00",
+  "urlDate": {
+    "year": "2026",
+    "month": "03",
+    "day": "04"
+  },
+  "permalink": {
+    "fr": "/blog/2026/03/04/imagemagickscriptsrelease/",
+    "en": "/en/blog/2026/03/04/imagemagickscriptsrelease/"
+  },
+  "tags": [
+    "ImageMagick",
+    "LR/Mogrify 2",
+    "Magick.NET",
+    "open-source"
+  ],
+  "categories": [
+    "technical",
+    "coding"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1772665871/blog/n0pjuwq6tlbwx4zlx2qe.png",
+    "alt": "Capture d'écran de l'interface de l'application ImageMagick Scripts",
+    "width": 786,
+    "height": 593
+  }
+}

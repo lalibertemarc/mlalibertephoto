@@ -1,0 +1,30 @@
+{
+  "slug": "simonnaturallight",
+  "date": "2025-10-28T12:18:18-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "10",
+    "day": "28"
+  },
+  "permalink": {
+    "fr": "/blog/2025/10/28/simonnaturallight/",
+    "en": "/en/blog/2025/10/28/simonnaturallight/"
+  },
+  "tags": [
+    "Simon Gagnon",
+    "bnw"
+  ],
+  "categories": [
+    "portrait",
+    "natural light"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1761668395/_DSC9812-2.thumb_gg8zwd.jpg",
+    "alt": "Portrait de Simon Gagnon en lumière naturelle",
+    "width": 600,
+    "height": 600
+  }
+}

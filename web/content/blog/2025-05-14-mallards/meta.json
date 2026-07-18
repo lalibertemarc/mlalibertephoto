@@ -1,0 +1,28 @@
+{
+  "slug": "mallards",
+  "date": "2025-05-14T11:19:03-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "05",
+    "day": "14"
+  },
+  "permalink": {
+    "fr": "/blog/2025/05/14/mallards/",
+    "en": "/en/blog/2025/05/14/mallards/"
+  },
+  "tags": [
+    "mallard"
+  ],
+  "categories": [
+    "bird",
+    "wildlife"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "/img/_DSC8306-001.jpg",
+    "width": 600,
+    "height": 600
+  }
+}

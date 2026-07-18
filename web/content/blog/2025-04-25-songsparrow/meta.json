@@ -1,0 +1,28 @@
+{
+  "slug": "songsparrow",
+  "date": "2025-04-25T12:45:51-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "04",
+    "day": "25"
+  },
+  "permalink": {
+    "fr": "/blog/2025/04/25/songsparrow/",
+    "en": "/en/blog/2025/04/25/songsparrow/"
+  },
+  "tags": [
+    "song sparrow"
+  ],
+  "categories": [
+    "bird",
+    "wildlife"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "/img/_DSC8046-001.jpg",
+    "width": 600,
+    "height": 600
+  }
+}

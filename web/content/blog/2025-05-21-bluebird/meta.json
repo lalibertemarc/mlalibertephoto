@@ -1,0 +1,28 @@
+{
+  "slug": "bluebird",
+  "date": "2025-05-21T08:25:26-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "05",
+    "day": "21"
+  },
+  "permalink": {
+    "fr": "/blog/2025/05/21/bluebird/",
+    "en": "/en/blog/2025/05/21/bluebird/"
+  },
+  "tags": [
+    "bluebird"
+  ],
+  "categories": [
+    "bird",
+    "wildlife"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "/img/_DSC8478-001.jpg",
+    "width": 600,
+    "height": 600
+  }
+}

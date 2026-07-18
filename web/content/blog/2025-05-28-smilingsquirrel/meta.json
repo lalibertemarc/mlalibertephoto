@@ -1,0 +1,28 @@
+{
+  "slug": "smilingsquirrel",
+  "date": "2025-05-28T07:59:24-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "05",
+    "day": "28"
+  },
+  "permalink": {
+    "fr": "/blog/2025/05/28/smilingsquirrel/",
+    "en": "/en/blog/2025/05/28/smilingsquirrel/"
+  },
+  "tags": [
+    "squirrel"
+  ],
+  "categories": [
+    "wildlife"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1748433540/_DSC8662-001-2_zkx3hv.jpg",
+    "alt": "Un écureuil souriant sur une branche",
+    "width": 1350,
+    "height": 1350
+  }
+}

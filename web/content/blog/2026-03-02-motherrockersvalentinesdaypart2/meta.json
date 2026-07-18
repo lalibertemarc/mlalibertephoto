@@ -1,0 +1,33 @@
+{
+  "slug": "motherrockersvalentinesdaypart2",
+  "date": "2026-03-02T19:38:35-05:00",
+  "urlDate": {
+    "year": "2026",
+    "month": "03",
+    "day": "02"
+  },
+  "permalink": {
+    "fr": "/blog/2026/03/02/motherrockersvalentinesdaypart2/",
+    "en": "/en/blog/2026/03/02/motherrockersvalentinesdaypart2/"
+  },
+  "tags": [
+    "MotherRockers",
+    "rock",
+    "metal",
+    "Sonum Fest",
+    "St-Valentin"
+  ],
+  "categories": [
+    "live",
+    "event"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1772498319/blog/dq77bmwizypbdf2aqa2p.jpg",
+    "alt": "Deuxième volet de la soirée St-Valentin Kinky avec Mother Rockers au Sonum Fest",
+    "width": 600,
+    "height": 600
+  }
+}

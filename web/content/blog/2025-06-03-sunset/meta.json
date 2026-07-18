@@ -1,0 +1,29 @@
+{
+  "slug": "sunset",
+  "date": "2025-06-03T11:16:43-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "06",
+    "day": "03"
+  },
+  "permalink": {
+    "fr": "/blog/2025/06/03/sunset/",
+    "en": "/en/blog/2025/06/03/sunset/"
+  },
+  "tags": [
+    "St-Lawrence river"
+  ],
+  "categories": [
+    "nature",
+    "sunset"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1748964078/_DSC1740-5_d1jaq3.jpg",
+    "alt": "Couché de soleil sur le fleuve St-Laurent",
+    "width": 600,
+    "height": 600
+  }
+}

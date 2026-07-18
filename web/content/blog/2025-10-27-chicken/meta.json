@@ -1,0 +1,34 @@
+{
+  "slug": "chicken",
+  "date": "2025-10-27T08:39:53-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "10",
+    "day": "27"
+  },
+  "permalink": {
+    "fr": "/blog/2025/10/27/chicken/",
+    "en": "/en/blog/2025/10/27/chicken/"
+  },
+  "tags": [
+    "chicken",
+    "dinosaur",
+    "farm",
+    "ILCE-7CM2",
+    "Sony AC7II",
+    "FE 85mm F1.8"
+  ],
+  "categories": [
+    "bird",
+    "wildlife"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1761568777/_DSC4876.thumb_b77lcy.jpg",
+    "alt": "Portrait d'un poulet qui ressemble dangeureusement à un dinosaure",
+    "width": 600,
+    "height": 600
+  }
+}
