@@ -1,0 +1,81 @@
+/*
+ * Ported from static/css/custom.css:31-66 (base) and :577-594 (gallery overlay variant).
+ */
+
+.navButton {
+  display: inline-block;
+  /* Asymmetric on purpose: the extra right padding balances the chevron that ::after
+     appends. Equalising it puts the chevron flush against the edge. */
+  padding: var(--spacing-button-y) var(--spacing-button-r) var(--spacing-button-y) var(--spacing-button-l);
+  margin: var(--spacing-button-margin-y) 0;
+  border: none;
+  background-color: var(--color-accent);
+  color: #fff;
+  text-decoration: none;
+  border-radius: var(--radius-card);
+  font-weight: 600;
+  letter-spacing: var(--tracking-emphasis);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+  box-shadow: var(--shadow-button);
+}
+
+.navButton::after {
+  content: '\00a0\203A';
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.navButton:hover,
+.navButton:focus {
+  background-color: var(--color-accent-border);
+  color: #fff;
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-button-hover);
+  outline: none;
+}
+
+.navButton:hover::after,
+.navButton:focus::after {
+  transform: translateX(4px);
+}
+
+.navButton:focus-visible {
+  outline: 2px solid var(--color-accent-soft);
+  outline-offset: 2px;
+}
+
+/*
+ * The CTA that appears over a gallery cell on hover: outline rather than filled, because it
+ * sits on a photograph.
+ *
+ * In the source this is `.dark-gallery .photo-gallery .nav-button` — it depends on a
+ * page-level class. The gallery half of that selector is knowable here, and every gallery in
+ * the corpus is on a dark-gallery page, so the rendered result matches. The sibling variant
+ * `.dark-gallery .flex-images .nav-button` is NOT ported: it turns on purely from the page
+ * class, which the page-layout item owns, and guessing it here would restyle FlexImages CTAs
+ * on dark-blog pages, where the source leaves them gold.
+ */
+.galleryOverlay {
+  background: transparent;
+  border: 1px solid rgb(255 255 255 / 0.6);
+  color: #fff;
+  font-weight: 400;
+  font-size: var(--text-button-sm);
+  letter-spacing: var(--tracking-button);
+  padding: var(--spacing-button-gallery-y) var(--spacing-button-gallery-r) var(--spacing-button-gallery-y)
+    var(--spacing-button-gallery-l);
+  box-shadow: none;
+  border-radius: var(--radius-button);
+}
+
+.galleryOverlay:hover,
+.galleryOverlay:focus {
+  background: rgb(255 255 255 / 0.12);
+  border-color: #fff;
+  color: #fff;
+  box-shadow: none;
+}

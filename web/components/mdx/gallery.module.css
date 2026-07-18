@@ -1,0 +1,186 @@
+/*
+ * Ported from static/css/custom.css:139-151 (standalone image), :481-575 (gallery grid and
+ * hover overlay), :717-757 (responsive), :577-594 (gallery CTA button).
+ *
+ * Shared by Gallery and ImageModal rather than split per component: the source styles the
+ * figure through descendant selectors rooted at `.photo-gallery`, so the grid container and
+ * the cell have to resolve to the same generated class names. Two modules would hash them
+ * separately and the descendant rules would never match.
+ *
+ * The same ImageModal markup is styled two entirely different ways depending on whether it
+ * sits inside a Gallery: standalone it is an ordinary figure with a caption above it, in a
+ * gallery it becomes a fixed-ratio cell whose caption is a hover overlay.
+ */
+
+.photoGallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-gallery-gap);
+  margin: 1rem 0 2rem;
+}
+
+/* ---------------------------------------------------------------------------
+   Standalone figure — a blog post image, outside any gallery
+   --------------------------------------------------------------------------- */
+
+.image {
+  cursor: zoom-in;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.image:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-image-hover);
+}
+
+.title {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+
+/* ---------------------------------------------------------------------------
+   Gallery cell — same markup, reskinned
+   --------------------------------------------------------------------------- */
+
+.photoGallery .figure {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: var(--aspect-portrait);
+  margin: 0;
+  cursor: pointer;
+}
+
+/* !important overrides the inline width/height next/image emits from the intrinsic
+   dimensions. In a gallery the cell defines the box and the image fills it; the declared
+   `width` prop, present on most in-gallery images, is inert here — as it was in Hugo. */
+.photoGallery .image {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.photoGallery .figure:hover .image {
+  transform: scale(1.04);
+}
+
+/* Group shots break the grid and switch to a landscape ratio. */
+.photoGallery .wide {
+  grid-column: 1 / -1;
+  aspect-ratio: var(--aspect-wide);
+}
+
+.photoGallery .figure::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgb(from var(--color-scrim-gallery) r g b / 0.85) 0%,
+    rgb(from var(--color-scrim-gallery) r g b / 0.4) 40%,
+    transparent 100%
+  );
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.photoGallery .figure:hover::after {
+  opacity: 1;
+}
+
+.photoGallery .title {
+  position: absolute;
+  bottom: var(--spacing-gallery-title-y);
+  left: 0;
+  right: 0;
+  z-index: 2;
+  color: #fff;
+  font-weight: 400;
+  font-size: var(--text-gallery-caption);
+  letter-spacing: var(--tracking-title);
+  text-align: center;
+  padding: 0 12px;
+  margin: 0;
+  opacity: 0;
+  transform: translateY(8px);
+  transition:
+    opacity 0.35s ease,
+    transform 0.35s ease;
+  pointer-events: none;
+}
+
+.photoGallery .figure:hover .title {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.buttonContainer {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.photoGallery .buttonContainer {
+  position: absolute;
+  bottom: var(--spacing-gallery-button-y);
+  left: 0;
+  right: 0;
+  z-index: 2;
+  margin: 0;
+  opacity: 0;
+  transform: translateY(8px);
+  transition:
+    opacity 0.35s ease,
+    transform 0.35s ease;
+}
+
+.photoGallery .figure:hover .buttonContainer {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 991px) {
+  .photoGallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Below 767px there is no hover to reveal anything, so the overlay content becomes static
+   and permanently visible beneath the image instead. */
+@media (max-width: 767px) {
+  .photoGallery {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-gallery-gap-sm);
+  }
+
+  .photoGallery .figure::after {
+    display: none;
+  }
+
+  .photoGallery .title {
+    position: static;
+    opacity: 1;
+    transform: none;
+    color: rgb(255 255 255 / 0.8);
+    padding: 8px 0 0;
+    font-size: var(--text-gallery-caption-sm);
+    pointer-events: auto;
+  }
+
+  .photoGallery .buttonContainer {
+    position: static;
+    opacity: 1;
+    transform: none;
+    margin-top: 6px;
+  }
+
+  .photoGallery .figure:hover .image {
+    transform: none;
+  }
+}

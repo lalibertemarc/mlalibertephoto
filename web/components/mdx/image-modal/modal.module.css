@@ -1,0 +1,154 @@
+/*
+ * Ported from static/css/custom.css:68-138 (modal chrome) and :615-659 (nav + counter).
+ *
+ * One structural change from the source: the source toggles `display: none` / `display:
+ * flex` and needs a forced reflow before adding `.active` so the opacity transition has a
+ * frame to start from. Here the modal is always displayed and hidden with `opacity: 0` +
+ * `pointer-events: none`, which is transitionable on its own. `position: fixed` means the
+ * invisible modal costs nothing in layout.
+ */
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-modal-backdrop);
+  backdrop-filter: blur(var(--blur-modal));
+  -webkit-backdrop-filter: blur(var(--blur-modal));
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+/* `opening` and `closing` deliberately fall through to the hidden base rule — they are the
+   two ends the transition runs between, matching the source's `.modal` / `.modal.active`
+   pair exactly. */
+.modal[data-phase='open'] {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.image {
+  max-width: 90vw;
+  max-height: 85vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: var(--radius-button);
+  box-shadow: var(--shadow-modal);
+  transform: scale(0.95);
+  transition: transform 0.3s ease;
+}
+
+.modal[data-phase='open'] .image {
+  transform: scale(1);
+}
+
+.caption {
+  margin: 12px auto 0;
+  display: block;
+  width: 80%;
+  max-width: var(--container-caption);
+  text-align: center;
+  color: var(--color-modal-caption);
+  padding: 0;
+  font-style: italic;
+  letter-spacing: var(--tracking-title);
+}
+
+.close {
+  position: absolute;
+  top: var(--spacing-modal-edge);
+  right: var(--spacing-modal-edge);
+  color: var(--color-modal-close);
+  font-size: var(--text-modal-close);
+  font-weight: 300;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: var(--spacing-close);
+  height: var(--spacing-close);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-round);
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.close:hover,
+.close:focus {
+  background: rgb(255 255 255 / 0.1);
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: rgb(255 255 255 / 0.7);
+  font-size: var(--text-modal-nav);
+  font-weight: 200;
+  cursor: pointer;
+  width: var(--spacing-modal-nav);
+  height: var(--spacing-modal-nav);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-round);
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+  z-index: 1001;
+  padding: 0;
+  line-height: 1;
+}
+
+.prev {
+  left: var(--spacing-modal-edge);
+}
+
+.next {
+  right: var(--spacing-modal-edge);
+}
+
+.nav:hover,
+.nav:focus {
+  background: rgb(255 255 255 / 0.1);
+  color: #fff;
+  outline: none;
+}
+
+.counter {
+  text-align: center;
+  color: rgb(255 255 255 / 0.5);
+  font-weight: 300;
+  font-size: var(--text-counter);
+  letter-spacing: var(--tracking-meta);
+  margin-top: 8px;
+}
+
+@media (max-width: 767px) {
+  .nav {
+    font-size: var(--text-modal-nav-sm);
+    width: var(--spacing-modal-nav-sm);
+    height: var(--spacing-modal-nav-sm);
+  }
+
+  .prev {
+    left: var(--spacing-modal-edge-sm);
+  }
+
+  .next {
+    right: var(--spacing-modal-edge-sm);
+  }
+}

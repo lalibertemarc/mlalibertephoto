@@ -61,6 +61,7 @@ You **must** consult these files before launching any exploration related to the
 - `docs/nextjs-scaffold.md` — Next.js app in `web/`, static-export config, design token extraction and conventions
 - `docs/content-migration.md` — Hugo→MDX migration script, the URL contract and why dates never become `Date` objects, shortcode/raw-HTML transforms, known data quirks
 - `docs/bootstrap-dependency-map.md` — which Bootstrap 3 classes/JS the site actually uses, Tailwind mapping, dead code
+- `docs/mdx-components.md` — the five MDX components replacing the Hugo shortcodes, the Cloudinary loader and dimension manifest, modal architecture, next-intl wiring, and the shortcode bugs fixed during the port
 
 ## Rules
 

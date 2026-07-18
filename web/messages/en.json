@@ -1,0 +1,13 @@
+{
+  "ImageModal": {
+    "moreFromShoot": "See all photos from this shoot",
+    "close": "Close image modal",
+    "previousImage": "Previous image",
+    "nextImage": "Next image",
+    "enlargedView": "Enlarged image view"
+  },
+  "NavButton": {
+    "previous": "← Previous",
+    "next": "Next →"
+  }
+}

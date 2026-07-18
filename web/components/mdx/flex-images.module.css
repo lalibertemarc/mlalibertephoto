@@ -1,0 +1,25 @@
+/*
+ * Ported from static/css/custom.css:14-29.
+ *
+ * The image rule targets a bare `img`, so it reaches whatever the children render without
+ * needing a shared class — which is what the source relies on too.
+ *
+ * Not ported: `.dark-blog .flex-images img { box-shadow: ... }` (custom.css:1500-1502). It
+ * turns on from a page-level class owned by the page-layout item.
+ */
+
+.flexImages {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.flexImages img {
+  max-width: 100%;
+  height: auto;
+  flex: 1 1 auto;
+  min-width: 200px;
+}
