@@ -86,4 +86,4 @@ Current capabilities:
 
 For now, the preset configurations are hardcoded (centered watermarks, borders at 0.5% of the longest edge, etc.), which suits my needs perfectly. But I'm already planning enhancements—more customization options and UI improvements—that might eventually make this little app a complete replacement for the Lightroom plugin.
 
-**Update:** The app is now publicly available on GitHub! Check out the [follow-up post](/en/blog/imagemagickscriptsrelease/) for more details and the download link.
+**Update:** The app is now publicly available on GitHub! Check out the [follow-up post](/en/blog/2026/03/04/imagemagickscriptsrelease/) for more details and the download link.

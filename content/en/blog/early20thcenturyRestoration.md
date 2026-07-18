@@ -160,8 +160,8 @@ This restoration shows how even a heavily damaged photo can be revived with pati
 <br>
 Would you like to see your old photos restored?
 <br>
-{{< navbutton url="/contact" text="Contact me here" >}}
+{{< navbutton url="/en/contact" text="Contact me here" >}}
 
 or 
 
-{{< navbutton url="/restoration" text="Check my packages here" >}}
+{{< navbutton url="/en/restoration" text="Check my packages here" >}}

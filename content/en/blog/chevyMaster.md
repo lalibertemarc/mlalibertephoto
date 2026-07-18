@@ -168,11 +168,11 @@ Restoring old photos isn't just about repairing damage - it's about preserving s
 Do you have a photo to restore?
 If you have a damaged photo that deserves a second life:
 
-{{< navbutton url="/contact" text="Contact me here" >}}
+{{< navbutton url="/en/contact" text="Contact me here" >}}
 
 or 
 
-{{< navbutton url="/restoration" text="Check out my packages here" >}}
+{{< navbutton url="/en/restoration" text="Check out my packages here" >}}
 
 <hr>
 

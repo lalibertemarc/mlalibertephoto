@@ -42,8 +42,8 @@ This is one of my premium restoration services with colorization, but the client
 <br>
 Would you like to see your old photos restored?
 <br>
-{{< navbutton url="/contact" text="Contact me here" >}}
+{{< navbutton url="/en/contact" text="Contact me here" >}}
 
 or 
 
-{{< navbutton url="/restoration" text="Check my packages here" >}}
+{{< navbutton url="/en/restoration" text="Check my packages here" >}}

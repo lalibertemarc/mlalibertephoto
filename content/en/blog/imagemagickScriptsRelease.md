@@ -16,7 +16,7 @@ authors = ["Marc Laliberté"]
 
 <hr>
 
-A while back, I wrote about the frustrating [LR/Mogrify 2 export bug](/en/blog/lrmogrifymanulafix/) that breaks when you try to export images with multiple presets in Lightroom:
+A while back, I wrote about the frustrating [LR/Mogrify 2 export bug](/en/blog/2025/07/08/lrmogrifymanualfix/) that breaks when you try to export images with multiple presets in Lightroom:
 
 ```
 ./LRMogrifyExportTask.lua:128: attempt to index local 'handle' (a nil value) (2)

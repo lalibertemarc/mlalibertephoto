@@ -23,7 +23,7 @@ Recognizing your artistic talent as well as your reality, I've created exclusive
 It is possible to combine several packages for a preferential rate, to be discussed according to your needs.
 
 {{< fleximages >}}
-{{< navbutton url="/contact" text="Contact me for a free quote" >}}
+{{< navbutton url="/en/contact" text="Contact me for a free quote" >}}
 {{< /fleximages >}}
 
 <br>

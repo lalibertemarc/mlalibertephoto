@@ -1,8 +1,8 @@
 +++
-title = 'Dinosaure moderne'
+title = 'Modern Dinosaur'
 date = 2025-10-27T08:39:53-04:00
 draft = false
-description = "Dinosaure moderne"
+description = "Modern Dinosaur"
 tags = ["chicken", "dinosaur","farm",  "ILCE-7CM2", "Sony AC7II", "FE 85mm F1.8"]
 categories = ["bird","wildlife"]
 external_banner = true

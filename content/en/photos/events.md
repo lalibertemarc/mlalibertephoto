@@ -22,70 +22,70 @@ Ask about my special rates for smaller events.
     title="Mother Rockers"
     alt="Mother Rockers guitarist facing the Sonum Fest crowd"
     caption="Love was in the air on Valentine's Day concert at the @sonum_fest, literally."
-    button-url="/blog/2026/03/01/motherRockersValentinesDayPart1/"
+    button-url="/en/blog/2026/03/01/motherrockersvalentinesdaypart1/"
 >}}
 {{< image-modal
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1772301698/blog/vfa9k0azt4rdhwjm3k9i.jpg"
     title="Kung Fu Hotline"
     alt="Kung Fu Hotline in full swing at Sonum fest"
     caption="Under the spotlights, Kung Fu Hotline gives it all"
-    button-url="/blog/2026/02/28/kungFuHotlineLive/"
+    button-url="/en/blog/2026/02/28/kungfuhotlinelive/"
 >}}
 {{< image-modal
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1772237471/blog/kv6a8ujdev1e7hlpurwp.jpg"
     title="ButterButtButler"
     alt="ButterButtButler live at la Source de la Martinière"
     caption="ButterButtButler sets la Source de la Martinière on fire"
-    button-url="/blog/2026/02/27/butterButtButlerLive/"
+    button-url="/en/blog/2026/02/27/butterbuttbutlerlive/"
 >}}
 {{< image-modal
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750165440/DSC01453_-_insta_vtfgof.jpg"
     title="The Mother Rockers"
     alt="Billie Ballz from The Mother Rockers"
     caption="Billie Ballz from The Mother Rockers"
-    button-url="/blog/2025/04/26/bateaudenuitmotherrockers/"
+    button-url="/en/blog/2025/04/26/bateaudenuitmotherrockers/"
 >}}
 {{< image-modal
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750165440/DSC01554_-_insta_cfkfog.jpg"
     title="The Mother Rockers"
     alt="Bobby Coxx from The Mother Rockers"
     caption="Bobby Coxx from The Mother Rockers"
-    button-url="/blog/2025/04/26/bateaudenuitmotherrockers/"
+    button-url="/en/blog/2025/04/26/bateaudenuitmotherrockers/"
 >}}
 {{< image-modal
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761750181/_DSC4243.web_pvwfwt.jpg"
     title="Prohibition5"
     alt="Prohibition5 live"
     caption="Prohibition5 live"
-    button-url="/blog/2025/10/29/Prohibition5/"
+    button-url="/en/blog/2025/10/29/prohibition/"
 >}}
 {{< image-modal
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750165440/_DSC4217-Enhanced-NR_-_insta-2_v9iavk.jpg"
     title="Krista Shipperbottom (ex-Lutharo)"
     caption="Krista Shipperbottom (ex-Lutharo)"
     alt="Lutharo"
-    button-url="/blog/2025/10/29/krista/"
+    button-url="/en/blog/2025/10/29/krista/"
 >}}
 {{< image-modal
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750165440/_DSC7025_-_insta_frefml.jpg"
     title="Guitbassdrom"
     caption="Guitbassdrom"
     alt="Guitbassdrom"
-    button-url="/blog/2025/03/02/sonumguitbassdrom/"
+    button-url="/en/blog/2025/03/02/sonumguitbassdrom/"
 >}}
 {{< image-modal
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750165978/_DSC6905_-_insta_p8bqkg.jpg"
     title="Diamond Cobra"
     caption="Diamond Cobra"
     alt="Diamond Cobra"
-    button-url="/blog/2025/03/02/sonumdiamoncobra/"
+    button-url="/en/blog/2025/03/02/sonumdiamoncobra/"
 >}}
 {{< image-modal
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750165666/_DSC2795_lkfozw.jpg"
     title="EBJM Danse"
     caption="EBJM Danse show at Sunset"
     alt="EBJM Danse show at Sunset"
-    button-url="/blog/2025/10/30/ebjmdanse/"
+    button-url="/en/blog/2025/10/30/ebjmdanse/"
 >}}
 {{< /gallery >}}
 

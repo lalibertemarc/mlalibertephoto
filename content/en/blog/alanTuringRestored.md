@@ -50,8 +50,8 @@ Whether it's a family portrait, childhood memory, or historical image, send me a
 
 Want to restore a photo?
 
-{{< navbutton url="/contact" text="Contact me here" >}}
+{{< navbutton url="/en/contact" text="Contact me here" >}}
 
 or 
 
-{{< navbutton url="/restoration" text="Check out my packages here" >}}
+{{< navbutton url="/en/restoration" text="Check out my packages here" >}}

@@ -160,8 +160,8 @@ Each step required patience—but seeing her standing on that road again? Pricel
 
 Want to restore a photo?
 
-{{< navbutton url="/contact" text="Contact me here" >}}
+{{< navbutton url="/en/contact" text="Contact me here" >}}
 
 or 
 
-{{< navbutton url="/restoration" text="Check my packages here" >}}
+{{< navbutton url="/en/restoration" text="Check my packages here" >}}
