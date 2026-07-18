@@ -13,7 +13,7 @@ Extends the dark editorial aesthetic from the carousel and gallery pages to all 
 | Body text | `rgba(255,255,255,0.85)` | Primary text |
 | Muted text | `rgba(255,255,255,0.6)` | Descriptions, subtitles |
 | Label text | `rgba(255,255,255,0.45)` | Section headers |
-| Accent | `var(--primary-accent)` / `#955251` | Icons, active states, hover |
+| Accent | `var(--primary-accent)` / `#c9a84c` | Icons, active states, hover |
 | Border subtle | `rgba(255,255,255,0.06)` | Card borders, dividers |
 | Border hover | `rgba(255,255,255,0.15)` | Hover states |
 

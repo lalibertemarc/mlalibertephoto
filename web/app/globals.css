@@ -1,0 +1,425 @@
+@import 'tailwindcss';
+
+/* =============================================================================
+   Design tokens extracted verbatim from static/css/custom.css
+   =============================================================================
+
+   Every value below appears in custom.css exactly as written. Nothing is
+   rounded to a Tailwind scale step: if the source says 22px, the token says
+   22px. Names are role-based because custom.css is organised by role (BEM-ish
+   families: .home-carousel--modern, .dark-gallery, .dark-blog, .hp-*), so a
+   token name points at the component it came from.
+
+   Deliberately NOT tokenised: the 19 distinct rgba(255,255,255,a) alphas the
+   source uses for text and hairline borders. Tailwind's `text-white/45` and
+   `border-white/6` reproduce them exactly with no token needed.
+
+   Source of truth stays static/css/custom.css until item #12 deletes it.
+   ========================================================================== */
+
+/* `static` emits every token below even when no utility references it yet.
+   Without it Tailwind tree-shakes unused theme variables, and the extracted
+   design system would only half-exist until items #4-#9 happened to use each
+   value. The tokens are the deliverable here, so they all ship. */
+@theme static {
+  /* ---------------------------------------------------------------------
+     Breakpoints
+
+     Cleared and redefined to Bootstrap 3's values. Tailwind's defaults
+     (640/768/1024/1280) do not line up with the source's media queries, which
+     are max-width 767px and max-width 991px -- i.e. Bootstrap's sm and md
+     boundaries. Redefining means `col-md-4` translates to `md:w-1/3` and lands
+     on the same pixel.
+     ------------------------------------------------------------------- */
+  --breakpoint-*: initial;
+  --breakpoint-sm: 768px; /* Bootstrap sm — above `@media (max-width: 767px)` */
+  --breakpoint-md: 992px; /* Bootstrap md — above `@media (max-width: 991px)` */
+  --breakpoint-lg: 1200px; /* Bootstrap lg */
+
+  /* NOTE: `xl` and `2xl` no longer exist. Bootstrap 3 has no fourth breakpoint
+     and the source never uses one. Tailwind drops utilities whose variant is
+     undefined SILENTLY — `xl:grid-cols-4` emits no CSS and raises no error. If
+     a design genuinely needs a wider tier, add it here first. */
+
+  /* ---------------------------------------------------------------------
+     Colour — accent family
+     The 8 :root custom properties from custom.css lines 2-11.
+     ------------------------------------------------------------------- */
+  --color-accent: #c9a84c; /* --primary-accent */
+  --color-accent-deep: #8a7233; /* --navbar-border-top */
+  --color-accent-border: #a8893e; /* --button-border */
+  --color-accent-focus: #9a7d38; /* --link-focus */
+  --color-accent-hover: #b09542; /* --link-hover-bg */
+  --color-accent-soft: #d4bf7a; /* --navbar-focus */
+  --color-accent-pale: #e0d3a3; /* --pagination-bg */
+  --color-accent-glow: rgba(201, 168, 76, 0.6); /* --form-shadow */
+  --color-accent-underline: rgba(201, 168, 76, 0.35); /* blog link underline, custom.css:1451 */
+
+  /* ---------------------------------------------------------------------
+     Colour — dark surfaces
+     Five opaque tones plus the translucent navbar/dropdown fills.
+     ------------------------------------------------------------------- */
+  --color-surface-hero: #1e1414; /* carousel, testimonials, recent posts */
+  --color-surface-page: #1a1212; /* gallery breakout, features, cta, blog */
+  --color-surface-heading: #221818; /* #heading-breadcrumbs.dark-heading */
+  --color-surface-footer: #151010; /* #footer.hp-footer */
+  --color-surface-copyright: #0f0b0b; /* #copyright.hp-copyright */
+  --color-surface-nav: rgba(26, 18, 18, 0.85); /* .navbar-default */
+  --color-surface-nav-affixed: rgba(21, 16, 16, 0.95); /* .affix .navbar-default */
+  --color-surface-dropdown: rgba(26, 18, 18, 0.96); /* .dropdown-menu, .yamm-fw */
+
+  /* Gradient scrim bases. The source writes these as rgba() stops; keeping the
+     opaque base as a token lets the gradient be rebuilt with /opacity. */
+  --color-scrim-hero: #160e0e; /* rgba(22, 14, 14, a) — carousel vignette */
+  --color-scrim-gallery: #1a1212; /* rgba(26, 18, 18, a) — gallery + card overlays */
+
+  /* ---------------------------------------------------------------------
+     Colour — modal chrome
+     ------------------------------------------------------------------- */
+  --color-modal-backdrop: rgba(0, 0, 0, 0.85);
+  --color-modal-caption: #e0d6d0;
+  --color-modal-close: #f1f1f1;
+
+  /* ---------------------------------------------------------------------
+     Typography — family
+     Loaded via next/font in app/layout.tsx, which supplies --font-roboto.
+     ------------------------------------------------------------------- */
+  --font-sans: var(--font-roboto), 'Roboto', sans-serif;
+
+  /* ---------------------------------------------------------------------
+     Typography — size
+
+     Role-named rather than scale-named. Several roles share a value (0.8rem
+     covers five different components); each keeps its own token so a component
+     references the size it was designed with, and so a future change to one
+     role cannot silently move the others.
+
+     Suffixes track the source's media queries:
+       -md = the `@media (max-width: 991px)` value
+       -sm = the `@media (max-width: 767px)` value
+     ------------------------------------------------------------------- */
+
+  /* Carousel hero */
+  --text-hero: 3rem;
+  --text-hero-md: 2.4rem;
+  --text-hero-sm: 2rem;
+  --text-hero-body: 1rem;
+
+  /* Blog post (.dark-blog) */
+  --text-page-title: 2rem; /* #heading-breadcrumbs.dark-heading h1 */
+  --text-page-title-sm: 1.5rem;
+  --text-post-body: 1.2rem;
+  --text-post-body-sm: 1.1rem;
+  --text-post-h2: 1.75rem;
+  --text-post-h2-sm: 1.5rem;
+  --text-post-h3: 1.35rem;
+
+  /* Gallery pages (.dark-gallery) */
+  --text-gallery-title: 1rem; /* h1 — quiet uppercase */
+  --text-gallery-h2: 0.8rem; /* section eyebrow */
+  --text-gallery-h3: 1.1rem; /* service tier label */
+  --text-gallery-body: 1.05rem;
+  --text-gallery-caption: 0.9rem; /* .photo-gallery .image-title */
+  --text-gallery-caption-sm: 0.85rem;
+
+  /* Homepage sections (.hp-*) */
+  --text-section-label: 0.8rem;
+  --text-section-subtitle: 1.05rem;
+  --text-section-subtitle-sm: 0.95rem;
+  --text-card-title: 1rem;
+  --text-card-body: 0.9rem;
+  --text-card-icon: 2.2rem;
+  --text-card-icon-sm: 1.8rem;
+  --text-cta-title: 1.8rem;
+  --text-cta-title-md: 1.5rem;
+  --text-cta-title-sm: 1.3rem;
+  --text-cta-subtitle: 1rem;
+  --text-quote-icon: 1.4rem;
+  --text-quote: 0.95rem;
+  --text-quote-author: 0.85rem;
+  --text-quote-role: 0.8rem;
+  --text-blog-card-title: 0.9rem;
+  --text-blog-card-title-md: 0.85rem;
+  --text-blog-card-meta: 0.75rem;
+  --text-blog-card-summary: 0.85rem;
+  --text-blog-card-icon: 1.2rem;
+
+  /* Buttons */
+  --text-button: 0.875rem; /* .nav-button on hero, .hp-outline-button */
+  --text-button-sm: 0.75rem; /* gallery overlay button */
+  --text-button-cta: 0.9rem; /* .hp-cta__button */
+  --text-button-footer: 0.8rem; /* .hp-footer__contact-btn */
+
+  /* Metadata and chrome */
+  --text-footer-heading: 0.75rem;
+  --text-meta: 0.8rem; /* .dark-blog .text-muted */
+  --text-counter: 0.8rem; /* .modal-counter */
+  --text-modal-close: 28px;
+  --text-modal-nav: 48px;
+  --text-modal-nav-sm: 36px;
+
+  /* ---------------------------------------------------------------------
+     Typography — letter spacing
+     ------------------------------------------------------------------- */
+  --tracking-body: 0.015em;
+  --tracking-title: 0.02em;
+  /* Named -emphasis, not -wide: Tailwind ships `--tracking-wide` at 0.025em, and
+     taking that name would silently repoint every `tracking-wide` in the app. */
+  --tracking-emphasis: 0.03em; /* .nav-button, testimonial author */
+  --tracking-button: 0.04em;
+  --tracking-label: 0.06em;
+  --tracking-meta: 0.1em;
+  --tracking-footer-heading: 0.14em;
+  --tracking-eyebrow: 0.18em; /* uppercase section labels */
+
+  /* ---------------------------------------------------------------------
+     Typography — line height
+     ------------------------------------------------------------------- */
+  --leading-hero: 1.15;
+  --leading-page-title: 1.3;
+  --leading-card-title: 1.4;
+  --leading-carousel-item: 1.55;
+  --leading-body: 1.6;
+  --leading-quote: 1.7;
+  --leading-post: 1.8;
+
+  /* ---------------------------------------------------------------------
+     Radius
+     ------------------------------------------------------------------- */
+  --radius-button: 2px; /* outline buttons, modal image, owl indicators */
+  --radius-card: 3px; /* .nav-button, feature/testimonial/blog cards */
+  --radius-embed: 4px; /* iframes */
+  /* The source uses 50%, not a large px value. On the square elements it is
+     applied to (.close 40x40, .modal-prev/next 56x56, dots 10x10) this matches
+     `rounded-full`, but 50% is kept so non-square uses stay faithful. */
+  --radius-round: 50%;
+
+  /* ---------------------------------------------------------------------
+     Shadow
+     ------------------------------------------------------------------- */
+  --shadow-button: 0 2px 4px rgba(0, 0, 0, 0.15);
+  --shadow-button-hover: 0 4px 12px rgba(0, 0, 0, 0.2);
+  --shadow-image-hover: 0 4px 16px rgba(0, 0, 0, 0.25);
+  --shadow-card-hover: 0 8px 24px rgba(0, 0, 0, 0.3);
+  --shadow-blog-card-hover: 0 6px 20px rgba(0, 0, 0, 0.3);
+  --shadow-dropdown: 0 8px 24px rgba(0, 0, 0, 0.4);
+  --shadow-navbar: 0 1px 12px rgba(0, 0, 0, 0.4);
+  --shadow-modal: 0 8px 32px rgba(0, 0, 0, 0.4);
+  --shadow-embed: 0 4px 20px rgba(0, 0, 0, 0.4);
+
+  --text-shadow-hero: 0 1px 6px rgba(0, 0, 0, 0.35);
+  --text-shadow-hero-body: 0 1px 4px rgba(0, 0, 0, 0.3);
+
+  /* ---------------------------------------------------------------------
+     Spacing — named, in the source's own units
+     ------------------------------------------------------------------- */
+
+  /* Carousel overlay and pagination insets */
+  --spacing-carousel-x: 42px;
+  --spacing-carousel-y: 58px;
+  --spacing-carousel-x-md: 32px;
+  --spacing-carousel-y-md: 44px;
+  --spacing-carousel-x-sm: 24px;
+  --spacing-carousel-y-sm: 40px;
+  --spacing-carousel-dots-y: 28px;
+  --spacing-carousel-dots-y-md: 22px;
+  --spacing-carousel-dots-y-sm: 14px;
+
+  /* Section vertical rhythm */
+  --spacing-section: 70px;
+  --spacing-section-md: 50px;
+  --spacing-section-sm: 40px;
+  --spacing-cta: 60px;
+  --spacing-cta-md: 45px;
+  --spacing-cta-sm: 36px;
+  --spacing-footer: 50px;
+  --spacing-copyright: 30px;
+  --spacing-heading-band: 32px;
+
+  /* Grids and cards */
+  --spacing-gallery-gap: 6px;
+  --spacing-gallery-gap-sm: 12px;
+  --spacing-card-gap: 30px;
+  --spacing-card-gap-sm: 20px;
+  --spacing-feature-gap-sm: 16px;
+
+  /* Gallery hover-overlay offsets */
+  --spacing-gallery-title-y: 40px;
+  --spacing-gallery-button-y: 10px;
+
+  /* Modal chrome insets */
+  --spacing-modal-edge: 16px;
+  --spacing-modal-edge-sm: 8px;
+
+  /* Button padding. em-based in the source, and asymmetric on purpose: every
+     variant pads more on the right than the left to balance the "\00a0\203A"
+     chevron that .nav-button::after appends (custom.css:45-49). Preserve the
+     asymmetry or the chevron sits flush against the edge. */
+  --spacing-button-y: 0.7em; /* .nav-button, custom.css:33 */
+  --spacing-button-r: 1.8em;
+  --spacing-button-l: 1.4em;
+  --spacing-button-hero-y: 0.6em; /* carousel .nav-button + .hp-outline-button */
+  --spacing-button-hero-r: 1.6em; /* custom.css:298, 805 */
+  --spacing-button-hero-l: 1.2em;
+  --spacing-button-gallery-y: 0.4em; /* gallery overlay button, custom.css:584 */
+  --spacing-button-gallery-r: 1em;
+  --spacing-button-gallery-l: 0.8em;
+  --spacing-button-cta-y: 0.65em; /* .hp-cta__button, custom.css:1101 */
+  --spacing-button-cta-r: 1.8em;
+  --spacing-button-cta-l: 1.3em;
+  --spacing-button-footer-y: 0.5em; /* .hp-footer__contact-btn, custom.css:1265 */
+  --spacing-button-footer-x: 1.4em; /* symmetric — this variant has no chevron */
+  --spacing-button-margin-y: 0.5em; /* .nav-button margin, custom.css:34 */
+
+  /* Component sizes. These live in the --spacing-* namespace, not a --size-*
+     one: Tailwind v4 has no --size-* theme namespace, so those tokens would
+     emit as CSS variables but generate no `w-*`/`h-*` utilities at all. */
+  --spacing-close: 40px;
+  --spacing-modal-nav: 56px;
+  --spacing-modal-nav-sm: 44px;
+  --spacing-dot: 10px; /* testimonial owl dots */
+  --spacing-indicator-w: 28px; /* carousel line indicator */
+  --spacing-indicator-w-active: 44px;
+  --spacing-indicator-h: 3px;
+
+  /* Bootstrap grid gutter — half-width, as Bootstrap applies it per side */
+  --spacing-gutter: 15px;
+
+  /* ---------------------------------------------------------------------
+     Content widths
+     ------------------------------------------------------------------- */
+  --container-carousel-copy: 550px;
+  --container-carousel-copy-md: 460px;
+  /* Named -gallery-prose, not -prose: `--container-prose` is a Tailwind built-in
+     (65ch), and taking that name would silently repoint every `max-w-prose` in
+     the codebase at 640px. */
+  --container-gallery-prose: 640px; /* gallery paragraphs and lists */
+  --container-subtitle: 580px; /* .hp-section-subtitle */
+  --container-caption: 700px; /* .modal-caption */
+  --container-embed: 560px; /* gallery iframes */
+
+  /* Bootstrap 3 .container widths, preserved exactly */
+  --container-bs-sm: 750px;
+  --container-bs-md: 970px;
+  --container-bs-lg: 1170px;
+
+  /* ---------------------------------------------------------------------
+     Hero dimensions
+     ------------------------------------------------------------------- */
+  --height-hero: 75vh;
+  --height-hero-md: 60vh;
+  --height-hero-sm: 85vh;
+  --height-hero-min: 450px;
+  --height-hero-min-md: 380px;
+  --height-hero-min-sm: 400px;
+  --height-hero-max: 700px;
+
+  /* ---------------------------------------------------------------------
+     Aspect ratios
+     ------------------------------------------------------------------- */
+  --aspect-portrait: 4 / 5; /* gallery cells */
+  --aspect-wide: 16 / 9; /* group shots, embeds */
+  --aspect-card: 16 / 10; /* blog card thumbnails */
+
+  /* ---------------------------------------------------------------------
+     Easing
+     ------------------------------------------------------------------- */
+  --ease-carousel: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-indicator: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ---------------------------------------------------------------------
+     Blur — backdrop-filter values
+     ------------------------------------------------------------------- */
+  --blur-modal: 8px;
+  --blur-navbar: 12px;
+
+  /* ---------------------------------------------------------------------
+     Animation
+     ------------------------------------------------------------------- */
+  --animate-ken-burns: kenBurns 6s ease-out forwards;
+
+  /* Three variants, not one. The source applies carouselFadeUp at three
+     different delays (custom.css:325, 329, 332) and the stagger IS the effect —
+     a single delay-less token would land title, copy and CTA simultaneously. */
+  --animate-carousel-fade-up-title: carouselFadeUp 0.55s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s forwards;
+  --animate-carousel-fade-up-copy: carouselFadeUp 0.55s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s forwards;
+  --animate-carousel-fade-up-cta: carouselFadeUp 0.55s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.55s forwards;
+
+  @keyframes kenBurns {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.04);
+    }
+  }
+
+  @keyframes carouselFadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(22px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* =============================================================================
+   Bootstrap 3 compatibility
+
+   Only `.container` ships as real CSS. Its 750/970/1170px steps are load-bearing
+   -- they set the measure of every page on the site, and Tailwind has no
+   equivalent (`max-w-*` is a single value, not a stepped one).
+
+   The other ~20 Bootstrap classes in use (row, col-*, hidden-*, visible-*,
+   text-*, img-responsive, pull-*, clearfix, sr-only) map cleanly onto stock
+   Tailwind utilities and are NOT reimplemented here -- shipping them would be
+   dead CSS. See docs/bootstrap-dependency-map.md for the mapping table.
+   ========================================================================== */
+
+/* `@utility` REPLACES Tailwind's built-in container utility rather than sitting
+   alongside it. Defining `.container` in a component layer instead would lose:
+   Tailwind's own container (width:100% + max-width caps at 768/992/1200) is
+   emitted in the utilities layer, which outranks components, so it would win
+   and silently give every page the wrong measure. */
+@utility container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: var(--spacing-gutter);
+  padding-left: var(--spacing-gutter);
+
+  /* Tailwind still emits its own container (width:100% plus max-width caps at
+     the breakpoints) ahead of this rule. The Bootstrap widths below are each
+     smaller than the matching cap so the caps never actually bind, but clearing
+     max-width keeps that from being a coincidence future edits could break. */
+  max-width: none;
+
+  @media (width >= 768px) {
+    width: var(--container-bs-sm);
+  }
+
+  @media (width >= 992px) {
+    width: var(--container-bs-md);
+  }
+
+  @media (width >= 1200px) {
+    width: var(--container-bs-lg);
+  }
+}
+
+@layer base {
+  html {
+    background-color: var(--color-surface-page);
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-surface-page);
+    color: --alpha(var(--color-white) / 85%);
+  }
+}

@@ -38,7 +38,8 @@ Homepage sections pull from YAML files in `data/`:
 
 ### Styling
 - Theme color scheme: "marsala" (configured in `hugo.toml` under `[params]`)
-- Custom overrides in `static/css/custom.css` using CSS variables (e.g., `--primary-accent: #955251`)
+- Custom overrides in `static/css/custom.css` using CSS variables
+- **Accent is `--primary-accent: #c9a84c` (gold).** `custom.css:3` overrides the marsala theme's `#955251` and loads last (`headers.html:65`), so gold is what renders. Any `#955251` reference elsewhere is stale.
 
 ## External Services
 - **Cloudinary**: image hosting (images referenced via `res.cloudinary.com` URLs)
@@ -57,6 +58,8 @@ You **must** consult these files before launching any exploration related to the
 - `docs/gallery-pages.md` — dark gallery layout, CSS Grid, hover overlays, modal navigation
 - `docs/homepage-redesign.md` — dark homepage design tokens, section classes, CSS scoping, i18n keys
 - `docs/blog-post-styling.md` — blog post rendering flow, dark-blog vs dark-gallery CSS, typography hierarchy
+- `docs/nextjs-scaffold.md` — Next.js app in `web/`, static-export config, design token extraction and conventions
+- `docs/bootstrap-dependency-map.md` — which Bootstrap 3 classes/JS the site actually uses, Tailwind mapping, dead code
 
 ## Rules
 
