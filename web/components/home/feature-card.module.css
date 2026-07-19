@@ -1,0 +1,61 @@
+/*
+ * Ported from static/css/custom.css:941-979, plus the mobile hover-disable at :1368-1372.
+ *
+ * A module rather than utilities because the hover cascades from the card onto a descendant
+ * (`.hp-feature-card:hover .hp-feature-card__icon { transform: scale(1.1) }`) and is switched
+ * off wholesale below 768px — the same shape as gallery.module.css, and the case
+ * docs/mdx-components.md reserves modules for.
+ */
+
+.card {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  border: 1px solid rgb(255 255 255 / 0.06);
+  border-radius: var(--radius-card);
+  margin-bottom: var(--spacing-card-gap);
+  background: transparent;
+  transition:
+    border-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.card:hover {
+  border-color: rgb(255 255 255 / 0.15);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.icon {
+  font-size: var(--text-card-icon);
+  color: var(--color-accent);
+  margin-bottom: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .icon {
+  transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
+  .card {
+    padding: 1.5rem 1rem;
+    margin-bottom: var(--spacing-feature-gap-sm);
+  }
+
+  .icon {
+    font-size: var(--text-card-icon-sm);
+    margin-bottom: 0.8rem;
+  }
+
+  /* Touch devices fire :hover on tap and then keep it — the source drops the lift entirely
+     below 768px rather than leaving cards stuck in a hovered state. */
+  .card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .card:hover .icon {
+    transform: none;
+  }
+}

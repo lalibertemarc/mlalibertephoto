@@ -445,7 +445,27 @@
     font-family: var(--font-sans);
     /* Bootstrap's body size, which the 10px root above would otherwise leave at 10px. */
     font-size: 1.4rem;
+    /*
+     * Bootstrap's body line-height, the sibling of the font-size above and missed on the first
+     * pass. Tailwind's preflight sets 1.5 on `html`, so every element that does not name its own
+     * leading rendered ~5% taller than the Hugo site — visible once homepage sections were
+     * diffed by computed style (a testimonial role read 12px against Hugo's 11.43px).
+     *
+     * Elements with an explicit `leading-*` utility are unaffected; this only restores the
+     * inherited default.
+     */
+    line-height: 1.428571429;
     background-color: var(--color-surface-page);
     color: --alpha(var(--color-white) / 85%);
+  }
+
+  /*
+   * Bootstrap's heading line-height. Tailwind's preflight makes headings inherit the body's,
+   * which left every ported heading tall (a section label boxed at 27px against Hugo's 24px).
+   * Only headings that set their own leading — the carousel h1 at 1.15, blog card titles at
+   * 1.4 — override this, exactly as they override the theme rule in the source.
+   */
+  :is(h1, h2, h3, h4, h5, h6) {
+    line-height: 1.1;
   }
 }

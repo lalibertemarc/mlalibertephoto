@@ -10,7 +10,9 @@
 
 import { readFile, readdir } from 'node:fs/promises'
 import path from 'node:path'
+import { cache } from 'react'
 import { parse as parseYaml } from 'yaml'
+import { formatPostDate } from '@/lib/dates'
 import type { Locale } from '@/lib/permalink'
 import { splitMdxFrontmatter } from './mdx'
 
@@ -23,6 +25,20 @@ export interface BlogPostSummary {
   href: string
   title: string
   imageSrc: string
+  /**
+   * Display-ready, already localised — see `lib/dates.ts#formatPostDate`. Formatted here,
+   * once, from the same literal Y/M/D that `permalink.ts` builds the URL from, so a card's
+   * date and its link can never disagree about which day the post is.
+   */
+  date: string
+  /**
+   * Hugo's `.Summary`. Ported as a field but never populated: `hide_summary` is `true` in
+   * both `fr.params.recent_posts` and `en.params.recent_posts`, so nothing has rendered it
+   * in production. Building an MDX-body summariser for a value no page displays would be
+   * speculative — the field exists so that reviving it is a one-line change here rather than
+   * a reshaping of this type. See `HIDE_SUMMARY` in components/home/recent-posts-section.tsx.
+   */
+  summary?: string
 }
 
 /**
@@ -45,8 +61,15 @@ interface BlogMetaShape {
   banner?: { src?: unknown }
 }
 
-/** All posts, newest first. `limit` trims the result; omit it for the whole list. */
-export async function listBlogPosts(locale: Locale, limit?: number): Promise<BlogPostSummary[]> {
+/**
+ * Every post for a locale, newest first.
+ *
+ * Cached on `locale` alone, deliberately excluding any limit: three call sites want different
+ * counts of the same list in a single render — the footer's three, the homepage's four, and
+ * the blog index's all — and without this each one sweeps all 77 post directories again.
+ * Slicing happens in `listBlogPosts`, outside the cache, so the three share one read.
+ */
+const readAllPosts = cache(async (locale: Locale): Promise<BlogPostSummary[]> => {
   const entries = await readdir(BLOG_DIR, { withFileTypes: true })
 
   const posts = await Promise.all(
@@ -68,6 +91,7 @@ export async function listBlogPosts(locale: Locale, limit?: number): Promise<Blo
           href,
           title,
           imageSrc: typeof bannerSrc === 'string' ? bannerSrc : PLACEHOLDER_IMAGE,
+          date: formatPostDate(rawDate, locale),
           // Ordering only. Parsing to an instant is right here and would be a bug in
           // lib/permalink.ts: frontmatter dates carry -04:00 / -05:00 offsets, so a lexical
           // sort misorders posts either side of a DST change, while a Date round-trip can
@@ -78,10 +102,14 @@ export async function listBlogPosts(locale: Locale, limit?: number): Promise<Blo
       }),
   )
 
-  const sorted = posts
+  return posts
     .filter((post): post is NonNullable<typeof post> => post !== null)
     .sort((a, b) => b.sortKey - a.sortKey)
-    .map(({ href, title, imageSrc }) => ({ href, title, imageSrc }))
+    .map(({ href, title, imageSrc, date }) => ({ href, title, imageSrc, date }))
+})
 
-  return limit === undefined ? sorted : sorted.slice(0, limit)
+/** All posts, newest first. `limit` trims the result; omit it for the whole list. */
+export async function listBlogPosts(locale: Locale, limit?: number): Promise<BlogPostSummary[]> {
+  const all = await readAllPosts(locale)
+  return limit === undefined ? all : all.slice(0, limit)
 }

@@ -1,15 +1,24 @@
 /**
  * The homepage, shared by both locale trees.
  *
- * The real homepage — carousel, features, testimonials, recent posts — is item #7. This
- * carries only what the routing shell needs to demonstrate: that one implementation serves
- * two URLs, in two languages, under two `<html lang>` values.
+ * Section order follows layouts/index.html:20-28 — carousel, features, testimonials, CTA, recent
+ * posts. The CTA sits before the posts, not after.
+ *
+ * There is no page-level `container` and no page-level `h1`. Each section is full-bleed with its
+ * own inner container, so wrapping the page would clip every section background to content
+ * width; and the only `h1` on the real homepage is the active carousel slide's title. The
+ * `clients` partial is not ported — `[clients] enable = false`, so it renders nothing today.
  */
 
 import type { Metadata } from 'next'
+import { HomeCarousel } from '@/components/home/carousel/carousel'
+import { CtaSection } from '@/components/home/cta-section'
+import { FeaturesSection } from '@/components/home/features-section'
+import { RecentPostsSection } from '@/components/home/recent-posts-section'
+import { TestimonialsSection } from '@/components/home/testimonials-section'
 import { ExtraMeta } from '@/components/seo/ExtraMeta'
 import { newestContentDate } from '@/lib/content/content-dates'
-import { getT } from '@/lib/translate'
+import { getCarouselSlides } from '@/lib/content/homepage-data'
 import { localeHref, type Locale } from '@/lib/permalink'
 import { buildMetadata } from '@/lib/seo/metadata'
 import { getSiteConfig } from '@/lib/site-config'
@@ -28,17 +37,17 @@ export function homeMetadata(locale: Locale): Metadata {
 }
 
 export async function HomePage({ locale }: { locale: Locale }) {
-  const t = getT(locale, 'Home')
-  const site = getSiteConfig(locale)
   // The home page cascades from all content, not just posts — see lib/content/content-dates.ts.
   const updatedAt = await newestContentDate()
 
   return (
-    <main className="container py-16">
+    <main>
       <ExtraMeta updatedAt={updatedAt} />
-      <h1 className="mb-4 text-page-title font-light tracking-title text-white">{site.title}</h1>
-      <p className="max-w-prose text-white/70">{site.aboutUs}</p>
-      <p className="mt-8 text-white/45">{t('ctaSubtitle')}</p>
+      <HomeCarousel slides={getCarouselSlides()} locale={locale} />
+      <FeaturesSection locale={locale} />
+      <TestimonialsSection locale={locale} />
+      <CtaSection locale={locale} />
+      <RecentPostsSection locale={locale} />
     </main>
   )
 }

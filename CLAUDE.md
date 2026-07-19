@@ -64,6 +64,7 @@ You **must** consult these files before launching any exploration related to the
 - `docs/mdx-components.md` — the five MDX components replacing the Hugo shortcodes, the Cloudinary loader and dimension manifest, modal architecture, next-intl wiring, and the shortcode bugs fixed during the port
 - `docs/routing-and-chrome.md` — the FR/EN route groups and why `app/en/` cannot work, the thin-shim pattern, why all of `next-intl/server` is unusable and what replaces it, the language switcher and the taxonomy gap, and the nav/footer/heading port (including the ~half of `nav.html` that is unreachable)
 - `docs/seo-contract.md` — every head tag Hugo emits and under what condition, the sitemap/robots/RSS artifact shapes, the four analytics wirings, the dead code and live bugs, the deliberate deviations the Next port makes, and the `web/lib/seo/` implementation (including the four things Next's Metadata API cannot express and the taxonomy slug rules)
+- `docs/homepage-port.md` — the five homepage sections in Next, why the Embla carousel toggles its active class imperatively (and the forced reflow that makes loop animations replay), Owl's real 5000ms autoplay interval vs the 2000ms transition, the three places `custom.css` disagrees with what actually renders (the gold section rule, testimonial padding, Bootstrap's line-heights — now in `globals.css`), the Bootstrap grid mapping, and the date formatter's timezone trap
 
 ## Rules
 
