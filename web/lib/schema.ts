@@ -125,6 +125,7 @@ export const TestimonialSchema = z.strictObject({
 
 export type Locale = 'fr' | 'en'
 export type UrlDate = z.infer<typeof UrlDateSchema>
+export type PermalinkPair = z.infer<typeof PermalinkPairSchema>
 export type Banner = z.infer<typeof BannerSchema>
 export type BlogMeta = z.infer<typeof BlogMetaSchema>
 export type PageMeta = z.infer<typeof PageMetaSchema>

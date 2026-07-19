@@ -9,8 +9,11 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { PageHeading, isDarkPageHeading } from '@/components/chrome/page-heading'
+import { ExtraMeta } from '@/components/seo/ExtraMeta'
 import { listBlogPosts } from '@/lib/content/blog-posts'
-import type { Locale } from '@/lib/permalink'
+import { newestPostDate } from '@/lib/content/content-dates'
+import { localeHref, type Locale } from '@/lib/permalink'
+import { buildMetadata } from '@/lib/seo/metadata'
 
 /**
  * "Blog" is the section title in both languages — it is the menu label in each
@@ -19,15 +22,24 @@ import type { Locale } from '@/lib/permalink'
  */
 const BLOG_TITLE = 'Blog'
 
-export function blogIndexMetadata(): Metadata {
-  return { title: BLOG_TITLE }
+/**
+ * Takes a locale now: the title is the same word in both languages, but the description,
+ * keywords and hreflang alternates are not.
+ */
+export function blogIndexMetadata(locale: Locale): Metadata {
+  return buildMetadata({
+    locale,
+    permalinks: { fr: localeHref('/blog/', 'fr'), en: localeHref('/blog/', 'en') },
+    title: BLOG_TITLE,
+  })
 }
 
 export async function BlogIndexPage({ locale }: { locale: Locale }) {
-  const posts = await listBlogPosts(locale)
+  const [posts, updatedAt] = await Promise.all([listBlogPosts(locale), newestPostDate()])
 
   return (
     <>
+      <ExtraMeta updatedAt={updatedAt} />
       <PageHeading title={BLOG_TITLE} dark={isDarkPageHeading('blog')} />
       <main className="container py-12">
         <ul className="flex flex-col gap-4">

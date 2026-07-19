@@ -5,7 +5,9 @@
     "type": "module",
     "scripts": {
         "dev": "next dev",
+        "prebuild": "tsx scripts/build-seo-files.ts",
         "build": "next build",
+        "seo:build": "tsx scripts/build-seo-files.ts",
         "start": "next start",
         "lint": "eslint",
         "typecheck": "tsc --noEmit",

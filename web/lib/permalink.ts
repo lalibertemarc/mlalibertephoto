@@ -91,3 +91,56 @@ export function pagePermalink(relPath: string, locale: Locale): string {
 export function blogFolderName(date: UrlDate, slug: string): string {
   return `${date.year}-${date.month}-${date.day}-${slug}`
 }
+
+/** Hugo's `[taxonomies]` in hugo.toml, singular key to plural URL segment. */
+export type TaxonomyKind = 'tags' | 'categories' | 'authors'
+
+export const TAXONOMY_KINDS: readonly TaxonomyKind[] = ['tags', 'categories', 'authors']
+
+/**
+ * Hugo's URL form of a taxonomy term.
+ *
+ * Verified by diffing this against every term directory in a real build rather than derived
+ * from Hugo's `urlize` source, which is why the rules look arbitrary — they are:
+ *
+ *   "Prohibition5"              -> prohibition5
+ *   "LR/Mogrify 2"              -> lr/mogrify-2      (a slash makes a two-segment path)
+ *   "Marc Laliberté"            -> marc-laliberté    (accented letters kept)
+ *   "Île d'Orléans"             -> île-dorléans      (apostrophe deleted, not hyphenated)
+ *   "Sigma 24-70mm F2.8 DG"     -> sigma-24-70mm-f2.8-dg   (hyphens and dots kept)
+ *   "E 70–350mm F4.5–6.3 G OSS" -> e-70350mm-f4.56.3-g-oss
+ *
+ * That last one is the trap. A plain hyphen is preserved, but an en-dash (U+2013) is
+ * stripped with no replacement, merging the digits either side of it. The corpus also
+ * contains a non-breaking hyphen (U+2011), which strips the same way. Neither is visually
+ * distinguishable from a hyphen in an editor.
+ *
+ * Case-folding means terms differing only in case collapse together — "Quebec"/"quebec" and
+ * "Sonum Fest"/"sonum fest" each produce one page, exactly as they do in Hugo.
+ */
+export function slugifyTerm(term: string): string {
+  return term
+    .toLowerCase()
+    .split('/')
+    .map((segment) =>
+      segment
+        .normalize('NFC')
+        .replace(/['’]/g, '')
+        .replace(/\s+/g, '-')
+        // Keeps letters (including accented), digits, underscore, dot and hyphen. Everything
+        // else — en-dashes, non-breaking hyphens, punctuation — is dropped outright.
+        .replace(/[^\p{L}\p{N}_.\-]/gu, '')
+        .replace(/-{2,}/g, '-')
+        .replace(/^-+|-+$/g, ''),
+    )
+    .filter(Boolean)
+    .join('/')
+}
+
+export function taxonomyPermalink(kind: TaxonomyKind, slug: string, locale: Locale): string {
+  return localeHref(`/${kind}/${slug}/`, locale)
+}
+
+export function taxonomyListPermalink(kind: TaxonomyKind, locale: Locale): string {
+  return localeHref(`/${kind}/`, locale)
+}

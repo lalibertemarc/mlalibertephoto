@@ -8,27 +8,23 @@
  * content, swapping the locale prefix is not an approximation; it is exactly what Hugo's
  * `.Translations` resolves to.
  *
- * Taxonomy is where that stops being true, which is why this returns `null` rather than a
- * best guess. Hugo generates `/tags/<term>/` from the term *string*, and the terms are
- * translated with the posts: `/tags/paruline-flamboyante/` and
- * `/en/tags/american-redstart/` are the same tag on the same post. A prefix swap there
- * produces a URL that has never existed. netlify.toml:227 carries a redirect for exactly
- * that pair, so this is observed behaviour, not a hypothetical.
+ * Taxonomy pairs the same way, which this module previously assumed it did not. The concern
+ * was that terms are translated with their posts, so `/tags/paruline-flamboyante/` and
+ * `/en/tags/american-redstart/` would name one tag under two slugs that no string transform
+ * relates. That was true once — netlify.toml:227 still redirects that exact pair — but it is
+ * not true of the corpus as it stands: `tags` and `categories` live in each post's shared
+ * `meta.json`, one array serving both languages, and `migrate-content.ts` hard-errors if the
+ * two source trees disagree. Verified directly: `redstart.md` reads
+ * `tags = ["american redstart"]` in *both* trees, and every term directory in a real build
+ * appears identically under `/tags/` and `/en/tags/`. So the redirect is a historical
+ * artifact of a vocabulary that has since been unified, not evidence of a live gap.
  *
- * Mapping those terms needs a FR↔EN table derived from post membership, which the content
- * migration never produced — taxonomy is not represented under `web/content/` at all.
- * Until that exists, taxonomy paths report "unknown" and the caller decides what to do.
- * Returning the target homepage from here instead would erase the distinction between
- * "this page has no counterpart" and "its counterpart is the homepage".
+ * `null` remains reachable and is kept deliberately: it distinguishes "this page has no
+ * counterpart" from "its counterpart is the homepage", which a fallback would erase. It just
+ * no longer applies to taxonomy.
  */
 
 import { localePrefix, type Locale } from './permalink'
-
-/**
- * Hugo's `[taxonomies]` in hugo.toml, plus their list pages. Term slugs are per-language
- * vocabulary, so no structural mapping between locales exists for anything beneath these.
- */
-const UNMAPPED_SECTIONS = ['/tags/', '/categories/', '/authors/']
 
 /** Strip the locale prefix, yielding a path that is the same in both trees. */
 function toNeutralPath(pathname: string): string {
@@ -42,11 +38,7 @@ function toNeutralPath(pathname: string): string {
  * derived. `pathname` may belong to either locale.
  */
 export function resolveCounterpart(pathname: string, target: Locale): string | null {
-  const neutral = toNeutralPath(pathname)
+  if (!pathname.startsWith('/')) return null
 
-  if (UNMAPPED_SECTIONS.some((section) => neutral.startsWith(section))) {
-    return null
-  }
-
-  return `${localePrefix(target)}${neutral}`
+  return `${localePrefix(target)}${toNeutralPath(pathname)}`
 }

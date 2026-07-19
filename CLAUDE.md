@@ -63,6 +63,7 @@ You **must** consult these files before launching any exploration related to the
 - `docs/bootstrap-dependency-map.md` — which Bootstrap 3 classes/JS the site actually uses, Tailwind mapping, dead code
 - `docs/mdx-components.md` — the five MDX components replacing the Hugo shortcodes, the Cloudinary loader and dimension manifest, modal architecture, next-intl wiring, and the shortcode bugs fixed during the port
 - `docs/routing-and-chrome.md` — the FR/EN route groups and why `app/en/` cannot work, the thin-shim pattern, why all of `next-intl/server` is unusable and what replaces it, the language switcher and the taxonomy gap, and the nav/footer/heading port (including the ~half of `nav.html` that is unreachable)
+- `docs/seo-contract.md` — every head tag Hugo emits and under what condition, the sitemap/robots/RSS artifact shapes, the four analytics wirings, the dead code and live bugs, the deliberate deviations the Next port makes, and the `web/lib/seo/` implementation (including the four things Next's Metadata API cannot express and the taxonomy slug rules)
 
 ## Rules
 

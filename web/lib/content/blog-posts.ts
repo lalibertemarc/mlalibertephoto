@@ -12,6 +12,7 @@ import { readFile, readdir } from 'node:fs/promises'
 import path from 'node:path'
 import { parse as parseYaml } from 'yaml'
 import type { Locale } from '@/lib/permalink'
+import { splitMdxFrontmatter } from './mdx'
 
 const BLOG_DIR = path.join(process.cwd(), 'content', 'blog')
 
@@ -24,17 +25,15 @@ export interface BlogPostSummary {
   imageSrc: string
 }
 
-const FRONTMATTER = /^---\r?\n([\s\S]*?)\r?\n---/
-
 /**
  * The post title lives in the MDX frontmatter rather than meta.json, because it differs per
  * language while meta.json is shared across both. See docs/content-migration.md.
  */
 async function readTitle(dir: string, locale: Locale): Promise<string | null> {
   const source = await readFile(path.join(dir, `${locale}.mdx`), 'utf8')
-  const match = FRONTMATTER.exec(source)
-  if (!match?.[1]) return null
-  const data: unknown = parseYaml(match[1])
+  const parts = splitMdxFrontmatter(source)
+  if (!parts) return null
+  const data: unknown = parseYaml(parts.frontmatter)
   if (typeof data !== 'object' || data === null) return null
   const { title } = data as { title?: unknown }
   return typeof title === 'string' ? title : null
