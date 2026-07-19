@@ -15,10 +15,13 @@
  * Pages Router integration uses, where locale and messages are passed in rather than
  * inferred from a request. It needs no plugin, no config file and no middleware.
  *
- * Placement: wrap wherever the locale is unambiguously known. Today that is the preview
- * route; once per-locale route groups exist (items #7-#9) this moves up into
- * `app/(fr)/layout.tsx` and `app/(en)/layout.tsx` with a hardcoded literal each. No
- * `useTranslations` call site changes when it moves.
+ * Placement: mounted once per locale tree by `lib/pages/site-layout.tsx`, which the two root
+ * layouts (`app/(fr)/layout.tsx` and `app/(en)/en/layout.tsx`) delegate to with a hardcoded
+ * locale literal each.
+ *
+ * This covers client components only. Server components cannot call `useTranslations`, and
+ * `next-intl/server` throws without the plugin for the same reason described below — they use
+ * `lib/translate.ts`'s `getT(locale, namespace)` instead.
  */
 
 import { NextIntlClientProvider } from 'next-intl'

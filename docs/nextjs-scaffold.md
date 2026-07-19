@@ -52,11 +52,32 @@ Three settings in `next.config.ts` that are not optional:
 - **`trailingSlash: true`** — Hugo emits every URL with a trailing slash
   (`/blog/2025/10/29/prohibition/`). Without this, export writes `blog.html`
   instead of `blog/index.html` and **every indexed URL 404s**.
-- **`images.unoptimized: true`** — `output: 'export'` has no optimizer to run;
-  without this, `next build` hard-fails on any `next/image`. Images are
-  Cloudinary URLs served at final size, so nothing is lost.
+- **`images.loader: 'custom'`** — `output: 'export'` has no optimizer to run, so
+  without a loader `next build` hard-fails on any `next/image`. This started as
+  `images.unoptimized: true`; board item #4 replaced it with
+  `lib/cloudinary-loader.ts`, which injects `f_auto,q_auto,w_*,c_limit`. See
+  `docs/mdx-components.md`.
 
 `tsconfig.json` sets `strict: true` and `noUncheckedIndexedAccess: true`.
+
+## The 10px root
+
+**Bootstrap 3 sets `html { font-size: 10px }`**, and the Hugo site loads Bootstrap 3. Every
+`rem` in `custom.css` was therefore authored against a 10px root: `--text-page-title: 2rem`
+means **20px**, and the footer headings at `0.75rem` are genuinely **7.5px**.
+
+The original extraction copied those values across verbatim — correct in itself — into an app
+whose root was the browser default 16px, so all 39 `--text-*` tokens rendered **1.6× too
+large**. This was invisible until item #5 compared computed styles against a running Hugo
+server; nothing about the CSS looks wrong on its own.
+
+`globals.css` now sets `font-size: 62.5%` on `html`, reproducing Bootstrap's root. That fixes
+the tokens *and* aligns Tailwind's own rem-based utilities with the source, which matters for
+the vertical rhythm below.
+
+**Consequence for component work:** stock Tailwind steps no longer carry their familiar pixel
+values — `text-sm` is 8.75px, `p-4` is 10px. When a component needs an exact size, state it
+(`text-[14px]`) rather than reaching for the step that "looks like 14px".
 
 ## Design tokens
 
@@ -108,6 +129,11 @@ Every one of these lands exactly on Tailwind's default 0.25rem spacing scale —
 them would produce ~40 single-use tokens that each alias a number Tailwind
 already has. The handful of em-based ones (`0.3em`, `0.4em` list-item margins)
 are font-relative and belong in arbitrary values: `mb-[0.3em]`.
+
+This mapping is only true because both sides are `rem` **and both resolve against the same
+root**. It held by luck until item #5 set the root to 62.5%; before that, `2rem` in the source
+meant 20px while Tailwind's `8` emitted 32px, and the equivalence above was off by 1.6× — see
+"The 10px root".
 
 The tokens exist for values Tailwind *cannot* express: brand colours, the
 role-specific type scale, Bootstrap's stepped container, custom easings, and the
@@ -202,16 +228,15 @@ stale.
   `netlify.toml` are **not** context-scoped — a preview-only noindex needs an
   `out/_headers` file generated at build time off the `CONTEXT` env var, and
   branch deploys enabled in the Netlify UI.
-- **`app/tokens/`** is scaffold tooling for items #4–#9, not public site content.
-  Delete it or move it behind a dev-only route before launch.
-- **The FR/EN route structure is not decided yet, and should be before pages
-  accumulate.** `app/layout.tsx` currently hardcodes `<html lang="fr">` and
-  French metadata. The App Router renders one root layout per route tree, so
-  `/en/*` pages added under the present shape would inherit `lang="fr"`. The fix
-  is a route group per locale (`app/(fr)/layout.tsx`, `app/(en)/layout.tsx`),
-  each emitting its own `<html lang>`. Retrofitting later means moving every
-  route. Note `output: 'export'` rules out middleware-based locale detection, so
-  the split has to be structural. Item #3 or #4 should settle this.
+- **`app/(fr)/tokens/`** is scaffold tooling for items #4–#9, not public site
+  content. Delete it or move it behind a dev-only route before launch.
+
+**Settled since:** the FR/EN route structure was the open question here, and item
+#5 resolved it — two top-level route groups, `app/(fr)/*` and `app/(en)/en/*`,
+each with its own root layout and `<html lang>`, and no `app/layout.tsx`. Note
+the English tree needs the group *and* a literal `en` segment: `app/en/` alone is
+not a route group and would have inherited `lang="fr"`. See
+`docs/routing-and-chrome.md`.
 
 ## Known warnings
 

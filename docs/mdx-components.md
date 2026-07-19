@@ -126,8 +126,13 @@ fills in absent props by reading the request config — it calls `getFormats()` 
 `getConfigNow()` unconditionally — and the build fails with "Couldn't find next-intl config
 file" even when locale and messages are both supplied.
 
-When per-locale route groups land, `IntlProvider` moves up into `app/(fr)/layout.tsx` and
-`app/(en)/layout.tsx`. No `useTranslations` call site changes.
+Item #5 landed those route groups: `IntlProvider` now sits in `app/(fr)/layout.tsx` and
+`app/(en)/en/layout.tsx` (via `lib/pages/site-layout.tsx`), and no `useTranslations` call site
+changed. Note the English path — the group alone does not produce the `/en` prefix.
+
+Server components cannot use `useTranslations`, and `next-intl/server` is unusable here for
+the same missing-config-file reason described above; `lib/translate.ts`'s `getT(locale, ns)`
+is the server-side equivalent. See `docs/routing-and-chrome.md`.
 
 ## Verification surface
 

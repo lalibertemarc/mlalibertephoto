@@ -62,6 +62,7 @@ You **must** consult these files before launching any exploration related to the
 - `docs/content-migration.md` — Hugo→MDX migration script, the URL contract and why dates never become `Date` objects, shortcode/raw-HTML transforms, known data quirks
 - `docs/bootstrap-dependency-map.md` — which Bootstrap 3 classes/JS the site actually uses, Tailwind mapping, dead code
 - `docs/mdx-components.md` — the five MDX components replacing the Hugo shortcodes, the Cloudinary loader and dimension manifest, modal architecture, next-intl wiring, and the shortcode bugs fixed during the port
+- `docs/routing-and-chrome.md` — the FR/EN route groups and why `app/en/` cannot work, the thin-shim pattern, why all of `next-intl/server` is unusable and what replaces it, the language switcher and the taxonomy gap, and the nav/footer/heading port (including the ~half of `nav.html` that is unreachable)
 
 ## Rules
 

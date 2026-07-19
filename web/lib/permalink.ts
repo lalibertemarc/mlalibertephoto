@@ -55,18 +55,36 @@ export function slugFromFilename(basenameNoExt: string): string {
   return basenameNoExt.toLowerCase()
 }
 
-function localePrefix(locale: Locale): string {
+export function localePrefix(locale: Locale): string {
   // French is the default language and has no prefix.
   return locale === 'en' ? '/en' : ''
 }
 
+/**
+ * Prefix an already locale-relative path that carries leading and trailing slashes.
+ *
+ * Chrome links — the nav, the home link, the language switcher — need the locale prefix
+ * too, but are not derived from migrated content, so they cannot go through
+ * `pagePermalink`. Routing them here keeps this module the only place that knows the
+ * prefix is the string `/en`, which is what stops a nav link and a content link from
+ * ever disagreeing about where a page lives.
+ *
+ * `localeHref('/', 'en')` is `/en/`, so the home case needs no special branch.
+ */
+export function localeHref(path: string, locale: Locale): string {
+  if (!path.startsWith('/') || !path.endsWith('/')) {
+    throw new Error(`localeHref needs a leading and trailing slash: ${JSON.stringify(path)}`)
+  }
+  return `${localePrefix(locale)}${path}`
+}
+
 export function blogPermalink(date: UrlDate, slug: string, locale: Locale): string {
-  return `${localePrefix(locale)}/blog/${date.year}/${date.month}/${date.day}/${slug}/`
+  return localeHref(`/blog/${date.year}/${date.month}/${date.day}/${slug}/`, locale)
 }
 
 /** `relPath` is the source path without extension, e.g. "contact" or "photos/portraits". */
 export function pagePermalink(relPath: string, locale: Locale): string {
-  return `${localePrefix(locale)}/${relPath.toLowerCase()}/`
+  return localeHref(`/${relPath.toLowerCase()}/`, locale)
 }
 
 /** Output directory name for a post: `YYYY-MM-DD-slug`. */

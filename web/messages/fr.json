@@ -9,5 +9,67 @@
   "NavButton": {
     "previous": "← Précédent",
     "next": "Suivant →"
+  },
+  "Nav": {
+    "home": "Accueil",
+    "goToHomepage": "aller à l'accueil",
+    "toggleNavigation": "Basculer la Navigation",
+    "switchLanguage": "Changer de langue"
+  },
+  "Footer": {
+    "aboutUs": "À propos de nous",
+    "recentPosts": "Billets récents",
+    "contactTitle": "Contact",
+    "contactGoTo": "Aller à la page de contact"
+  },
+  "Home": {
+    "viewAllPosts": "Voir toutes mes publications",
+    "testimonialsTitle": "Ce que disent mes clients",
+    "testimonialsSubtitle": "J'ai travaillé avec de nombreux clients dans la Ville de Québec et je suis toujours ravis de les entendre repartir satisfaits de notre collaboration. Découvrez ce qu'ils ont pensé de mon travail.",
+    "featuresTitle": "Pourquoi me choisir",
+    "featuresSubtitle": "Un service professionnel, flexible et adapté à vos besoins.",
+    "ctaTitle": "Prêt à capturer vos moments?",
+    "ctaSubtitle": "Réservez votre séance photo dès maintenant.",
+    "ctaButtonText": "Me contacter"
+  },
+  "Blog": {
+    "readMore": "En lire plus",
+    "continueReading": "Continuer la lecture",
+    "authorBy": "Par",
+    "publishedOn": "le",
+    "newer": "Récent",
+    "older": "Ancien"
+  },
+  "Contact": {
+    "addressTitle": "Adresse",
+    "formTitle": "Formulaire de contact",
+    "name": "Votre nom",
+    "email": "Votre Email",
+    "message": "Votre Message",
+    "send": "Envoyer le Message"
+  },
+  "Widgets": {
+    "categoriesTitle": "Catégories",
+    "tagsTitle": "Tags",
+    "searchTitle": "Recherche"
+  },
+  "NotFound": {
+    "error": "Erreur 404: Page introuvable",
+    "message": "Nous sommes désolés – cette page n'est plus là",
+    "goHome": "Aller à l'accueil"
+  },
+  "Months": {
+    "January": "janvier",
+    "February": "février",
+    "March": "mars",
+    "April": "avril",
+    "May": "mai",
+    "June": "juin",
+    "July": "juillet",
+    "August": "aout",
+    "September": "septembre",
+    "October": "octobre",
+    "November": "novembre",
+    "December": "décembre"
   }
 }

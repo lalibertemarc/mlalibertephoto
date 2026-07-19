@@ -62,6 +62,10 @@
   --color-surface-hero: #1e1414; /* carousel, testimonials, recent posts */
   --color-surface-page: #1a1212; /* gallery breakout, features, cta, blog */
   --color-surface-heading: #221818; /* #heading-breadcrumbs.dark-heading */
+  /* The light heading band's text. From the theme rather than custom.css — the original
+     extraction covered custom.css only, and the light variant is styled entirely by
+     style.marsala.css:1752, which custom.css never overrides. */
+  --color-heading-light: #333333;
   --color-surface-footer: #151010; /* #footer.hp-footer */
   --color-surface-copyright: #0f0b0b; /* #copyright.hp-copyright */
   --color-surface-nav: rgba(26, 18, 18, 0.85); /* .navbar-default */
@@ -414,11 +418,33 @@
 
 @layer base {
   html {
+    /*
+     * 10px root, reproducing Bootstrap 3's own reset (`html { font-size: 10px }` in
+     * bootstrap.min.css, which the Hugo site loads).
+     *
+     * This is load-bearing, and its absence was a silent 1.6x error. Every rem value in
+     * custom.css — the 39 `--text-*` tokens extracted into this file, and the vertical
+     * rhythm on headings, paragraphs and lists — was authored against that 10px root.
+     * Carried into a default 16px-root app they all render 1.6x too large: the page-title
+     * band measures 20px on the live site and was rendering at 32px here, and the footer
+     * headings are genuinely 7.5px, not 12px.
+     *
+     * Setting the root here rather than rewriting the tokens to px keeps them verbatim
+     * (see docs/nextjs-scaffold.md) and realigns Tailwind's own rem-based utilities with
+     * the source at the same time — `p-4` is 1rem is 10px, which is what `1rem` means in
+     * custom.css. The catch: stock Tailwind steps no longer carry their usual pixel
+     * values, so a utility picked by its default size will come out 1.6x small. Component
+     * work that needs an exact pixel size should state it — `text-[14px]` — rather than
+     * reach for `text-sm`.
+     */
+    font-size: 62.5%;
     background-color: var(--color-surface-page);
   }
 
   body {
     font-family: var(--font-sans);
+    /* Bootstrap's body size, which the 10px root above would otherwise leave at 10px. */
+    font-size: 1.4rem;
     background-color: var(--color-surface-page);
     color: --alpha(var(--color-white) / 85%);
   }

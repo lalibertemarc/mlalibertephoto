@@ -1,6 +1,11 @@
-public/
+# Hugo's build output. Anchored: unanchored `public/` also matched web/public/, which is
+# the Next.js static-asset directory and must be committed.
+/public/
 newContent.sh
 *.csv
+# The permalink ground truth the migration diffs against when Hugo is not on PATH
+# (see docs/content-migration.md). Caught by *.csv above.
+!web/scripts/fixtures/*.csv
 node_modules/
 # Google service account credentials & indexing script
 marclalibertephoto-*.json
