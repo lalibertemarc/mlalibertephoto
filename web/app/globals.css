@@ -90,6 +90,13 @@
      ------------------------------------------------------------------- */
   --font-sans: var(--font-roboto), 'Roboto', sans-serif;
 
+  /* Declared rather than inherited from Tailwind's default theme. Nothing in custom.css or
+     the theme ever styles `pre`/`code` on a dark background — the Hugo site renders
+     Bootstrap's light-grey box on #1a1212, which is a live defect, not a design. Code blocks
+     are therefore new surface with no token to extract, and naming the stack here beats
+     depending on a default surviving `@theme static`. */
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
+
   /* ---------------------------------------------------------------------
      Typography — size
 

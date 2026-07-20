@@ -17,6 +17,7 @@
         "images:dimensions:all": "tsx scripts/fetch-image-dimensions.ts --all"
     },
     "dependencies": {
+        "@mdx-js/mdx": "^3.1.1",
         "embla-carousel-autoplay": "^8.6.0",
         "embla-carousel-react": "^8.6.0",
         "next": "16.2.10",
@@ -27,7 +28,6 @@
         "zod": "^4.4.3"
     },
     "devDependencies": {
-        "@mdx-js/mdx": "^3.1.1",
         "@tailwindcss/postcss": "^4.3.3",
         "@types/node": "^24.10.1",
         "@types/react": "^19.2.17",

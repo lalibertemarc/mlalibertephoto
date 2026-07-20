@@ -22,6 +22,8 @@ const BLOG_DIR = path.join(process.cwd(), 'content', 'blog')
 const PLACEHOLDER_IMAGE = '/img/placeholder.png'
 
 export interface BlogPostSummary {
+  /** Joins against `TermEntry.members` so a term page can list its posts. */
+  slug: string
   href: string
   title: string
   imageSrc: string
@@ -56,6 +58,7 @@ async function readTitle(dir: string, locale: Locale): Promise<string | null> {
 }
 
 interface BlogMetaShape {
+  slug?: unknown
   date?: unknown
   permalink?: { fr?: unknown; en?: unknown }
   banner?: { src?: unknown }
@@ -81,13 +84,17 @@ const readAllPosts = cache(async (locale: Locale): Promise<BlogPostSummary[]> =>
 
         const href = meta.permalink?.[locale]
         const rawDate = meta.date
-        if (typeof href !== 'string' || typeof rawDate !== 'string') return null
+        const slug = meta.slug
+        if (typeof href !== 'string' || typeof rawDate !== 'string' || typeof slug !== 'string') {
+          return null
+        }
 
         const title = await readTitle(dir, locale)
         if (title === null) return null
 
         const bannerSrc = meta.banner?.src
         return {
+          slug,
           href,
           title,
           imageSrc: typeof bannerSrc === 'string' ? bannerSrc : PLACEHOLDER_IMAGE,
@@ -105,7 +112,7 @@ const readAllPosts = cache(async (locale: Locale): Promise<BlogPostSummary[]> =>
   return posts
     .filter((post): post is NonNullable<typeof post> => post !== null)
     .sort((a, b) => b.sortKey - a.sortKey)
-    .map(({ href, title, imageSrc, date }) => ({ href, title, imageSrc, date }))
+    .map(({ slug, href, title, imageSrc, date }) => ({ slug, href, title, imageSrc, date }))
 })
 
 /** All posts, newest first. `limit` trims the result; omit it for the whole list. */

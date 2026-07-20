@@ -137,6 +137,30 @@ export function slugifyTerm(term: string): string {
     .join('/')
 }
 
+/**
+ * A term as Hugo titles its page.
+ *
+ * Hugo does not display the frontmatter spelling: `wildlife` heads its page as "Wildlife" and
+ * `sonum fest` as "Sonum Fest". 99 of the 129 terms differ from their raw string, so using the
+ * raw value would change nearly every taxonomy heading and `<title>` on the site.
+ *
+ * Every letter following a non-alphanumeric character is capitalised, apostrophes and hyphens
+ * included — `Île d'Orléans` becomes `Île D'Orléans`, `black-bird` becomes `Black-Bird`. Those
+ * two look like defects and are what Hugo actually renders.
+ *
+ * Hugo's default `titleCaseStyle` is AP, which lowercases a list of short English words in
+ * medial position. That rule cannot be distinguished from this one on the current corpus:
+ * both reproduce all 129 headings exactly, because no term contains an English stop word
+ * anywhere but the first position. The simpler rule is used, and a term like "birds of prey"
+ * is the case that would tell them apart — it would render "Birds Of Prey" here and "Birds of
+ * Prey" in Hugo.
+ */
+export function titleCaseTerm(term: string): string {
+  return term.replace(/(^|[^\p{L}\p{N}'’]|['’])(\p{L})/gu, (_, boundary: string, letter: string) =>
+    boundary + letter.toLocaleUpperCase(),
+  )
+}
+
 export function taxonomyPermalink(kind: TaxonomyKind, slug: string, locale: Locale): string {
   return localeHref(`/${kind}/${slug}/`, locale)
 }

@@ -1,0 +1,39 @@
+/*
+ * Ported from Bootstrap 3's `.pager` as the theme uses it: a full-width row with the two
+ * controls pushed to opposite ends, pill-shaped, muted until hovered.
+ */
+
+.pager {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin: 3rem 0 0;
+}
+
+.link {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  border: 1px solid rgb(255 255 255 / 0.15);
+  border-radius: 15px;
+  font-size: var(--text-meta);
+  letter-spacing: var(--tracking-meta);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(255 255 255 / 0.6);
+  transition:
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+a.link:hover,
+a.link:focus {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+/* Bootstrap's `.pager .disabled > a` — present, unclickable, visibly inert. */
+.disabled {
+  opacity: 0.35;
+  cursor: default;
+}

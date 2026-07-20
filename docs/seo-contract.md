@@ -119,7 +119,7 @@ Counted across `content/fr/` + `content/en/`, so each story counts twice.
 | --- | --- | --- | --- |
 | `banner` (any) | 154 | 77 | 46 external + 31 local |
 | `external_banner` | 92 | 46 | always co-occurs with `banner_width`/`banner_height`/`keywords` |
-| `keywords` | 92 | 46 | 1:1 with `external_banner` — added in the same batch edit |
+| `keywords` | 10 | **5** | Was 92/46 when this was written and 1:1 with `external_banner`; since stripped from ~41 posts on `master`. `external_banner` still measures 92/46, so the two are no longer paired. Re-measured during item #8. |
 | `meta_title` | 24 | 12 | |
 | `noindex` | 2 | 1 | `smsPrices` only |
 | `canonical` | 0 | 0 | override never used; canonical is always `.Permalink` |
@@ -287,6 +287,10 @@ the first row is an **expected** delta, not a regression.
 | `image-sitemap.xml` deleted | Dead and buggy. |
 | Keywords behaviour left as-is | Meta keywords is ignored by Google. "Fixing" the shadowed variable would alter 92 pages for no gain and pollute the head diff. |
 | RSS keeps all 85 pages | Parity at cutover. Narrowing to blog-only is a visible change to subscribers; file it separately if wanted. |
+| Self-referencing canonical on paginated pages (item #8) | Hugo collapses `/blog/page/2/` onto `/blog/`, asserting two pages listing different posts are duplicates. 10 URLs affected; one-line rollback in each of two functions. |
+| Taxonomy hub pages populated (item #8) | `/tags/`, `/categories/`, `/authors/` render **blank** in Hugo — the paginator filters `.Data.Pages` by `Type in mainSections`, which matches nothing on a Kind=taxonomy page — yet are indexed. With the sidebar widgets unported they are the only site-wide link path to 129 term pages. |
+| OG block emitted for the 4 bannerless posts (item #8) | Hugo's `$is_valid_image` gate fails on their broken local banner and drops the block entirely, so those 8 pages share with no preview image at all. The migration already dropped the broken banner, so the port falls back to the default sharing image. |
+| Byline author links gain a trailing slash (item #8) | Hugo emits `/authors/marc-lalibert%C3%A9` while the page has a trailing slash, so every byline link takes a redirect hop. |
 | RSS descriptions are plain text | Hugo's are rendered HTML. Matching that means compiling every MDX body through the full pipeline, custom components and all, to produce markup nothing indexes. See "RSS summaries" below. |
 | Undated pages omit `<pubDate>` | Hugo gives the seven dateless pages Go's zero time, `Mon, 01 Jan 0001 00:00:00 +0000`. The element is optional in RSS 2.0, so they carry none. Item count is unchanged at 85. |
 | `hugo.Generator` dropped | It names Hugo and a version number. Emitting it from a Next build would be false. |
@@ -330,6 +334,13 @@ Each was verified against Next 16.2.10's own resolver source, not its docs.
    the two halves together are the full tag set.
 4. **`title` must always be `{ absolute }`.** `resolveTitle` applies the ambient template
    even to `openGraph.title`, and Hugo never appends the site name.
+
+A fifth thing, found in item #8: **`markdownify` applies Goldmark's smartypants**, so Hugo's
+`<title>` and `description` carry U+2019 where the frontmatter has a straight apostrophe —
+`Merle d&rsquo;Amérique`, not `d'Amérique`. Six posts are affected across `<title>`,
+`description`, `og:title` and `og:description`. `toPlainText` now substitutes the apostrophe.
+The `<h1>` does *not* get this treatment (`.Title` is used raw), so heading and title
+legitimately differ by one character.
 
 Two more traps worth stating: Next infers `twitter:card` as `summary_large_image` whenever
 any image resolves, and one always resolves here, so the card is always set explicitly. And

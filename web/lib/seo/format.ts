@@ -25,6 +25,7 @@ export function absoluteUrl(path: string): string {
 
 const MARKDOWN_EMPHASIS = /(\*\*|__|\*|_|`)/g
 const HTML_TAG = /<[^>]*>/g
+const APOSTROPHE = /'/g
 
 /**
  * Hugo's `markdownify | plainify` chain, applied to titles and descriptions.
@@ -34,9 +35,27 @@ const HTML_TAG = /<[^>]*>/g
  * properly just to strip it again would be absurd, so this removes the inline markers and
  * any HTML directly. Block constructs are out of scope: a heading or list in a `title`
  * frontmatter field would be a content bug, not something to render.
+ *
+ * `markdownify` also runs Goldmark's smartypants extension, which is why the straight
+ * apostrophe becomes U+2019: Hugo's `<title>` for `robin` is `Merle d&rsquo;Amérique`, not
+ * `d'Amérique`. Six posts carry an apostrophe in a title or description, and without this
+ * every one of them advertises a different string than the indexed page does. Note the
+ * `<h1>` does *not* get this treatment — `.Title` is used raw there — so the heading and the
+ * title legitimately differ by one character.
+ *
+ * Only the apostrophe is substituted. Smartypants also converts paired quotes, dashes and
+ * ellipses, but no title or description in the corpus contains any of them — verified by
+ * diffing all four affected tags across every page against a real Hugo build, where the only
+ * differences were apostrophes. A title containing `"quoted"` or `--` is the case that would
+ * need more here.
  */
 export function toPlainText(text: string): string {
-  return text.replace(HTML_TAG, '').replace(MARKDOWN_EMPHASIS, '').replace(/\s+/g, ' ').trim()
+  return text
+    .replace(HTML_TAG, '')
+    .replace(MARKDOWN_EMPHASIS, '')
+    .replace(APOSTROPHE, '’')
+    .replace(/\s+/g, ' ')
+    .trim()
 }
 
 /**

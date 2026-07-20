@@ -1,0 +1,194 @@
+/*
+ * Blog post typography — ported from static/css/custom.css:1416-1522 (the `.dark-blog`
+ * family: typography, metadata, media, responsive).
+ *
+ * A module rather than utilities because every source rule is a descendant selector hanging
+ * off one wrapper (`.dark-blog #post-content h2`, `> p`, `blockquote`, `a:hover`, …) and the
+ * elements they target are produced by MDX, so there is no JSX to hang a className on. Same
+ * reasoning that already made gallery.module.css a module.
+ *
+ * Two rules here are NOT ports; both are marked at their definition:
+ *   - `blockquote` is written as the *computed* result of the Hugo cascade, not as the source
+ *     override. See the note there.
+ *   - `pre`/`code` have no source at all. See the note there.
+ *
+ * Not ported: `#blog-post.dark-blog::before` (custom.css:1402-1413), the fixed full-viewport
+ * #1a1212 pane. It patched a Bootstrap layout whose html/body background was never dark;
+ * globals.css sets `background-color: var(--color-surface-page)` on both html and body for
+ * the whole app, so reproducing it would be redundant paint with a position:fixed and a
+ * negative z-index attached.
+ */
+
+.body {
+  position: relative;
+  color: rgb(255 255 255 / 0.85);
+}
+
+/* Direct-child only, exactly as the source scopes it — paragraphs nested inside a gallery or
+   a flex-images block keep their own component's treatment. */
+.body > p {
+  font-weight: 300;
+  font-size: var(--text-post-body);
+  letter-spacing: var(--tracking-body);
+  color: rgb(255 255 255 / 0.75);
+  line-height: var(--leading-post);
+  text-align: left;
+}
+
+.body h2 {
+  font-weight: 400;
+  font-size: var(--text-post-h2);
+  color: rgb(255 255 255 / 0.9);
+  letter-spacing: var(--tracking-title);
+  margin: 2.5rem 0 1rem;
+}
+
+.body h3 {
+  font-weight: 400;
+  font-size: var(--text-post-h3);
+  color: rgb(255 255 255 / 0.8);
+  letter-spacing: var(--tracking-title);
+  margin: 2rem 0 0.8rem;
+}
+
+.body strong {
+  color: #fff;
+}
+
+.body a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-decoration-color: var(--color-accent-underline);
+  text-underline-offset: 2px;
+  transition:
+    color 0.25s ease,
+    text-decoration-color 0.25s ease;
+}
+
+.body a:hover,
+.body a:focus {
+  color: #fff;
+  text-decoration-color: rgb(255 255 255 / 0.4);
+}
+
+/*
+ * Written as the COMPUTED box, not as custom.css:1460-1467 reads.
+ *
+ * The source overrides only `padding-left`, so three quarters of the theme's
+ * `padding: 10px 20px` survive, and it never touches `font-size`, so the theme's flat 14px
+ * survives too. At the 10px root that is larger than the 1.2rem (12px) paragraph around it.
+ * Odd, but it is what production renders.
+ *
+ * Porting the override alone would not reproduce that here: Tailwind's preflight zeroes
+ * blockquote margin, padding and border outright, and nothing in globals.css restores them,
+ * so there is no base layer underneath to cascade against. The flattened values are the only
+ * way to land on the same box.
+ */
+.body blockquote {
+  border-left: 3px solid var(--color-accent);
+  padding: 10px 20px 10px 1.5rem;
+  margin: 1.5rem 0;
+  font-size: 14px;
+  font-style: italic;
+  color: rgb(255 255 255 / 0.6);
+  background: transparent;
+}
+
+.body hr {
+  border-color: rgb(255 255 255 / 0.08);
+  margin: 2.5rem 0;
+}
+
+.body ul,
+.body ol {
+  color: rgb(255 255 255 / 0.75);
+  line-height: var(--leading-post);
+}
+
+.body ul li,
+.body ol li {
+  margin-bottom: 0.4em;
+}
+
+.body iframe {
+  display: block;
+  max-width: 100%;
+  margin: 2rem auto;
+  border-radius: var(--radius-embed);
+  box-shadow: var(--shadow-embed);
+}
+
+/*
+ * New — no source to port.
+ *
+ * Neither custom.css nor the theme styles `pre`/`code` in a dark context, so production
+ * renders Bootstrap's light-grey box on #1a1212. That is a defect, visible today on
+ * lrmogrifymanualfix and imagemagickscriptsrelease, and reproducing it was rejected.
+ *
+ * Values reuse the existing embed vocabulary rather than inventing a third depth treatment:
+ * --color-surface-hero is the established "lifted one step off the page" tone, and the radius
+ * and shadow are the same pair the iframe rule above uses. No syntax highlighting — the two
+ * posts with fenced blocks tag no language.
+ */
+.body pre {
+  background: var(--color-surface-hero);
+  color: rgb(255 255 255 / 0.85);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.6;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  border-radius: var(--radius-embed);
+  box-shadow: var(--shadow-embed);
+  overflow-x: auto;
+}
+
+.body pre code {
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+}
+
+.body :not(pre) > code {
+  background: rgb(255 255 255 / 0.08);
+  color: var(--color-accent);
+  padding: 0.15em 0.4em;
+  border-radius: 3px;
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+}
+
+@media (max-width: 767px) {
+  .body > p {
+    font-size: var(--text-post-body-sm);
+  }
+
+  .body h2 {
+    font-size: var(--text-post-h2-sm);
+  }
+}
+
+/* custom.css:1483-1497 — the muted author/date line. `.text-uppercase` and `.mb-small` are
+   Bootstrap utilities the Hugo markup also carries (style.marsala.css:79-100), folded in
+   here since there is no Bootstrap to supply them. */
+.meta {
+  text-align: right;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: var(--text-meta);
+  letter-spacing: var(--tracking-meta);
+  color: rgb(255 255 255 / 0.45);
+}
+
+.metaLink {
+  color: rgb(255 255 255 / 0.6);
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.metaLink:hover,
+.metaLink:focus {
+  color: var(--color-accent);
+}

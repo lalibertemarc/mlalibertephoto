@@ -35,6 +35,7 @@ import {
   type MdxFrontmatter,
   type PageMeta,
   type PermalinkPair,
+  type UrlDate,
 } from '@/lib/schema'
 import { splitMdxFrontmatter } from './mdx'
 
@@ -47,6 +48,7 @@ export type Localized<T> = Record<Locale, T>
 export interface BlogEntry {
   kind: 'blog'
   slug: string
+  urlDate: UrlDate
   permalink: PermalinkPair
   date: string
   tags: string[]
@@ -67,6 +69,15 @@ export interface PageEntry {
   summary: Localized<string>
 }
 
+/** One post's membership in a term, for the term page's listing. */
+export interface TermMember {
+  /** Joins against `BlogPostSummary.slug` in `blog-posts.ts`. */
+  slug: string
+  permalink: PermalinkPair
+  /** Raw frontmatter date, literal — never reconstructed as a Date. */
+  date: string
+}
+
 export interface TermEntry {
   kind: 'term'
   taxonomy: TaxonomyKind
@@ -76,6 +87,8 @@ export interface TermEntry {
   permalink: PermalinkPair
   /** Raw dates of every post carrying this term, for the list page's lastmod. */
   memberDates: string[]
+  /** The posts themselves, newest first — what a term page lists. */
+  members: TermMember[]
 }
 
 export interface SiteIndex {
@@ -168,6 +181,7 @@ async function loadPosts(): Promise<BlogEntry[]> {
         return {
           kind: 'blog',
           slug: meta.slug,
+          urlDate: meta.urlDate,
           permalink: meta.permalink,
           date: meta.date,
           tags: meta.tags,
@@ -220,13 +234,32 @@ async function loadPages(): Promise<PageEntry[]> {
 }
 
 /**
+ * Everything `deriveTerms` needs from a post.
+ *
+ * Structural rather than `BlogEntry` so the routing layer can group terms from a cheap
+ * `meta.json`-only read (`content/post-meta.ts`) instead of paying for both locales'
+ * frontmatter and a summarised body, which only the feeds want. `BlogEntry` satisfies it
+ * already, so the call below is unchanged.
+ */
+export type PostMetaLike = Pick<
+  BlogEntry,
+  'slug' | 'urlDate' | 'date' | 'permalink' | 'tags' | 'categories' | 'authors'
+>
+
+/**
  * Term pages, grouped from post membership.
  *
  * Terms differing only in case collapse into one page, matching Hugo — the corpus contains
  * both "Quebec"/"quebec" and "Sonum Fest"/"sonum fest". The first spelling encountered wins
  * as the display term, which only affects `article:section` casing on a page nothing links.
+ *
+ * Members come back newest first, ordered here rather than in the routes. Ordering needs the
+ * parsed instant — frontmatter dates carry -04:00/-05:00 offsets, so a lexical sort misplaces
+ * posts either side of a DST change — while every URL and every displayed date needs the
+ * literal string. Doing it once, where the dates already are, keeps that distinction in one
+ * place instead of restating it in three taxonomy routes across two locales.
  */
-function deriveTerms(posts: readonly BlogEntry[]): TermEntry[] {
+export function deriveTerms(posts: readonly PostMetaLike[]): TermEntry[] {
   const bySlug = new Map<string, TermEntry>()
 
   for (const post of posts) {
@@ -244,8 +277,15 @@ function deriveTerms(posts: readonly BlogEntry[]): TermEntry[] {
         const key = `${taxonomy}/${slug}`
         const existing = bySlug.get(key)
 
+        const member: TermMember = {
+          slug: post.slug,
+          permalink: post.permalink,
+          date: post.date,
+        }
+
         if (existing) {
           existing.memberDates.push(post.date)
+          existing.members.push(member)
           continue
         }
 
@@ -259,9 +299,14 @@ function deriveTerms(posts: readonly BlogEntry[]): TermEntry[] {
             en: taxonomyPermalink(taxonomy, slug, 'en'),
           },
           memberDates: [post.date],
+          members: [member],
         })
       }
     }
+  }
+
+  for (const entry of bySlug.values()) {
+    entry.members.sort((a, b) => Date.parse(b.date) - Date.parse(a.date))
   }
 
   return [...bySlug.values()]

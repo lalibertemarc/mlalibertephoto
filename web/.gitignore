@@ -21,3 +21,4 @@ yarn-error.log*
 /public/fr/
 /public/en/
 /public/index.xml
+/public/_redirects
