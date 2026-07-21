@@ -132,3 +132,19 @@
   margin-top: 0.5rem;
   font-size: 0.9em;
 }
+
+/*
+ * custom.css:662-664 — #666 is unreadable on the dark surface, so the source lifts it on
+ * gallery pages. Deferred until the page layer existed; `PageBody` now renders the unhashed
+ * `dark-gallery` class this hooks.
+ *
+ * `:global` and located here rather than in page.module.css for the reason flex-images.module
+ * .css already documents: `.mainCaption` is hashed per module, so a selector written over
+ * there would compile to a class name no other file emits.
+ *
+ * Every BeforeAfter in the corpus is on restoration, which is a dark-gallery page — so in
+ * practice #666 above never renders. It stays as the port of record.
+ */
+:global(.dark-gallery) .mainCaption {
+  color: rgb(255 255 255 / 0.6);
+}

@@ -199,6 +199,11 @@ Three decisions worth knowing:
   that is *larger* than the surrounding `1.2rem` (12px) paragraph. Porting the override alone
   would not reproduce it here: Tailwind's preflight zeroes blockquote margin, padding and
   border, and nothing restores them, so there is no base layer to cascade against.
+- **List markers are a restoration, not a port.** `custom.css:1476-1481` styles only colour and
+  line-height, because Bootstrap and the browser default supply the marker and the indent.
+  Tailwind's preflight zeroes both, so the original port rendered the 6 posts with bullet lists
+  unmarked and unindented. Added in item #9, which hit the same thing on the standalone pages —
+  `list-style: revert` rather than a literal `disc`, so ordered lists keep their numbers.
 - **`pre`/`code` are new work.** Nothing in `custom.css` or the theme styles them on a dark
   background, so production renders Bootstrap's light-grey box on `#1a1212` — visible today on
   `lrmogrifymanualfix` and `imagemagickscriptsrelease`. Reproducing that was rejected. The new

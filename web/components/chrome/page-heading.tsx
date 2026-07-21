@@ -10,7 +10,14 @@
  * band. `layouts/index.html` never calls the partial, so the homepage has no band.
  */
 
-/** Mirrors the `$isDark` expression at breadcrumbs.html:1. */
+/**
+ * Mirrors the `$isDark` expression at breadcrumbs.html:1.
+ *
+ * The `page` branch is no longer consulted: standalone pages render one skin and always pass
+ * `dark` (see lib/pages/content-page.tsx and the note atop components/pages/page.module.css).
+ * Kept because it is the faithful record of Hugo's condition, and is what to re-enable if the
+ * three light pages are ever given a light skin back.
+ */
 export function isDarkPageHeading(kind: 'blog' | 'page', pageClass?: string): boolean {
   return kind === 'blog' || Boolean(pageClass?.includes('dark'))
 }

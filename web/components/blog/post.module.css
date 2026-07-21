@@ -99,10 +99,26 @@
   margin: 2.5rem 0;
 }
 
+/*
+ * `list-style` and `padding-left` are restorations, not ports.
+ *
+ * custom.css:1476-1481 styles only colour and line-height, because Bootstrap and the browser
+ * default supply the marker and the indent underneath. Tailwind's preflight zeroes both
+ * (`ol, ul { list-style: none; margin: 0; padding: 0 }`), so porting the source rule alone
+ * rendered the 6 posts that use bullet lists as unmarked, unindented runs of text.
+ *
+ * 40px is the browser default the source was authored against. `revert` rather than a literal
+ * `disc`, so an ordered list still gets its numbers.
+ *
+ * Found while porting the standalone pages, which needed the same three declarations — see
+ * components/pages/page.module.css and docs/pages-port.md.
+ */
 .body ul,
 .body ol {
   color: rgb(255 255 255 / 0.75);
   line-height: var(--leading-post);
+  padding-left: 40px;
+  list-style: revert;
 }
 
 .body ul li,

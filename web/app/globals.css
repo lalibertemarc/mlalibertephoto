@@ -423,6 +423,170 @@
   }
 }
 
+/* =============================================================================
+   Bootstrap 3 — the contact form
+
+   The exception to the rule stated above, and the only one. That rule holds
+   because the ~20 Bootstrap classes in the *chrome* had JSX to move them to;
+   these live inside `content/pages/contact/{fr,en}.mdx` as raw HTML, and
+   `web/content/` is regenerated wholesale by `npm run migrate:content` at
+   cutover. Rewriting the markup by hand would be overwritten by the next run,
+   and teaching the migration to special-case one page would put content-specific
+   knowledge into a script that is otherwise content-agnostic. So the class names
+   stay and the CSS comes to them.
+
+   Scope is exactly what the contact form uses -- grid, form group, control,
+   button, and the theme's `.heading` -- not Bootstrap's forms module wholesale.
+
+   Values are Bootstrap 3.3.7's own, with the theme's two overrides folded in:
+   `.form-control:focus` takes the gold border and glow (style.marsala.css:3270)
+   and `.btn-template-main` is white-on-gold (style.marsala.css:555). Both read
+   from `--color-accent`, so the form tracks the accent like everything else.
+
+   `@layer components` is deliberate: CSS Modules are emitted outside Tailwind's
+   layers and therefore outrank this, so `page.module.css`'s `.body h3` keeps its
+   margin against `.heading h3` below rather than the two racing on source order.
+   ========================================================================== */
+
+@layer components {
+  .row {
+    margin-left: calc(var(--spacing-gutter) * -1);
+    margin-right: calc(var(--spacing-gutter) * -1);
+  }
+
+  .row::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  .col-sm-6,
+  .col-sm-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: var(--spacing-gutter);
+    padding-right: var(--spacing-gutter);
+  }
+
+  /* Bootstrap's `sm` tier, which --breakpoint-sm above already pins to 768px. */
+  @media (width >= 768px) {
+    .col-sm-6,
+    .col-sm-12 {
+      float: left;
+    }
+
+    .col-sm-6 {
+      width: 50%;
+    }
+
+    .col-sm-12 {
+      width: 100%;
+    }
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  /* Tailwind's preflight resets `label` to `display: inline`; Bootstrap's own
+     block-ish label is what the field spacing assumes. */
+  .form-group label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+  }
+
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 0.075);
+    transition:
+      border-color 0.15s ease-in-out,
+      box-shadow 0.15s ease-in-out;
+  }
+
+  /* Bootstrap fixes `.form-control` at 34px, which would crop the message box to a
+     single line. The source leaves textareas auto-height for the same reason. */
+  textarea.form-control {
+    height: auto;
+    min-height: 100px;
+  }
+
+  .form-control:focus {
+    border-color: var(--color-accent);
+    outline: 0;
+    box-shadow:
+      inset 0 1px 1px rgb(0 0 0 / 0.075),
+      0 0 8px var(--color-accent-glow);
+  }
+
+  .btn {
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    user-select: none;
+  }
+
+  /* style.marsala.css:555 — white fill, accent text and border. Reads as a strong
+     CTA on the dark page, which is what it already is on the light Hugo one. */
+  .btn-template-main {
+    color: var(--color-accent);
+    background-color: #fff;
+    border-color: var(--color-accent);
+  }
+
+  .btn-template-main:hover,
+  .btn-template-main:focus,
+  .btn-template-main:active {
+    color: var(--color-accent);
+    background-color: #e6e6e6;
+    border-color: var(--color-accent-border);
+  }
+
+  /* The envelope glyph sits flush against the label without this — the source got
+     the gap from Font Awesome's own `fa` margin. */
+  .btn-template-main svg {
+    margin-right: 0.5em;
+  }
+
+  /* style.marsala.css:101 — the underlined section title above the form. */
+  .heading {
+    margin-bottom: 40px;
+  }
+
+  .heading h1,
+  .heading h2,
+  .heading h3,
+  .heading h4,
+  .heading h5 {
+    display: inline-block;
+    border-bottom: solid 5px var(--color-accent);
+    line-height: 1.1;
+    padding-bottom: 10px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-label);
+  }
+}
+
 @layer base {
   html {
     /*
