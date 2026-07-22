@@ -141,18 +141,18 @@ The `noindex` set is derived rather than hardcoded because `build-seo-files.ts` 
 entries by reading the same flag; restating the list would let the two drift. Today it is
 `/smsprices/` and `/en/smsprices/`.
 
-### The asset allowlist
+### Assets
 
-`scripts/fixtures/missing-assets.txt` holds 27 local banner paths that the export references
-but does not ship. `migrate-content.ts` copies banner paths into `meta.json` verbatim, but the
-files still live only in Hugo's `static/img/` — booked as a later asset item in
-`docs/content-migration.md`.
+A broken `href` and a broken `src`/`srcset` are both errors, unconditionally.
 
-A broken `href` is **always** an error. A broken `src`/`srcset` is an error unless the path is
-on that list, in which case it warns. So a *new* broken image fails the build while the known
-queue does not hold the check hostage. Same shape as the migration's four-missing-banner
-allowlist. The file is a queue, not a set of accepted defects: delete a line when its file
-lands, delete the file when it is empty.
+This was briefly not true. `scripts/fixtures/missing-assets.txt` held 27 local banner paths
+that the export referenced but did not ship — `migrate-content.ts` copies banner paths into
+`meta.json` verbatim, and the files still lived only in Hugo's `static/img/`. Those paths
+warned instead of failing, so the check stayed useful without the queue holding it hostage.
+
+Item #14 shipped the assets, which emptied the queue. The fixture and its machinery
+(`readAllowlist()`, the `knownMissing` bucket, its report line) were removed with it rather
+than left behind as a code path with no data. See `docs/static-assets.md`.
 
 ## What the first run found
 

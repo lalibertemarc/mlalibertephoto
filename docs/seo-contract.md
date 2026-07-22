@@ -74,12 +74,13 @@ Exact strings, no interpolation. Only `content/{fr,en}/smsPrices.md` set `noinde
 ### The image chain
 
 ```
-banner  →  default_sharing_image ("img/logo.png", 782x200)  →  "img/sharing-default.png"
+banner  →  default_sharing_image ("img/logo.png", 782x200)
 ```
 
-The third fallback is unreachable — `default_sharing_image` is always set — and the file
-does not exist. If that param were ever removed, `fileExists` would silently fail and
-drop every image tag rather than erroring.
+Hugo shipped a third link in this chain, `"img/sharing-default.png"`, which was unreachable —
+`default_sharing_image` is always set — and named a file that has never existed. Item #14
+removed it. If that param were ever removed too, `fileExists` would silently fail and drop
+every image tag rather than erroring.
 
 Validity: external banners are trusted unconditionally; local images must exist on disk.
 Dimensions come from `banner_width`/`banner_height` front matter for external banners, or
@@ -243,7 +244,9 @@ Confirmed by grep; safe to delete or ignore during the port.
   `og:image:width/height` matching `image_width`/`image_height` (782x200) is coincidence:
   those come from `imageConfig` reading the real `logo.png`.
 - **Top-level `canonical =`** in `hugo.toml` — not a Hugo setting, referenced by nothing.
-- **`static/img/sharing-default.png`** — referenced as a fallback, does not exist.
+- **`static/img/sharing-default.png`** — was referenced as a fallback and never existed.
+  Removed from `headers.html:90` by item #14; Hugo's output is unchanged, since the branch
+  could not execute. See `docs/static-assets.md`.
 - **`permalinks.toml`'s `en`/`fr` keys** — the flat `[permalinks]` map keys by *section*,
   and no content has section `en` or `fr`. Almost certainly inert, but not empirically
   disprovable here because no content sets a `slug` override, so the patterns coincide

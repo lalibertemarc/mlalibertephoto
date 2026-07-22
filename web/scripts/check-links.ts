@@ -50,7 +50,6 @@ import { MigrationReport } from './lib/report'
 const HERE = path.dirname(fileURLToPath(import.meta.url))
 const OUT_DIR = path.resolve(HERE, '..', 'out')
 const CONTENT_DIR = path.resolve(HERE, '..', 'content')
-const ALLOWLIST_FILE = path.join(HERE, 'fixtures', 'missing-assets.txt')
 
 /** How many referencing pages to name before collapsing the rest into a count. */
 const SAMPLE_PAGES = 3
@@ -199,34 +198,6 @@ function referencesIn(html: string, pageUrlPath: string, report: MigrationReport
   return found
 }
 
-// ─── Known-missing assets ─────────────────────────────────────────────────────────────────
-
-/**
- * Local banner images the migration recorded but never copied into `public/`.
- *
- * `docs/content-migration.md` books this as a later asset-pipeline task: `meta.json` holds
- * paths like `/img/foo.jpg` that resolve only through Hugo's `static/`. They are broken on
- * the exported site today, so listing them keeps this check useful instead of permanently
- * red — and keeps a *new* broken image a hard failure. The same shape as the migration's
- * four-missing-banner allowlist, and it shrinks to nothing when the assets land.
- */
-async function readAllowlist(): Promise<Set<string>> {
-  let contents: string
-  try {
-    contents = await readFile(ALLOWLIST_FILE, 'utf8')
-  } catch {
-    return new Set()
-  }
-
-  return new Set(
-    contents
-      .split('\n')
-      .map((line) => line.trim())
-      .filter((line) => line !== '' && !line.startsWith('#'))
-      .map(normalizePath),
-  )
-}
-
 // ─── Sitemap and feed coverage ────────────────────────────────────────────────────────────
 
 const LOC = /<loc>([^<]*)<\/loc>/g
@@ -328,12 +299,10 @@ async function main(): Promise<void> {
   }
 
   const index = await indexOutput()
-  const allowlist = await readAllowlist()
   const htmlPages = [...index.pages].sort()
 
   const brokenLinks = new Map<string, string[]>()
   const brokenAssets = new Map<string, string[]>()
-  const knownMissing = new Map<string, string[]>()
   const redirectHops = new Map<string, string[]>()
 
   let referenceCount = 0
@@ -353,9 +322,7 @@ async function main(): Promise<void> {
           break
         case 'missing':
           if (reference.kind === 'href') bucket(brokenLinks, reference.target, reference.from)
-          else if (allowlist.has(reference.target)) {
-            bucket(knownMissing, reference.target, reference.from)
-          } else bucket(brokenAssets, reference.target, reference.from)
+          else bucket(brokenAssets, reference.target, reference.from)
           break
       }
     }
@@ -364,7 +331,6 @@ async function main(): Promise<void> {
   reportBroken(report, 'broken-link', 'error', brokenLinks)
   reportBroken(report, 'broken-asset', 'error', brokenAssets)
   reportBroken(report, 'redirect-hop', 'warning', redirectHops, ' (no trailing slash)')
-  reportBroken(report, 'known-missing-asset', 'warning', knownMissing)
 
   console.log(
     `Checked ${referenceCount} references across ${htmlPages.length} pages — ` +

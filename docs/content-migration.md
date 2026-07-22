@@ -157,9 +157,7 @@ Rendering (items #4–#9). Build-time schema enforcement landed as item #10 — 
 is now parsed on every `npm run build` by `scripts/validate-content.ts`, and every reader goes
 through `lib/content/parse.ts` so a failure names its file. See `docs/build-validation.md`.
 
-**Local banner images are not copied.** `meta.json` records paths like `/img/foo.jpg` that
-today resolve only through Hugo's `static/`. Moving those 27 files into `web/public/` is an
-asset-pipeline task for a later item. Note nine of those filenames contain spaces, which will
-need URL-encoding or renaming before Next serves them. The 27 paths are listed in
-`web/scripts/fixtures/missing-assets.txt`, which keeps the link checker from failing on them
-while still failing on any *new* broken image — delete a line as each file lands.
+**Local banner images.** `meta.json` records paths like `/img/foo.jpg` that once resolved only
+through Hugo's `static/`. Item #14 copied all 27 into `web/public/img/` under their exact
+names — including the six containing spaces, which both generators already emit as `%20`. See
+`docs/static-assets.md`.
