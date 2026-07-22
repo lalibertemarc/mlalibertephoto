@@ -14,7 +14,9 @@ import { cache } from 'react'
 import { parse as parseYaml } from 'yaml'
 import { formatPostDate } from '@/lib/dates'
 import type { Locale } from '@/lib/permalink'
+import { BlogMetaSchema, MdxFrontmatterSchema } from '@/lib/schema'
 import { splitMdxFrontmatter } from './mdx'
+import { displayPath, parseContentFile } from './parse'
 
 const BLOG_DIR = path.join(process.cwd(), 'content', 'blog')
 
@@ -47,21 +49,13 @@ export interface BlogPostSummary {
  * The post title lives in the MDX frontmatter rather than meta.json, because it differs per
  * language while meta.json is shared across both. See docs/content-migration.md.
  */
-async function readTitle(dir: string, locale: Locale): Promise<string | null> {
-  const source = await readFile(path.join(dir, `${locale}.mdx`), 'utf8')
+async function readTitle(dir: string, locale: Locale): Promise<string> {
+  const file = path.join(dir, `${locale}.mdx`)
+  const source = await readFile(file, 'utf8')
   const parts = splitMdxFrontmatter(source)
-  if (!parts) return null
-  const data: unknown = parseYaml(parts.frontmatter)
-  if (typeof data !== 'object' || data === null) return null
-  const { title } = data as { title?: unknown }
-  return typeof title === 'string' ? title : null
-}
+  if (!parts) throw new Error(`No frontmatter in ${displayPath(file)}`)
 
-interface BlogMetaShape {
-  slug?: unknown
-  date?: unknown
-  permalink?: { fr?: unknown; en?: unknown }
-  banner?: { src?: unknown }
+  return parseContentFile(MdxFrontmatterSchema, parseYaml(parts.frontmatter), file).title
 }
 
 /**
@@ -80,37 +74,30 @@ const readAllPosts = cache(async (locale: Locale): Promise<BlogPostSummary[]> =>
       .filter((entry) => entry.isDirectory())
       .map(async (entry) => {
         const dir = path.join(BLOG_DIR, entry.name)
-        const meta = JSON.parse(await readFile(path.join(dir, 'meta.json'), 'utf8')) as BlogMetaShape
+        const metaFile = path.join(dir, 'meta.json')
+        const meta = parseContentFile(
+          BlogMetaSchema,
+          JSON.parse(await readFile(metaFile, 'utf8')) as unknown,
+          metaFile,
+        )
 
-        const href = meta.permalink?.[locale]
-        const rawDate = meta.date
-        const slug = meta.slug
-        if (typeof href !== 'string' || typeof rawDate !== 'string' || typeof slug !== 'string') {
-          return null
-        }
-
-        const title = await readTitle(dir, locale)
-        if (title === null) return null
-
-        const bannerSrc = meta.banner?.src
         return {
-          slug,
-          href,
-          title,
-          imageSrc: typeof bannerSrc === 'string' ? bannerSrc : PLACEHOLDER_IMAGE,
-          date: formatPostDate(rawDate, locale),
+          slug: meta.slug,
+          href: meta.permalink[locale],
+          title: await readTitle(dir, locale),
+          imageSrc: meta.banner?.src ?? PLACEHOLDER_IMAGE,
+          date: formatPostDate(meta.date, locale),
           // Ordering only. Parsing to an instant is right here and would be a bug in
           // lib/permalink.ts: frontmatter dates carry -04:00 / -05:00 offsets, so a lexical
           // sort misorders posts either side of a DST change, while a Date round-trip can
           // shift the calendar day a URL is built from. Ordering wants the instant; URLs
           // want the literal prefix. Different questions.
-          sortKey: Date.parse(rawDate),
+          sortKey: Date.parse(meta.date),
         }
       }),
   )
 
   return posts
-    .filter((post): post is NonNullable<typeof post> => post !== null)
     .sort((a, b) => b.sortKey - a.sortKey)
     .map(({ slug, href, title, imageSrc, date }) => ({ slug, href, title, imageSrc, date }))
 })

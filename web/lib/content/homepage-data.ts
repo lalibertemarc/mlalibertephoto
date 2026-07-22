@@ -29,19 +29,24 @@ import {
   type Feature,
   type Testimonial,
 } from '@/lib/schema'
+import { parseContentFile } from './parse'
 
 /**
  * Both of these are written in source-filename order, which is not display order — carousel.json
  * is weight 2,1,3,4, so unsorted the hero would open on Events instead of Portraits. Hugo sorts
  * at render time (`sort .Site.Data.carousel "weight"`); this sorts once, at load.
  */
-const carouselSlides: CarouselSlide[] = CarouselSlideSchema.array()
-  .parse(carouselRaw)
-  .sort((a, b) => a.weight - b.weight)
+const carouselSlides: CarouselSlide[] = parseContentFile(
+  CarouselSlideSchema.array(),
+  carouselRaw,
+  'content/data/carousel.json',
+).sort((a, b) => a.weight - b.weight)
 
-const features: Feature[] = FeatureSchema.array()
-  .parse(featuresRaw)
-  .sort((a, b) => a.weight - b.weight)
+const features: Feature[] = parseContentFile(
+  FeatureSchema.array(),
+  featuresRaw,
+  'content/data/features.json',
+).sort((a, b) => a.weight - b.weight)
 
 /**
  * No sort. `TestimonialSchema` has no `weight`, and the array order already is production's
@@ -49,7 +54,11 @@ const features: Feature[] = FeatureSchema.array()
  * migration wrote the array in that same sorted-filename order. Re-sorting by anything else
  * would diverge from the live site rather than match it.
  */
-const testimonials: Testimonial[] = TestimonialSchema.array().parse(testimonialsRaw)
+const testimonials: Testimonial[] = parseContentFile(
+  TestimonialSchema.array(),
+  testimonialsRaw,
+  'content/data/testimonials.json',
+)
 
 /** The four hero slides, ascending by `weight`. */
 export function getCarouselSlides(): CarouselSlide[] {

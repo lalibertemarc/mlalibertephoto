@@ -16,6 +16,7 @@
 import { readFile, readdir } from 'node:fs/promises'
 import path from 'node:path'
 import { BlogMetaSchema } from '@/lib/schema'
+import { parseContentFile } from './parse'
 import type { PostMetaLike } from './site-index'
 
 const BLOG_DIR = path.join(process.cwd(), 'content', 'blog')
@@ -29,10 +30,9 @@ async function read(): Promise<PostMetaLike[]> {
     entries
       .filter((entry) => entry.isDirectory())
       .map(async (entry): Promise<PostMetaLike> => {
-        const raw: unknown = JSON.parse(
-          await readFile(path.join(BLOG_DIR, entry.name, 'meta.json'), 'utf8'),
-        )
-        const meta = BlogMetaSchema.parse(raw)
+        const file = path.join(BLOG_DIR, entry.name, 'meta.json')
+        const raw: unknown = JSON.parse(await readFile(file, 'utf8'))
+        const meta = parseContentFile(BlogMetaSchema, raw, file)
         return {
           slug: meta.slug,
           urlDate: meta.urlDate,

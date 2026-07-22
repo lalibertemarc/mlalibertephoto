@@ -8,6 +8,11 @@
  *
  * Anticipated content problems are `MigrationError`s and become findings. Anything else is
  * a bug in this script and is left to crash with its stack intact.
+ *
+ * `MigrationReport` itself is not migration-specific and is shared by the two other
+ * whole-corpus passes — `validate-content.ts` and `check-links.ts` — which want the same
+ * thing: every failure in one run, grouped, with the file that caused each. The error
+ * subclasses below remain the migration's own.
  */
 
 export abstract class MigrationError extends Error {

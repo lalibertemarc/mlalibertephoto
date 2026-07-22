@@ -31,6 +31,7 @@ import {
 } from '@/lib/schema'
 import { splitMdxFrontmatter } from './mdx'
 import { compileMdxBody } from './mdx-runtime'
+import { parseContentFile } from './parse'
 
 const PAGES_DIR = path.join(process.cwd(), 'content', 'pages')
 
@@ -67,22 +68,28 @@ export interface ContentPage {
  */
 const loadPage = cache(async (pagePath: string, locale: Locale): Promise<ContentPage | null> => {
   const dir = path.join(PAGES_DIR, pagePath)
+  const metaFile = path.join(dir, 'meta.json')
 
   let rawMeta: string
   try {
-    rawMeta = await readFile(path.join(dir, 'meta.json'), 'utf8')
+    rawMeta = await readFile(metaFile, 'utf8')
   } catch {
     // The folder does not exist. A genuine 404 — the only `null` this module returns.
     return null
   }
 
-  const meta = PageMetaSchema.parse(JSON.parse(rawMeta) as unknown)
+  const meta = parseContentFile(PageMetaSchema, JSON.parse(rawMeta) as unknown, metaFile)
 
-  const source = await readFile(path.join(dir, `${locale}.mdx`), 'utf8')
+  const mdxFile = path.join(dir, `${locale}.mdx`)
+  const source = await readFile(mdxFile, 'utf8')
   const parts = splitMdxFrontmatter(source)
   if (!parts) throw new Error(`No frontmatter in pages/${pagePath}/${locale}.mdx`)
 
-  const frontmatter = MdxFrontmatterSchema.parse(parseYaml(parts.frontmatter))
+  const frontmatter = parseContentFile(
+    MdxFrontmatterSchema,
+    parseYaml(parts.frontmatter),
+    mdxFile,
+  )
 
   // An MDX failure names the file, exactly as `blog-post.ts` does. The migration's compile
   // gate only proves a body *parses*; it never executes one, so "Expected component X to be

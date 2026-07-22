@@ -16,6 +16,7 @@
 import { readFile, readdir } from 'node:fs/promises'
 import path from 'node:path'
 import { parse as parseYaml } from 'yaml'
+import type { z } from 'zod'
 import {
   blogPermalink,
   pagePermalink,
@@ -38,6 +39,7 @@ import {
   type UrlDate,
 } from '@/lib/schema'
 import { splitMdxFrontmatter } from './mdx'
+import { parseContentFile } from './parse'
 
 const CONTENT_DIR = path.join(process.cwd(), 'content')
 const LOCALES: readonly Locale[] = ['fr', 'en']
@@ -110,7 +112,7 @@ async function readMdx(dir: string, locale: Locale): Promise<MdxFile> {
   if (!parts) throw new Error(`No frontmatter in ${file}`)
 
   return {
-    frontmatter: MdxFrontmatterSchema.parse(parseYaml(parts.frontmatter)),
+    frontmatter: parseContentFile(MdxFrontmatterSchema, parseYaml(parts.frontmatter), file),
     body: parts.body,
   }
 }
@@ -160,8 +162,8 @@ async function readLocalized(
   }
 }
 
-async function readJson<T>(file: string, parse: (value: unknown) => T): Promise<T> {
-  return parse(JSON.parse(await readFile(file, 'utf8')))
+async function readJson<S extends z.ZodType>(file: string, schema: S): Promise<z.infer<S>> {
+  return parseContentFile(schema, JSON.parse(await readFile(file, 'utf8')) as unknown, file)
 }
 
 async function loadPosts(): Promise<BlogEntry[]> {
@@ -173,9 +175,7 @@ async function loadPosts(): Promise<BlogEntry[]> {
       .filter((entry) => entry.isDirectory())
       .map(async (entry): Promise<BlogEntry> => {
         const postDir = path.join(dir, entry.name)
-        const meta: BlogMeta = await readJson(path.join(postDir, 'meta.json'), (v) =>
-          BlogMetaSchema.parse(v),
-        )
+        const meta: BlogMeta = await readJson(path.join(postDir, 'meta.json'), BlogMetaSchema)
         const localized = await readLocalized(postDir)
 
         return {
@@ -216,9 +216,7 @@ async function loadPages(): Promise<PageEntry[]> {
 
   return Promise.all(
     dirs.map(async (pageDir): Promise<PageEntry> => {
-      const meta: PageMeta = await readJson(path.join(pageDir, 'meta.json'), (v) =>
-        PageMetaSchema.parse(v),
-      )
+      const meta: PageMeta = await readJson(path.join(pageDir, 'meta.json'), PageMetaSchema)
       const localized = await readLocalized(pageDir)
 
       return {

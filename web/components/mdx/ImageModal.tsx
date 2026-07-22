@@ -1,7 +1,7 @@
 'use client'
 
 import { useTranslations } from 'next-intl'
-import { linkTargetProps } from '@/lib/links'
+import { internalHref, linkTargetProps } from '@/lib/links'
 import { ContentImage } from './ContentImage'
 import { useInGallery } from './gallery-context'
 import { useIsModalHost } from './image-modal/use-modal-host'
@@ -151,7 +151,7 @@ export function ImageModal({
       {buttonUrl && (
         <div className={styles.buttonContainer}>
           <a
-            href={buttonUrl}
+            href={internalHref(buttonUrl)}
             className={
               inGallery
                 ? `${navButtonStyles.navButton} ${navButtonStyles.galleryOverlay}`

@@ -1,4 +1,4 @@
-import { linkTargetProps } from '@/lib/links'
+import { internalHref, linkTargetProps } from '@/lib/links'
 import { DirectionLabel } from './DirectionLabel'
 import styles from './nav-button.module.css'
 
@@ -28,9 +28,10 @@ export function NavButton({ url, text, direction, className }: NavButtonProps) {
   if (!url) return null
 
   const classes = [styles.navButton, className].filter(Boolean).join(' ')
+  const href = internalHref(url)
 
   return (
-    <a href={url} className={classes} {...linkTargetProps(url)}>
+    <a href={href} className={classes} {...linkTargetProps(href)}>
       {text ?? (direction ? <DirectionLabel direction={direction} /> : null)}
     </a>
   )

@@ -34,11 +34,26 @@ function toNeutralPath(pathname: string): string {
 }
 
 /**
+ * Routes that exist in the French tree only, and so have no counterpart to swap to.
+ *
+ * Symmetry holds for every *content* path — that is what the note above establishes — but not
+ * for scaffold routes, which are hand-written under `app/(fr)/` with no `app/(en)/en/` twin.
+ * `/tokens/` is the design-token reference page, which says in its own header that it exists
+ * for the migration and gets deleted at the end of it. Without this the switcher advertised
+ * `/en/tokens/`, a URL the export never wrote — the one broken internal link
+ * `scripts/check-links.ts` found on its first run.
+ */
+const FRENCH_ONLY_PATHS: ReadonlySet<string> = new Set(['/tokens/'])
+
+/**
  * The `target`-locale URL for the page at `pathname`, or `null` when no counterpart can be
  * derived. `pathname` may belong to either locale.
  */
 export function resolveCounterpart(pathname: string, target: Locale): string | null {
   if (!pathname.startsWith('/')) return null
 
-  return `${localePrefix(target)}${toNeutralPath(pathname)}`
+  const neutral = toNeutralPath(pathname)
+  if (FRENCH_ONLY_PATHS.has(neutral)) return null
+
+  return `${localePrefix(target)}${neutral}`
 }

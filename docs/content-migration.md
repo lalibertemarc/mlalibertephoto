@@ -153,10 +153,13 @@ orphans but never deleted automatically.
 
 ## Not done here
 
-Rendering (items #4–#9) and build-time schema enforcement (item #10). The five components
-named above do not exist yet — `web/lib/schema.ts` is the runtime contract item #10 imports.
+Rendering (items #4–#9). Build-time schema enforcement landed as item #10 — `web/lib/schema.ts`
+is now parsed on every `npm run build` by `scripts/validate-content.ts`, and every reader goes
+through `lib/content/parse.ts` so a failure names its file. See `docs/build-validation.md`.
 
 **Local banner images are not copied.** `meta.json` records paths like `/img/foo.jpg` that
 today resolve only through Hugo's `static/`. Moving those 27 files into `web/public/` is an
 asset-pipeline task for a later item. Note nine of those filenames contain spaces, which will
-need URL-encoding or renaming before Next serves them.
+need URL-encoding or renaming before Next serves them. The 27 paths are listed in
+`web/scripts/fixtures/missing-assets.txt`, which keeps the link checker from failing on them
+while still failing on any *new* broken image — delete a line as each file lands.

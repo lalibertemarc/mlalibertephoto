@@ -5,9 +5,12 @@
     "type": "module",
     "scripts": {
         "dev": "next dev",
-        "prebuild": "tsx scripts/build-seo-files.ts",
+        "prebuild": "tsc --noEmit && tsx scripts/validate-content.ts && tsx scripts/build-seo-files.ts",
         "build": "next build",
+        "postbuild": "tsx scripts/check-links.ts",
         "seo:build": "tsx scripts/build-seo-files.ts",
+        "validate:content": "tsx scripts/validate-content.ts",
+        "check:links": "tsx scripts/check-links.ts",
         "start": "next start",
         "lint": "eslint",
         "typecheck": "tsc --noEmit",
