@@ -1,6 +1,6 @@
 +++
 meta_title = 'Portrait Photographer Quebec | Portraits, Casting & Natural Light'
-title='Portolio | Portraits'
+title='Portfolio | Portraits'
 draft = false
 page_class = "dark-gallery"
 description = "Professional photographer specializing in casting portraits, corporate portraits, natural light portraits, and group portraits in Quebec City. Whether for personal, professional, or artistic projects, I create timeless and impactful portraits. Book your unique photo session."

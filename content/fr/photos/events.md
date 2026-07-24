@@ -1,6 +1,6 @@
 +++
 meta_title = "Photographe de concerts Québec | Photographe d'événements Québec"
-title='Portolio | Évènements'
+title='Portfolio | Évènements'
 draft = false
 page_class = "dark-gallery"
 description = "Photographe d'événements à Québec, spécialiste des concerts et des spectacles de musique. Discret et professionnel, je capture l'énergie, l'émotion et les moments inoubliables de vos performances, de vos événements corporatifs et culturels grâce à des images dynamiques et percutantes."

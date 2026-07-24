@@ -1,6 +1,6 @@
 +++
 meta_title = "Concert photographer Quebec | Event photographer Quebec"
-title='Portolio | Events'
+title='Portfolio | Events'
 draft = false
 page_class = "dark-gallery"
 description = "Event photographer in Quebec City, specializing in concerts and music live shows. Discreet and professional, I capture the energy, emotion, and unforgettable moments of your performances, corporate events, and cultural events through dynamic and impactful images."

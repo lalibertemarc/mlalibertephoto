@@ -15,7 +15,7 @@ authors = ["Marc Laliberté"]
 
 ## ButterButtButler live at la Source de la Martinière
 
-Great concert by ButtButtButler at la Source de la Martinière, Québec, on January 16, 2026.
+Great concert by ButterButtButler at la Source de la Martinière, Québec, on January 16, 2026.
 
 {{< fleximages >}}
 {{< image-modal
