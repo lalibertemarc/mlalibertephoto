@@ -2,70 +2,90 @@ Add a blog post's featured image to the events gallery pages.
 
 ## Input
 
-The blog post filename (without `.md`) is: $ARGUMENTS
+The post's folder name under `web/content/blog/` is: $ARGUMENTS
 
-Example: `butterButtButlerLive`
+Example: `2026-02-27-butterbuttbutlerlive`
+
+A bare slug is also accepted — match it against the folder names and use the one that ends with it.
 
 ## Steps
 
-### 1. Read the blog post files
+### 1. Read the post
 
-- Read `content/fr/blog/<filename>.md` and `content/en/blog/<filename>.md`.
-- If either file doesn't exist, stop and report the error.
+Read all three files in `web/content/blog/<folder>/`:
+- `meta.json` — for the permalinks
+- `fr.mdx` — for the French alt and caption
+- `en.mdx` — for the English alt and caption
 
-### 2. Extract data from the blog posts
+If the folder does not exist, list the folders whose name contains the argument and stop.
 
-From the French blog post, extract:
-- **first image src**: The `src` of the first `image-modal` shortcode in the content body.
-- **date**: The `date` field from frontmatter (needed to build the permalink).
-- **title**: A short display title for the gallery entry (use the band/subject name, not the full header).
-- **alt (FR)**: The `alt` of the first `image-modal` in the French post.
-- **caption (FR)**: The `caption` of the first `image-modal` in the French post.
+### 2. Extract the data
 
-From the English blog post, extract:
-- **alt (EN)**: The `alt` of the first `image-modal` in the English post.
-- **caption (EN)**: The `caption` of the first `image-modal` in the English post.
+From `meta.json`:
+- **permalink (FR)**: the `permalink.fr` value, e.g. `/blog/2026/02/27/butterbuttbutlerlive/`
+- **permalink (EN)**: the `permalink.en` value, e.g. `/en/blog/2026/02/27/butterbuttbutlerlive/`
 
-### 3. Build the blog post permalink
+Use these **verbatim**. Do not rebuild a URL from the date and slug: the stored permalink is what
+the route actually serves, and re-deriving it is how a Y/M/D drifts by a day across a timezone
+offset.
 
-The permalink pattern is `/blog/:year/:month/:day/:filename/`.
+From `fr.mdx`:
+- **first image src**: the `src` of the first `<ImageModal>` in the body
+- **alt (FR)** and **caption (FR)**: that same `ImageModal`'s `alt` and `caption`
 
-Using the `date` from frontmatter, construct the URL:
-- `/blog/YYYY/MM/DD/<filename>/`
+From `en.mdx`:
+- **alt (EN)** and **caption (EN)**: the corresponding `ImageModal`'s `alt` and `caption`
 
-Example: date `2026-02-27T14:30:00-05:00` + filename `butterButtButlerLive` → `/blog/2026/02/27/butterButtButlerLive/`
+Also decide a short **display title** for the gallery cell — the band or event name (e.g.
+`ButterButtButler`), not the full descriptive header.
 
-### 4. Add entry to the French events page
+### 3. Add the entry to the French events page
 
-- Open `content/fr/photos/events.md`.
-- Insert a new `image-modal` block at the **top** of the `{{< gallery >}}` section (right after the `{{< gallery >}}` line), with:
-  - `src` = first image src
-  - `title` = short display title
-  - `alt` = French alt text
-  - `caption` = French caption text
-  - `button-url` = blog post permalink
+Open `web/content/pages/photos/events/fr.mdx`. Insert a new line immediately after the
+`<Gallery>` opening tag — newest first:
 
-### 5. Add entry to the English events page
+```mdx
+<ImageModal src={"<first image src>"} title={"<display title>"} alt={"<alt FR>"} caption={"<caption FR>"} buttonUrl={"<permalink.fr>"} />
+```
 
-- Open `content/en/photos/events.md`.
-- Insert a new `image-modal` block at the **top** of the `{{< gallery >}}` section, with:
-  - `src` = first image src
-  - `title` = same short display title
-  - `alt` = English alt text
-  - `caption` = English caption text
-  - `button-url` = same blog post permalink
+Every prop is a JSX expression wrapping a double-quoted string — `src={"…"}`, never
+`src="…"`. `web/scripts/fetch-image-dimensions.ts` harvests image URLs by matching that exact
+form, and the prop is `buttonUrl`, not Hugo's `button-url`.
+
+The events page also contains a `<FlexImages>` block holding a `<NavButton>` near the top. That
+is not the gallery — insert into the `<Gallery>` further down.
+
+### 4. Add the entry to the English events page
+
+Same insertion in `web/content/pages/photos/events/en.mdx`, at the top of its `<Gallery>`, with:
+- the same `src` and the same `title`
+- `alt` and `caption` from `en.mdx`
+- `buttonUrl` = **`permalink.en`** (the `/en/`-prefixed one)
+
+Linking the English cell at the French URL is the easy mistake here; it costs the reader a
+language switch mid-visit.
+
+### 5. Validate
+
+```bash
+npm --prefix web run validate:content
+```
+
+The image already entered `web/lib/image-dimensions.json` when the post was created, so no
+dimension refresh is needed. If the URL is somehow absent from that manifest, run
+`npm --prefix web run images:dimensions`.
 
 ### 6. Report results
 
 Output:
 - Confirmation that both events pages were updated
-- The image used and the permalink generated
-- A reminder to preview both `/photos/events` and `/en/photos/events` pages
+- The image used and both permalinks
+- A reminder to preview `/photos/events/` and `/en/photos/events/`
 
 ## Important rules
 
 - Always insert at the **top** of the gallery (newest first).
-- The `button-url` links to the blog post so visitors can see more photos.
+- `buttonUrl` links to the blog post so visitors can see more photos — French page to the French URL, English page to the English URL.
 - The `title` should be a short name (e.g. band name, event name), not the full descriptive header.
-- Reuse the existing `alt` and `caption` from each language's blog post — do not invent new ones.
+- Reuse the existing `alt` and `caption` from each language's MDX file — do not invent new ones.
 - Do NOT modify anything else in the events pages.
