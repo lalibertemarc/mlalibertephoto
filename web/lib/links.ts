@@ -23,8 +23,8 @@ const LAST_SEGMENT_HAS_DOT = /\.[^/]*$/
  *
  * `next.config.ts` sets `trailingSlash: true`, so every page is served at `<path>/` and every
  * framework-derived link (`lib/permalink.ts`, the nav, the feeds, the sitemap) already ends in
- * one. Links written by hand in MDX do not: 52 `NavButton` calls point at `/contact`,
- * `/en/contact`, `/restoration` and `/en/restoration`. Those resolve — Netlify redirects the
+ * one. Links written by hand in MDX do not: `NavButton` calls point at unslashed paths such
+ * as `/contact` and `/en/contact`. Those resolve — Netlify redirects the
  * unslashed form — but every one costs a hop, and the page's own canonical advertises the
  * slashed URL that its buttons do not use. `scripts/check-links.ts` reports each as a
  * `redirect-hop`.

@@ -65,19 +65,18 @@ interface LocaleSeoDefaults {
 export const SEO_DEFAULTS: Record<Locale, LocaleSeoDefaults> = {
   fr: {
     description:
-      'Photographe de la ville de Québec spécialisé en portrait, événementiel et restauration de photos anciennes.',
+      'Photographe de la ville de Québec spécialisé en portrait et événementiel.',
     keywords: [
       'photographe portrait',
       'photographe Québec',
       'portrait corporatif',
       'portrait casting',
       'événementiel',
-      'restauration de photos',
     ],
   },
   en: {
     description:
-      'Photographer in Quebec City specializing in portraits, events and restoration of old photos',
+      'Photographer in Quebec City specializing in portraits and events',
     keywords: [
       'portrait photographer',
       'portrait',
@@ -85,7 +84,6 @@ export const SEO_DEFAULTS: Record<Locale, LocaleSeoDefaults> = {
       'corporate portrait',
       'events',
       'photographer Quebec',
-      'photo restoration',
     ],
   },
 }
