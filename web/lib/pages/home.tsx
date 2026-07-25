@@ -41,7 +41,9 @@ export async function HomePage({ locale }: { locale: Locale }) {
   const updatedAt = await newestContentDate()
 
   return (
-    <main>
+    // `home` scopes a small typographic bump over the extracted-verbatim custom.css sizes —
+    // the homepage reads its body copy a touch larger. See the `.home` block in globals.css.
+    <main className="home">
       <ExtraMeta updatedAt={updatedAt} />
       <HomeCarousel slides={getCarouselSlides()} locale={locale} />
       <FeaturesSection locale={locale} />

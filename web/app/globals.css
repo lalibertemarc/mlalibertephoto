@@ -640,3 +640,32 @@
     line-height: 1.1;
   }
 }
+
+/* =============================================================================
+   Homepage typographic bump
+
+   The `--text-*` tokens above are extracted verbatim from custom.css, so the
+   homepage reproduced Hugo's sizes exactly — and its body copy read a little
+   small. Rather than edit the extracted record, this scope (on the homepage
+   `<main class="home">`) redefines only the readable-text tokens the homepage
+   uses, nudging them up ~12%. Setting the custom properties on this ancestor
+   overrides the `:root` values for the whole subtree by inheritance, so every
+   `text-*` utility inside the homepage picks up the larger size with no markup
+   changes. Headings, the eyebrow label and the hero title are left as-is — the
+   complaint was the small copy, not the display type. All these tokens are
+   homepage-only (used solely under components/home/), so nothing else moves.
+   ========================================================================== */
+.home {
+  --text-hero-body: 1.1rem; /* was 1rem */
+  --text-section-subtitle: 1.2rem; /* was 1.05rem */
+  --text-section-subtitle-sm: 1.05rem; /* was 0.95rem */
+  --text-card-title: 1.1rem; /* was 1rem */
+  --text-card-body: 1rem; /* was 0.9rem */
+  --text-quote: 1.05rem; /* was 0.95rem */
+  --text-quote-author: 0.9rem; /* was 0.85rem */
+  --text-quote-role: 0.85rem; /* was 0.8rem */
+  --text-cta-subtitle: 1.1rem; /* was 1rem */
+  --text-blog-card-title: 1rem; /* was 0.9rem */
+  --text-blog-card-title-md: 0.95rem; /* was 0.85rem */
+  --text-blog-card-meta: 0.8rem; /* was 0.75rem */
+}
