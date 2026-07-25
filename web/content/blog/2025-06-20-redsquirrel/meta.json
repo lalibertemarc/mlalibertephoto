@@ -1,0 +1,28 @@
+{
+  "slug": "redsquirrel",
+  "date": "2025-06-20T10:22:08-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "06",
+    "day": "20"
+  },
+  "permalink": {
+    "fr": "/blog/2025/06/20/redsquirrel/",
+    "en": "/en/blog/2025/06/20/redsquirrel/"
+  },
+  "tags": [
+    "squirrel"
+  ],
+  "categories": [
+    "wildlife"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1750429292/_DSC8704-001-2_je20hu.jpg",
+    "alt": "Écureuil roux américain (Tamiasciurus hudsonicus) en posture dramatique",
+    "width": 600,
+    "height": 600
+  }
+}

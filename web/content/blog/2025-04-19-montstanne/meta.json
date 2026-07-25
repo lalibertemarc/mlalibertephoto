@@ -1,0 +1,28 @@
+{
+  "slug": "montstanne",
+  "date": "2025-04-19T10:46:56-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "04",
+    "day": "19"
+  },
+  "permalink": {
+    "fr": "/blog/2025/04/19/montstanne/",
+    "en": "/en/blog/2025/04/19/montstanne/"
+  },
+  "tags": [
+    "Mont-Sainte-Anne"
+  ],
+  "categories": [
+    "nature",
+    "tourism"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "/img/_DSC7363.jpg",
+    "width": 600,
+    "height": 400
+  }
+}

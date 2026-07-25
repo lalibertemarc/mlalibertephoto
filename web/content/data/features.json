@@ -1,0 +1,80 @@
+[
+  {
+    "weight": 4,
+    "name": {
+      "fr": "Livraison de Photos Rapide",
+      "en": "Fast Photo Delivery"
+    },
+    "icon": "fas fa-camera",
+    "url": "",
+    "description": {
+      "fr": "Les livraisons de photos se font généralement dans les 48 heures suivant la séance.",
+      "en": "Photo deliveries are usually made within 48 hours of the session."
+    }
+  },
+  {
+    "weight": 6,
+    "name": {
+      "fr": "Forfaits Flexibles",
+      "en": "Flexible Packages"
+    },
+    "icon": "fas fa-wallet",
+    "url": "",
+    "description": {
+      "fr": "J'adapte mes forfaits selon vos besoins et votre budget pour vous offrir la meilleure expérience possible.",
+      "en": "I tailor my packages to your needs and budget to offer you the best possible experience."
+    }
+  },
+  {
+    "weight": 1,
+    "name": {
+      "fr": "Studio Maison",
+      "en": "Home Studio"
+    },
+    "icon": "fas fa-house",
+    "url": "",
+    "description": {
+      "fr": "Vous pouvez venir dans mon studio personnel à Boischatel.",
+      "en": "You are welcome to come to my home studio in Boischatel."
+    }
+  },
+  {
+    "weight": 3,
+    "name": {
+      "fr": "Lumière Naturelle",
+      "en": "Natural Light"
+    },
+    "icon": "fas fa-sun",
+    "url": "",
+    "description": {
+      "fr": "Séance photo à l'extérieur à l'endroit de votre choix ou du miens dans la ville de Québec.",
+      "en": "Outdoor photo shoot at a location of your choice or mine in Quebec City."
+    }
+  },
+  {
+    "weight": 5,
+    "name": {
+      "fr": "Paiements Sécurisés",
+      "en": "Secure Payments"
+    },
+    "icon": "fas fa-cart-shopping",
+    "url": "",
+    "description": {
+      "fr": "Les paiements se font via des plateformes sécurisées pour garantir la protection de vos informations. Carte de crédit, PayPal ou virement bancaire sont acceptés.",
+      "en": "Payments are processed through secure platforms to ensure the protection of your information. Credit cards, PayPal, and bank transfers are accepted."
+    }
+  },
+  {
+    "weight": 2,
+    "name": {
+      "fr": "Studio Mobile",
+      "en": "Mobile Studio"
+    },
+    "icon": "fas fa-lightbulb",
+    "url": "",
+    "description": {
+      "fr": "Je me déplace chez vous dans la grande région de Québec avec mon studio mobile.",
+      "en": "I travel to your home in the greater Quebec City area with my mobile studio."
+    }
+  }
+]

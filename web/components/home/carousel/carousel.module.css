@@ -1,0 +1,276 @@
+/*
+ * The hero carousel, ported from static/css/custom.css:153-419 (`.home-carousel--modern`).
+ *
+ * None of the theme's `.home-carousel` base (style.marsala.css:1159-1240) is ported. The modern
+ * block overrides every visual property it sets — the photogrid background, the marsala
+ * `.dark-mask`, the uppercase 46px heading, the owl padding — so it is a complete replacement,
+ * not a supplement. Two of its rules are dead in a way worth recording: the tablet font-size
+ * step-downs for `ul`/`p` never fire, because the modern block's unconditional `font-size` has
+ * equal specificity and loads later, so it wins at every viewport.
+ *
+ * The `.owl-item.active` hook that drove the animations is replaced by `[data-active='true']`,
+ * set imperatively — see carousel.tsx for why it is not derived from render state.
+ */
+
+.hero {
+  position: relative;
+  background: var(--color-surface-hero);
+  text-align: left;
+}
+
+/*
+ * Embla's base structure. Unlike Owl — whose own CSS is `.owl-carousel { display: none }` until
+ * its JS runs, so the hero is blank until jQuery loads — this is a correct layout on its own:
+ * with no JavaScript at all it shows slide 1 full-width and clips the rest.
+ */
+.viewport {
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  touch-action: pan-y;
+}
+
+.slide {
+  position: relative;
+  flex: 0 0 100%;
+  min-width: 0;
+  overflow: hidden;
+  height: var(--height-hero);
+  min-height: var(--height-hero-min);
+  max-height: var(--height-hero-max);
+  background: var(--color-surface-hero);
+}
+
+.image {
+  object-fit: cover;
+  object-position: center;
+  will-change: transform;
+}
+
+.gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 72%;
+  z-index: 1;
+  pointer-events: none;
+  /* Five stops, so Tailwind's two/three-stop gradient utilities cannot express it. Literal
+     rgba over --color-scrim-hero (#160e0e), as in the source. */
+  background: linear-gradient(
+    to top,
+    rgba(22, 14, 14, 0.88) 0%,
+    rgba(22, 14, 14, 0.72) 18%,
+    rgba(22, 14, 14, 0.45) 40%,
+    rgba(22, 14, 14, 0.12) 65%,
+    transparent 100%
+  );
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  padding: 0 0 var(--spacing-carousel-y) var(--spacing-carousel-x);
+  max-width: var(--container-carousel-copy);
+}
+
+.overlay h1 {
+  font-weight: 300;
+  font-size: var(--text-hero);
+  letter-spacing: var(--tracking-title);
+  color: #fff;
+  margin: 0 0 0.3em;
+  line-height: var(--leading-hero);
+  text-shadow: var(--text-shadow-hero);
+}
+
+.overlay ul,
+.overlay p {
+  font-weight: 400;
+  font-size: var(--text-hero-body);
+  letter-spacing: var(--tracking-body);
+  color: rgb(255 255 255 / 0.85);
+  text-shadow: var(--text-shadow-hero-body);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.overlay ul li {
+  margin-bottom: 5px;
+  line-height: var(--leading-carousel-item);
+}
+
+.link,
+.link:hover,
+.link:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+/*
+ * The entrance. These four start invisible and are revealed only by the animation's `forwards`
+ * fill — which is why the reduced-motion block below restores opacity explicitly rather than
+ * just dropping `animation`, and why slide 1 carries `data-active` in the exported HTML.
+ */
+.overlay h1,
+.overlay ul,
+.overlay p,
+.overlay .cta {
+  opacity: 0;
+}
+
+.slide[data-active='true'] .image {
+  animation: var(--animate-ken-burns);
+}
+
+.slide[data-active='true'] .overlay h1 {
+  animation: var(--animate-carousel-fade-up-title);
+}
+
+.slide[data-active='true'] .overlay ul,
+.slide[data-active='true'] .overlay p {
+  animation: var(--animate-carousel-fade-up-copy);
+}
+
+.slide[data-active='true'] .overlay .cta {
+  animation: var(--animate-carousel-fade-up-cta);
+}
+
+/* Pagination — line indicators, bottom-right. */
+.dots {
+  position: absolute;
+  bottom: var(--spacing-carousel-dots-y);
+  right: var(--spacing-carousel-x);
+  left: auto;
+  width: auto;
+  margin: 0;
+  text-align: right;
+  z-index: 3;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.dot {
+  display: block;
+  width: var(--spacing-indicator-w);
+  height: var(--spacing-indicator-h);
+  padding: 0;
+  border: none;
+  border-radius: var(--radius-button);
+  background: rgb(255 255 255 / 0.4);
+  cursor: pointer;
+  transition:
+    width 0.35s var(--ease-indicator),
+    background 0.3s ease;
+}
+
+.dot:hover,
+.dot[aria-current='true'] {
+  width: var(--spacing-indicator-w-active);
+  background: #fff;
+}
+
+.dot:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+@media (max-width: 991px) {
+  .slide {
+    height: var(--height-hero-md);
+    min-height: var(--height-hero-min-md);
+  }
+
+  .overlay {
+    padding: 0 0 var(--spacing-carousel-y-md) var(--spacing-carousel-x-md);
+    max-width: var(--container-carousel-copy-md);
+  }
+
+  .overlay h1 {
+    font-size: var(--text-hero-md);
+  }
+
+  .dots {
+    right: var(--spacing-carousel-x-md);
+    bottom: var(--spacing-carousel-dots-y-md);
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    text-align: center;
+  }
+
+  .slide {
+    height: var(--height-hero-sm);
+    min-height: var(--height-hero-min-sm);
+    max-height: none;
+  }
+
+  .overlay {
+    padding: 0 var(--spacing-carousel-x-sm) var(--spacing-carousel-y-sm);
+    max-width: 100%;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  .overlay h1 {
+    font-size: var(--text-hero-sm);
+  }
+
+  /* Inline-block so the bullet column stays left-aligned inside a centred overlay. */
+  .overlay ul {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .gradient {
+    height: 80%;
+  }
+
+  .dots {
+    right: 0;
+    left: 0;
+    justify-content: center;
+    text-align: center;
+    bottom: var(--spacing-carousel-dots-y-sm);
+  }
+}
+
+/*
+ * Decorative motion off. The fade-up cannot simply lose its animation: these elements are
+ * `opacity: 0` by default, so removing it without restoring opacity would leave the hero's text
+ * permanently invisible — a far worse outcome for this visitor than the motion itself.
+ *
+ * Pure CSS, so it applies before any JavaScript runs. The autoplay half of the preference is in
+ * carousel.tsx, which a media query cannot express.
+ */
+@media (prefers-reduced-motion: reduce) {
+  .slide[data-active='true'] .image {
+    animation: none;
+  }
+
+  .overlay h1,
+  .overlay ul,
+  .overlay p,
+  .overlay .cta,
+  .slide[data-active='true'] .overlay h1,
+  .slide[data-active='true'] .overlay ul,
+  .slide[data-active='true'] .overlay p,
+  .slide[data-active='true'] .overlay .cta {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .dot {
+    transition: none;
+  }
+}

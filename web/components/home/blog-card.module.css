@@ -1,0 +1,97 @@
+/*
+ * Ported from static/css/custom.css:1128-1215, plus the mobile overrides at :1364-1367.
+ *
+ * A module for the same reason as the feature card: three separate hovers cascade from the card
+ * onto descendants — the thumbnail scales, the scrim fades in, the card itself lifts — and all
+ * of it is switched off below 768px.
+ */
+
+.card {
+  border: 1px solid rgb(255 255 255 / 0.06);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  margin-bottom: var(--spacing-card-gap);
+  background: transparent;
+  transition:
+    border-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.card:hover {
+  border-color: rgb(255 255 255 / 0.15);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-blog-card-hover);
+}
+
+.imageLink {
+  display: block;
+  text-decoration: none;
+}
+
+.imageFrame {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: var(--aspect-card);
+}
+
+.imageFrame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .imageFrame img {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  /* Literal rgba, not `rgb(from var(--color-scrim-gallery) …)`: relative colour syntax only
+     reached Firefox in 128, and this is the scrim over every blog thumbnail. The base is
+     --color-scrim-gallery (#1a1212) — kept in sync by hand, as the source has it. */
+  background: linear-gradient(
+    to top,
+    rgba(26, 18, 18, 0.7) 0%,
+    rgba(26, 18, 18, 0.2) 50%,
+    transparent 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.overlay svg {
+  width: var(--text-blog-card-icon);
+  height: var(--text-blog-card-icon);
+  color: rgb(255 255 255 / 0.8);
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+@media (max-width: 767px) {
+  .card {
+    margin-bottom: var(--spacing-card-gap-sm);
+  }
+
+  /* Touch devices latch :hover after a tap; the source drops the whole hover treatment rather
+     than leaving a card stuck lifted with its scrim showing. */
+  .overlay {
+    display: none;
+  }
+
+  .card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .card:hover .imageFrame img {
+    transform: none;
+  }
+}

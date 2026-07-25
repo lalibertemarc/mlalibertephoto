@@ -1,0 +1,31 @@
+{
+  "slug": "canadagoose",
+  "date": "2025-04-15T10:31:12-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "04",
+    "day": "15"
+  },
+  "permalink": {
+    "fr": "/blog/2025/04/15/canadagoose/",
+    "en": "/en/blog/2025/04/15/canadagoose/"
+  },
+  "tags": [
+    "goose",
+    "canada",
+    "outarde",
+    "bernache"
+  ],
+  "categories": [
+    "bird",
+    "wildlife"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "/img/_DSC7455 - insta.jpg",
+    "width": 600,
+    "height": 600
+  }
+}

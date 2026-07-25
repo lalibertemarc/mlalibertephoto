@@ -55,3 +55,23 @@ All appended after the homepage responsive rules:
 - `layouts/_default/single.html` — template with dark-blog auto-detection
 - `layouts/partials/breadcrumbs.html` — override with dark-heading conditional
 - `static/css/custom.css` — all dark-blog styles (appended at end)
+
+## Ported to Next (board item #8)
+
+See `docs/blog-port.md` for the full port. Three findings from that work belong here, because
+they are properties of the Hugo CSS this file describes rather than of the port:
+
+- **Section A is already ported** by `web/components/chrome/page-heading.tsx` (item #5), not by
+  the blog work — the dark heading band is shared with the gallery pages.
+- **Section B is redundant in Next.** `#blog-post.dark-blog::before` paints a fixed
+  full-viewport `#1a1212` pane because the Bootstrap layout's `html`/`body` background was
+  never dark. `web/app/globals.css` sets that colour on both, app-wide, so the pseudo-element
+  has nothing left to do.
+- **The blockquote rule does not say what it renders.** `custom.css:1460-1467` overrides only
+  `padding-left`, so three quarters of the theme's `padding: 10px 20px`
+  (`style.marsala.css:3441`) survive, and it never sets `font-size`, so the theme's flat `14px`
+  survives too. Computed: `padding: 10px 20px 10px 1.5rem`, `font-size: 14px` — which at
+  Bootstrap's 10px root is *larger* than the `1.2rem` (12px) paragraph around it.
+- **`pre`/`code` have no dark styling anywhere.** Neither this file's rules nor the theme
+  touch them in a dark context, so Bootstrap's light-grey box renders on `#1a1212`. Live on
+  `LRMogrifyManualFix` and `imagemagickScriptsRelease`. The port styles them; Hugo does not.

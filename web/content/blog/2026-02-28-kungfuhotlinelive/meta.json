@@ -1,0 +1,32 @@
+{
+  "slug": "kungfuhotlinelive",
+  "date": "2026-02-28T08:00:00-05:00",
+  "urlDate": {
+    "year": "2026",
+    "month": "02",
+    "day": "28"
+  },
+  "permalink": {
+    "fr": "/blog/2026/02/28/kungfuhotlinelive/",
+    "en": "/en/blog/2026/02/28/kungfuhotlinelive/"
+  },
+  "tags": [
+    "band",
+    "kungfuhotline",
+    "metal",
+    "rock"
+  ],
+  "categories": [
+    "live",
+    "event"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1772301693/blog/exfuaelw9dncifiskdhf.jpg",
+    "alt": "Kung Fu Hotline en spectacle au Sonum fest pour la St-Valentin",
+    "width": 600,
+    "height": 600
+  }
+}

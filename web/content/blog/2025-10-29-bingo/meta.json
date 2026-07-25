@@ -1,0 +1,34 @@
+{
+  "slug": "bingo",
+  "date": "2025-10-29T12:08:29-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "10",
+    "day": "29"
+  },
+  "permalink": {
+    "fr": "/blog/2025/10/29/bingo/",
+    "en": "/en/blog/2025/10/29/bingo/"
+  },
+  "tags": [
+    "moody",
+    "liminal",
+    "night",
+    "ILCE-7CM2",
+    "Sony AC7II",
+    "FE 16mm F1.8 G"
+  ],
+  "categories": [
+    "street",
+    "low light"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1761754095/_DSC3726.thumb_k4zrer.jpg",
+    "alt": "Un chat noir traverse la rue pour aller au bingo",
+    "width": 600,
+    "height": 600
+  }
+}

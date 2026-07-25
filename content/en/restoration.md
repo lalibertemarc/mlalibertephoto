@@ -1,5 +1,5 @@
 +++
-meta_title="Photo restoration Quebec City | Digitization old photostos"
+meta_title="Photo restoration Quebec City | Digitization old photos"
 title = "Old Photo Restoration Service"
 draft = false
 page_class = "dark-gallery"

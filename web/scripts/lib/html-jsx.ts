@@ -1,0 +1,286 @@
+/**
+ * Raw HTML to JSX conversion for embedded markup.
+ *
+ * Hugo's Goldmark runs with `unsafe = true`, so content embeds raw HTML freely: 74 iframes,
+ * 124 unclosed `<br>`, 66 unclosed `<hr>`, and in contact.md a Bootstrap form and a Google
+ * Ads `<script>`. MDX parses all of that as JSX, where each of those is a hard error rather
+ * than the lenient-HTML no-op it is today.
+ *
+ * The tag and attribute universe here is closed and small: it was enumerated from the
+ * actual corpus, not guessed from the HTML spec. Anything outside it passes through
+ * untouched, because unrecognised markup is far more likely to be prose containing a `<`
+ * than markup this needs to rewrite.
+ */
+
+/** Elements that must be self-closed in JSX. */
+const VOID_ELEMENTS = new Set([
+  'area',
+  'base',
+  'br',
+  'col',
+  'embed',
+  'hr',
+  'img',
+  'input',
+  'link',
+  'meta',
+  'param',
+  'source',
+  'track',
+  'wbr',
+])
+
+/**
+ * HTML attribute names React spells differently. Only names that actually occur are listed;
+ * the rest (href, src, width, height, title, id, rel, name, type, method, action, target,
+ * allow, scrolling) are already valid JSX and pass through unchanged.
+ */
+const ATTRIBUTE_RENAMES: Record<string, string> = {
+  class: 'className',
+  for: 'htmlFor',
+  frameborder: 'frameBorder',
+  allowfullscreen: 'allowFullScreen',
+  referrerpolicy: 'referrerPolicy',
+  autocomplete: 'autoComplete',
+  enctype: 'encType',
+  srcset: 'srcSet',
+  colspan: 'colSpan',
+  rowspan: 'rowSpan',
+  tabindex: 'tabIndex',
+  maxlength: 'maxLength',
+  minlength: 'minLength',
+  readonly: 'readOnly',
+  novalidate: 'noValidate',
+  autofocus: 'autoFocus',
+  crossorigin: 'crossOrigin',
+  datetime: 'dateTime',
+  usemap: 'useMap',
+  contenteditable: 'contentEditable',
+  spellcheck: 'spellCheck',
+}
+
+/**
+ * Tag names treated as markup. Anything else following a `<` is left alone as prose.
+ * `script` is deliberately absent: it is handled separately and must not be rewritten twice.
+ */
+const KNOWN_TAGS = new Set([
+  'a', 'abbr', 'b', 'blockquote', 'br', 'button', 'code', 'div', 'em', 'form', 'h1', 'h2',
+  'h3', 'h4', 'h5', 'h6', 'hr', 'i', 'iframe', 'img', 'input', 'label', 'li', 'ol', 'p',
+  'picture', 'pre', 'section', 'small', 'source', 'span', 'strong', 'sub', 'sup', 'table',
+  'tbody', 'td', 'textarea', 'th', 'thead', 'tr', 'ul', 'video',
+])
+
+/** `border:none;overflow:hidden` becomes `{{"border": "none", "overflow": "hidden"}}`. */
+function styleToJsxObject(css: string): string {
+  const entries: string[] = []
+  for (const declaration of css.split(';')) {
+    const trimmed = declaration.trim()
+    if (trimmed === '') continue
+    const separator = trimmed.indexOf(':')
+    if (separator === -1) continue
+    const property = trimmed.slice(0, separator).trim()
+    const value = trimmed.slice(separator + 1).trim()
+    // CSS custom properties keep their literal name; everything else camelCases.
+    const key = property.startsWith('--')
+      ? property
+      : property.replace(/-([a-z])/g, (_, letter: string) => letter.toUpperCase())
+    entries.push(`${JSON.stringify(key)}: ${JSON.stringify(value)}`)
+  }
+  return `{{${entries.join(', ')}}}`
+}
+
+const ATTRIBUTE = /([a-zA-Z_:][-a-zA-Z0-9_:.]*)(?:\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s"'>]+)))?/g
+
+function convertAttributes(raw: string): string {
+  const parts: string[] = []
+  for (const match of raw.matchAll(ATTRIBUTE)) {
+    const name = match[1]
+    if (name === undefined) continue
+    const value = match[2] ?? match[3] ?? match[4]
+
+    const jsxName = ATTRIBUTE_RENAMES[name.toLowerCase()] ?? name
+
+    if (value === undefined) {
+      // Bare HTML boolean attribute (`required`, `allowfullscreen`). JSX reads this as true.
+      parts.push(jsxName)
+      continue
+    }
+    if (jsxName === 'style') {
+      parts.push(`style=${styleToJsxObject(value)}`)
+      continue
+    }
+    // A double-quoted JSX attribute is a literal string, so braces and apostrophes inside
+    // need no escaping. Values never contain a literal double quote (verified corpus-wide).
+    parts.push(`${jsxName}="${value.replace(/"/g, '&quot;')}"`)
+  }
+  return parts.join(' ')
+}
+
+const TAG = /<(\/?)([a-zA-Z][a-zA-Z0-9]*)((?:[^>"']|"[^"]*"|'[^']*')*?)(\/?)>/g
+
+function convertTags(text: string): string {
+  return text.replace(
+    TAG,
+    (whole, closing: string, name: string, attrs: string, selfClosing: string) => {
+      const tag = name.toLowerCase()
+      if (!KNOWN_TAGS.has(tag)) return whole
+
+      if (closing === '/') return `</${tag}>`
+
+      const converted = convertAttributes(attrs)
+      const rendered = converted === '' ? tag : `${tag} ${converted}`
+
+      // Void elements are written unclosed throughout the corpus and must self-close in JSX.
+      // A non-void element written self-closed keeps that form too: dropping the slash would
+      // turn `<div />` into an unclosed `<div>` and swallow the rest of the document.
+      if (VOID_ELEMENTS.has(tag) || selfClosing === '/') return `<${rendered} />`
+
+      return `<${rendered}>`
+    },
+  )
+}
+
+/**
+ * A Font Awesome class list — `fab fa-2x fa-facebook`, `far fa-envelope`.
+ *
+ * Matches on the `fa-` token rather than on the family prefix, since `fab`/`far`/`fas` alone
+ * carry no glyph and prose could plausibly contain them.
+ */
+const FONT_AWESOME_CLASS = /(?:^|\s)fa-[a-z0-9-]+(?:\s|$)/i
+
+/** An `<i>` with no content. Every Font Awesome tag in the corpus is empty. */
+const EMPTY_ITALIC = /<i\s([^>]*?)>\s*<\/i>/gi
+
+/**
+ * The class attribute, in either quoting style.
+ *
+ * Both occur in this one file: contact.md writes the submit button's icon with double quotes
+ * and the two social icons with single quotes. Matching only double quotes silently converted
+ * one of the three and left the others as empty elements — which is precisely the invisible
+ * failure this transform exists to prevent, so it is worth stating why the alternation is here.
+ */
+const CLASS_ATTRIBUTE = /\bclass(?:Name)?\s*=\s*(?:"([^"]*)"|'([^']*)')/i
+
+/**
+ * Font Awesome `<i>` tags become `<FaIcon>`.
+ *
+ * Hugo draws these from a CDN stylesheet (`headers.html:51`) that the Next app deliberately
+ * does not load, so left alone they render as empty inline elements — the contact page's two
+ * social links become invisible and its submit button loses its glyph.
+ *
+ * This has to happen at migration time. The obvious seam, overriding `i` in the MDX component
+ * map, does not exist: MDX routes only *markdown-generated* elements through `_components`,
+ * while literal JSX in the body compiles to `_jsx("i", …)` with a string tag the map can never
+ * intercept. Verified against `@mdx-js/mdx` directly, not assumed.
+ *
+ * A rehype plugin is the other alternative and is rejected on purpose — `mdx-runtime.ts` and
+ * this script both run with no plugins specifically so that the configuration the compile gate
+ * proves and the configuration that renders are the same one.
+ *
+ * Keyed on a tag-and-class pattern, not on a page, so it stays a general rule about raw HTML
+ * like every other rewrite in this file. An `<i>` with content, or without a `fa-` class, is
+ * left alone and still renders as an italic.
+ */
+function convertIcons(text: string): string {
+  return text.replace(EMPTY_ITALIC, (whole, attrs: string) => {
+    const match = CLASS_ATTRIBUTE.exec(attrs)
+    const className = match?.[1] ?? match?.[2]
+    if (className === undefined || !FONT_AWESOME_CLASS.test(className)) return whole
+    return `<FaIcon className="${className}" />`
+  })
+}
+
+/**
+ * MDX has no HTML comments — `<!-- … -->` is a syntax error, not a no-op. The JSX equivalent
+ * is an expression containing a block comment.
+ */
+function convertComments(text: string): string {
+  return text.replace(/<!--([\s\S]*?)-->/g, (_whole, body: string) => {
+    // A nested `*/` would close the JSX comment early and spill its remainder into the page.
+    return `{/*${body.replace(/\*\//g, '*\\/')}*/}`
+  })
+}
+
+/**
+ * A `<script>` body is JavaScript, and MDX would read its braces as expressions. Moving the
+ * source into `dangerouslySetInnerHTML` keeps it an opaque string to MDX while still
+ * emitting a real script tag into the exported HTML.
+ */
+function convertScripts(block: string): string {
+  const match = /^<script(\s[^>]*)?>([\s\S]*?)<\/script>$/i.exec(block)
+  if (!match) return block
+
+  const converted = match[1] ? convertAttributes(match[1]) : ''
+  const prefix = converted === '' ? 'script' : `script ${converted}`
+  // Escape what a template literal treats specially, so arbitrary JS survives intact.
+  const escaped = (match[2] ?? '')
+    .replace(/\\/g, '\\\\')
+    .replace(/`/g, '\\`')
+    .replace(/\$\{/g, '\\${')
+
+  return `<${prefix} dangerouslySetInnerHTML={{ __html: \`${escaped}\` }} />`
+}
+
+/**
+ * Sentinel for regions lifted out of the text before rewriting. NUL cannot occur in source
+ * markdown, so a placeholder can never collide with real content.
+ */
+const SENTINEL = ' '
+
+/**
+ * Each store gets its own tag letter. Sharing one placeholder shape across stores means the
+ * first unmask pass also matches the other store's placeholders and resolves them against
+ * the wrong array.
+ */
+function mask(
+  text: string,
+  pattern: RegExp,
+  tag: string,
+  store: string[],
+  transform?: (block: string) => string,
+): string {
+  return text.replace(pattern, (block) => {
+    store.push(transform ? transform(block) : block)
+    return `${SENTINEL}${tag}${store.length - 1}${SENTINEL}`
+  })
+}
+
+function unmask(text: string, tag: string, store: string[]): string {
+  return text.replace(
+    new RegExp(`${SENTINEL}${tag}(\\d+)${SENTINEL}`, 'g'),
+    (_whole, index: string) => {
+      const block = store[Number.parseInt(index, 10)]
+      if (block === undefined) throw new Error('Placeholder lost during HTML transform')
+      return block
+    },
+  )
+}
+
+/**
+ * Order matters.
+ *
+ * Fenced code blocks are lifted out first. MDX does not parse JSX inside them, so their
+ * contents are already safe, and rewriting a void tag that a post is deliberately showing
+ * as example markup would corrupt the example.
+ *
+ * Scripts come out second, already converted. Their bodies are arbitrary JavaScript that
+ * may contain sequences the tag pass would read as markup, and by that point the body sits
+ * inside a template literal where any rewrite would be silent corruption.
+ *
+ * Icons are folded in before the tag pass, because they consume an open and a close tag
+ * together. Running after would leave `convertTags` to rewrite the `<i>` and the `</i>`
+ * separately, and the icon pass would then have to match a form it had already broken.
+ * `FaIcon` is not in KNOWN_TAGS, so the tag pass leaves what this emits alone.
+ */
+export function htmlToJsx(text: string): string {
+  const fences: string[] = []
+  const scripts: string[] = []
+
+  let result = mask(text, /^```[\s\S]*?^```/gm, 'F', fences)
+  result = mask(result, /<script(?:\s[^>]*)?>[\s\S]*?<\/script>/gi, 'S', scripts, convertScripts)
+  result = convertComments(result)
+  result = convertIcons(result)
+  result = convertTags(result)
+  result = unmask(result, 'S', scripts)
+  return unmask(result, 'F', fences)
+}

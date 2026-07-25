@@ -1,6 +1,6 @@
 +++
 meta_title = "Photographe de concerts Québec | Photographe d'événements Québec"
-title='Portolio | Évènements'
+title='Portfolio | Évènements'
 draft = false
 page_class = "dark-gallery"
 description = "Photographe d'événements à Québec, spécialiste des concerts et des spectacles de musique. Discret et professionnel, je capture l'énergie, l'émotion et les moments inoubliables de vos performances, de vos événements corporatifs et culturels grâce à des images dynamiques et percutantes."
@@ -22,21 +22,21 @@ Demandez pour mes prix spéciaux pour petits spectacles.
     title="Mother Rockers"
     alt="Guitariste de Mother Rockers devant la foule du Sonum Fest"
     caption="L'amour était littéralement dans l'air lors du concert de la Saint-Valentin au @sonum_fest."
-    button-url="/blog/2026/03/01/motherRockersValentinesDayPart1/"
+    button-url="/blog/2026/03/01/motherrockersvalentinesdaypart1/"
 >}}
 {{< image-modal
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1772301698/blog/vfa9k0azt4rdhwjm3k9i.jpg"
     title="Kung Fu Hotline"
     alt="Kung Fu Hotline en pleine action au Sonum fest"
     caption="Sous les projecteurs, Kung Fu Hotline donne tout"
-    button-url="/blog/2026/02/28/kungFuHotlineLive/"
+    button-url="/blog/2026/02/28/kungfuhotlinelive/"
 >}}
 {{< image-modal
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1772237471/blog/kv6a8ujdev1e7hlpurwp.jpg"
     title="ButterButtButler"
     alt="ButterButtButler en concert à la Source de la Martinière"
     caption="ButterButtButler enflamme la Source de la Martinière"
-    button-url="/blog/2026/02/27/butterButtButlerLive/"
+    button-url="/blog/2026/02/27/butterbuttbutlerlive/"
 >}}
 {{< image-modal
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750165440/DSC01453_-_insta_vtfgof.jpg"
@@ -57,7 +57,7 @@ Demandez pour mes prix spéciaux pour petits spectacles.
     title="Prohibition5"
     alt="Prohibition5 en spectacle"
     caption="Prohibition5 en spectacle"
-    button-url="/blog/2025/10/29/Prohibition5/"
+    button-url="/blog/2025/10/29/prohibition/"
 >}}
 {{< image-modal
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750165440/_DSC4217-Enhanced-NR_-_insta-2_v9iavk.jpg"

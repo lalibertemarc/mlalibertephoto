@@ -1,0 +1,33 @@
+{
+  "slug": "simonportraits",
+  "date": "2025-10-28T11:39:58-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "10",
+    "day": "28"
+  },
+  "permalink": {
+    "fr": "/blog/2025/10/28/simonportraits/",
+    "en": "/en/blog/2025/10/28/simonportraits/"
+  },
+  "tags": [
+    "Simon Gagnon",
+    "ILCE-7CM2",
+    "Sony AC7II",
+    "Sigma 24-70mm F2.8 DG DN II Art"
+  ],
+  "categories": [
+    "portrait",
+    "corporate portrait",
+    "casting portrait"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1761665967/_DSC4052-Edit.thumb_hruvhq.jpg",
+    "alt": "Portrait de style casting d'un homme prise en studio",
+    "width": 600,
+    "height": 600
+  }
+}

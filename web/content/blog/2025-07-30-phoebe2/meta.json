@@ -1,0 +1,29 @@
+{
+  "slug": "phoebe2",
+  "date": "2025-07-30T11:01:37-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "07",
+    "day": "30"
+  },
+  "permalink": {
+    "fr": "/blog/2025/07/30/phoebe2/",
+    "en": "/en/blog/2025/07/30/phoebe2/"
+  },
+  "tags": [
+    "Eastern Phoebe"
+  ],
+  "categories": [
+    "bird",
+    "wildlife"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1753887667/_DSC9242-Edit-2.thumb_yrldkg.jpg",
+    "alt": "Moucherolle phébi mange une sauterelle",
+    "width": 600,
+    "height": 600
+  }
+}

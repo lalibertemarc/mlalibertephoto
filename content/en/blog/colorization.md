@@ -46,5 +46,5 @@ The photo retains its vintage style, but the color makes it more alive than ever
 <br>
 
 {{< fleximages >}}
-{{< navbutton url="/restoration" text="Learn more about my packages" >}}
+{{< navbutton url="/en/restoration" text="Learn more about my packages" >}}
 {{< /fleximages >}}

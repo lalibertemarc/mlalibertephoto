@@ -32,21 +32,21 @@ Here are some photos of the main building that I like. I gave them a cold tint w
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1762014538/_DSC3590.web_qdvkdc.jpg"
     width="1350px"
     alt="Entrance to the Roger-Van den Hende Botanical Garden"
-    caption="Une vue grand angle de l'entrée du jardin botanique" 
+    caption="A wide-angle view of the entrance to the botanical garden" 
 >}}
 
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1762014538/_DSC3587.web_ufh64b.jpg"
     width="1350px"
     alt="Entrance to the Roger-Van den Hende Botanical Garden"
-    caption="Une vue grand angle de l'entrée du jardin botanique" 
+    caption="A wide-angle view of the entrance to the botanical garden" 
 >}}
 
 {{< image-modal 
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1762014539/_DSC3591.web_jm3tpp.jpg"
     width="1350px"
     alt="Entrance to the Roger-Van den Hende Botanical Garden"
-    caption="Une vue grand angle de l'entrée du jardin botanique" 
+    caption="A wide-angle view of the entrance to the botanical garden" 
 >}}
 
 {{</ gallery >}}

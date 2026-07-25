@@ -1,0 +1,28 @@
+{
+  "slug": "commongrackle",
+  "date": "2025-04-24T09:22:42-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "04",
+    "day": "24"
+  },
+  "permalink": {
+    "fr": "/blog/2025/04/24/commongrackle/",
+    "en": "/en/blog/2025/04/24/commongrackle/"
+  },
+  "tags": [
+    "grackle"
+  ],
+  "categories": [
+    "bird",
+    "wildlife"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "/img/_DSC7450.jpg",
+    "width": 600,
+    "height": 600
+  }
+}

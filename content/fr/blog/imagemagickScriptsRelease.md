@@ -16,7 +16,7 @@ authors = ["Marc Laliberté"]
 
 <hr>
 
-Il y a quelque temps, j'ai écrit à propos du [bogue d'export de LR/Mogrify 2](/blog/lrmogrifymanulafix/) qui plante quand on essaie d'exporter des images avec plusieurs préréglages dans Lightroom :
+Il y a quelque temps, j'ai écrit à propos du [bogue d'export de LR/Mogrify 2](/blog/2025/07/08/lrmogrifymanualfix/) qui plante quand on essaie d'exporter des images avec plusieurs préréglages dans Lightroom :
 
 ```
 ./LRMogrifyExportTask.lua:128: attempt to index local 'handle' (a nil value) (2)

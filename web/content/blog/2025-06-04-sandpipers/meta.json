@@ -1,0 +1,29 @@
+{
+  "slug": "sandpipers",
+  "date": "2025-06-04T10:06:06-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "06",
+    "day": "04"
+  },
+  "permalink": {
+    "fr": "/blog/2025/06/04/sandpipers/",
+    "en": "/en/blog/2025/06/04/sandpipers/"
+  },
+  "tags": [
+    "solitary sandpiper"
+  ],
+  "categories": [
+    "bird",
+    "wildlife"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1749046040/_DSC8656-001-4_gaux0q.jpg",
+    "alt": "Chevaliers solitaires sur une branche dans un marais",
+    "width": 600,
+    "height": 600
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "slug": "thatitlawyer",
+  "date": "2025-07-14T11:46:56-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "07",
+    "day": "14"
+  },
+  "permalink": {
+    "fr": "/blog/2025/07/14/thatitlawyer/",
+    "en": "/en/blog/2025/07/14/thatitlawyer/"
+  },
+  "tags": [
+    "That It Lawyer"
+  ],
+  "categories": [
+    "portrait",
+    "corporate portrait",
+    "casting portrait"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1752508069/_DSC3458-retouched.thumb_tzznxg.jpg",
+    "alt": "That IT Lawyer et son visage perplexe face au sujet du jour",
+    "width": 600,
+    "height": 600
+  }
+}

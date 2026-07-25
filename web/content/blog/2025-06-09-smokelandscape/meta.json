@@ -1,0 +1,31 @@
+{
+  "slug": "smokelandscape",
+  "date": "2025-06-09T08:55:32-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "06",
+    "day": "09"
+  },
+  "permalink": {
+    "fr": "/blog/2025/06/09/smokelandscape/",
+    "en": "/en/blog/2025/06/09/smokelandscape/"
+  },
+  "tags": [
+    "wildfire smoke",
+    "gaspesie",
+    "quebec"
+  ],
+  "categories": [
+    "nature",
+    "tourism"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1749473692/_DSC8922-thumnail_border_boknd7.jpg",
+    "alt": "Quai dans un paysage de fumée",
+    "width": 600,
+    "height": 600
+  }
+}

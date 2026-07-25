@@ -1,0 +1,5 @@
+# Generated content must round-trip byte-identically for the migration's idempotency check
+# to mean anything. Without this, a fresh clone on Windows rewrites these to CRLF and the
+# next `npm run migrate:content:check` reports every file as changed.
+web/content/** text eol=lf
+web/scripts/fixtures/*.csv text eol=lf

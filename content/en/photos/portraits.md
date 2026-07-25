@@ -1,6 +1,6 @@
 +++
 meta_title = 'Portrait Photographer Quebec | Portraits, Casting & Natural Light'
-title='Portolio | Portraits'
+title='Portfolio | Portraits'
 draft = false
 page_class = "dark-gallery"
 description = "Professional photographer specializing in casting portraits, corporate portraits, natural light portraits, and group portraits in Quebec City. Whether for personal, professional, or artistic projects, I create timeless and impactful portraits. Book your unique photo session."
@@ -75,14 +75,14 @@ Professional photographer specializing in casting portraits, corporate portraits
     title="Michel Rondeau"
     alt="Portrait of Michel Rondeau of the band Prohibition5 caught in action"
     caption="Prohibition5 gives a singer-songwriter/crooner style performance in the streets of Limoilou, Quebec"
-    button-url="/en/blog/2025/10/29/Prohibition5/"
+    button-url="/en/blog/2025/10/29/prohibition/"
 >}}
 {{< image-modal
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761750180/_DSC9723.web_ptw3sn.jpg"
     title="Sylvie St-Cyr"
     alt="Portrait of a woman taken in natural light"
     caption="Portrait of Sylvie St-Cyr taken during a Prohibition5 performance"
-    button-url="/en/blog/2025/10/29/Prohibition5/"
+    button-url="/en/blog/2025/10/29/prohibition/"
 >}}
 {{< image-modal
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761755199/_DSC3284.web_zvsnua.jpg"
@@ -131,7 +131,7 @@ Professional photographer specializing in casting portraits, corporate portraits
     title="Prohibition5"
     alt="The band Prohibition5 will be performing on September 15, 2025 in the streets of Limoilou."
     caption="Prohibition5 gives a singer-songwriter/crooner style performance in the streets of Limoilou, Quebec"
-    button-url="/en/blog/2025/10/29/Prohibition5/"
+    button-url="/en/blog/2025/10/29/prohibition/"
 >}}
 {{< image-modal
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750126658/_DSC6892_kenmim.jpg"

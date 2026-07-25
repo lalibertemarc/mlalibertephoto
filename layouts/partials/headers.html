@@ -87,7 +87,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 {{ $is_blog := and (eq .Type "blog") (eq .Kind "page") }}
 {{ $has_image := isset .Params "banner" }}
 {{ $is_external := isset .Params "external_banner" }}
-{{ $image := cond $has_image .Params.banner (.Site.Params.default_sharing_image | default "img/sharing-default.png") }}
+{{/* `default_sharing_image` is always set in params.toml, so the theme's third fallback
+     ("img/sharing-default.png") was unreachable — and the file it named has never existed.
+     See docs/static-assets.md. */}}
+{{ $image := cond $has_image .Params.banner .Site.Params.default_sharing_image }}
 {{ $is_valid_image := or $is_external (print "static/" $image | fileExists) }}
 
 {{ if $is_valid_image }}

@@ -5,15 +5,20 @@
 Defined in `static/css/custom.css` under `:root`:
 
 ```css
---primary-accent: #955251;      /* Marsala */
---navbar-border-top: #532e2d;
---button-border: #6d3c3b;
---link-focus: #633736;
---form-shadow: rgba(149, 82, 81, 0.6);
---pagination-bg: #d2adad;
---link-hover-bg: #74403f;
---navbar-focus: #c08c8c;
+--primary-accent: #c9a84c;      /* Gold */
+--navbar-border-top: #8a7233;
+--button-border: #a8893e;
+--link-focus: #9a7d38;
+--form-shadow: rgba(201, 168, 76, 0.6);
+--pagination-bg: #e0d3a3;
+--link-hover-bg: #b09542;
+--navbar-focus: #d4bf7a;
 ```
+
+> The palette is **gold**, not marsala. `custom.css` loads after
+> `style.marsala.css` (see load order below), so these values win over the
+> theme's `#955251` family. Earlier revisions of this doc listed the marsala
+> values; they were never what the site rendered.
 
 ## CSS Load Order
 

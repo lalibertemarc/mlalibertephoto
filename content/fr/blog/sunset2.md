@@ -18,5 +18,5 @@ authors = ["Marc Laliberté"]
     width="1350px"
     title="Le coucher de soleil qu'on a eu samedi dernier à Cap-Chat."
     alt="Scène de plage avec coucher de soleil sur le fleuve St-Laurent"
-    caption="Golden and lavender colors for a breathtaking landscape on Cap-Chat beach"
+    caption="Des couleurs dorées et lavandes pour un paysage a couper le souffle sur la plage de Cap-Chat"
 >}}

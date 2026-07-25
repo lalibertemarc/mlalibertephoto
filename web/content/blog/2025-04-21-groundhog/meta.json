@@ -1,0 +1,27 @@
+{
+  "slug": "groundhog",
+  "date": "2025-04-21T08:46:32-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "04",
+    "day": "21"
+  },
+  "permalink": {
+    "fr": "/blog/2025/04/21/groundhog/",
+    "en": "/en/blog/2025/04/21/groundhog/"
+  },
+  "tags": [
+    "groundhog"
+  ],
+  "categories": [
+    "wildlife"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "/img/_DSC7933-001.jpg",
+    "width": 600,
+    "height": 600
+  }
+}

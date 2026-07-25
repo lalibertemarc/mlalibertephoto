@@ -1,0 +1,8 @@
+{
+  "path": "videos",
+  "permalink": {
+    "fr": "/videos/",
+    "en": "/en/videos/"
+  },
+  "pageClass": "dark-gallery"
+}

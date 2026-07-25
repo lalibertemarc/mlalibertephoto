@@ -18,5 +18,5 @@ authors = ["Marc Laliberté"]
     width="1350px"
     title="The sunset we had last Saturday at Cap-Chat."
     alt="Beach scene with sunset on the St. Lawrence River"
-    caption="Des couleurs dorées et lavandes pour un paysage a couper le souffle sur la plage de Cap-Chat"
+    caption="Golden and lavender colors for a breathtaking landscape on Cap-Chat beach"
 >}}

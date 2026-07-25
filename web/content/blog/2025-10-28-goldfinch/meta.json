@@ -1,0 +1,31 @@
+{
+  "slug": "goldfinch",
+  "date": "2025-10-28T14:06:32-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "10",
+    "day": "28"
+  },
+  "permalink": {
+    "fr": "/blog/2025/10/28/goldfinch/",
+    "en": "/en/blog/2025/10/28/goldfinch/"
+  },
+  "tags": [
+    "goldfinch",
+    "ZV-E10",
+    "E 70–350mm F4.5–6.3 G OSS"
+  ],
+  "categories": [
+    "bird",
+    "wildlife"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1761674777/_DSC9322.thumb_y6bm6v.jpg",
+    "alt": "Chardonneret jaune sur une branche avec un ciel bleu",
+    "width": 600,
+    "height": 600
+  }
+}

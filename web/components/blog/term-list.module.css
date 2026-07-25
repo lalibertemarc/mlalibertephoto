@@ -1,0 +1,44 @@
+/*
+ * The term directory on a taxonomy hub.
+ *
+ * No Hugo source — these pages render blank today (see taxonomy-list.tsx). Styled from the
+ * same dark-blog vocabulary as everything else on the blog surface: accent on hover, muted
+ * hairlines, uppercase metadata.
+ */
+
+.terms {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.term {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid rgb(255 255 255 / 0.12);
+  border-radius: var(--radius-embed);
+  text-decoration: none;
+  color: rgb(255 255 255 / 0.75);
+  font-size: var(--text-post-body);
+  font-weight: 300;
+  transition:
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.term:hover,
+.term:focus {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.count {
+  font-size: var(--text-meta);
+  letter-spacing: var(--tracking-meta);
+  color: rgb(255 255 255 / 0.4);
+}

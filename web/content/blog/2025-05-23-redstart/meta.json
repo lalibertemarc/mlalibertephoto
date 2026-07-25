@@ -1,0 +1,28 @@
+{
+  "slug": "redstart",
+  "date": "2025-05-23T08:11:47-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "05",
+    "day": "23"
+  },
+  "permalink": {
+    "fr": "/blog/2025/05/23/redstart/",
+    "en": "/en/blog/2025/05/23/redstart/"
+  },
+  "tags": [
+    "american redstart"
+  ],
+  "categories": [
+    "bird",
+    "wildlife"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "/img/_DSC8604-001.jpg",
+    "width": 600,
+    "height": 600
+  }
+}

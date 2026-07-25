@@ -1,9 +1,12 @@
 [build]
-command = "hugo --gc --minify --environment production"
-publish = "public"
+command = "npm --prefix web ci && npm --prefix web run build"
+publish = "web/out"
 
-[context.production.environment]
-    HUGO_VERSION = "0.147.4"
+[build.environment]
+  # Match the dev machine (Node 24 / npm 11). The committed package-lock.json is
+  # npm 11-shaped; Node 22 ships npm 10, which rejects it (`npm ci` EUSAGE on
+  # @swc/helpers). Pinning 24 keeps dev and CI on the same npm.
+  NODE_VERSION = "24"
 
 [[redirects]]
   from = "https://www.marclaliberte.photos/*"
@@ -150,6 +153,13 @@ publish = "public"
 [[redirects]]
   from = "/categories/portraits"
   to = "/categories/portrait/"
+  status = 301
+
+# "squirrel" was a category in Hugo (indexed) but consolidated to a tag-only term
+# in the Next.js migration; /categories/squirrel/ would 404 without this.
+[[redirects]]
+  from = "/categories/squirrel/*"
+  to = "/tags/squirrel/"
   status = 301
 
 # Categories that should be tags (EN)

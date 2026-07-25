@@ -1,0 +1,31 @@
+{
+  "slug": "rainyday",
+  "date": "2025-05-25T10:57:44-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "05",
+    "day": "25"
+  },
+  "permalink": {
+    "fr": "/blog/2025/05/25/rainyday/",
+    "en": "/en/blog/2025/05/25/rainyday/"
+  },
+  "tags": [
+    "rain",
+    "waterfall",
+    "moody",
+    "creative"
+  ],
+  "categories": [
+    "nature",
+    "tourism"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "/img/_DSC8402.jpg",
+    "width": 600,
+    "height": 600
+  }
+}

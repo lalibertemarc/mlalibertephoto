@@ -6,5 +6,5 @@ description = "Marc Laliberte's photo portfolio in Quebec City featuring portrai
 +++
 
 - [Portraits]({{< ref "photos/portraits.md" >}})
-- [Évènements]({{< ref "photos/events.md" >}})
+- [Events]({{< ref "photos/events.md" >}})
 - [Wildlife]({{< ref "photos/wildlife.md" >}})

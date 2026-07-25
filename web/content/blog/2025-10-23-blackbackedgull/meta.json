@@ -1,0 +1,32 @@
+{
+  "slug": "blackbackedgull",
+  "date": "2025-10-23T10:53:07-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "10",
+    "day": "23"
+  },
+  "permalink": {
+    "fr": "/blog/2025/10/23/blackbackedgull/",
+    "en": "/en/blog/2025/10/23/blackbackedgull/"
+  },
+  "tags": [
+    "gull",
+    "bnw",
+    "ZV-E10",
+    "E 70–350mm F4.5–6.3 G OSS"
+  ],
+  "categories": [
+    "bird",
+    "wildlife"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1761231138/_DSC9477.thumb_zez9ro.jpg",
+    "alt": "Portrait d'un Goéland marin",
+    "width": 600,
+    "height": 600
+  }
+}

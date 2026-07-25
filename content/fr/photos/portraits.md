@@ -1,6 +1,6 @@
 +++
 meta_title = 'Photographe Portrait Québec | Portraits Casting & Lumière Naturelle'
-title='Portolio | Portraits'
+title='Portfolio | Portraits'
 draft = false
 page_class = "dark-gallery"
 description = "Photographe professionnel spécialisé en portraits de casting, portraits corporatifs, portraits en lumière naturelle et portraits de groupe à Québec. Que ce soit pour des projets personnels, professionnels ou artistiques, je crée des portraits intemporels et percutants. Réservez votre séance photo unique."
@@ -73,14 +73,14 @@ Photographe professionnel spécialisé en portraits de casting, portraits corpor
     title="Michel Rondeau"
     alt="Portrait de Michel Rondeau du groupe Prohibition5 pris en plein action"
     caption="Prohibition5 donne une performance de style chansonnier/crooner dans les rues de Limoilou, Québec"
-    button-url="/blog/2025/10/29/Prohibition5/"
+    button-url="/blog/2025/10/29/prohibition/"
 >}}
 {{< image-modal
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761750180/_DSC9723.web_ptw3sn.jpg"
     title="Sylvie St-Cyr"
     alt="Portrait d'une femme pris en lumière naturelle"
     caption="Portrait de Sylvie St-Cyr pris pendant un spectacle de Prohibition5"
-    button-url="/blog/2025/10/29/Prohibition5/"
+    button-url="/blog/2025/10/29/prohibition/"
 >}}
 {{< image-modal
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1761755199/_DSC3284.web_zvsnua.jpg"
@@ -131,7 +131,7 @@ Photographe professionnel spécialisé en portraits de casting, portraits corpor
     title="Prohibition5"
     alt="Le groupe Prohibition5 en spectacle le 15 septembre 2025 dans les rues de Limoilou"
     caption="Prohibition5 donne une performance de style chansonnier/crooner dans les rues de Limoilou, Québec"
-    button-url="/blog/2025/10/29/Prohibition5/"
+    button-url="/blog/2025/10/29/prohibition/"
 >}}
 {{< image-modal
     src="https://res.cloudinary.com/dbjekf3b7/image/upload/v1750126658/_DSC6892_kenmim.jpg"

@@ -1,0 +1,38 @@
+/*
+ * Ported from static/css/custom.css:14-29.
+ *
+ * The image rule targets a bare `img`, so it reaches whatever the children render without
+ * needing a shared class — which is what the source relies on too.
+ *
+ * `.dark-blog .flex-images img { box-shadow }` (custom.css:1500-1502) is at the bottom of
+ * this file. It was deferred when this component landed, waiting on the page-level class;
+ * the blog-post work now provides it.
+ */
+
+.flexImages {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.flexImages img {
+  max-width: 100%;
+  height: auto;
+  flex: 1 1 auto;
+  min-width: 200px;
+}
+
+/*
+ * custom.css:1500-1502 — the shadow applies only inside a blog post, never on a gallery page.
+ *
+ * The guard has to be `:global`, and the rule has to live in this file rather than in
+ * post.module.css. `.flexImages` is hashed per module, so a selector written over there would
+ * compile to a class name that appears in no other file's output and would silently never
+ * match. `PostBody` renders the unhashed `dark-blog` class for this rule to hook.
+ */
+:global(.dark-blog) .flexImages img {
+  box-shadow: var(--shadow-embed);
+}

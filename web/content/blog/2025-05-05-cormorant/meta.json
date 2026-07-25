@@ -1,0 +1,28 @@
+{
+  "slug": "cormorant",
+  "date": "2025-05-05T14:02:49-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "05",
+    "day": "05"
+  },
+  "permalink": {
+    "fr": "/blog/2025/05/05/cormorant/",
+    "en": "/en/blog/2025/05/05/cormorant/"
+  },
+  "tags": [
+    "cormorant"
+  ],
+  "categories": [
+    "bird",
+    "wildlife"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "/img/_DSC8195-001.jpg",
+    "width": 600,
+    "height": 600
+  }
+}

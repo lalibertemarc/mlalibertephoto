@@ -1,0 +1,174 @@
+/*
+ * Standalone-page typography — ported from static/css/custom.css:427-715 (the `.dark-gallery
+ * #post-content` family: base, prose, headings, rule, lists, embeds).
+ *
+ * A module rather than utilities for the same reason post.module.css is one: every source rule
+ * is a descendant selector hanging off a single wrapper, and the elements are produced by MDX,
+ * so there is no JSX to hang a className on.
+ *
+ * Applied to all EIGHT pages, not only the five whose meta.json declares
+ * `page_class = "dark-gallery"`. Hugo renders contact, photos and smsPrices light — white
+ * Bootstrap page, textured heading band — but globals.css puts `--color-surface-page` on both
+ * html and body app-wide, so there is no light surface left for them to sit on. Giving three
+ * pages a second skin would mean either duplicating post.module.css or reworking the verified
+ * blog surface; using the skin the other five already ask for keeps one page voice. A recorded
+ * deviation — see docs/pages-port.md.
+ *
+ * Not ported: `.dark-gallery #post-content::before` (custom.css:430-439), the `calc(-50vw +
+ * 50%)` full-bleed breakout painting #1a1212 edge to edge. `--color-surface-page` IS #1a1212
+ * and already covers html and body, so reproducing it is redundant paint behind a negative
+ * z-index. Exactly the call post.module.css:15-19 records for the `.dark-blog` twin.
+ *
+ * `font-family: 'Roboto', sans-serif` is dropped from every rule that declares it. The source
+ * repeats it because the Bootstrap theme sets a different family on headings; here
+ * `--font-sans` is Roboto on body and headings inherit it.
+ */
+
+.body {
+  position: relative;
+  color: rgb(255 255 255 / 0.85);
+}
+
+/* Direct-child only, exactly as the source scopes it — paragraphs inside a gallery, a
+   flex-images block or the contact form keep their own treatment. */
+.body > p {
+  font-weight: 300;
+  font-size: var(--text-gallery-body);
+  letter-spacing: var(--tracking-body);
+  color: rgb(255 255 255 / 0.75);
+  max-width: var(--container-gallery-prose);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* The page title, rendered by MDX from a `#` heading rather than by the heading band. Only
+   restoration uses one. */
+.body h1 {
+  font-weight: 300;
+  font-size: var(--text-gallery-title);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-eyebrow);
+  color: rgb(255 255 255 / 0.55);
+  text-align: center;
+  margin: 2rem 0 1.5rem;
+}
+
+/* Section eyebrows: small, quiet, uppercase, each introduced by a hairline rule. */
+.body h2 {
+  font-weight: 300;
+  font-size: var(--text-gallery-h2);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-eyebrow);
+  color: rgb(255 255 255 / 0.45);
+  text-align: center;
+  margin: 3rem 0 1.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgb(255 255 255 / 0.08);
+}
+
+/* The first section needs no divider — the heading band above it already is one. */
+.body h2:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.body h3 {
+  font-weight: 300;
+  font-size: var(--text-gallery-h3);
+  letter-spacing: var(--tracking-label);
+  color: rgb(255 255 255 / 0.85);
+  text-align: center;
+  margin: 2.5rem 0 1rem;
+}
+
+.body strong {
+  color: #fff;
+}
+
+/*
+ * Gold, and deliberately without an underline.
+ *
+ * There is no `.dark-gallery … a` rule to port: on these pages Hugo falls through to the
+ * theme's bare `a { color: var(--primary-accent) }` (style.marsala.css:3183), which custom.css
+ * repoints to the gold accent and never decorates. That differs from `.dark-blog #post-content
+ * a` (custom.css:1448), which adds the underline — so post.module.css and this file disagree
+ * here on purpose, matching the two source cascades.
+ */
+.body a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.body a:hover,
+.body a:focus {
+  color: var(--color-accent-focus);
+}
+
+.body hr {
+  border-color: rgb(255 255 255 / 0.08);
+  margin: 2.5rem 0;
+}
+
+/*
+ * `list-style` and `padding-left` are restorations, not ports.
+ *
+ * The source styles only colour and measure, because Bootstrap and the browser default supply
+ * the marker and the indent underneath. Tailwind's preflight zeroes both outright
+ * (`ol, ul { list-style: none; margin: 0; padding: 0 }`), so porting the source rule alone
+ * renders restoration's six service lists and smsPrices' price list as unmarked runs of text.
+ * 40px is the browser default the source was authored against.
+ *
+ * Text stays left-aligned inside the centred 640px box: the source sets `text-align` on `> p`
+ * but never on `ul`, so lists inherit `start` from the body.
+ */
+.body ul,
+.body ol {
+  color: rgb(255 255 255 / 0.75);
+  max-width: var(--container-gallery-prose);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  list-style: revert;
+}
+
+.body ul li,
+.body ol li {
+  margin-bottom: 0.3em;
+}
+
+/*
+ * The date line above the body, on the one page that has a date.
+ *
+ * `single.html:44` gates its byline block on `.Params.author OR .Params.date`, and
+ * `photos/meta.json` is the only page meta carrying a date — so `/photos/` alone renders this,
+ * with no author beside it. Bootstrap's `.text-muted .text-uppercase .mb-small .text-right`
+ * are folded in, since there is no Bootstrap here to supply them.
+ *
+ * Colour is the dark-surface value rather than Bootstrap's #777: `/photos/` is a light page in
+ * Hugo, and #777 on #1a1212 is unreadable. It follows the one-skin decision at the top of this
+ * file, and matches what post.module.css uses for the same line on a blog post.
+ */
+.meta {
+  text-align: right;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: var(--text-meta);
+  letter-spacing: var(--tracking-meta);
+  color: rgb(255 255 255 / 0.45);
+}
+
+/* YouTube embeds on the videos page. The source pins `width: 560px` and lets the aspect ratio
+   drive the height, so the iframe's own width/height attributes never bind. */
+.body iframe {
+  display: block;
+  max-width: 100%;
+  width: var(--container-embed);
+  margin: 1rem auto;
+  border-radius: var(--radius-embed);
+  box-shadow: var(--shadow-embed);
+  aspect-ratio: var(--aspect-wide);
+  height: auto;
+}

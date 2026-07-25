@@ -1,0 +1,34 @@
+{
+  "slug": "womenfourgenerations",
+  "date": "2025-10-27T08:03:45-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "10",
+    "day": "27"
+  },
+  "permalink": {
+    "fr": "/blog/2025/10/27/womenfourgenerations/",
+    "en": "/en/blog/2025/10/27/womenfourgenerations/"
+  },
+  "tags": [
+    "history",
+    "family",
+    "women",
+    "generations"
+  ],
+  "categories": [
+    "restoration",
+    "colorization",
+    "retouching",
+    "digitization"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1761566671/_DSC3225G.thumb_plsys8.jpg",
+    "alt": "Quatre générations de femmes posant pour une photographie au début du 20ieme siècle",
+    "width": 600,
+    "height": 600
+  }
+}

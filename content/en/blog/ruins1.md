@@ -10,7 +10,7 @@ banner = "img/DSC01304.jpg"
 authors = ["Marc Laliberté"]
 +++
 
-<p>Ruins of the Petite Chute hydroelectric power station, located near the Dame Blanche waterfall. <br> The facility was demolished in 1974 after ten years of inactivity, following Hydro-Québec's takeover of national electricity distribution. <p>
+<p>Ruins of the Petite Chute hydroelectric power station, located near the Dame Blanche waterfall. <br> The facility was demolished in 1974 after ten years of inactivity, following Hydro-Québec's takeover of national electricity distribution. </p>
 
 <a href="https://www.ville.quebec.qc.ca/citoyens/patrimoine/quartiers/montmorency/interet/chute-de-la-dame-blanche.aspx" target="_blank" rel="noopener noreferrer">Source</a>
 

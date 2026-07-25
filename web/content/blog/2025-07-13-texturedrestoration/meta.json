@@ -1,0 +1,32 @@
+{
+  "slug": "texturedrestoration",
+  "date": "2025-07-13T10:06:10-04:00",
+  "urlDate": {
+    "year": "2025",
+    "month": "07",
+    "day": "13"
+  },
+  "permalink": {
+    "fr": "/blog/2025/07/13/texturedrestoration/",
+    "en": "/en/blog/2025/07/13/texturedrestoration/"
+  },
+  "tags": [
+    "history",
+    "family"
+  ],
+  "categories": [
+    "restoration",
+    "colorization",
+    "retouching",
+    "digitization"
+  ],
+  "authors": [
+    "Marc Laliberté"
+  ],
+  "banner": {
+    "src": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1752502765/_DSC3210B_restoredE.thumb_bbc2fe.jpg",
+    "alt": "Deux couples posent amicalement sur une route de compagne",
+    "width": 600,
+    "height": 600
+  }
+}
