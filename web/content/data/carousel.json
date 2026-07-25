@@ -42,27 +42,6 @@
     "href": "photos/portraits"
   },
   {
-    "weight": 3,
-    "title": {
-      "fr": "Restauration de photos",
-      "en": "Photo Restoration"
-    },
-    "contactText": {
-      "fr": "Contactez-moi pour un devis gratuit",
-      "en": "Contact me for a free quote"
-    },
-    "description": {
-      "fr": "<ul class=\"list-style-none\">\n  <li>Éliminiation de rayures</li>\n  <li>Enlever grain et flous</li>\n  <li>Colorisation</li>\n  <li>Numérisation</li>\n  <li>Préparation pour impression</li>\n</ul>\n",
-      "en": "<ul class=\"list-style-none\">\n  <li>Scratch removal</li>\n  <li>Remove grain and blurriness</li>\n  <li>Colorization</li>\n  <li>Digitization</li>\n  <li>Print preparation</li>\n</ul>\n"
-    },
-    "image": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1748480912/_DSC7374-001-Edit-Edit_-_insta_nemrfg.jpg",
-    "alt": {
-      "fr": "Exemples d'avant et après de restauration de photos anciennes",
-      "en": "Before and after examples of old photo restoration"
-    },
-    "href": "restoration"
-  },
-  {
     "weight": 4,
     "title": {
       "fr": "Vidéos",

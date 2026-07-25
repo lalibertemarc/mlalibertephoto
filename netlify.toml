@@ -44,7 +44,7 @@ publish = "web/out"
   status = 301
 [[redirects]]
   from = "/tags/restoration/*"
-  to = "/categories/restoration/"
+  to = "/blog/"
   status = 301
 [[redirects]]
   from = "/tags/technical/*"
@@ -52,7 +52,7 @@ publish = "web/out"
   status = 301
 [[redirects]]
   from = "/tags/colorization"
-  to = "/categories/colorization/"
+  to = "/blog/"
   status = 301
 [[redirects]]
   from = "/tags/live"
@@ -72,13 +72,13 @@ publish = "web/out"
   status = 301
 [[redirects]]
   from = "/tags/retouche/*"
-  to = "/categories/retouching/"
+  to = "/blog/"
   status = 301
 
 # Tags that should be categories (EN)
 [[redirects]]
   from = "/en/tags/restoration/*"
-  to = "/en/categories/restoration/"
+  to = "/en/blog/"
   status = 301
 [[redirects]]
   from = "/en/tags/nature"
@@ -90,11 +90,11 @@ publish = "web/out"
   status = 301
 [[redirects]]
   from = "/en/tags/digitization/*"
-  to = "/en/categories/digitization/"
+  to = "/en/blog/"
   status = 301
 [[redirects]]
   from = "/en/tags/colorization/*"
-  to = "/en/categories/colorization/"
+  to = "/en/blog/"
   status = 301
 [[redirects]]
   from = "/en/tags/casting-portrait"
@@ -148,7 +148,7 @@ publish = "web/out"
   status = 301
 [[redirects]]
   from = "/categories/colorisation/*"
-  to = "/categories/colorization/"
+  to = "/blog/"
   status = 301
 [[redirects]]
   from = "/categories/portraits"
@@ -231,7 +231,7 @@ publish = "web/out"
   status = 301
 [[redirects]]
   from = "/tags/generation"
-  to = "/tags/generations/"
+  to = "/blog/"
   status = 301
 [[redirects]]
   from = "/tags/paruline-flamboyante"
@@ -253,5 +253,128 @@ publish = "web/out"
   status = 301
 [[redirects]]
   from = "/en/blog/page/6/"
+  to = "/en/blog/"
+  status = 301
+
+# ── Retired photo restoration service (deprecated 2026-07) ──
+# The service page, its 8 blog posts, and the now-empty restoration / colorization /
+# digitization / retouching taxonomies. All 301 to the closest live page. The dead
+# taxonomy targets that these replace were repointed in the sections above.
+
+# Service portfolio page
+[[redirects]]
+  from = "/restoration/*"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/en/restoration/*"
+  to = "/en/"
+  status = 301
+
+# Removed blog posts (FR)
+[[redirects]]
+  from = "/blog/2025/05/15/restoration/*"
+  to = "/blog/"
+  status = 301
+[[redirects]]
+  from = "/blog/2025/05/29/colorization/*"
+  to = "/blog/"
+  status = 301
+[[redirects]]
+  from = "/blog/2025/05/31/chevymaster/*"
+  to = "/blog/"
+  status = 301
+[[redirects]]
+  from = "/blog/2025/06/04/ladyfarmlandrestoration/*"
+  to = "/blog/"
+  status = 301
+[[redirects]]
+  from = "/blog/2025/06/12/early20thcenturyrestoration/*"
+  to = "/blog/"
+  status = 301
+[[redirects]]
+  from = "/blog/2025/06/19/alanturingrestored/*"
+  to = "/blog/"
+  status = 301
+[[redirects]]
+  from = "/blog/2025/07/13/texturedrestoration/*"
+  to = "/blog/"
+  status = 301
+[[redirects]]
+  from = "/blog/2025/10/27/womenfourgenerations/*"
+  to = "/blog/"
+  status = 301
+
+# Removed blog posts (EN)
+[[redirects]]
+  from = "/en/blog/2025/05/15/restoration/*"
+  to = "/en/blog/"
+  status = 301
+[[redirects]]
+  from = "/en/blog/2025/05/29/colorization/*"
+  to = "/en/blog/"
+  status = 301
+[[redirects]]
+  from = "/en/blog/2025/05/31/chevymaster/*"
+  to = "/en/blog/"
+  status = 301
+[[redirects]]
+  from = "/en/blog/2025/06/04/ladyfarmlandrestoration/*"
+  to = "/en/blog/"
+  status = 301
+[[redirects]]
+  from = "/en/blog/2025/06/12/early20thcenturyrestoration/*"
+  to = "/en/blog/"
+  status = 301
+[[redirects]]
+  from = "/en/blog/2025/06/19/alanturingrestored/*"
+  to = "/en/blog/"
+  status = 301
+[[redirects]]
+  from = "/en/blog/2025/07/13/texturedrestoration/*"
+  to = "/en/blog/"
+  status = 301
+[[redirects]]
+  from = "/en/blog/2025/10/27/womenfourgenerations/*"
+  to = "/en/blog/"
+  status = 301
+
+# Emptied taxonomy pages (FR)
+[[redirects]]
+  from = "/categories/restoration/*"
+  to = "/blog/"
+  status = 301
+[[redirects]]
+  from = "/categories/colorization/*"
+  to = "/blog/"
+  status = 301
+[[redirects]]
+  from = "/categories/digitization/*"
+  to = "/blog/"
+  status = 301
+[[redirects]]
+  from = "/categories/retouching/*"
+  to = "/blog/"
+  status = 301
+[[redirects]]
+  from = "/tags/generations/*"
+  to = "/blog/"
+  status = 301
+
+# Emptied taxonomy pages (EN)
+[[redirects]]
+  from = "/en/categories/restoration/*"
+  to = "/en/blog/"
+  status = 301
+[[redirects]]
+  from = "/en/categories/colorization/*"
+  to = "/en/blog/"
+  status = 301
+[[redirects]]
+  from = "/en/categories/digitization/*"
+  to = "/en/blog/"
+  status = 301
+[[redirects]]
+  from = "/en/categories/retouching/*"
   to = "/en/blog/"
   status = 301

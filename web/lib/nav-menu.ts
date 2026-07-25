@@ -75,12 +75,6 @@ export const MAIN_MENU: MenuItem[] = [
         weight: 2,
       },
       {
-        id: 'restoration',
-        label: { fr: 'Restauration de photos', en: 'Restoration' },
-        target: { kind: 'page', path: 'restoration' },
-        weight: 3,
-      },
-      {
         id: 'photos-wildlife',
         label: { fr: 'Animalière', en: 'Wildlife' },
         target: { kind: 'page', path: 'photos/wildlife' },
@@ -131,9 +125,9 @@ export function resolveHref(target: MenuTarget, locale: Locale): string {
  * Two clauses, and both are load-bearing:
  *
  * - A match on any *menu-tree* descendant. This is not the same as a URL-path descendant:
- *   "Restauration de photos" is a child of Portfolio in the menu but lives at
- *   `/restoration/`, nowhere near `/photos/`. A `startsWith` check against the parent's
- *   href alone would leave Portfolio unlit on that page.
+ *   "Vidéos" is a child of Portfolio in the menu but lives at `/videos/`, nowhere near
+ *   `/photos/`. A `startsWith` check against the parent's href alone would leave Portfolio
+ *   unlit on that page.
  * - A URL-prefix match on the item's own href, for `page` targets only. This is what keeps
  *   "Blog" lit while reading an individual post, since posts have no menu node. Restricting
  *   it to `page` targets is what stops "Bienvenue" — whose href is `/` and therefore a

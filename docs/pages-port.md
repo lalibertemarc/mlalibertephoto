@@ -2,6 +2,13 @@
 
 How the Next.js app serves the eight non-blog pages at Hugo's exact URLs. Board item #9.
 
+> **2026-07 update — restoration retired.** The photo restoration service was deprecated: the
+> `restoration` page, its 8 blog posts, and the now-empty restoration/colorization/digitization/
+> retouching taxonomies were removed, and their URLs 301 to `/` and `/blog/` (see `netlify.toml`).
+> Counts below (the "eight pages", the Restoration table row, its BeforeAfter/standalone-image
+> tallies, and the per-page `NavButton` totals) describe the port as shipped and are left as the
+> historical record — the live app now serves **seven** standalone pages.
+
 The Hugo-side styling reference is `docs/gallery-pages.md`; the components these pages render
 are in `docs/mdx-components.md`; the head-tag contract is `docs/seo-contract.md`.
 

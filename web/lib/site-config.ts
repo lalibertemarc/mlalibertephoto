@@ -55,7 +55,7 @@ const SITE_CONFIG: Record<Locale, LocaleSiteConfig> = {
     title: 'Marc Laliberte Photo et Vidéos',
     logoSrc: LOGO_SRC,
     aboutUs:
-      'Photographe et vidéographe de la ville de Québec spécialisé en portrait, événementiel et restauration de photos anciennes.',
+      'Photographe et vidéographe de la ville de Québec spécialisé en portrait et événementiel.',
     copyright:
       'Copyright (c) 2025 - 2026, Marc Laliberte Photo&Video; tous droits réservés.',
     address: { ...SHARED_ADDRESS, region: 'Ville de Québec et environs' },
@@ -64,7 +64,7 @@ const SITE_CONFIG: Record<Locale, LocaleSiteConfig> = {
     title: 'Marc Laliberte Photo and Videos',
     logoSrc: LOGO_SRC,
     aboutUs:
-      'Photographer and videographer from Quebec City specializing in portraits, events and restoration of old photos.',
+      'Photographer and videographer from Quebec City specializing in portraits and events.',
     copyright:
       'Copyright (c) 2025 - 2026, Marc Laliberte Photo&Video; all rights reserved.',
     // Fix, not a port. `address` is defined once at the top level of params.toml:40 and

@@ -1,8 +1,8 @@
 /**
  * A standalone (non-blog) page, shared by both locale trees.
  *
- * The eight pages under `content/pages/` — contact, photos and its three galleries,
- * restoration, smsPrices, videos. Their route files are locale-and-path literals over this,
+ * The seven pages under `content/pages/` — contact, photos and its three galleries,
+ * smsPrices, videos. Their route files are locale-and-path literals over this,
  * matching every other page in the app; see docs/routing-and-chrome.md on the shim pattern.
  *
  * There is no `generateStaticParams` here and no dynamic segment. Eight pages with fixed,
@@ -36,7 +36,6 @@ export type ContentPagePath =
   | 'photos/portraits'
   | 'photos/events'
   | 'photos/wildlife'
-  | 'restoration'
   | 'smsPrices'
   | 'videos'
 
