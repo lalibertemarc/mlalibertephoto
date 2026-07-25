@@ -3,7 +3,10 @@ command = "npm --prefix web ci && npm --prefix web run build"
 publish = "web/out"
 
 [build.environment]
-  NODE_VERSION = "22"
+  # Match the dev machine (Node 24 / npm 11). The committed package-lock.json is
+  # npm 11-shaped; Node 22 ships npm 10, which rejects it (`npm ci` EUSAGE on
+  # @swc/helpers). Pinning 24 keeps dev and CI on the same npm.
+  NODE_VERSION = "24"
 
 [[redirects]]
   from = "https://www.marclaliberte.photos/*"
