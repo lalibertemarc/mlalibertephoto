@@ -33,8 +33,11 @@ export function FeaturesSection({ locale }: { locale: Locale }) {
             card is inset by one gutter and the grid reads 30px narrower than the source. */}
         <div className="-mx-gutter flex flex-wrap">
           {features.map((feature) => (
-            <div key={feature.weight} className="w-full px-gutter md:w-1/3">
-              <article className={styles.card}>
+            // `flex` makes the column stretch the card to the row's height (align-items:
+            // stretch), so all three cards in a row match regardless of description length;
+            // `w-full` keeps the card filling the column width now that it's a flex item.
+            <div key={feature.weight} className="flex w-full px-gutter md:w-1/3">
+              <article className={`${styles.card} w-full`}>
                 <FeatureCardIcon icon={feature.icon} url={feature.url} />
                 <h3 className="mb-[0.7rem] text-card-title font-normal tracking-title text-white/90">
                   {feature.name[locale]}
