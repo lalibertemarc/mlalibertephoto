@@ -1,8 +1,8 @@
-import Link from 'next/link'
 import { resolveCounterpart } from '@/lib/locale-counterpart'
 import { LOCALE_INFO, otherLocale } from '@/lib/locale'
 import { localeHref, type Locale } from '@/lib/permalink'
 import { GlobeIcon } from './icons'
+import { SlashSafeLink } from './slash-safe-link'
 
 /**
  * Switch to the other language, staying on the current page where one exists.
@@ -33,16 +33,17 @@ export function LanguageSwitcher({
   const href = resolveCounterpart(pathname, target) ?? localeHref('/', target)
 
   return (
-    <Link
+    <SlashSafeLink
       href={href}
       lang={LOCALE_INFO[target].htmlLang}
       aria-label={`${label}: ${LOCALE_INFO[target].label}`}
       // A sibling `> li > a` in the same `ul.nav`, so it takes the bar's typography
-      // (style.marsala.css:317-339) like every other top-level entry.
+      // (style.marsala.css:317-339) like every other top-level entry. On a dotted-term page the
+      // counterpart href is itself a dotted taxonomy URL, so this must not go through raw `Link`.
       className="flex items-center gap-1.5 border-t-[5px] border-t-transparent px-gutter py-[21px] text-[14px] font-bold uppercase tracking-[0.08em] text-white/80 underline transition-colors duration-250 hover:border-t-accent hover:bg-white/8 hover:text-white"
     >
       <GlobeIcon />
       {LOCALE_INFO[target].label}
-    </Link>
+    </SlashSafeLink>
   )
 }
