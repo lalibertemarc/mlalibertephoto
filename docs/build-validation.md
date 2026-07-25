@@ -124,7 +124,8 @@ Scanning `content=` attributes for URL-ish strings would add false positives for
 
 `next.config.ts` sets `trailingSlash: true`, so every page is `<path>/index.html` and links end
 in a slash. A link to the unslashed form still works — Netlify redirects it — but costs a hop.
-So it resolves, and **warns**. Eighteen such links exist today; see below.
+So it resolves, and **warns**. Eighteen such links existed at first; all are fixed now (see
+below), so a clean build reports no redirect hops.
 
 ### What is excluded from "every page is in a sitemap"
 
@@ -163,7 +164,7 @@ counterpart for every path, so the language switcher advertised a URL the export
 `?? localeHref('/', target)` fallback handles the `null`. The `null` branch was documented as
 deliberately reachable and had, until now, nothing reaching it.
 
-**Eighteen redirect hops — four fixed, fourteen open.** Two unrelated causes:
+**Eighteen redirect hops — all fixed.** Two unrelated causes:
 
 - **`/contact` and `/restoration` authored without a trailing slash** in MDX, as
   `<NavButton url={"/contact"} />` — 52 calls across 13 posts. **Fixed** by
@@ -171,19 +172,40 @@ deliberately reachable and had, until now, nothing reaching it.
   from content: `NavButton` and `ImageModal`'s `buttonUrl`. Framework-derived links
   (`lib/permalink.ts`, the nav, the feeds) already carried the slash and do not go through it.
 - **Seven taxonomy terms containing a dot** (`fe-50mm-f1.8`, `magick.net`,
-  `sigma-24-70mm-f2.8-dg-dn-ii-art`, `e-70350mm-f4.56.3-g-oss`, …) render as
+  `sigma-24-70mm-f2.8-dg-dn-ii-art`, `e-70350mm-f4.56.3-g-oss`, …) rendered as
   `href="/tags/fe-50mm-f1.8"` while their sitemap `<loc>` and canonical both say
   `/tags/fe-50mm-f1.8/`. Next's `trailingSlash: true` skips any path whose last segment
-  contains a dot, treating it as a file. The page is served either way, but every internal link
-  disagrees with the canonical. ×2 locales = 14, and **open**.
+  contains a dot, treating it as a file, so `<Link>` strips the slash at render time. The page
+  is served either way, but every internal link disagreed with the canonical. ×2 locales = 14.
+  **Fixed** in item #17 (below).
 
-`internalHref()` declines to slash a dotted last segment for exactly the same reason Next
-does, so the two can never disagree about a given href. That is why it does not fix the second
-case: the rewrite happens inside the framework, not at the call site. Fixing it would mean
-either renaming the terms — which changes live URLs, the one thing the migration must not do —
-or post-processing the export.
+### The dotted-term fix (item #17)
 
-Nothing here 404s, so both are warnings.
+The slash is stripped by `<Link>` itself, not by the export writer — a plain `<a>` or a `<link
+rel="canonical">` string is emitted verbatim, which is why the canonical kept the slash the
+links lost. So the fix is to route the dotted links around `<Link>`:
+
+- `linkStripsTrailingSlash(href)` in `lib/links.ts` — true when the last path segment (after
+  stripping a trailing slash) contains a dot, i.e. exactly when `<Link>` would treat it as a
+  file. It is the deliberate complement of `internalHref`, which declines to *add* a slash to
+  the same shape so that content-authored links agree with what `<Link>` does; a taxonomy
+  permalink already *carries* the slash and must keep it, so it needs the opposite treatment.
+- `components/chrome/slash-safe-link.tsx` — `SlashSafeLink` renders a plain `<a>` when that
+  predicate holds and a `<Link>` otherwise, so only the handful of dotted terms lose client-side
+  prefetch and every other link is unchanged.
+
+Two components emit these links, and `check-links` buckets by target, so **both** had to move to
+`SlashSafeLink` or all 14 warnings would have survived: `components/blog/TermList.tsx` (the
+taxonomy hub → term links) and `components/chrome/language-switcher.tsx` (whose counterpart href
+on a dotted-term page is itself a dotted taxonomy URL). No blog post links a tag directly — the
+sidebar was dropped — and no dotted term currently paginates, so those are the only two sources.
+
+The rejected alternatives were renaming the terms (changes live indexed URLs — the one thing the
+migration must not do) and post-processing the export (a second URL authority that could drift
+from `permalink.ts`). Changing the canonical and sitemaps to the unslashed form was also out:
+they match the live Hugo URLs and must keep doing so.
+
+Nothing here ever 404'd, so every one of these was a warning, not a build failure.
 
 ## Not done here
 

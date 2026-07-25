@@ -1,3 +1,0 @@
-blog = "/blog/:year/:month/:day/:filename/"
-en = "/:slug/"
-fr = "/:sections/:filename/"

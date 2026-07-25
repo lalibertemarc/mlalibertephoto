@@ -5,7 +5,7 @@
  * See `lib/pages/taxonomy-list.tsx` for why the port populates them.
  */
 
-import Link from 'next/link'
+import { SlashSafeLink } from '@/components/chrome/slash-safe-link'
 import type { TermEntry } from '@/lib/content/site-index'
 import { titleCaseTerm, type Locale } from '@/lib/permalink'
 import styles from './term-list.module.css'
@@ -21,10 +21,10 @@ export function TermList({
     <ul className={styles.terms}>
       {terms.map((term) => (
         <li key={term.slug}>
-          <Link href={term.permalink[locale]} className={styles.term}>
+          <SlashSafeLink href={term.permalink[locale]} className={styles.term}>
             {titleCaseTerm(term.term)}
             <span className={styles.count}>{term.members.length}</span>
-          </Link>
+          </SlashSafeLink>
         </li>
       ))}
     </ul>
