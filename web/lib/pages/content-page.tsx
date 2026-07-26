@@ -1,12 +1,12 @@
 /**
  * A standalone (non-blog) page, shared by both locale trees.
  *
- * The seven pages under `content/pages/` — contact, photos and its three galleries,
+ * The eight pages under `content/pages/` — contact, photos and its four galleries,
  * smsPrices, videos. Their route files are locale-and-path literals over this,
  * matching every other page in the app; see docs/routing-and-chrome.md on the shim pattern.
  *
- * There is no `generateStaticParams` here and no dynamic segment. Eight pages with fixed,
- * indexed URLs are eight files, and a literal route cannot disagree with `meta.json` about
+ * There is no `generateStaticParams` here and no dynamic segment. Nine pages with fixed,
+ * indexed URLs are nine files, and a literal route cannot disagree with `meta.json` about
  * where a page lives — whereas a catch-all would have to be trusted not to swallow `/blog/`,
  * `/tags/` and the other static segments it shares a level with.
  */
@@ -35,6 +35,7 @@ export type ContentPagePath =
   | 'photos'
   | 'photos/portraits'
   | 'photos/events'
+  | 'photos/behind-the-scenes'
   | 'photos/wildlife'
   | 'smsPrices'
   | 'videos'
@@ -77,8 +78,8 @@ export async function ContentPage({
 
   return (
     <>
-      {/* `og:updated_time` is `with .Lastmod`, and `.Lastmod` falls back to `.Date`. Seven of
-          the eight pages carry no date at all, so `with` is falsy and Hugo emits no tag —
+      {/* `og:updated_time` is `with .Lastmod`, and `.Lastmod` falls back to `.Date`. Eight of
+          the nine pages carry no date at all, so `with` is falsy and Hugo emits no tag —
           `updatedAt` being undefined reproduces that. `/photos/` is the exception. */}
       <ExtraMeta updatedAt={page.date} />
 

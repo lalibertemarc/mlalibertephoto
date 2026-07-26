@@ -42,6 +42,27 @@
     "href": "photos/portraits"
   },
   {
+    "weight": 3,
+    "title": {
+      "fr": "Plateau de tournage",
+      "en": "Behind the Scenes"
+    },
+    "contactText": {
+      "fr": "Contactez-moi pour un devis gratuit",
+      "en": "Contact me for a free quote"
+    },
+    "description": {
+      "fr": "<ul class=\"list-style-none\">\n  <li>Vidéoclips</li>\n  <li>Courts métrages</li>\n  <li>Making-of</li>\n  <li>Photos de plateau</li>\n</ul>\n",
+      "en": "<ul class=\"list-style-none\">\n  <li>Music videos</li>\n  <li>Short films</li>\n  <li>Making-of</li>\n  <li>On-set stills</li>\n</ul>\n"
+    },
+    "image": "https://res.cloudinary.com/dbjekf3b7/image/upload/v1785081315/blog/qtcoluhnh2syhuaetwhe.jpg",
+    "alt": {
+      "fr": "Le vidéaste cadre le batteur derrière sa batterie avec une caméra sur stabilisateur",
+      "en": "The videographer frames the drummer behind his kit with a camera on a gimbal"
+    },
+    "href": "photos/behind-the-scenes"
+  },
+  {
     "weight": 4,
     "title": {
       "fr": "Vidéos",

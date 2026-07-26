@@ -9,6 +9,17 @@ How the Next.js app serves the eight non-blog pages at Hugo's exact URLs. Board 
 > tallies, and the per-page `NavButton` totals) describe the port as shipped and are left as the
 > historical record — the live app now serves **seven** standalone pages.
 
+> **2026-07 update — behind-the-scenes gallery added.** A fourth portfolio gallery,
+> `photos/behind-the-scenes` (`/photos/behind-the-scenes/`, `/en/photos/behind-the-scenes/`),
+> was added for the on-set photography service: `dark-gallery`, 1 gallery, 6 images, all six
+> pulled from the 2026-07-26 Forgotten Tales post and already carried by
+> `lib/image-dimensions.json`. It is the first page on this surface with no Hugo ancestor — no
+> `content/fr` source, no `languages.toml` menu entry (see the note in `lib/nav-menu.ts`), and
+> nothing in the Hugo tree to diff its head tags against. The live app now serves **eight**
+> standalone pages over 18 route shims. It also takes the homepage carousel to four slides,
+> which is what `lib/content/homepage-data.ts` and `components/home/carousel/carousel-slide.tsx`
+> have always described.
+
 The Hugo-side styling reference is `docs/gallery-pages.md`; the components these pages render
 are in `docs/mdx-components.md`; the head-tag contract is `docs/seo-contract.md`.
 

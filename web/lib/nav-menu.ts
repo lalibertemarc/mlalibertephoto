@@ -48,7 +48,11 @@ export interface ResolvedMenuItem extends ResolvedSubMenuItem {
   children?: ResolvedSubMenuItem[]
 }
 
-/** Labels and weights are verbatim from config/_default/languages.toml. */
+/**
+ * Labels and weights are verbatim from config/_default/languages.toml, except
+ * `photos-behind-the-scenes` — that gallery post-dates the frozen Hugo tree and has no entry
+ * there.
+ */
 export const MAIN_MENU: MenuItem[] = [
   {
     id: 'home',
@@ -73,6 +77,12 @@ export const MAIN_MENU: MenuItem[] = [
         label: { fr: 'Évènements', en: 'Events' },
         target: { kind: 'page', path: 'photos/events' },
         weight: 2,
+      },
+      {
+        id: 'photos-behind-the-scenes',
+        label: { fr: 'Plateau de tournage', en: 'Behind the Scenes' },
+        target: { kind: 'page', path: 'photos/behind-the-scenes' },
+        weight: 3,
       },
       {
         id: 'photos-wildlife',
