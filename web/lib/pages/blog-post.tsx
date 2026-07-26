@@ -10,11 +10,13 @@ import { notFound } from 'next/navigation'
 import { PageHeading, isDarkPageHeading } from '@/components/chrome/page-heading'
 import { PostBody } from '@/components/blog/PostBody'
 import { PostByline } from '@/components/blog/PostByline'
+import { PostNav } from '@/components/blog/PostNav'
 import { PostTerms } from '@/components/blog/PostTerms'
 import { ImageModalJsonLd } from '@/components/mdx'
 import { BlogPostingJsonLd } from '@/components/seo/BlogPostingJsonLd'
 import { ExtraMeta } from '@/components/seo/ExtraMeta'
 import { getBlogPost } from '@/lib/content/blog-post'
+import { getPostNeighbours } from '@/lib/content/blog-posts'
 import { loadAllPostMeta } from '@/lib/content/post-meta'
 import type { Locale, UrlDate } from '@/lib/permalink'
 import { buildMetadata, canonicalUrl } from '@/lib/seo/metadata'
@@ -84,6 +86,10 @@ export async function BlogPostPage({
   const post = await getBlogPost(toUrlDate(params), params.slug, locale)
   if (!post) notFound()
 
+  // Free: `listBlogPosts` underneath is cache()d on locale and the footer already called it
+  // while rendering this same page.
+  const neighbours = await getPostNeighbours(locale, post.slug)
+
   const url = canonicalUrl({ locale, permalinks: post.permalink })
 
   return (
@@ -111,6 +117,7 @@ export async function BlogPostPage({
           tags={post.tagLinks}
           locale={locale}
         />
+        <PostNav newer={neighbours.newer} older={neighbours.older} locale={locale} />
       </main>
     </>
   )

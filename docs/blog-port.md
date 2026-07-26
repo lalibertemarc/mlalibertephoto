@@ -210,6 +210,45 @@ does **not** read the term index: a post shows which terms it carries, not how m
 them, so it needs no membership grouping. That is what keeps it callable from `blog-posts.ts`,
 which runs on essentially every route via the footer's recent-posts block.
 
+## Prev/next post navigation
+
+Also added after the port, below the terms row. `single.html` has no such block, so unlike
+almost everything else on this surface there is no original to reproduce — both of the
+decisions below are choices, not ports.
+
+- **Each link shows the neighbour's title.** `Pager` gets away with a bare "Ancien →" because
+  its destination is more of the list you are already looking at. Here the destination is one
+  specific post, and the title is the only thing that tells a reader whether to follow.
+- **A missing neighbour is omitted, not disabled.** `Pager` renders an inert `<span>` at the
+  ends because Hugo's pager emits both controls unconditionally. No such contract applies here.
+
+`getPostNeighbours` in `lib/content/blog-posts.ts` is an index lookup, not a read: the
+underlying `readAllPosts` is `cache()`d on locale and the footer has already called it while
+rendering the same page, so the list is in memory by the time the post page asks.
+
+**It reuses that list's order rather than recomputing it**, and that is the load-bearing part.
+The sort runs on `Date.parse(meta.date)` — the parsed instant — because frontmatter dates carry
+`-04:00`/`-05:00` offsets and a lexical sort on the raw string misorders posts either side of a
+DST change. Re-deriving the order at the call site is exactly how the two would drift.
+Newest-first, so the *newer* neighbour is the preceding index.
+
+The layout is a two-column grid rather than `justify-content: space-between`, precisely because
+one side is omitted at the ends: with flex the survivor slides to the middle, while fixed tracks
+keep the oldest post's "Récent" on the left and the newest post's "Ancien" on the right.
+
+`Blog.postNavigation` was added to both message files for the `<nav>` landmark's accessible
+name — the one new i18n key on this surface. `Blog.newer` / `Blog.older` were already there.
+
+Anchors carry `rel="prev"` / `rel="next"`, matching what `Pager` already emits. These are
+anchor attributes, not `<link>` head tags; no head tag changed.
+
+Verified across all 140 post pages (70 posts × 2 locales): neighbours match publication order,
+and no FR post links to an EN one or vice versa.
+
+> The corpus is **70 posts** as of this change, not the 77 in the table at the top of this
+> document — posts have been removed since the port was written. The counts in that table
+> (and the 430-page total) describe the port at the time and have not been re-audited.
+
 ## The `page/1` alias stubs
 
 Hugo emits a real file for every list's first page — `/blog/page/1/` and one per term, 266

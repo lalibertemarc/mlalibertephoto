@@ -1,0 +1,84 @@
+/*
+ * Chronological navigation at the foot of a post.
+ *
+ * No Hugo source — `single.html` has no prev/next at all. Vocabulary is borrowed from
+ * `pager.module.css` (the list-page prev/next) rather than invented: the same uppercase
+ * `--text-meta` / `--tracking-meta` direction label, the same muted-until-hovered treatment,
+ * the same 0.25s colour transition.
+ *
+ * Not borrowed: the pill. A pill sized for the word "Ancien" is the wrong container for a
+ * post title that can run to two lines, so the direction becomes a small kicker above the
+ * title and the whole block is the link.
+ */
+
+.nav {
+  /* A two-column grid rather than `justify-content: space-between`, because one side is
+     omitted at the ends of the archive. With flex, the survivor would slide to the middle;
+     with fixed tracks, the oldest post's "Récent" link stays on the left and the newest
+     post's "Ancien" link stays on the right, where a reader expects to find them. */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgb(255 255 255 / 0.08);
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  text-decoration: none;
+  color: rgb(255 255 255 / 0.75);
+  transition: color 0.25s ease;
+}
+
+/* Second track, and right-aligned — the "older" direction. Placed explicitly so it holds the
+   right-hand column even when it is the only child. */
+.older {
+  grid-column: 2;
+  text-align: right;
+}
+
+.direction {
+  font-size: var(--text-meta);
+  letter-spacing: var(--tracking-meta);
+  text-transform: uppercase;
+  color: rgb(255 255 255 / 0.45);
+  transition: color 0.25s ease;
+}
+
+.title {
+  font-size: var(--text-post-body);
+  font-weight: 300;
+  line-height: 1.35;
+}
+
+.link:hover,
+.link:focus-visible {
+  color: var(--color-accent);
+}
+
+.link:hover .direction,
+.link:focus-visible .direction {
+  color: var(--color-accent);
+}
+
+.link:focus-visible {
+  outline: 2px solid var(--color-accent-soft);
+  outline-offset: 4px;
+}
+
+/* Stacked on phones, where two columns would leave each title in a ~40-character gutter.
+   The older link loses its right alignment with the column it was balancing against. */
+@media (max-width: 767px) {
+  .nav {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .older {
+    grid-column: 1;
+    text-align: left;
+  }
+}

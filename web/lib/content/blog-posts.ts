@@ -121,6 +121,42 @@ const readAllPosts = cache(async (locale: Locale): Promise<BlogPostSummary[]> =>
     }))
 })
 
+/** A post's chronological neighbours. Either side is absent at the ends of the archive. */
+export interface PostNeighbours {
+  /** The post published after this one. Absent on the newest post. */
+  newer: BlogPostSummary | undefined
+  /** The post published before this one. Absent on the oldest post. */
+  older: BlogPostSummary | undefined
+}
+
+/**
+ * The posts either side of `slug` in publication order.
+ *
+ * An index lookup, not a read. `readAllPosts` is `cache()`d on `locale` and the footer's
+ * recent-posts block already calls it on every route, so by the time a post page asks for its
+ * neighbours the list is in memory and this costs a `findIndex`.
+ *
+ * The order is `readAllPosts`' own, deliberately not recomputed here. That sort runs on
+ * `Date.parse(meta.date)` — the parsed instant — because frontmatter dates carry -04:00/-05:00
+ * offsets and a lexical sort on the raw string misorders posts either side of a DST change.
+ * Re-deriving the order at the call site is exactly how the two would drift.
+ *
+ * Newest-first, so the *newer* neighbour is the preceding index.
+ */
+export async function getPostNeighbours(
+  locale: Locale,
+  slug: string,
+): Promise<PostNeighbours> {
+  const all = await readAllPosts(locale)
+  const index = all.findIndex((post) => post.slug === slug)
+
+  // Only reachable if a post page renders a slug no meta.json carries, which the route's own
+  // `generateStaticParams` rules out. Degrade to no navigation rather than throwing.
+  if (index === -1) return { newer: undefined, older: undefined }
+
+  return { newer: all[index - 1], older: all[index + 1] }
+}
+
 /** All posts, newest first. `limit` trims the result; omit it for the whole list. */
 export async function listBlogPosts(locale: Locale, limit?: number): Promise<BlogPostSummary[]> {
   const all = await readAllPosts(locale)

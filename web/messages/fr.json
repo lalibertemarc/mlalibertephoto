@@ -39,7 +39,8 @@
     "authorBy": "Par",
     "publishedOn": "le",
     "newer": "Récent",
-    "older": "Ancien"
+    "older": "Ancien",
+    "postNavigation": "Navigation entre les billets"
   },
   "Contact": {
     "addressTitle": "Adresse",

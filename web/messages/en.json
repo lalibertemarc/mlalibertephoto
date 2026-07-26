@@ -39,7 +39,8 @@
     "authorBy": "By",
     "publishedOn": "on",
     "newer": "Newer",
-    "older": "Older"
+    "older": "Older",
+    "postNavigation": "Post navigation"
   },
   "Contact": {
     "addressTitle": "Address",
