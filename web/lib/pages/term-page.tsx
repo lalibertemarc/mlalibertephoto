@@ -139,7 +139,7 @@ export async function TermPage({
           "Wildlife". See titleCaseTerm. */}
       <PageHeading title={titleCaseTerm(term.term)} dark={isDarkPageHeading('blog')} />
       <main className="container py-12">
-        <PostList posts={slice.items} />
+        <PostList posts={slice.items} locale={locale} />
         <Pager links={pagerLinks(base, slice.page, slice.totalPages)} locale={locale} />
       </main>
     </>

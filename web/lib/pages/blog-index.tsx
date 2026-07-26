@@ -75,7 +75,7 @@ export async function BlogIndexPage({
       <ExtraMeta updatedAt={updatedAt} />
       <PageHeading title={BLOG_TITLE} dark={isDarkPageHeading('blog')} />
       <main className="container py-12">
-        <PostList posts={slice.items} />
+        <PostList posts={slice.items} locale={locale} />
         <Pager links={pagerLinks(BASE[locale], slice.page, slice.totalPages)} locale={locale} />
       </main>
     </>

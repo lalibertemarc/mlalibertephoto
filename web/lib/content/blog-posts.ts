@@ -1,8 +1,8 @@
 /**
  * Blog posts as a list, newest first.
  *
- * Deliberately narrow: this reads the three fields the chrome and the index need — title,
- * href, banner. Summaries, tags, pagination and the post body are item #7's content layer.
+ * Deliberately narrow: this reads what the chrome and the index need — title, href, banner,
+ * date, and the post's categories. Summaries, full tag lists and the post body stay out.
  *
  * Runs at build time only. `output: 'export'` has no runtime server, so these `fs` reads
  * happen during `next build` and their results are baked into the exported HTML.
@@ -17,6 +17,7 @@ import type { Locale } from '@/lib/permalink'
 import { BlogMetaSchema, MdxFrontmatterSchema } from '@/lib/schema'
 import { splitMdxFrontmatter } from './mdx'
 import { displayPath, parseContentFile } from './parse'
+import { termLinks, type TermLink } from './post-terms'
 
 const BLOG_DIR = path.join(process.cwd(), 'content', 'blog')
 
@@ -35,6 +36,16 @@ export interface BlogPostSummary {
    * date and its link can never disagree about which day the post is.
    */
   date: string
+  /**
+   * The post's categories, resolved to links. Tags are deliberately absent: a card carries one
+   * line of metadata, and 3–6 tag pills per row across ten rows reads as noise. The full set is
+   * on the post page.
+   *
+   * Resolved here rather than in `PostList` because this module already knows the locale and
+   * already builds `href` from it; threading a locale prop through the component instead would
+   * give the card two independent notions of which language it is in.
+   */
+  categoryLinks: TermLink[]
   /**
    * Hugo's `.Summary`. Ported as a field but never populated: `hide_summary` is `true` in
    * both `fr.params.recent_posts` and `en.params.recent_posts`, so nothing has rendered it
@@ -87,6 +98,7 @@ const readAllPosts = cache(async (locale: Locale): Promise<BlogPostSummary[]> =>
           title: await readTitle(dir, locale),
           imageSrc: meta.banner?.src ?? PLACEHOLDER_IMAGE,
           date: formatPostDate(meta.date, locale),
+          categoryLinks: termLinks('categories', meta.categories, locale),
           // Ordering only. Parsing to an instant is right here and would be a bug in
           // lib/permalink.ts: frontmatter dates carry -04:00 / -05:00 offsets, so a lexical
           // sort misorders posts either side of a DST change, while a Date round-trip can
@@ -99,7 +111,14 @@ const readAllPosts = cache(async (locale: Locale): Promise<BlogPostSummary[]> =>
 
   return posts
     .sort((a, b) => b.sortKey - a.sortKey)
-    .map(({ slug, href, title, imageSrc, date }) => ({ slug, href, title, imageSrc, date }))
+    .map(({ slug, href, title, imageSrc, date, categoryLinks }) => ({
+      slug,
+      href,
+      title,
+      imageSrc,
+      date,
+      categoryLinks,
+    }))
 })
 
 /** All posts, newest first. `limit` trims the result; omit it for the whole list. */

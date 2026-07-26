@@ -10,6 +10,7 @@ import { notFound } from 'next/navigation'
 import { PageHeading, isDarkPageHeading } from '@/components/chrome/page-heading'
 import { PostBody } from '@/components/blog/PostBody'
 import { PostByline } from '@/components/blog/PostByline'
+import { PostTerms } from '@/components/blog/PostTerms'
 import { ImageModalJsonLd } from '@/components/mdx'
 import { BlogPostingJsonLd } from '@/components/seo/BlogPostingJsonLd'
 import { ExtraMeta } from '@/components/seo/ExtraMeta'
@@ -105,6 +106,11 @@ export async function BlogPostPage({
       <main className="container py-12">
         <PostByline authors={post.authors} displayDate={post.displayDate} locale={locale} />
         <PostBody>{post.body}</PostBody>
+        <PostTerms
+          categories={post.categoryLinks}
+          tags={post.tagLinks}
+          locale={locale}
+        />
       </main>
     </>
   )

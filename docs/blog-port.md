@@ -166,6 +166,50 @@ Pagination is prev/next only — `← Récent` / `Ancien →`, `← Newer` / `Ol
 numbers and no ellipsis. Hugo emits the pager even when both directions are disabled, so a
 single-page term page still shows two inert controls. Reproduced.
 
+One thing the list rows now show that `list.html` does not: **each row carries its post's
+categories as pills.** See the section below.
+
+## Terms on posts and cards
+
+Added after the port. Nothing on the site linked to a term page from a post: the sidebar that
+carried the tags/categories widgets was dropped (above), and the taxonomy hubs were the only
+remaining path to 258 term pages. Tags were authored, validated, and fed to `article:tag` —
+and were invisible to a reader.
+
+| Surface | Shows | Component |
+|---|---|---|
+| Post page, under the body | categories **and** tags | `components/blog/PostTerms.tsx` |
+| Post-list row (blog index + every term page) | categories only | same, `variant="card"` |
+
+Categories render as a soft accent fill, tags as an outlined hairline — the distinction is
+carried by the skin, not by a visible "Categories:"/"Tags:" label. Each group is its own `<ul>`
+so it can take an `aria-label`, which is what gives a screen reader the name a sighted reader
+gets from the styling. Those labels reuse `Widgets.categoriesTitle` / `Widgets.tagsTitle`, the
+orphaned sidebar strings already sitting in both message files — no new i18n keys.
+
+Tags are deliberately absent from cards: 3–6 pills per row across ten rows out-weighs the
+titles they sit under.
+
+Four things this had to get right, all of them pre-existing traps:
+
+- **`SlashSafeLink`, never `Link`.** Seven term slugs end in a dotted segment
+  (`/tags/fe-50mm-f1.8/`); `<Link>` reads a trailing dot-segment as a file and strips the
+  trailing slash, which then disagrees with the term page's own canonical and both sitemaps.
+- **Labels go through `titleCaseTerm`,** so a pill reading "Île D'Orléans" opens a page headed
+  "Île D'Orléans". The raw frontmatter spelling would disagree on 99 of 129 terms.
+- **Raw `tags`/`categories` stay on `BlogPost` alongside the resolved links.** The head and the
+  body want different forms of the same value: `article:tag` carries the raw `Île d'Orléans`,
+  the pill displays the title-cased one. Dropping the raw arrays would silently rewrite the
+  OG block.
+- **Dedupe by slug, not by string,** and skip terms that slugify to nothing — both mirroring
+  `deriveTerms`, so a pill can never point at a page that was not generated. `Quebec` and
+  `quebec` are one page and must not render two identical links.
+
+`lib/content/post-terms.ts` holds the mapping. It is pure and synchronous, and deliberately
+does **not** read the term index: a post shows which terms it carries, not how many posts share
+them, so it needs no membership grouping. That is what keeps it callable from `blog-posts.ts`,
+which runs on essentially every route via the footer's recent-posts block.
+
 ## The `page/1` alias stubs
 
 Hugo emits a real file for every list's first page — `/blog/page/1/` and one per term, 266
@@ -263,7 +307,8 @@ Recorded here and in `docs/seo-contract.md`.
 | Deviation | Rationale |
 |---|---|
 | Index and term pages render dark, no sidebar | The app's ambient surface is already `#1a1212`; a light column would disagree with every post it links to. The two sidebar widgets are navigation the nav menu and the hubs now cover. |
-| Taxonomy hubs are populated | They render **blank** in Hugo — the paginator filters `.Data.Pages` by `Type in mainSections`, which matches nothing on a Kind=taxonomy page. They are indexed anyway. With the sidebar gone they are the only site-wide link path to 129 term pages, on a site already showing 322 URLs as "crawled — currently not indexed". |
+| Taxonomy hubs are populated | They render **blank** in Hugo — the paginator filters `.Data.Pages` by `Type in mainSections`, which matches nothing on a Kind=taxonomy page. They are indexed anyway. With the sidebar gone they were the only site-wide link path to 129 term pages, on a site already showing 322 URLs as "crawled — currently not indexed". Posts and cards now link terms directly too — see "Terms on posts and cards". |
+| Posts and list rows link their terms | Not in `single.html` or `list.html`; the sidebar they replace was. Restores the reader-facing path from a post to related work, and gives the 258 term pages inbound links from indexed content rather than from the hubs alone. |
 | Self-referencing canonical on paginated pages | Hugo collapses `/blog/page/2/` onto `/blog/`, asserting that two pages listing different posts are duplicates. Rollback is one line in each of two functions if GSC coverage worsens. |
 | OG block emitted for the 4 bannerless posts | Hugo's `$is_valid_image` gate fails on their broken local banner and drops the block entirely, so those pages currently share with no preview at all. The migration already dropped the broken banner, so the port falls back to the default sharing image. |
 | `pre`/`code` styled for dark | No source to port; the current rendering is a defect. |

@@ -37,6 +37,7 @@ import {
 import { splitMdxFrontmatter } from './mdx'
 import { compileMdxBody } from './mdx-runtime'
 import { parseContentFile } from './parse'
+import { termLinks, type TermLink } from './post-terms'
 
 const BLOG_DIR = path.join(process.cwd(), 'content', 'blog')
 
@@ -53,8 +54,14 @@ export interface BlogPost {
   date: string
   /** Display-ready and localised, e.g. "29 octobre, 2025". */
   displayDate: string
+  /** Raw, as written in frontmatter. The SEO layer's `article:tag` wants these, not labels. */
   tags: string[]
+  /** Raw, as written in frontmatter — `article:section`. */
   categories: string[]
+  /** The same two arrays resolved for display. Kept alongside rather than replacing the raw
+   *  strings, because the head and the body want different forms of the same value. */
+  tagLinks: TermLink[]
+  categoryLinks: TermLink[]
   authors: BylineAuthor[]
   banner?: Banner
   /** This locale only. `meta.json` holds everything the two languages share. */
@@ -115,6 +122,8 @@ const loadPost = cache(async (folder: string, locale: Locale): Promise<BlogPost 
     displayDate: formatPostDate(meta.date, locale),
     tags: meta.tags,
     categories: meta.categories,
+    tagLinks: termLinks('tags', meta.tags, locale),
+    categoryLinks: termLinks('categories', meta.categories, locale),
     authors: meta.authors.map((name) => ({
       name,
       // Hugo writes this href without a trailing slash (`/authors/marc-lalibert%C3%A9`) while

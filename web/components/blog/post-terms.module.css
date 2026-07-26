@@ -1,0 +1,103 @@
+/*
+ * A post's own tags and categories, as pills.
+ *
+ * No Hugo source. The theme carried these in a sidebar (`col-md-3`) that the port dropped, so
+ * nothing on the site linked to a term page from a post — see docs/blog-port.md.
+ *
+ * Styled from `term-list.module.css`, the chip idiom already established on the taxonomy hubs:
+ * same padding, same radius, same hairline, same 0.25s colour transition, accent on hover. The
+ * one addition is a second skin, since a post carries both taxonomies at once and a reader has
+ * to be able to tell them apart without a label:
+ *
+ *   - a category is filled with a soft accent tint
+ *   - a tag is an outlined hairline
+ *
+ * A tint rather than solid gold. Solid reads fine once, under a post body, but the same pills
+ * repeat on every card of a ten-row list, where solid gold overwhelms the titles it sits under.
+ */
+
+.groups {
+  display: flex;
+  flex-wrap: wrap;
+  /* Row gap holds wrapped lines apart; the larger column gap is what separates the categories
+     group from the tags group when both sit on one line. */
+  gap: 0.75rem 1.5rem;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  /* Matches `.body hr` in post.module.css — the body's own rule for a horizontal division. */
+  border-top: 1px solid rgb(255 255 255 / 0.08);
+}
+
+/* On a card the pills are one more line of metadata under the date, not a footer. No rule, no
+   top border — the card already has its own boundaries. */
+.cardGroups {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.cardGroups .list {
+  gap: 0.5rem;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: baseline;
+  padding: 0.5rem 1rem;
+  /* Transparent rather than absent, so the filled skin can take a border colour on hover
+     without the pill changing size. */
+  border: 1px solid transparent;
+  border-radius: var(--radius-embed);
+  text-decoration: none;
+  font-size: var(--text-post-body);
+  font-weight: 300;
+  transition:
+    color 0.25s ease,
+    border-color 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.pill:focus-visible {
+  outline: 2px solid var(--color-accent-soft);
+  outline-offset: 2px;
+}
+
+.tag {
+  border-color: rgb(255 255 255 / 0.12);
+  color: rgb(255 255 255 / 0.75);
+}
+
+.tag:hover,
+.tag:focus {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.category {
+  background: rgb(201 168 76 / 0.14);
+  color: var(--color-accent);
+}
+
+.category:hover,
+.category:focus {
+  background: rgb(201 168 76 / 0.22);
+  border-color: var(--color-accent);
+}
+
+/* The card skin. Sized off --text-meta so a pill sits level with the date line above it
+   (post-list.module.css `.meta`) rather than out-typing it. */
+.compact {
+  padding: 0.25rem 0.7rem;
+  font-size: var(--text-meta);
+  letter-spacing: var(--tracking-meta);
+}

@@ -12,15 +12,27 @@
  *   - **No sidebar.** See docs/blog-port.md for why the two widgets it held
  *     are not ported and what replaces the link path they provided.
  *
+ * One addition that is not a port: each row carries its post's categories as pills, which the
+ * source template does not. It is the card-side half of the same link path the dropped sidebar
+ * used to provide — see components/blog/PostTerms.tsx.
+ *
  * Dark rather than the source's light Bootstrap column, matching the post pages a reader
  * lands on from here. A recorded deviation, not an oversight.
  */
 
 import Link from 'next/link'
 import type { BlogPostSummary } from '@/lib/content/blog-posts'
+import type { Locale } from '@/lib/permalink'
+import { PostTerms } from './PostTerms'
 import styles from './post-list.module.css'
 
-export function PostList({ posts }: { posts: readonly BlogPostSummary[] }) {
+export function PostList({
+  posts,
+  locale,
+}: {
+  posts: readonly BlogPostSummary[]
+  locale: Locale
+}) {
   return (
     <ul className={styles.list}>
       {posts.map((post) => (
@@ -42,6 +54,8 @@ export function PostList({ posts }: { posts: readonly BlogPostSummary[] }) {
               <Link href={post.href}>{post.title}</Link>
             </h2>
             <p className={styles.meta}>{post.date}</p>
+            {/* Categories only — see the note on `categoryLinks` in lib/content/blog-posts.ts. */}
+            <PostTerms categories={post.categoryLinks} locale={locale} variant="card" />
           </div>
         </li>
       ))}
