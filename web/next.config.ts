@@ -19,11 +19,13 @@ const nextConfig: NextConfig = {
     loader: 'custom',
     loaderFile: './lib/cloudinary-loader.ts',
 
-    // Trimmed from the Next defaults, which top out at 3840px. The widest any image can
-    // render on this site is the Bootstrap lg container (1170px) plus the full-bleed
-    // gallery breakout, so 1920 covers 2x on the largest realistic cell. Keeping 3840 in
-    // the list would put a 4K variant in every srcset that no layout can ever select.
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920],
+    // This was once trimmed to 1920 on the premise that the widest any image renders is the
+    // Bootstrap lg container (1170px) plus the full-bleed gallery breakout. A gallery cell
+    // breaks that premise: it crops by covering, so a wide image is painted several times
+    // wider than its cell (see coverFactor in ImageModal.tsx) and can ask for well past 1920
+    // once the viewport is large. `sizes` still governs selection, so a 33vw cell holding a
+    // 4/5 image never reaches for these; they cost two srcset entries.
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2560, 3840],
 
     // Gallery cells, not viewport-width images: a 3-column grid inside a 1170px container
     // makes each cell ~380px, so these are the widths `sizes` resolves to on gallery pages.

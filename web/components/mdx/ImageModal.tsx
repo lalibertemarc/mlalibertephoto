@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl'
 import { internalHref, linkTargetProps } from '@/lib/links'
+import { getDimensions } from '@/lib/image-dimensions'
 import { ContentImage } from './ContentImage'
 import { useInGallery } from './gallery-context'
 import { useIsModalHost } from './image-modal/use-modal-host'
@@ -44,10 +45,50 @@ export interface ImageModalProps {
  * A gallery cell is one column of a 3/2/1-column grid, so it never needs a
  * viewport-width variant on desktop. Breakpoints match the grid's in gallery.module.css.
  */
-const GALLERY_SIZES = '(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw'
+const GALLERY_WIDTHS = ['(max-width: 767px) 100vw', '(max-width: 991px) 50vw', '33vw']
 
 /** A `variant="wide"` cell spans every column. */
-const WIDE_SIZES = '100vw'
+const WIDE_WIDTHS = ['100vw']
+
+/** Cell aspect ratios, from `--aspect-portrait` / `--aspect-wide` in globals.css. */
+const CELL_ASPECT = 4 / 5
+const WIDE_CELL_ASPECT = 16 / 9
+
+/**
+ * How much wider than its cell `object-fit: cover` paints an image.
+ *
+ * A gallery cell is a fixed 4/5 (or 16/9 when wide) box and the image fills it by covering,
+ * so anything wider than the cell is scaled up until its *height* fits and then cropped left
+ * and right. The painted width is therefore the cell width times the ratio mismatch, not the
+ * cell width — a 2.7:1 panorama in a 4/5 cell paints 3.4× wider than the box it sits in.
+ *
+ * `sizes` describes the box, so without this correction the browser picks a candidate three
+ * stops too small and the crop is a visible upscale: measured at 2.0× on the widest images in
+ * the corpus. The wider the image, the blurrier the thumbnail — the reported symptom exactly.
+ *
+ * Returns 1 for an image the manifest does not know, and for anything the cell crops
+ * vertically instead (a portrait in a portrait cell), where the cell width is already right.
+ */
+function coverFactor(src: string, cellAspect: number): number {
+  const dimensions = getDimensions(src)
+  if (!dimensions) return 1
+  return Math.max(1, dimensions.w / dimensions.h / cellAspect)
+}
+
+/** Applies the cover correction to each entry of a `sizes` list. */
+function scaleSizes(widths: string[], factor: number): string {
+  if (factor <= 1) return widths.join(', ')
+  const scale = factor.toFixed(2)
+  return widths
+    .map((entry) => {
+      const at = entry.lastIndexOf(' ')
+      // Entries are either "<media> <length>" or a bare "<length>".
+      return at === -1
+        ? `calc(${entry} * ${scale})`
+        : `${entry.slice(0, at)} calc(${entry.slice(at + 1)} * ${scale})`
+    })
+    .join(', ')
+}
 
 /** Widest a standalone image can render when its CSS width is a percentage or absent. */
 const FALLBACK_STANDALONE_WIDTH = '700px'
@@ -105,9 +146,16 @@ export function ImageModal({
     modalStore.open(images, Math.max(triggers.indexOf(clicked), 0))
   }
 
-  const figureClass = [styles.figure, inGallery && variant === 'wide' ? styles.wide : null]
+  const isWideCell = variant === 'wide'
+
+  const figureClass = [styles.figure, inGallery && isWideCell ? styles.wide : null]
     .filter(Boolean)
     .join(' ')
+
+  const gallerySizes = scaleSizes(
+    isWideCell ? WIDE_WIDTHS : GALLERY_WIDTHS,
+    coverFactor(src, isWideCell ? WIDE_CELL_ASPECT : CELL_ASPECT),
+  )
 
   /**
    * Mirrors the source's conditional exactly (image-modal.html:13-15): a declared width sets
@@ -136,7 +184,7 @@ export function ImageModal({
         className={styles.image}
         src={src}
         alt={alt}
-        sizes={inGallery ? (variant === 'wide' ? WIDE_SIZES : GALLERY_SIZES) : standaloneSizes(width)}
+        sizes={inGallery ? gallerySizes : standaloneSizes(width)}
         itemProp="contentUrl"
         loading="lazy"
         data-modal-trigger=""

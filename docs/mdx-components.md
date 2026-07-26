@@ -49,6 +49,40 @@ wrong: 221 of the 295 in-gallery images declare a `width` prop (it is simply ine
 overridden by the cell), so presence of `width` says nothing about whether an image is in a
 gallery.
 
+### `sizes` in a gallery describes the crop, not the cell
+
+A gallery cell is a fixed-ratio box — `4 / 5`, or `16 / 9` for `variant="wide"` — and the image
+fills it with `object-fit: cover`. Covering scales the image until *both* axes reach the box,
+so an image wider than its cell is scaled up until its height fits and then cropped left and
+right. The painted width is `cellWidth × (imageAspect / cellAspect)`, not `cellWidth`.
+
+`sizes` describes the box, so the uncorrected `33vw` under-stated the request by that same
+factor and the browser fetched a candidate several stops too small. The crop then upscaled it.
+This is invisible on the images the cell crops *vertically* (a portrait in a portrait cell,
+factor 1) and gets worse the wider the image gets: a sweep of all 295 in-gallery images found
+**91 blurry at a 1920 viewport, the worst at 2.0×** — 2.7:1 panoramas in 4/5 cells fetching the
+640px candidate to paint 1275px.
+
+`coverFactor()` in `ImageModal.tsx` reads the aspect ratio out of the dimension manifest and
+`scaleSizes()` multiplies every entry of the `sizes` list by it. An image missing from the
+manifest gets a factor of 1, which is the pre-existing behaviour.
+
+Two consequences worth knowing:
+
+- **`deviceSizes` had to grow back to 2560/3840.** It had been trimmed to 1920 on the premise
+  that nothing renders wider than the 1170px container; a cover crop breaks that premise. The
+  entries only cost two srcset items, since `sizes` still governs selection.
+- **8 images stay soft and no `sizes` value can fix them.** They are 1350×498-ish panoramas in
+  `wide` cells: covering a 16/9 cell needs 1737px and the Cloudinary *original* is 1350px wide
+  (verified against the untransformed URL — `c_limit` has nothing larger to return). Only a
+  higher-resolution re-upload, or a cell ratio closer to the image, removes the 1.29× upscale.
+
+Measure it in the browser rather than reasoning about it, and note that `naturalWidth` is **not**
+the bitmap's pixel width when a `w`-descriptor srcset is in play: it is the bitmap divided by
+its density, and density is `descriptor / sizes`. The descriptor lies whenever `c_limit` clamps
+— next/image labels the `w_1920` URL `1920w` and Cloudinary returns the 1350px original
+untouched. Compare against `Math.min(candidateWidth, manifestWidth)` instead.
+
 ## The modal
 
 One modal instance per page, reproducing Hugo's `Scratch`-flag dedupe of `#imageModal`.
