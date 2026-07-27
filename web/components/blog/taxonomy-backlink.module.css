@@ -1,0 +1,45 @@
+/*
+ * The hub backlink at the top of a term page.
+ *
+ * No Hugo source — see TaxonomyBacklink.tsx for what this replaces.
+ *
+ * The outlined hairline is the skin `post-terms.module.css` gives `.tag` and
+ * `term-list.module.css` gives `.term`: the site's established idiom for "a link out to a
+ * taxonomy destination", reused rather than re-invented. Sized off `--text-meta` like the
+ * `.compact` card pill, so it reads as metadata sitting under the heading band instead of
+ * out-typing the post titles below it.
+ *
+ * `inline-block`, not the `inline-flex` those two use: the content here is an arrow glyph plus
+ * a label, and inline flow is what keeps the space between them behaving like a space.
+ */
+
+.wrap {
+  /* PostList's first row follows immediately; 2.5rem matches the gap between its own rows. */
+  margin: 0 0 2.5rem;
+}
+
+.backlink {
+  display: inline-block;
+  padding: 0.25rem 0.7rem;
+  border: 1px solid rgb(255 255 255 / 0.12);
+  border-radius: var(--radius-embed);
+  text-decoration: none;
+  color: rgb(255 255 255 / 0.75);
+  font-size: var(--text-meta);
+  letter-spacing: var(--tracking-meta);
+  font-weight: 300;
+  transition:
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.backlink:hover,
+.backlink:focus {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.backlink:focus-visible {
+  outline: 2px solid var(--color-accent-soft);
+  outline-offset: 2px;
+}

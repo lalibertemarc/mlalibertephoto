@@ -11,6 +11,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { Pager } from '@/components/blog/Pager'
 import { PostList } from '@/components/blog/PostList'
+import { TaxonomyBacklink } from '@/components/blog/TaxonomyBacklink'
 import { PageHeading, isDarkPageHeading } from '@/components/chrome/page-heading'
 import { ExtraMeta } from '@/components/seo/ExtraMeta'
 import { listBlogPosts, type BlogPostSummary } from '@/lib/content/blog-posts'
@@ -139,6 +140,10 @@ export async function TermPage({
           "Wildlife". See titleCaseTerm. */}
       <PageHeading title={titleCaseTerm(term.term)} dark={isDarkPageHeading('blog')} />
       <main className="container py-12">
+        {/* Not a port. Nothing else on this page leads anywhere but a post, so a reader
+            arriving from search cannot reach the taxonomy from the one term of it they
+            landed on. See components/blog/TaxonomyBacklink.tsx. */}
+        <TaxonomyBacklink taxonomy={taxonomy} locale={locale} />
         <PostList posts={slice.items} locale={locale} />
         <Pager links={pagerLinks(base, slice.page, slice.totalPages)} locale={locale} />
       </main>

@@ -210,6 +210,44 @@ does **not** read the term index: a post shows which terms it carries, not how m
 them, so it needs no membership grouping. That is what keeps it callable from `blog-posts.ts`,
 which runs on essentially every route via the footer's recent-posts block.
 
+## The hub backlink on term pages
+
+The other half of the same link path, added later. `PostTerms` restored post → term; a term
+page still went nowhere but to a post. It rendered a heading, a list and a pager, so a reader
+arriving from search on `/tags/bnw/` could not reach the other 98 tags without going back
+through the main nav.
+
+> Counts here are the corpus as of this change: **99 tags, 21 categories, 1 author** per
+> locale, 248 term pages once paginated continuations and both locales are included. The 129
+> terms quoted elsewhere in this document describe the port at the time and predate the post
+> removals noted under prev/next.
+
+`components/blog/TaxonomyBacklink.tsx` sits at the top of `<main>`, above the post list —
+"← Tous les tags" on `/tags/bnw/`, "← All categories" on `/en/categories/wildlife/`. It renders
+on all 248 term pages, paginated continuations included, across all three taxonomies and both
+locales. `<main>`'s contents only; the `<h1>` and every head tag are untouched.
+
+**The label is localised, and that is a decision against the local grain.** The taxonomy hub
+headings are deliberately *not* translated — the French `/categories/` is headed "Categories"
+(above) — so a French reader clicks "Toutes les catégories" and lands on a page headed
+"Categories". That inconsistency is accepted. The untranslated rule exists to reproduce Hugo's
+indexed `<h1>`/`<title>`; this is body copy in a block Hugo never emitted, so no head tag and
+no indexed string is at stake, and there is nothing to reproduce. `Widgets.categoriesTitle` was
+already localised and already serving as an aria-label on `PostTerms`, so the precedent for
+localised taxonomy nouns in body and a11y copy was on this side. Translating the headings
+themselves remains the separate, still-open follow-up it was.
+
+Three keys — `Widgets.allTags` / `allCategories` / `allAuthors` — rather than one string with a
+`{taxonomy}` placeholder, because French agreement differs per taxonomy: *tous les* tags but
+*toutes les* catégories. An ICU select on the noun would be longer than the three phrases.
+These are the first genuinely new strings on this surface; everything else reused an orphan.
+
+The skin is the outlined hairline `post-terms.module.css` gives a tag and `term-list.module.css`
+gives a hub entry — the established "link out to a taxonomy destination" idiom, at `--text-meta`
+so it reads as metadata under the heading band rather than out-typing the titles below it. It
+goes through `SlashSafeLink` even though a hub href has no dotted segment and `<Link>` would
+leave it alone: making this the one exception is how the next dotted URL gets missed.
+
 ## Prev/next post navigation
 
 Also added after the port, below the terms row. `single.html` has no such block, so unlike

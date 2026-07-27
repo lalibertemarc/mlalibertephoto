@@ -53,7 +53,10 @@
   "Widgets": {
     "categoriesTitle": "Catégories",
     "tagsTitle": "Tags",
-    "searchTitle": "Recherche"
+    "searchTitle": "Recherche",
+    "allTags": "Tous les tags",
+    "allCategories": "Toutes les catégories",
+    "allAuthors": "Tous les auteurs"
   },
   "NotFound": {
     "error": "Erreur 404: Page introuvable",
